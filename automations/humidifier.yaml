@@ -5,7 +5,7 @@
   trigger:
   - below: '35'
   #- below: '{{ states("input_number.min_humidity_slider") | float }}'
-    entity_id: sensor.aqara_master_bed_humidity
+    entity_id: sensor.lumi_lumi_weather_dfca7302_humidity
     for: '10'
     platform: numeric_state
   condition: []
@@ -22,7 +22,7 @@
   trigger:
   #- above: '{{ states("input_number.max_humidity_slider") | float }}'
   - above: '40'
-    entity_id: sensor.aqara_master_bed_humidity
+    entity_id: sensor.lumi_lumi_weather_dfca7302_humidity
     for: '10'
     platform: numeric_state
   condition: []
