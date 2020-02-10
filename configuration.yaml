@@ -1,0 +1,100 @@
+
+homeassistant:
+  customize: !include customize.yaml
+  
+#lovelace:
+#  mode: yaml
+
+default_config:
+
+
+# Uncomment this if you are using SSL/TLS, running in Docker container, etc.
+ http:
+    api_password: !secret api_pwd
+    base_url: !secret base_url
+    ssl_certificate: /ssl/fullchain.pem
+    ssl_key: /ssl/privkey.pem
+
+
+zha: 
+  usb_path: /dev/ttyUSB1
+  database_path: /config/zigbee.db
+
+zwave:
+  usb_path: /dev/ttyUSB0
+
+tuya:
+  username: !secret tuya_user
+  password: !secret tuya_pwd
+  country_code: "1"
+
+notify me:
+  platform: pushbullet
+  api_key: !secret pushbullet_key
+  name: mypushbullet
+  
+
+# Text to speech
+tts:
+  - platform: google_translate
+
+#Load from Directories
+script: !include_dir_merge_list scripts
+scene: !include_dir_merge_list scenes
+light: !include_dir_merge_list lights
+switch: !include_dir_merge_list switches
+sensor: !include_dir_merge_list sensors
+binary_sensor: !include_dir_merge_list binarysensors
+automation: !include_dir_merge_list automations
+
+#alert: !include_dir_merge_list alerts
+
+
+#Load from Single files
+group: !include groups.yaml
+#climate: !include climate.yaml
+#emulated_hue: !include emulated_hue.yaml
+
+
+#Input Variables
+input_boolean: !include_dir_merge_named input_boolean
+input_number: !include_dir_merge_named input_number
+input_select: !include_dir_merge_named input_select
+
+
+history:
+  include:
+    domains:
+      - sensor
+      - switch
+      - media_player
+      - light
+      - binary_sensor
+      - cover
+
+  exclude:
+    entities:
+     - sensor.alans_room_pressure
+     - sensor.outdoor_pressure
+     - sensor.garage_pressure
+     - sensor.laundry_pressure
+
+mqtt:
+  broker: 192.168.0.13
+  port: 1883
+  client_id: home-assistant-KC
+  username: ""
+  password: ""
+
+
+lock:
+  - platform: mqtt
+    name: Frontdoor
+    state_topic: "home-assistant/frontdoor/"
+    command_topic: "home-assistant/frontdoor/set"
+    payload_lock: "LOCK"
+    payload_unlock: "UNLOCK"
+    optimistic: false
+    qos: 1
+    retain: true
+    value_template: '{{ value.x }}'

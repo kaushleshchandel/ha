@@ -1,0 +1,12 @@
+# Example configuration.yaml entry
+- platform: systemmonitor
+  resources:
+    - type: disk_use_percent
+      arg: /home
+    - type: memory_use_percent
+    - type : processor_use
+    - type : ipv4_address
+      arg: eth0
+    - type : ipv6_address
+      arg: eth1
+    - type : last_boot

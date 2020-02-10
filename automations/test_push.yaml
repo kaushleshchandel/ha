@@ -1,0 +1,12 @@
+- alias: TestPush
+  trigger:
+    platform: numeric_state
+    entity_id: input_number.garage_timer_slider
+    above: 50
+  action:
+    service: notify.mobile_app_sm_g960u
+    data_template:
+      title: "Mobile Push Test"
+      message: "Test Samsung"
+      
+      

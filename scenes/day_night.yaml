@@ -1,0 +1,19 @@
+- name: Morning
+  entities:
+    zwave.leviton_dzpd3_1lw_plug_in_dimming_lamp_module:
+      state: on
+      brightness: 10
+- name: Home
+  entities:
+    light.tv_back_light:
+      state: on
+      brightness: 125
+- name: Sleeping
+  entities:
+    zwave.leviton_dzpd3_1lw_plug_in_dimming_lamp_module:
+      state: on
+      brightness: 10
+    light.garage: off
+- name: Away
+  entities:
+    light.tv_back_light: off

@@ -1,0 +1,16 @@
+#Alerts# Example configuration.yaml entry
+garage_door_left_open:
+  name: Garage is open
+  entity_id: binary_sensor.garage_door
+  state: 'on'   # Optional, 'on' is the default value
+  repeat:
+    - 5
+    - 15
+    - 30
+    - 45
+  can_acknowledge: true  # Optional, default is true
+  skip_first: true  # Optional, false is the default
+  message: "You left the Garage door open"
+  notifiers:
+    - device_tracker.kc_phone
+    - device_tracker.ec_phone

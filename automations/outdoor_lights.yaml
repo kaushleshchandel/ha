@@ -1,0 +1,35 @@
+#Auto On Garage Lights when Sun Sets
+- id: aa5c07ebe5274b89a13aa8cc806c3988
+  alias: 'LIGHT: Outdoor Lights ON'
+  description: Turn on outdoor lights in the Evening
+  trigger:
+  - event: sunset
+    platform: sun
+  condition: []
+  action:
+  - alias: ''
+    data:
+      entity_id: light.backyard
+    service: light.turn_on
+  - alias: ''
+    data:
+      entity_id: light.porch
+    service: light.turn_on
+
+#Auto Off lights when Sun rises
+- id: aa5c07ebe5274b89a13aa8cc806c3989
+  alias: 'LIGHT: Outdoor Lights OFF'
+  description: Turn off Outdoor lights when Sun is up
+  trigger:
+  - event: sunrise
+    platform: sun
+  condition: []
+  action:
+  - alias: ''
+    data:
+      entity_id: light.backyard
+    service: light.turn_off
+  - alias: ''
+    data:
+      entity_id: light.porch
+    service: light.turn_off

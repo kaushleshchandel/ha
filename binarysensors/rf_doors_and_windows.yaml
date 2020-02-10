@@ -1,0 +1,38 @@
+#2261A6 - Kitchen Door
+#743B29 - Backyard Glass Door
+#D6E629 - Front Door
+
+- platform: mqtt
+  name: "RF Kitchen Door"
+  state_topic: "001/tele/cambria/rf/RESULT"
+  value_template: '{{value_json.RfReceived.Data}}'
+  payload_on: "2261A6"
+  payload_off: "000000"
+  availability_topic: "001/tele/cambria/rf/LWT"
+  payload_available: "Online"
+  payload_not_available: "Offline"
+  qos: 1
+
+- platform: mqtt
+  name: "RF Backyard Glass Door"
+  state_topic: "001/tele/cambria/rf/RESULT"
+  value_template: '{{value_json.RfReceived.Data}}'
+  payload_on: "743B29"
+  payload_off: "000000"
+  availability_topic: "001/tele/cambria/rf/LWT"
+  payload_available: "Online"
+  payload_not_available: "Offline"
+  qos: 1
+
+
+- platform: mqtt
+  name: "RF Front Door"
+  state_topic: "001/tele/cambria/rf/RESULT"
+  value_template: '{{value_json.RfReceived.Data}}'
+  payload_on: "D6E629"
+  payload_off: "000000"
+  availability_topic: "001/tele/cambria/rf/LWT"
+  payload_available: "Online"
+  payload_not_available: "Offline"
+  qos: 1
+

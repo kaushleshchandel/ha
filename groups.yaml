@@ -1,0 +1,39 @@
+#Groups
+# Example configuration.yaml entry
+
+kitchen:
+  name: Kitchen
+  entities:
+    - light.kitchen_sink_light
+    - light.breakfast_table
+LivingRoom:
+  name: Living Room
+  entities:
+AlansRoom:
+  name: Alan's Room
+  entities:
+    - light.alans_night_lamp
+
+Loft:
+  name: Loft
+  entities:
+    - light.loft
+    - light.chandleir
+
+MasterBedroom:
+  name: Master Bedroom
+  entities:
+
+Garage:
+  name: garage
+  entities:
+    - light.garage
+
+climate:
+  name: Climate
+  entities:
+    - sensor.alans_room_temperature
+awesome_people:
+  name: Awesome People
+  entities:
+    - device_tracker.sm_g960

@@ -1,0 +1,12 @@
+- platform: mqtt
+  name: "Garage Door Opener"
+  state_topic: "001/stat/cambria/1/garage/controller/RESULT"
+  value_template: "{{ value_json.POWER }}"
+  command_topic: "001/cmnd/cambria/1/garage/controller/POWER"
+  payload_on: "ON"
+  payload_off: "OFF"
+  availability_topic: "001/tele/cambria/1/garage/controller/LWT"
+  payload_available: "Online"
+  payload_not_available: "Offline"
+  qos: 1
+  retain: false

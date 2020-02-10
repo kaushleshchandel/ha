@@ -1,0 +1,249 @@
+title: Home
+views:
+  - badges: null
+    cards:
+      - entity: switch.garage_opener
+        hold_action:
+          action: toggle
+        icon: 'mdi:garage'
+        icon_height: 56px
+        name: Open Garage
+        show_icon: true
+        show_name: true
+        tap_action:
+          action: more-info
+        type: entity-button
+      - entities:
+          - entity: light.breakfast_table
+            icon: 'mdi:ceiling-light'
+          - entity: light.dining_table
+            icon: 'mdi:ceiling-light'
+          - entity: light.garage
+          - entity: light.main_entrance
+            name: Entrance
+          - entity: light.chandleir
+            icon: 'mdi:ceiling-light'
+            name: Chandeleir
+          - entity: light.loft
+          - entity: light.kitchen_sink_light
+          - entity: light.alans_night_lamp
+          - entity: light.leviton_living_room_lamp_dimmer
+            icon: 'mdi:lamp'
+          - entity: light.leviton_master_bedroom_lamp_dimmer
+            icon: 'mdi:lamp'
+        show_header_toggle: true
+        title: Indoor Lights
+        type: entities
+      - entities:
+          - entity: light.porch
+          - entity: light.backyard
+        title: Outdoor Lights
+        type: entities
+      - entities:
+          - entity: input_number.garage_timer_slider
+            name: Garage Auto Off
+        type: entities
+      - entity: sensor.aqara_alans_roomo_temperature
+        max: 85
+        min: 50
+        name: Temp
+        theme: default
+        type: gauge
+      - entity: sensor.aqara_alans_room_humidity
+        max: 70
+        min: 10
+        name: Humidity
+        severity:
+          green: 30
+          red: 50
+          yellow: 40
+        theme: default
+        type: gauge
+      - entities:
+          - entity: switch.garage_opener
+            icon: 'mdi:garage-open'
+            name: Open / Close
+          - entity: binary_sensor.garage_door
+            name: Garage Door
+          - entity: binary_sensor.kitchen_door
+          - entity: binary_sensor.backyard_door
+          - entity: binary_sensor.aqara_backyard_door_sensor
+            icon: 'mdi:door'
+          - entity: binary_sensor.aqara_main_door_sensor
+            icon: 'mdi:door'
+        show_header_toggle: false
+        title: Doors and Windows
+        type: entities
+      - entity: weather.home
+        theme: default
+        type: weather-forecast
+      - entities:
+          - entity: sensor.aqara_alans_roomo_temperature
+            name: Alan's Room
+          - entity: sensor.aqara_master_bedroom_temperature
+            name: Master Bedroom
+          - entity: sensor.aqara_living_room_temperature
+            name: Living Room
+          - entity: sensor.outdoor_temperature
+            name: Outdoor
+          - entity: sensor.laundry_temperature
+            name: Laundry
+        show_header_toggle: false
+        title: Temperature
+        type: entities
+      - entities:
+          - entity: sensor.aqara_alans_room_humidity
+          - entity: sensor.aqara_master_bed_humidity
+          - entity: sensor.aqara_living_room_humidity
+        hours_to_show: 24
+        refresh_interval: 0
+        title: Humidity
+        type: history-graph
+      - entities:
+          - entity: switch.humidifier
+          - entity: sensor.aqara_alans_room_humidity
+            name: Outdoor
+          - entity: sensor.aqara_master_bed_humidity
+            name: Garage
+          - entity: sensor.aqara_living_room_humidity
+          - entity: sensor.outdoor_humidity
+          - entity: sensor.aqara_alans_room_humidity
+        show_header_toggle: false
+        title: Humidity
+        type: entities
+      - entities:
+          - entity: sensor.aqara_master_bedroom_temperature
+          - entity: sensor.aqara_living_room_temperature
+          - entity: sensor.aqara_alans_roomo_temperature
+        hours_to_show: 24
+        refresh_interval: 0
+        title: Temperature
+        type: history-graph
+    path: default_view
+    title: Home
+  - badges: []
+    cards:
+      - entities:
+          - entity: switch.linux
+        type: entities
+      - entities:
+          - entity: sensor.aqara_backyard_door_sensor_power
+          - entity: sensor.aqara_living_room_sensor_power
+          - entity: sensor.aqara_main_door_sensor_power
+          - entity: sensor.aqara_master_bed_power
+          - entity: sensor.aqara_master_bed_power
+          - entity: sensor.garage_pushbutton_power
+          - entity: sensor.aqara_alans_room_sensor_power
+        title: Battery
+        type: entities
+      - entities:
+          - entity: automation.system_daily_reboot_all_devices
+          - entity: automation.system_sync_states_on_start_up_manual_configuration
+        type: entities
+      - entities: []
+        type: entities
+      - type: entities
+        entities:
+          - entity: light.leviton_dzpd3_1lw_plug_in_dimming_lamp_module_level
+          - entity: light.leviton_dzpd3_1lw_plug_in_dimming_lamp_module_level_2
+          - entity: zwave.leviton_dzpd3_1lw_plug_in_dimming_lamp_module
+          - entity: zwave.leviton_dzpd3_1lw_plug_in_dimming_lamp_module_2
+          - entity: zwave.leviton_dzpd3_1lw_plug_in_dimming_lamp_module_3
+    panel: false
+    path: admin
+    title: Admin
+  - badges: []
+    cards:
+      - entities:
+          - entity: sensor.outdoor_temperature
+          - entity: sensor.outdoor_humidity
+          - entity: sensor.outdoor_pressure
+        show_header_toggle: false
+        title: Outdoor
+        type: entities
+      - entities:
+          - entity: sensor.aqara_living_room_temp
+          - entity: sensor.aqara_living_room_humidity
+          - entity: sensor.aqara_living_room_pressure
+          - entity: sensor.aqara_living_room_sensor_power
+        show_header_toggle: false
+        title: Living Room
+        type: entities
+      - entities:
+          - entity: sensor.alans_room_temperature
+          - entity: sensor.alans_room_humidity
+          - entity: sensor.alans_room_pressure
+        show_header_toggle: false
+        title: Alans Room
+        type: entities
+      - entities:
+          - entity: sensor.garage_temperature
+          - entity: sensor.garage_pressure
+        show_header_toggle: false
+        title: Garage
+        type: entities
+      - entities:
+          - entity: sensor.laundry_temperature
+          - entity: sensor.laundry_pressure
+        show_header_toggle: false
+        title: Laundry
+        type: entities
+      - entities:
+          - entity: automation.climate_auto_humidifier_on
+        type: entities
+      - entities:
+          - entity: sensor.aqara_master_bed_aqara
+          - entity: sensor.aqara_master_bedroom_humidity
+          - entity: sensor.aqara_master_bed_pressure
+          - entity: sensor.aqara_master_bed_sensor_battery
+        title: Master Bedroom
+        type: entities
+      - entity: weather.home
+        name: Cambria Lane Weather
+        type: weather-forecast
+      - entities:
+          - entity: sensor.aqara_living_room_temp
+          - entity: sensor.alans_room_temperature
+          - entity: sensor.garage_temperature
+          - entity: sensor.outdoor_temperature
+          - entity: sensor.laundry_temperature
+          - entity: sensor.aqara_master_bed_aqara
+        hours_to_show: 24
+        refresh_interval: 0
+        title: Temperature Trend
+        type: history-graph
+      - entities:
+          - entity: input_number.garage_timer_slider
+          - entity: input_number.humidity_slider
+          - entity: input_number.laundry_max_temperature
+        type: entities
+    path: climate
+    title: Climate
+  - badges:
+      - entity: switch.garage_opener
+      - entity: light.garage
+    cards:
+      - entities:
+          - entity: binary_sensor.rfkey_1
+          - entity: binary_sensor.rfkey_2
+          - entity: binary_sensor.rfkey_3
+          - entity: binary_sensor.rfkey_4
+          - entity: binary_sensor.rfkey_5
+          - entity: binary_sensor.rfkey_6
+          - entity: binary_sensor.rfkey_7
+          - entity: binary_sensor.rfkey_8
+        title: RFtest
+        type: entities
+  - badges: []
+    cards:
+      - entities:
+          - entity: input_select.who_cooks
+          - entity: input_boolean.alert_mode
+          - entity: input_boolean.ec_away_from_home
+          - entity: input_number.garage_timer_slider
+          - entity: input_boolean.school_mode
+          - entity: input_boolean.everyone_away_from_home
+          - entity: input_boolean.text_notifications
+        type: entities
+    path: test
+    title: Test

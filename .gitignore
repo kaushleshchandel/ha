@@ -1,0 +1,8 @@
+secrets.yaml
+*.log
+*.xml
+*.db
+.storage/
+OZW_Log.txt
+harmoney_harmony_hub.conf
+known_devices.yaml

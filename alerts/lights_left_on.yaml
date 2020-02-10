@@ -1,0 +1,10 @@
+garage_light:
+  name: Garage light left on
+  done_message: Garage light off
+  entity_id: light.garage
+  state: 'on'
+  repeat: 1
+  can_acknowledge: true
+  skip_first: true
+  notifiers:
+    - device_tracker.kc_phone

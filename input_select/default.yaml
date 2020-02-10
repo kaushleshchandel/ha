@@ -1,0 +1,13 @@
+# Example configuration.yaml entry
+who_cooks:
+  name: Who cooks today
+  options:
+    - Emelia
+    - Kaushlesh
+  initial: Kaushlesh
+  icon: mdi:panda
+living_room_preset:
+  options:
+    - Visitors
+    - Visitors with kids
+    - Home Alone

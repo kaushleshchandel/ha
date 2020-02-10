@@ -1,0 +1,24 @@
+garage_timer_slider:
+  name: Garage Timer
+  initial: 10
+  min: 1
+  max: 60
+  step: 5
+max_humidity_slider:
+  name: Maximum Humidity
+  initial: 40
+  min: 30
+  max: 50
+  step: 1
+min_humidity_slider:
+  name: Minimum Humidity
+  initial: 35
+  min: 30
+  max: 50
+  step: 1
+laundry_max_temperature:
+  name: Laundry Maximum Temperature
+  initial: 85
+  min: 50
+  max: 120
+  step: 10

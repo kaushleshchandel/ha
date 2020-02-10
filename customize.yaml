@@ -1,0 +1,39 @@
+#Living Room Sensor
+sensor.lumi_lumi_weather_dfca7302_power:
+  friendly_name: "Living Room Power"
+sensor.lumi_lumi_weather_dfca7302_temperature:
+  friendly_name: "Living Room Temperature"
+sensor.lumi_lumi_weather_dfca7302_humidity:
+  friendly_name: "Living Room Humidity"
+sensor.lumi_lumi_weather_dfca7302_pressure:
+  friendly_name: "Living Room Pressure"
+
+
+sensor.lumi_lumi_weather_e7d47302_power:
+  friendly_name: "Master Bedroom Power"
+sensor.lumi_lumi_weather_e7d47302_temperature:
+  friendly_name: "Master Bedroom Temperature"
+sensor.lumi_lumi_weather_e7d47302_humidity:
+  friendly_name: "Master Bedroom Humidity"
+sensor.lumi_lumi_weather_e7d47302_pressure:
+  friendly_name: "Master Bedroom Pressure"
+
+binary_sensor.lumi_lumi_sensor_magnet_aq2_cbee7202_on_off:
+  frinely_name: "laundry Door"
+
+
+sensor.lumi_lumi_weather_40e57202_power:
+  friendly_name: "Alans Bedroom Power"
+sensor.lumi_lumi_weather_40e57202_temperature:
+  friendly_name: "Alans Bedroom Temperature"
+sensor.lumi_lumi_weather_40e57202_humidity:
+  friendly_name: "Alans Bedroom Humidity"
+sensor.lumi_lumi_weather_40e57202_pressure:
+  friendly_name: "Alans Bedroom Pressure"
+
+light.leviton_dzpd3_1lw_plug_in_dimming_lamp_module_level:
+  friendly_name: "Master Bedroom Lamp"
+
+
+light.leviton_dzpd3_1lw_plug_in_dimming_lamp_module_level_2:
+  friendly_name: "Living Room Lamp"

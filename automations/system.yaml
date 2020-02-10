@@ -1,0 +1,56 @@
+- id: letsencrypt-renewal
+  alias: 'SYSTEM: Let''s Encrypt Renewal'
+  trigger:
+  - at: 00:00:00
+    platform: time
+  action:
+  - data:
+      addon: core_letsencrypt
+    service: hassio.addon_restart
+- id: 776fff5ede904359aa3a7ef5b56de5bf
+  alias: 'SYSTEM: Sync states on start-up - manual configuration'
+  trigger:
+  - event: start
+    platform: homeassistant
+  action:
+  - data:
+      payload: ''
+      topic: 001/cmnd/tasmotas/state
+    service: mqtt.publish
+  initial_state: true
+
+
+- id: '1578338746959'
+  alias: 'SYSTEM : Daily: Reboot all Devices'
+  description: ''
+  trigger:
+  - at: 03:45:00
+    platform: time
+  condition: []
+  action:
+  - data:
+      data:
+        push:
+          badge: 5
+      message: Rebooting all Tasmota devices...
+    service: notify.mobile_app_kc_samsung
+  - data:
+      Topic: 001/cmnd/tasmotas/restart
+    service: mqtt.publish
+- id: '1555848744587'
+  alias: 'SYSTEM : Weekly : Hassio Reboot'
+  trigger:
+  - at: 03:45:00
+    platform: time
+  condition:
+  - condition: time
+    weekday:
+    - wed
+  action:
+  - data:
+      data:
+        push:
+          badge: 5
+      message: Rebooting...
+    service: notify.kc_phone
+  - service: hassio.host_reboot

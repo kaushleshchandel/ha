@@ -1,0 +1,10 @@
+- alias: TestPushBullet
+  trigger:
+    platform: numeric_state
+    entity_id: input_number.garage_timer_slider
+    above: 15
+  action:
+    service: notify.mypushbullet
+    data_template:
+      title: "Push Bullet Test"
+      message: "ABC"
