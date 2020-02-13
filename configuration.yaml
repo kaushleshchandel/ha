@@ -86,15 +86,16 @@ mqtt:
   username: ""
   password: ""
 
-
-lock:
-  - platform: mqtt
-    name: Frontdoor
-    state_topic: "home-assistant/frontdoor/"
-    command_topic: "home-assistant/frontdoor/set"
-    payload_lock: "LOCK"
-    payload_unlock: "UNLOCK"
-    optimistic: false
-    qos: 1
-    retain: true
-    value_template: '{{ value.x }}'
+# Example configuration.yaml entry
+alarm_control_panel:
+  - platform: manual
+    name: Home Alarm
+    code: !secret control_panel_password
+    pending_time: 30
+    delay_time: 20
+    trigger_time: 4
+    disarmed:
+      trigger_time: 0
+    armed_home:
+      pending_time: 0
+      delay_time: 0
