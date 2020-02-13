@@ -1,7 +1,7 @@
 #Turn OFF Garage Lights
 - id: '1578160744520'
   alias: 'LIGHT: AUTO Garage lights  OFF'
-  description: Auto off in 10 minutes
+  description: Auto off in Set minutes
   trigger:
   - entity_id: light.garage
     for: '00:{{ states("input_number.garage_timer_slider") | int }} :00'
@@ -10,7 +10,25 @@
     to: 'on'
   condition: []
   action:
-  - alias: ''
     data:
       entity_id: light.garage
     service: light.turn_off
+
+#Turn ON Garage Lights
+- id: '874115816452007'
+  alias: 'LIGHT: AUTO Turn on Garage on Kitchen Door Open'
+  description: Turn on Kitchen Light
+  trigger:
+  - entity_id: binary_sensor.rf_kitchen_door
+    from: 'off'
+    platform: state
+    to: 'on'
+  condition: []
+  action:
+    data:
+      entity_id: light.garage
+    service: light.turn_on
+  action:
+    data:
+      entity_id: light.kitchen_sink_light
+    service: light.turn_on

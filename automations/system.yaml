@@ -7,6 +7,7 @@
   - data:
       addon: core_letsencrypt
     service: hassio.addon_restart
+
 - id: 776fff5ede904359aa3a7ef5b56de5bf
   alias: 'SYSTEM: Sync states on start-up - manual configuration'
   trigger:
@@ -37,6 +38,7 @@
   - data:
       Topic: 001/cmnd/tasmotas/restart
     service: mqtt.publish
+
 - id: '1555848744587'
   alias: 'SYSTEM : Weekly : Hassio Reboot'
   trigger:

@@ -3,14 +3,10 @@
   alias: 'CLIMATE : AUTO Humidifier ON'
   description: Alert when Humidity goes down
   trigger:
-  - below: '35'
-  #- below: '{{ states("input_number.min_humidity_slider") | float }}'
-    entity_id: sensor.lumi_lumi_weather_dfca7302_humidity
+    platform: template
+    value_template: '{{ states.sensor.lumi_lumi_weather_dfca7302_humidity.state < states.input_number.min_humidity_slider.state }}'  
     for: '10'
-    platform: numeric_state
-  condition: []
   action:
-  - alias: ''
     data:
       entity_id: switch.humidifier
     service: switch.turn_on
@@ -20,14 +16,12 @@
   alias: 'CLIMATE: AUTO Humidifier OFF'
   description: Turn off the Humidifier when Humidity Goes above 38
   trigger:
-  #- above: '{{ states("input_number.max_humidity_slider") | float }}'
-  - above: '40'
-    entity_id: sensor.lumi_lumi_weather_dfca7302_humidity
+    platform: template
+    value_template: '{{ states.sensor.lumi_lumi_weather_dfca7302_humidity.state > states.input_number.max_humidity_slider.state }}'  
     for: '10'
-    platform: numeric_state
-  condition: []
   action:
-  - alias: ''
     data:
       entity_id: switch.humidifier
     service: switch.turn_off
+
+

@@ -1,21 +1,27 @@
+#Timer for Garage
 garage_timer_slider:
   name: Garage Timer
   initial: 10
-  min: 1
+  min: 5
   max: 60
   step: 5
+
+#Maximum Humidity at which triggers ON
 max_humidity_slider:
   name: Maximum Humidity
   initial: 40
-  min: 30
+  min: 15
   max: 50
   step: 1
+
+#Minimam Humidity at which triggers ON
 min_humidity_slider:
   name: Minimum Humidity
-  initial: 35
-  min: 30
+  initial: 30
+  min: 15
   max: 50
   step: 1
+
 laundry_max_temperature:
   name: Laundry Maximum Temperature
   initial: 85

@@ -24,3 +24,5 @@
     data:
       entity_id: light.alans_night_lamp
     service: light.turn_ff
+
+
