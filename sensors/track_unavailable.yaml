@@ -1,0 +1,78 @@
+- platform: template
+  sensors:
+    unavailable_entities:
+      entity_id: sensor.time
+      friendly_name: Unavailable Entities
+      value_template: >
+        {% set count = states|selectattr('state', 'in', ['unavailable', 'unknown', 'none'])
+          |rejectattr('entity_id', 'in', state_attr('group.entity_blacklist', 'entity_id'))
+          |rejectattr('entity_id', 'eq' , 'group.entity_blacklist')
+          |rejectattr('entity_id', 'eq' , 'group.entity_whitelist')
+          |map(attribute='name')|list|length %}
+        {%- set devices = state_attr('group.entity_whitelist', 'entity_id') -%}
+        {%- set dev = namespace(value=0) -%}
+          {%- for entity_id in devices -%}
+            {%- if states(entity_id) in ['unavailable', 'unknown', 'none'] -%}
+            {%- set dev.value = dev.value + 1 -%}
+            {%- endif -%}
+          {%- endfor -%}
+        {{ count + dev.value }}
+      attribute_templates:
+        entities: >
+          {% set entities = states|selectattr('state', 'in', ['unavailable', 'unknown', 'none'])
+            |rejectattr('entity_id', 'in', state_attr('group.entity_blacklist', 'entity_id'))
+            |rejectattr('entity_id', 'eq' , 'group.entity_blacklist')
+            |rejectattr('entity_id', 'eq' , 'group.entity_whitelist')
+            |map(attribute='name')|list|join(', ') %}
+          {%- set whitelisted = state_attr('group.entity_whitelist', 'entity_id') -%}
+          {%- set dev = namespace(value=0) -%}
+            {%- for entity_id in whitelisted -%}
+              {% if states(entity_id) in ['unavailable', 'unknown', 'none'] %}
+                {%- if not dev.value == 0 %}{{- ', ' -}}
+              {% endif %}
+              {%- set dev.value = dev.value + 1 -%}
+              {{- entity_id -}}
+            {% endif -%}
+          {% endfor %}
+          {%- if not dev.value == 0 %}{{- ', ' -}}{% endif %}
+          {{- entities -}}
+
+- platform: template
+  sensors:
+    available_entities:
+      entity_id: sensor.time
+      friendly_name: Available Entities
+      value_template: >
+        {% set count = states|selectattr('state', 'in', ['unavailable', 'unknown', 'none'])
+          |rejectattr('entity_id', 'in', state_attr('group.entity_blacklist', 'entity_id'))
+          |rejectattr('entity_id', 'eq' , 'group.entity_blacklist')
+          |rejectattr('entity_id', 'eq' , 'group.entity_whitelist')
+          |map(attribute='name')|list|length %}
+        {%- set devices = state_attr('group.entity_whitelist', 'entity_id') -%}
+        {%- set dev = namespace(value=0) -%}
+          {%- for entity_id in devices -%}
+            {%- if states(entity_id) in ['unavailable', 'unknown', 'none'] -%}
+            {%- set dev.value = dev.value + 1 -%}
+            {%- endif -%}
+          {%- endfor -%}
+        {{ count + dev.value }}
+      attribute_templates:
+        entities: >
+          {% set entities = states|selectattr('state', 'in', ['unavailable', 'unknown', 'none'])
+            |rejectattr('entity_id', 'in', state_attr('group.entity_blacklist', 'entity_id'))
+            |rejectattr('entity_id', 'eq' , 'group.entity_blacklist')
+            |rejectattr('entity_id', 'eq' , 'group.entity_whitelist')
+            |map(attribute='name')|list|join(', ') %}
+          {%- set whitelisted = state_attr('group.entity_whitelist', 'entity_id') -%}
+          {%- set dev = namespace(value=0) -%}
+            {%- for entity_id in whitelisted -%}
+              {% if states(entity_id) in ['unavailable', 'unknown', 'none'] %}
+                {%- if not dev.value == 0 %}{{- ', ' -}}
+              {% endif %}
+              {%- set dev.value = dev.value + 1 -%}
+              {{- entity_id -}}
+            {% endif -%}
+          {% endfor %}
+          {%- if not dev.value == 0 %}{{- ', ' -}}{% endif %}
+          {{- entities -}}
+

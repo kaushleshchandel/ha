@@ -2,57 +2,6 @@
 # DOORS & WINDOWS
 ######################
 
-
-#001/cmnd/cambria/1/garage/controller/POWER3
-
-- platform: mqtt
-  #entity_id: "Garage_Door"
-  name: "Garage Door Sensor"
-  state_topic: "001/cmnd/cambria/1/garage/controller/POWER2"
-  payload_on: "0"
-  payload_off: "1"
-  availability_topic: "001/tele/cambria/1/garage/controller/LWT"
-  payload_available: "Online"
-  payload_not_available: "Offline"
-  device_class: garage_door   # also: window, garage_door or opening
-  qos: 1
-
-
-- platform: mqtt
-  #entity_id: "Garage_Door"
-  name: "Garage Opener 1"
-  state_topic: "001/cmnd/cambria/1/garage/controller/POWER1"
-  payload_on: "0"
-  payload_off: "1"
-  availability_topic: "001/tele/cambria/1/garage/controller/LWT"
-  payload_available: "Online"
-  payload_not_available: "Offline"
-  qos: 1
-
-
-- platform: mqtt
-  #entity_id: "Garage_Door"
-  name: "Garage Opener 2"
-  state_topic: "001/cmnd/cambria/1/garage/controller/POWER3"
-  payload_on: "0"
-  payload_off: "1"
-  availability_topic: "001/tele/cambria/1/garage/controller/LWT"
-  payload_available: "Online"
-  payload_not_available: "Offline"
-  qos: 1
-
-
-- platform: mqtt
-  name: "Backyard Door"
-  state_topic: "001/stat/cambria/1/living_room/doors/PATIO"
-  payload_on: "0"
-  payload_off: "1"
-  availability_topic: "001/tele/cambria/1/living_room/doors/LWT"
-  payload_available: "Online"
-  payload_not_available: "Offline"
-  device_class: door   # also: window, garage_door or opening
-  qos: 1
-
 - platform: mqtt
   name: "Couch Window"
   state_topic: "001/stat/cambria/1/living_room/doors/WINDOW"

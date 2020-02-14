@@ -37,3 +37,15 @@ light.leviton_dzpd3_1lw_plug_in_dimming_lamp_module_level:
 
 light.leviton_dzpd3_1lw_plug_in_dimming_lamp_module_level_2:
   friendly_name: "Living Room Lamp"
+
+
+#Variables that should persist values after reboot
+
+input_number.garage_timer_slider:
+  persistent: true
+input_number.max_humidity_slider:
+  persistent: true
+input_number.min_humidity_slider:
+  persistent: true
+input_number.laundry_max_temperature:
+  persistent: true

@@ -1,5 +1,5 @@
 # Trigger Alartm when in Armed Mode
-- alias: 'Trigger alarm while armed away'
+- alias: 'ALARM: Trigger alarm while armed away'
   trigger:
     - platform: state
       entity_id: binary_sensor.backyard_door
@@ -29,9 +29,8 @@
     service: alarm_control_panel.alarm_trigger
     entity_id: alarm_control_panel.ha_alarm
 
-
-#Notify when Alarm goes on
-- alias: 'Send notification when alarm triggered'
+#Send a notification
+- alias: 'ALARM: Send notification when alarm triggered'
   trigger:
     - platform: state
       entity_id: alarm_control_panel.ha_alarm
@@ -40,32 +39,32 @@
     - service: notify.notify
       data:
         message: "ALARM! The alarm has been triggered"
+    - service: notify.mypushbullet
+      data_template:
+        title: "HOME ALARM!"
+        message: "Alarm has triggered"        
+
+- alias: 'ALARM: Send notification when alarm is Disarmed'
+  trigger:
+    - platform: state
+      entity_id: alarm_control_panel.home_alarm
+      to: 'disarmed'
   action:
-    service: notify.mypushbullet
-    data_template:
-      title: "ALARM! House"
-      message: "Home Alarm is triggered"
+    - service: notify.notify
+      data_template:
+        message: "ALARM! The alarm is Disarmed at {{ states('sensor.date_time') }}"        
+    - service: notify.mypushbullet
+      data_template:
+        title: "HOME ALARM!"
+        message: "ALARM! The alarm is Disarmed at {{ states('sensor.date_time') }}"        
 
 
-- alias: 'Disarm alarm when Phone is in Range'
+#Disable the Home Alarm
+- alias: 'ALARM: Disarm alarm when known person arrives'
   trigger:
-    platform: state
-    entity_id: device_tracker.kc_phone
-    # trigger for determining when at home
-    from: 'not_home'
-    to: 'home'
-  trigger:
-    platform: state
-    entity_id: device_tracker.ec_phone
-    # trigger for determining when at home
-    from: 'not_home'
-    to: 'home'
-  trigger:
-    platform: state
-    entity_id: device_tracker.fm_phone
-    # trigger for determining when at home
-    from: 'not_home'
-    to: 'home'
+    - platform: state
+      entity_id: device_tracker.sm_g960u
+      to: 'home'
   action:
     - service: alarm_control_panel.alarm_disarm
       entity_id: alarm_control_panel.house_alarm

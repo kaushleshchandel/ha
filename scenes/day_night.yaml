@@ -18,7 +18,7 @@
   entities:
     zwave.leviton_dzpd3_1lw_plug_in_dimming_lamp_module:
       state: on
-      brightness: 10
+      brightness: 1
     light.360178242462ab2e57ae : off
     light.36017824d8f15ba5221f: off
     light.alans_night_lamp : off

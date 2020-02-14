@@ -1,6 +1,6 @@
 #Turn OFF Garage Lights
 - id: '1578160744520'
-  alias: 'Auto turn off Garage lights'
+  alias: 'LIGHT: Auto turn off Garage lights'
   description: Auto off in Set minutes
   trigger:
   - entity_id: light.garage
@@ -16,7 +16,7 @@
 
 #Turn ON Garage Lights
 - id: '874115816452007'
-  alias: 'Turn on Garage Lights  Kitchen Door Open'
+  alias: 'LIGHT: Turn on Garage Lights  Kitchen Door Open'
   description: Turn on Garage Light
   trigger:
   - entity_id: binary_sensor.rf_kitchen_door
@@ -31,7 +31,7 @@
 
 #Turn ON Kitchen Lights
 - id: '8741158164515812007'
-  alias: 'Turn on Kitchen on Kitchen door Open at night'
+  alias: 'LIGHT: Turn on Kitchen on Kitchen door Open at night'
   description: Turn on Kitchen Light
   trigger:
   - entity_id: binary_sensor.rf_kitchen_door
@@ -42,12 +42,6 @@
     condition: state  # from sunset until sunrise
     entity_id: sun.sun
     state: 'below_horizon'
-    condition: state # Checks if a light is off
-    entity_id: light.360178242462ab2e57ae
-    state: 'off'
-    condition: state
-    entity_id: light.36017824d8f15ba5221f
-    state: 'off'
   action:
     data:
       entity_id: light.kitchen_sink_light
@@ -55,7 +49,7 @@
 
 
 - id: aa5c03aa8c789a1cbe5806e274bc3989
-  alias: 'Reset Garage Timer'
+  alias: 'SYSTEM: Reset Garage Timer'
   description: Reset Garage Timer at 6:00
   trigger:
   - at: 06:00:00

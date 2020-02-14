@@ -1,6 +1,6 @@
 #Turn OFF Garage Lights
 - id: '811574816452007'
-  alias: 'LIGHT: RF REmote'
+  alias: 'LIGHT: RF Remote'
   description: Turn on Kitchen Light
   trigger:
   - entity_id: binary_sensor.rfkey_1

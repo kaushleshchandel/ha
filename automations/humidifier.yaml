@@ -5,7 +5,7 @@
   trigger:
     platform: template
     value_template: '{{ states.sensor.lumi_lumi_weather_dfca7302_humidity.state < states.input_number.min_humidity_slider.state }}'  
-    for: '10'
+    for: '5'
   action:
     data:
       entity_id: switch.humidifier
@@ -14,11 +14,11 @@
 #Turn off the Humidifier
 - id: '1578326945584'
   alias: 'CLIMATE: AUTO Humidifier OFF'
-  description: Turn off the Humidifier when Humidity Goes above 38
+  description: Turn off the Humidifier when Humidity is high
   trigger:
     platform: template
     value_template: '{{ states.sensor.lumi_lumi_weather_dfca7302_humidity.state > states.input_number.max_humidity_slider.state }}'  
-    for: '10'
+    for: '5'
   action:
     data:
       entity_id: switch.humidifier

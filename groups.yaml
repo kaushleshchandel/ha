@@ -28,6 +28,7 @@ Garage:
   name: garage
   entities:
     - light.garage
+    - light.360178242462ab2e57ae
 
 climate:
   name: Climate
@@ -37,3 +38,36 @@ awesome_people:
   name: Awesome People
   entities:
     - device_tracker.sm_g960
+ 
+# Whitelist contains entities that you expect to be there, that may not appear if the integration isn't ready on startup
+entity_whitelist:
+  - light.garage
+  - light.360178242462ab2e57ae
+  - light.36017824d8f15ba5221f
+  - light.alans_night_lamp
+  - light.backyard
+  - light.chandleir
+  - light.kitchen_sink_light
+  - light.loft
+  - light.main_entrance
+  - light.porch
+
+
+# Blacklist contains sensors that you don't care if they're unavailable - should contain  the sensor itself!!
+entity_blacklist:
+  - sensor.unavailable_entities
+  - sensor.available_entities
+  - sensor.Amps_1
+  - sensor.Amps_2
+  - sensor.Amps_Total
+  - sensor.Total_Watts
+  - sensor.Volts_1
+  - sensor.Volts_2
+  - sensor.Updater
+  - sensor.Frequency
+  - sensor.IPv4_address_eth0
+  - sensor.IPv6_address_eth1
+  - sensor.Power_Factor
+#  - Philips_LWB006_2a5c5b10_level
+#  - Philips_LWB006_4f104010_level
+#  - Philips_LWB006_6c005b10_level
