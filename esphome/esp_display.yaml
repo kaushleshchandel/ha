@@ -1,0 +1,68 @@
+esphome:
+  name: esp_display
+  platform: ESP8266
+  board: d1_mini
+
+wifi:
+  ssid: "IOT"
+  password: "608980608980"
+
+  # Enable fallback hotspot (captive portal) in case wifi connection fails
+  ap:
+    ssid: "HOME2G"
+    password: "608980608980"
+
+font:
+  - file: 'slkscr.ttf'
+    id: font1
+    size: 8
+
+  - file: 'arial.ttf'
+    id: font3
+    size: 14
+
+mqtt:
+  broker: 192.168.0.13
+
+i2c:
+  sda: D2
+  scl: D1
+  scan: false
+  frequency: 700khz
+
+
+display:
+  - platform: ssd1306_i2c
+    model: "SSD1306 128x32"
+   # reset_pin: GPIO16
+    address: 0x3C
+    update_interval: 5s
+    lambda: |-
+      // Clear display (not sure if this is needed?)
+      it.fill(0);
+      // Current time, random location (like a screensaver)
+      it.strftime(rand()%(20), rand()%(51), id(font3), "%Y-%m-%d %H:%M:%S", id(sntp_time).now());
+
+time:
+  - platform: sntp
+    id: sntp_time
+    timezone: 'EST+5EDT,M3.2.0/2,M11.1.0/2'
+    servers:
+      - 0.ca.pool.ntp.org
+      - 1.ca.pool.ntp.org
+      - 2.ca.pool.ntp.org
+
+# Enable logging
+logger: 
+
+
+# Enable Home Assistant API
+api:
+  password: "608980608980"
+
+ota:
+  password: "608980608980"
+
+
+
+

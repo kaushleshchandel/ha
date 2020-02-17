@@ -1,43 +1,5 @@
 #Groups
 # Example configuration.yaml entry
-
-kitchen:
-  name: Kitchen
-  entities:
-    - light.kitchen_sink_light
-    - light.breakfast_table
-LivingRoom:
-  name: Living Room
-  entities:
-AlansRoom:
-  name: Alan's Room
-  entities:
-    - light.alans_night_lamp
-
-Loft:
-  name: Loft
-  entities:
-    - light.loft
-    - light.chandleir
-
-MasterBedroom:
-  name: Master Bedroom
-  entities:
-
-Garage:
-  name: garage
-  entities:
-    - light.garage
-    - light.360178242462ab2e57ae
-
-climate:
-  name: Climate
-  entities:
-    - sensor.alans_room_temperature
-awesome_people:
-  name: Awesome People
-  entities:
-    - device_tracker.sm_g960
  
 # Whitelist contains entities that you expect to be there, that may not appear if the integration isn't ready on startup
 entity_whitelist:
@@ -51,7 +13,6 @@ entity_whitelist:
   - light.loft
   - light.main_entrance
   - light.porch
-
 
 # Blacklist contains sensors that you don't care if they're unavailable - should contain  the sensor itself!!
 entity_blacklist:
@@ -68,6 +29,15 @@ entity_blacklist:
   - sensor.IPv4_address_eth0
   - sensor.IPv6_address_eth1
   - sensor.Power_Factor
-#  - Philips_LWB006_2a5c5b10_level
-#  - Philips_LWB006_4f104010_level
-#  - Philips_LWB006_6c005b10_level
+  - zwave.leviton_dzpd3_1lw_plug_in_dimming_lamp_module
+  - zwave.leviton_dzpd3_1lw_plug_in_dimming_lamp_module_2
+  - light.philips_lwb006_2a5c5b10_level_on_off
+  - light.Philips_LWB006_2a5c5b10_level
+  - light.Philips_LWB006_4f104010_level
+  - light.Philips_LWB006_6c005b10_level
+  - sensor.philips_rwl020_bcac0b04_power
+ # - zwave.leviton_dzpd3_1lw_plug_in_dimming_lamp_module
+ # - zwave.leviton dzpd3 1lw plug in dimming lamp module level 2
+#  - light.philips_lwb006_6c005b10_level_on_off
+#  - light.philips_lwb006_2a5c5b10_level_on_off
+  - zwave.z_wave_sigma_designs_uzb_z_wave_usb_adapter
