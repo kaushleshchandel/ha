@@ -1,0 +1,43 @@
+esphome:
+  name: outdoor_bme280
+  platform: ESP8266
+  board: d1_mini
+
+
+wifi:
+  ssid: "IOT"
+  password: "608980608980"
+
+  # Enable fallback hotspot (captive portal) in case wifi connection fails
+  ap:
+    ssid: "HOME2G"
+    password: "608980608980"
+
+i2c:
+  sda: D1
+  scl: D2
+  scan: True
+
+
+# Example configuration entry
+sensor:
+  - platform: bme280
+    temperature:
+      name: "Outdoor Temperature"
+      oversampling: 16x
+    pressure:
+      name: "Outdoor Pressure"
+    humidity:
+      name: "Outdoor Humidity"
+    address: 0x76
+    update_interval: 60s
+
+captive_portal:
+
+# Enable logging
+logger:
+
+# Enable Home Assistant API
+api:
+
+ota:

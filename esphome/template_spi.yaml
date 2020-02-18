@@ -1,0 +1,23 @@
+esphome:
+  name: template_spi
+  platform: ESP8266
+  board: d1_mini
+
+wifi:
+  ssid: "IOT"
+  password: "608980608980"
+
+  # Enable fallback hotspot (captive portal) in case wifi connection fails
+  ap:
+    ssid: "Template Display"
+    password: "1234567890"
+
+captive_portal:
+
+# Enable logging
+logger:
+
+# Enable Home Assistant API
+api:
+
+ota:

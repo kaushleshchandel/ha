@@ -1,0 +1,101 @@
+esphome:
+  name: hvac
+  platform: ESP8266
+  board: d1_mini
+
+wifi:
+  ssid: "IOT"
+  password: "608980608980"
+
+  # Enable fallback hotspot (captive portal) in case wifi connection fails
+  ap:
+    ssid: "hvac"
+    password: "1234567890"
+
+captive_portal:
+
+
+#    icon: 'mdi:snowflake'
+#    icon: 'mdi:radiator'
+#    icon: 'mdi:fire'
+#    icon: 'mdi:fan'
+
+
+binary_sensor:
+  - platform: template
+    name: "Heat ON"
+    device_class: heat
+    lambda: |-
+      if (id(counter_heat).state > 2500) {
+        return true;
+      } else {
+        return false;
+      }
+  - platform: template
+    name: "Heat High ON"
+    device_class: heat
+    lambda: |-
+      if (id(counter_high).state > 2500) {
+        return true;
+      } else {
+        return false;
+      }
+  - platform: template
+    name: "Fan ON"
+    lambda: |-
+      if (id(counter_fan).state > 2500) {
+        return true;
+      } else {
+        return false;
+      }
+  - platform: template
+    device_class: cold
+    name: "Cool ON"
+    lambda: |-
+      if (id(counter_cool).state > 2500) {
+        return true;
+      } else {
+        return false;
+      }
+
+
+sensor:
+
+  - platform: pulse_counter
+    pin: D5
+    name: "Heat Counter"
+    id: counter_heat
+    accuracy_decimals: 0
+    update_interval: 5s
+
+  - platform: pulse_counter
+    pin: D2
+    name: "High Counter"
+    id: counter_high
+    accuracy_decimals: 0
+    update_interval: 5s
+    filters:
+
+  - platform: pulse_counter
+    pin: D1
+    name: "Cool Counter"
+    id: counter_cool
+    
+    accuracy_decimals: 0
+    update_interval: 5s
+
+  - platform: pulse_counter
+    pin: D6
+    name: "Fan Counter"
+    id: counter_fan
+    
+    accuracy_decimals: 0
+    update_interval: 5s
+
+# Enable logging
+logger:
+
+# Enable Home Assistant API
+api:
+
+ota:

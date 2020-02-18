@@ -1,0 +1,48 @@
+esphome:
+  name: template_io
+  platform: ESP8266
+  board: d1_mini
+
+wifi:
+  ssid: "IOT"
+  password: "608980608980"
+
+  # Enable fallback hotspot (captive portal) in case wifi connection fails
+  ap:
+    ssid: "HOME2G"
+    password: "608980608980"
+
+# BME Temp Sensor
+i2c:
+  sda: D1
+  scl: D2
+  scan: True
+
+# Example configuration entry
+sensor:
+  - platform: bme280
+    temperature:
+      name: "Garage Temperature"
+      oversampling: 16x
+    pressure:
+      name: "Garage Pressure"
+    humidity:
+      name: "Garage Humidity"
+    address: 0x76
+    update_interval: 60s
+  - platform: uptime
+    name: Uptime Sensor
+
+mqtt:
+  broker: 192.168.0.13
+
+
+captive_portal:
+
+# Enable logging
+logger:
+
+# Enable Home Assistant API
+api:
+
+ota:

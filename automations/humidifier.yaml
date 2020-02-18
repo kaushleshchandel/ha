@@ -4,7 +4,7 @@
   description: Alert when Humidity goes down
   trigger:
     platform: template
-    value_template: '{{ states.sensor.lumi_lumi_weather_dfca7302_humidity.state < states.input_number.min_humidity_slider.state }}'  
+    value_template: '{{ states.sensor.loft_humidity.state < states.input_number.min_humidity_slider.state }}'  
     for: '5'
   action:
     data:
@@ -17,7 +17,7 @@
   description: Turn off the Humidifier when Humidity is high
   trigger:
     platform: template
-    value_template: '{{ states.sensor.lumi_lumi_weather_dfca7302_humidity.state > states.input_number.max_humidity_slider.state }}'  
+    value_template: '{{ states.sensor.loft_humidity.state > states.input_number.max_humidity_slider.state }}'  
     for: '5'
   action:
     data:

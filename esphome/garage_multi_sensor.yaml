@@ -1,0 +1,41 @@
+esphome:
+  name: garage_multi_sensor
+  platform: ESP8266
+  board: nodemcuv2
+
+wifi:
+  ssid: "IOT"
+  password: "608980608980"
+
+  # Enable fallback hotspot (captive portal) in case wifi connection fails
+  ap:
+    ssid: "garage_multi_sensor"
+    password: "1234567890"
+
+# Example configuration entry
+binary_sensor:
+  - platform: gpio
+    name: "Garage Door"
+    pin: D1
+    device_class: garage_door
+  - platform: gpio
+    name: "Homelink B"
+    pin: D2
+  - platform: gpio
+    name: "Kitchen Door"
+    pin: D5
+    device_class: door
+  - platform: gpio
+    name: "Garage PIR Sensor"
+    pin: D6
+    device_class: occupancy
+    
+captive_portal:
+
+# Enable logging
+logger:
+
+# Enable Home Assistant API
+api:
+
+ota:

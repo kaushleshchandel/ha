@@ -12,17 +12,3 @@
   payload_not_available: "Offline"
   device_class: window   # also: window, garage_door or opening
   qos: 1
-
-
-- platform: mqtt
-  name: "Garage Door Sensor"
-  state_topic: "001/tele/cambria/1/garage/multi_sensor/SENSOR"
-  value_template: "{{ value_json.Switch1 }}"
-  payload_on: "ON"
-  payload_off: "OFF"
-  availability_topic: "001/tele/cambria/1/garage/multi_sensor/LWT"
-  payload_available: "Online"
-  payload_not_available: "Offline"
-  device_class: garage_door 
-  qos: 1
-
