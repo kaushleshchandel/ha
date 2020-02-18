@@ -5,8 +5,8 @@ esphome:
 
 
 wifi:
-  ssid: "IOT"
-  password: "608980608980"
+  ssid: !secret WIFI_SSID
+  password: !secret WIFI_password
 
   # Enable fallback hotspot (captive portal) in case wifi connection fails
   ap:

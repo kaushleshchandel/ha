@@ -13,7 +13,6 @@
   "loaded_integrations": [
     "api",
     "async_tcp",
-    "captive_portal",
     "display",
     "esphome",
     "font",
@@ -27,7 +26,6 @@
     "ssd1306_base",
     "ssd1306_i2c",
     "time",
-    "web_server_base",
     "wifi"
   ]
 }
