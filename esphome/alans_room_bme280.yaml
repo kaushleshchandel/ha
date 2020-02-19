@@ -1,9 +1,7 @@
-
 substitutions:
-  devicename: outdoor_bme280
-  device_shortname: Outdoor
+  devicename: alans_bedroom_bme280
+  device_shortname: Alans Bedroom
 
-#Subsitution File inclues everything for the Wifi & Configuraitons
 <<: !include .base.common.yaml
 
 i2c:
@@ -23,4 +21,3 @@ sensor:
       name: ${device_shortname} Humidity
     address: 0x76
     update_interval: 60s
-

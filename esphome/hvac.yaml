@@ -1,30 +1,13 @@
-esphome:
-  name: hvac
-  platform: ESP8266
-  board: d1_mini
+substitutions:
+  devicename: hvac
+  device_shortname: hvac
 
-wifi:
-  ssid: !secret WIFI_SSID
-  password: !secret WIFI_password
-
-  # Enable fallback hotspot (captive portal) in case wifi connection fails
-  ap:
-    ssid: "hvac"
-    password: "1234567890"
-
-captive_portal:
-
-
-#    icon: 'mdi:snowflake'
-#    icon: 'mdi:radiator'
-#    icon: 'mdi:fire'
-#    icon: 'mdi:fan'
-
+#Subsitution File inclues everything for the Wifi & Configuraitons
+<<: !include .base.common.yaml
 
 binary_sensor:
   - platform: template
-    name: "Heat ON"
-    device_class: heat
+    name: "Heat Low"
     lambda: |-
       if (id(counter_heat).state > 2500) {
         return true;
@@ -32,8 +15,7 @@ binary_sensor:
         return false;
       }
   - platform: template
-    name: "Heat High ON"
-    device_class: heat
+    name: "Heat High"
     lambda: |-
       if (id(counter_high).state > 2500) {
         return true;
@@ -41,7 +23,7 @@ binary_sensor:
         return false;
       }
   - platform: template
-    name: "Fan ON"
+    name: "Fan"
     lambda: |-
       if (id(counter_fan).state > 2500) {
         return true;
@@ -49,8 +31,7 @@ binary_sensor:
         return false;
       }
   - platform: template
-    device_class: cold
-    name: "Cool ON"
+    name: "Cool"
     lambda: |-
       if (id(counter_cool).state > 2500) {
         return true;
@@ -60,7 +41,6 @@ binary_sensor:
 
 
 sensor:
-
   - platform: pulse_counter
     pin: D5
     name: "Heat Counter"
@@ -80,7 +60,6 @@ sensor:
     pin: D1
     name: "Cool Counter"
     id: counter_cool
-    
     accuracy_decimals: 0
     update_interval: 5s
 
@@ -88,14 +67,5 @@ sensor:
     pin: D6
     name: "Fan Counter"
     id: counter_fan
-    
     accuracy_decimals: 0
     update_interval: 5s
-
-# Enable logging
-logger:
-
-# Enable Home Assistant API
-api:
-
-ota:

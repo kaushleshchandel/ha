@@ -1,6 +1,6 @@
 substitutions:
-  devicename: garage_bmp280
-  device_shortname: Garage
+  devicename: laundry_bmp280
+  device_shortname: Laundry
 
 <<: !include .base.common.yaml
 

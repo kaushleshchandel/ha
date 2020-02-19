@@ -1,9 +1,7 @@
-
 substitutions:
-  devicename: outdoor_bme280
-  device_shortname: Outdoor
+  devicename: living_room_bme280
+  device_shortname: Living Room
 
-#Subsitution File inclues everything for the Wifi & Configuraitons
 <<: !include .base.common.yaml
 
 i2c:

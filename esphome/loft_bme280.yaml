@@ -1,43 +1,38 @@
-esphome:
-  name: loft_bme280
-  platform: ESP8266
-  board: d1_mini
+substitutions:
+  devicename: loft_bme280
+  device_shortname: Loft
+  id_prefix: loft_
 
-
-wifi:
-  ssid: !secret WIFI_SSID
-  password: !secret WIFI_password
-
-  # Enable fallback hotspot (captive portal) in case wifi connection fails
-  ap:
-    ssid: "loft_bme280"
-    password: "1234567890"
+<<: !include .base.common.yaml
 
 i2c:
   sda: D1
   scl: D2
   scan: True
 
-
-# Example configuration entry
+#BME 280 Sensor
 sensor:
   - platform: bme280
     temperature:
-      name: "Loft Temperature"
+      name: ${device_shortname} Temperature
+      id: ${id_prefix}bme280_temperature
       oversampling: 16x
     pressure:
-      name: "Loft Pressure"
+      name: ${device_shortname} Pressure
+      id: ${id_prefix}bme280_pressure
     humidity:
-      name: "Loft Humidity"
+      name: ${device_shortname} Humidity
+      id: ${id_prefix}bme280_humidity
     address: 0x76
     update_interval: 60s
-
-captive_portal:
-
-# Enable logging
-logger:
-
-# Enable Home Assistant API
-api:
-
-ota:
+  - platform: template
+    name: ${device_shortname} Absolute Humidity
+    id: ${id_prefix}absolute_humidity
+    lambda: |-
+      const float mw = 18.01534;    // molar mass of water g/mol
+      const float r = 8.31447215;   // Universal gas constant J/mol/K
+      return (6.112 * powf(2.718281828, (17.67 * id(${id_prefix}bme280_temperature).state) /
+        (id(${id_prefix}bme280_temperature).state + 243.5)) * id(${id_prefix}bme280_humidity).state * mw) /
+        ((273.15 + id(${id_prefix}bme280_temperature).state) * r); // in grams/m^3
+    accuracy_decimals: 2
+    update_interval: 15s

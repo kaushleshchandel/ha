@@ -1,0 +1,33 @@
+#################### COMMON SETTINGS #########################
+esphome:
+  name: $devicename
+  platform: ESP8266
+  board: d1_mini
+
+wifi:
+  networks:
+  - ssid: !secret WIFI_SSID
+    password: !secret WIFI_password
+    priority: 0
+  - ssid: HOME2G
+    password: !secret WIFI_password
+    priority: 1
+  ap:
+    ssid: $devicename
+    password: !secret AP_password
+
+mqtt:
+  broker: 192.168.0.13
+
+logger: 
+
+api:
+
+ota:
+  safe_mode: True
+  id: myota
+
+#web_server:
+#  port: 80
+
+#################### COMMON SETTINGS #########################

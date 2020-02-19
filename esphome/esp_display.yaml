@@ -1,16 +1,8 @@
-esphome:
-  name: esp_display
-  platform: ESP8266
-  board: d1_mini
+substitutions:
+  devicename: esp_display
+  device_shortname: esp
 
-wifi:
-  ssid: !secret WIFI_SSID
-  password: !secret WIFI_password
-
-  # Enable fallback hotspot (captive portal) in case wifi connection fails
-  ap:
-    ssid: "esp_display"
-    password: !secret AP_password
+<<: !include .base.common.yaml
 
 font:
   - file: 'slkscr.ttf'
@@ -21,15 +13,23 @@ font:
     id: font3
     size: 14
 
-mqtt:
-  broker: 192.168.0.13
-
 i2c:
   sda: D2
   scl: D1
   scan: false
   frequency: 700khz
 
+
+sensor:
+  - platform: rotary_encoder
+    name: "Rotary Encoder"
+    pin_a: D5
+    pin_b: D6
+
+switch:
+  - platform: gpio
+    pin: D7
+    name: "Rotary Switch"
 
 display:
   - platform: ssd1306_i2c
@@ -51,18 +51,3 @@ time:
       - 0.ca.pool.ntp.org
       - 1.ca.pool.ntp.org
       - 2.ca.pool.ntp.org
-
-# Enable logging
-logger: 
-
-
-# Enable Home Assistant API
-api:
-  password: "608980608980"
-
-ota:
-  password: "608980608980"
-
-
-
-

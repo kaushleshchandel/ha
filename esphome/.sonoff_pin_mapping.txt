@@ -1,0 +1,128 @@
+Sonoff Basic
+============
+GPIO0	Button (inverted)
+GPIO1	TX pin (C1 Pin 2)
+GPIO3	RX pin (C1 Pin 3)
+GPIO12	Relay
+GPIO13	Green LED (inverted)
+GPIO14	Optional Sensor (C1 Pin 5)
+
+
+Sonoff RF
+===============================
+Pin	Function
+GPIO0	Button (inverted)
+GPIO12	Relay and Red LED
+GPIO13	Green LED (inverted)
+GPIO1	UART TX pin (for external sensors)
+GPIO3	UART RX pin (for external sensors)
+GPIO4	Optional sensor
+GPIO14	Optional sensor
+
+Sonoff Mini
+===============================
+Pin	Function
+GPIO0	Button (inverted)
+GPIO4	SW Input
+GPIO12	Relay and Red LED
+GPIO13	Blue LED (inverted)
+GPIO16	Optional sensor
+
+
+Shelly 2
+===============================
+Pin	Function
+GPIO4	Relay #1
+GPIO5	Relay #2
+GPIO12	SW Input #1
+GPIO14	SW Input #2
+
+
+===============================
+ESP8226 PINS
+===============================
+GPIO0	Controls Boot Mode
+GPIO1	UART TX pin
+GPIO2	Controls Boot Mode
+GPIO3	UART RX pin
+GPIO6	SDIO/Flash CLK pin
+GPIO7	SDIO/Flash Data 0 pin
+GPIO8	SDIO/Flash Data 1 pin
+GPIO9	SDIO/Flash Data 2 pin (qio/qout only)
+GPIO10	SDIO/Flash Data 3 pin (qio/qout only)
+GPIO11	SDIO/Flash CMD pin
+GPIO12	Attached to Hardware SPI controller MISO
+GPIO13	Attached to Hardware SPI controller MOSI
+GPIO14	Attached to Hardware SPI controller CLK
+GPIO15	Controls Boot Mode; Attached to Hardware SPI controller CS
+GPIO16	Special pin that can be accessed from RTC, and is Deep-Sleep wakeup pin
+TOUT aka GPIO17	ADC pin for measuring voltages, can only be used as analog input pin
+
+====== PIN MAP - NodeMCU =====
+D0 = GPIO16;
+D1 = GPIO5;
+D2 = GPIO4;
+D3 = GPIO0;
+D4 = GPIO2;
+D5 = GPIO14;
+D6 = GPIO12;
+D7 = GPIO13;
+D8 = GPIO15;
+D9 = GPIO3;
+D10 = GPIO1;
+LED_BUILTIN = GPIO16 (auxiliary constant for the board LED, not a board pin);
+
+
+
+
+----------------------------
+Pin	Restrictions	State after Reset
+GPIO0	If HIGH on boot	Weak Pull Up
+GPIO2	If HIGH on boot	Weak Pull Up
+GPIO4	 	High Impedance
+GPIO5	 	High Impedance
+GPIO6	 	Weak Pull Up
+GPIO12	 	Weak Pull Up
+GPIO13	 	Weak Pull Up
+GPIO14	 	Weak Pull Up
+GPIO15	If LOW on boot	Weak Pull Up
+GPIO16	Has pull-down (but no pull-up resistor	Weak Pull Down
+
+
+==========================
+Label	GPIO	Input	Output	Notes
+D0	GPIO16	no interrupt	no PWM or I2C support	HIGH at boot
+used to wake up from deep sleep
+D1	GPIO5	OK	OK	often used as SCL (I2C)
+D2	GPIO4	OK	OK	often used as SDA (I2C)
+D3	GPIO0	pulled up	OK	connected to FLASH button, boot fails if pulled LOW
+D4	GPIO2	pulled up	OK	HIGH at boot
+connected to on-board LED, boot fails if pulled LOW
+D5	GPIO14	OK	OK	SPI (SCLK)
+D6	GPIO12	OK	OK	SPI (MISO)
+D7	GPIO13	OK	OK	SPI (MOSI)
+D8	GPIO15	pulled to GND	OK	SPI (CS)
+Boot fails if pulled HIGH
+RX	GPIO3	OK	RX pin	HIGH at boot
+TX	GPIO1	TX pin	OK	HIGH at boot
+debug output at boot, boot fails if pulled LOW
+A0	ADC0	Analog Input	X	
+
+==== PIN Usage ====
+
+I2C : Software based. Use any pins
+
+GPIO5: SCL
+GPIO4: SDA
+
+SPI : The pins used as SPI in the ESP8266 are:
+
+GPIO12: MISO
+GPIO13: MOSI
+GPIO14: SCLK
+GPIO15: CS
+
+PWM Pins : Software PWM in all I/O pins: GPIO0 to GPIO16
+
+Interrupt Pins
+The ESP8266 supports interrupts in any GPIO, except GPIO16.
