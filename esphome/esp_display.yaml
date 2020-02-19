@@ -51,3 +51,9 @@ time:
       - 0.ca.pool.ntp.org
       - 1.ca.pool.ntp.org
       - 2.ca.pool.ntp.org
+
+      
+status_led:
+  pin:
+    number: GPIO2
+    inverted: yes    

@@ -23,3 +23,9 @@ binary_sensor:
     name: "Garage PIR Sensor"
     pin: D6
     device_class: occupancy
+
+
+status_led:
+  pin:
+    number: GPIO2
+    inverted: yes        

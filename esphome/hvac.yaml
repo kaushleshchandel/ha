@@ -69,3 +69,9 @@ sensor:
     id: counter_fan
     accuracy_decimals: 0
     update_interval: 5s
+
+
+status_led:
+  pin:
+    number: GPIO2
+    inverted: yes        

@@ -1,0 +1,25 @@
+substitutions:
+  devicename: backyard_multi_sensor
+  device_shortname: backyard_multi_sensor
+  id_prefix: backyard_  
+
+<<: !include .base.common.yaml
+
+# Example configuration entry
+binary_sensor:
+  - platform: gpio
+    name: "Backyard Door"
+    pin: D5
+    device_class: door
+    id: ${id_prefix}door_sensor
+
+  - platform: gpio
+    name: "Backyard Window"
+    pin: D6
+    device_class: window
+    id: ${id_prefix}window_sensor
+
+status_led:
+  pin:
+    number: GPIO2
+    inverted: yes    

@@ -23,5 +23,3 @@
     data:
       entity_id: switch.humidifier_relay
     service: switch.turn_off
-
-

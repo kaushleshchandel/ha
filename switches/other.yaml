@@ -1,17 +1,3 @@
-
-  - platform: mqtt
-    name: "Humidifier"
-    state_topic: "001/stat/cambria/2/laundry/humidifier/RESULT"  
-    value_template: "{{ value_json.POWER }}"
-    command_topic: "001/cmnd/cambria/2/laundry/humidifier/POWER"
-    payload_on: "ON"
-    payload_off: "OFF"
-    availability_topic: "001/tele/cambria/2/laundry/humidifier/LWT"
-    payload_available: "Online"
-    payload_not_available: "Offline"
-    qos: 1
-    retain: false
-
   - platform: mqtt
     name: "Refresh Devices"
     command_topic: "001/cmnd/tasmotas/state"
