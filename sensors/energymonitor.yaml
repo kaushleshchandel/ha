@@ -1,45 +1,37 @@
 - platform: mqtt
   name: "Volts 1"
-  state_topic: "001/cambria/energy/sensor"
-  value_template: '{{ value_json["V1"] }}'
+  state_topic: "001/emon/V1"
   unit_of_measurement: "Volts"
 - platform: mqtt
   name: "Volts 2"
-  state_topic: "001/cambria/energy/sensor"
-  value_template: '{{ value_json["V2"] }}'
+  state_topic: "001/emon/V2"
   unit_of_measurement: "Volts"
 - platform: mqtt
   name: "Amps 1"
-  state_topic: "001/cambria/energy/sensor"
-  value_template: '{{ value_json["I1"] }}'
+  state_topic: "001/emon/CT1"
   unit_of_measurement: "Amps"
 - platform: mqtt
   name: "Amps 2"
-  state_topic: "001/cambria/energy/sensor"
-  value_template: '{{ value_json["I2"] }}'
+  state_topic: "001/emon/CT2"
   unit_of_measurement: "Amps"
 - platform: mqtt
   name: "Amps Total"
-  state_topic: "001/cambria/energy/sensor"
-  value_template: '{{ value_json["totI"] }}'
+  state_topic: "001/emon/totl"
   unit_of_measurement: "Amps"
 - platform: mqtt
   name: "Total Watts"
-  state_topic: "001/cambria/energy/sensor"
-  value_template: '{{ value_json["AP"] }}'
+  state_topic: "001/emon/W"
   unit_of_measurement: "Watts"
 - platform: mqtt
   name: "Power Factor"
-  state_topic: "001/cambria/energy/sensor"
-  value_template: '{{ value_json["PF"] }}'
+  state_topic: "001/emon/PF"
   unit_of_measurement: "Watts"
 - platform: mqtt
   name: "Temperature"
-  state_topic: "001/cambria/energy/sensor"
-  value_template: '{{ value_json["t"] }}'
+  state_topic: "001/emon/temp"
   unit_of_measurement: "C"
 - platform: mqtt
   name: "Frequency"
-  state_topic: "001/cambria/energy/sensor"
-  value_template: '{{ value_json["f"] }}'
+  state_topic: "001/emon/freq"
   unit_of_measurement: "Hz"
+  

@@ -99,3 +99,19 @@ alarm_control_panel:
     armed_home:
       pending_time: 0
       delay_time: 0
+
+
+
+utility_meter:
+  daily_energy:
+    source: sensor.total_watts
+    cycle: daily
+    tariffs:
+      - peak
+      - offpeak
+  monthly_energy:
+    source: sensor.total_watts
+    cycle: monthly
+    tariffs:
+      - peak
+      - offpeak

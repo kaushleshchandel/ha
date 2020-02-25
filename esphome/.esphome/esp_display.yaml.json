@@ -17,7 +17,9 @@
     "esphome",
     "font",
     "gpio",
+    "homeassistant",
     "i2c",
+    "interval",
     "json",
     "logger",
     "mqtt",
@@ -25,11 +27,12 @@
     "ota",
     "rotary_encoder",
     "sensor",
-    "sntp",
     "ssd1306_base",
     "ssd1306_i2c",
+    "status_led",
     "substitutions",
     "switch",
+    "text_sensor",
     "time",
     "wifi"
   ]

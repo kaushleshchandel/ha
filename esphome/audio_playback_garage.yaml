@@ -1,0 +1,76 @@
+esphome:
+  name: audio_playback_garage
+  platform: ESP8266
+  board: nodemcuv2
+
+wifi:
+  ssid: "IOT"
+  password: "608980608980"
+
+  # Enable fallback hotspot (captive portal) in case wifi connection fails
+  ap:
+    ssid: "Audio Playback Garage"
+    password: "kvLxaXyumFys"
+
+switch:
+  - platform: template
+    name: "Turning on Outdoor lights"
+    id: template_swi_1
+    turn_on_action:
+    - dfplayer.play: 1
+  - platform: template
+    name: "System is Online"
+    id: template_swi_2
+    turn_on_action:
+    - dfplayer.play: 2
+  - platform: template
+    name: "System is offline"
+    id: template_swi_3
+    turn_on_action:
+    - dfplayer.play: 3
+  - platform: template
+    name: "Setting Home away Mode"
+    id: template_swi_4
+    turn_on_action:
+    - dfplayer.play: 4
+  - platform: template
+    name: "Welcome home"
+    id: template_swi_5
+    turn_on_action:
+    - dfplayer.play: 5
+  - platform: template
+    name: "Energy Usage is High"
+    id: template_swi_6
+    turn_on_action: 
+    - dfplayer.play: 6
+  - platform: template
+    name: "Turning off Outdoor lights"
+    id: template_swi_7
+    turn_on_action:
+    - dfplayer.play: 7
+  - platform: template
+    name: "Switch 8"
+    id: template_swi_8
+    turn_on_action:
+    - dfplayer.play: 8
+
+uart:
+  tx_pin: D1
+  rx_pin: D2
+  baud_rate: 9600
+
+# Declare DFPlayer mini module
+dfplayer:
+  on_finished_playback:
+    then:
+      logger.log: 'Playback finished event'
+
+captive_portal:
+
+# Enable logging
+logger:
+  level: VERBOSE
+# Enable Home Assistant API
+api:
+
+ota:

@@ -19,13 +19,32 @@ i2c:
   scan: false
   frequency: 700khz
 
+text_sensor:
+  - platform: homeassistant
+    entity_id: alarm_control_panel.my_alarm_system
+    name: "Alarm State"
+    id: alarm_state
 
 sensor:
   - platform: rotary_encoder
     name: "Rotary Encoder"
     pin_a: D5
     pin_b: D6
-
+    min_value: 10
+    max_value: 50
+    id: rencoder  
+  - platform: dht
+    pin: D8
+    temperature:
+      name: "Loft Temperature"
+    humidity:
+      name: "Loft Humidity"
+    update_interval: 60s
+    
+time:
+  - platform: homeassistant
+    id: esptime
+     
 switch:
   - platform: gpio
     pin: D7
@@ -33,25 +52,29 @@ switch:
 
 display:
   - platform: ssd1306_i2c
-    model: "SSD1306 128x32"
-   # reset_pin: GPIO16
+    model: "SH1106 128x32"
     address: 0x3C
-    update_interval: 5s
-    lambda: |-
-      // Clear display (not sure if this is needed?)
-      it.fill(0);
-      // Current time, random location (like a screensaver)
-      it.strftime(rand()%(20), rand()%(51), id(font3), "%Y-%m-%d %H:%M:%S", id(sntp_time).now());
-
-time:
-  - platform: sntp
-    id: sntp_time
-    timezone: 'EST+5EDT,M3.2.0/2,M11.1.0/2'
-    servers:
-      - 0.ca.pool.ntp.org
-      - 1.ca.pool.ntp.org
-      - 2.ca.pool.ntp.org
-
+    id: my_display
+    brightness : 0.5
+    pages:
+      - id: page_init
+        lambda: |-
+          it.print(0, 10, id(font1), "Welcome!");
+      - id: page_status
+        lambda: |-
+          it.printf(64, 0, id(font1), TextAlign::TOP_CENTER, "Humidity : %.1f", id(rencoder).state.c_str());
+      - id: page_setting
+        lambda: |-
+          it.printf(64, 0, id(font1), TextAlign::TOP_CENTER, "Alarm State: %s", id(alarm_state).state.c_str());
+      - id: page_error
+        lambda: |-
+          it.printf(64, 0, id(font1), TextAlign::TOP_CENTER, "Error");
+          
+interval:
+  - interval: 5s
+    then:
+      - display.page.show: page_status
+      - component.update: my_display
       
 status_led:
   pin:

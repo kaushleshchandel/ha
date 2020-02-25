@@ -6,6 +6,7 @@
 
 - name: Home
   entities:
+    switch.welcome_home : on
     light.tv_back_light:
       state: on
       brightness: 125
@@ -35,6 +36,7 @@
     light.chandleir: off
     light.garage: off
     light.loft: off
+    switch.setting_home_away_mode : on
     light.main_entrance: off
     light.kitchen_sink_light: off
     light.36017824d8f15ba5221f: off
@@ -43,6 +45,7 @@
 
 - name: Away-night
   entities:
+    switch.setting_home_away_mode : on
     light.360178242462ab2e57ae : off
     light.alans_night_lamp : off
     light.chandleir: off

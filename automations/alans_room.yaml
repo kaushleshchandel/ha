@@ -7,7 +7,7 @@
   condition: []
   action:
     data:
-      entity_id: light.alans_night_lamp
+      entity_id: light.alans_night_lamp_2
     service: light.turn_on
 
 
@@ -20,7 +20,7 @@
   condition: []
   action:
     data:
-      entity_id: light.alans_night_lamp
+      entity_id: light.alans_night_lamp_2
     service: light.turn_ff
 
 

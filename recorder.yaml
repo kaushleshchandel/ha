@@ -16,6 +16,13 @@ exclude:
     - scene
     - script
   entities:
+    - sensor.amps_1
+    - sensor.amps_2
+    - sensor.amps_total
+    - sensor.volts_1
+    - sensor.volts_2
+    - sensor.total_watts
+    - sensor.power_factor
     - sun.sun
     - zone.home
     - sensor.outdoor_temperature

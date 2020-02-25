@@ -1,0 +1,36 @@
+
+substitutions:
+  devicename: power_meter
+  device_shortname: Garage
+
+<<: !include .base.common.yaml
+
+spi:
+  clk_pin: 18
+  miso_pin: 19
+  mosi_pin: 23
+
+sensor:
+  - platform: atm90e32
+    cs_pin: 5
+    phase_a:
+      voltage:
+        name: "EMON Line Voltage A"
+      current:
+        name: "EMON CT1 Current"
+      power:
+        name: "EMON Active Power CT1"
+      gain_voltage: 41820
+      gain_ct: 25498
+    phase_b:
+      current:
+        name: "EMON CT2 Current"
+      power:
+        name: "EMON Active Power CT2"
+      gain_voltage: 41820
+      gain_ct: 25498
+    frequency:
+      name: "EMON Line Frequency"
+    line_frequency: 50Hz
+    gain_pga: 2X
+    update_interval: 60s

@@ -9,7 +9,7 @@
   action:
   - alias: ''
     data:
-      entity_id: light.backyard
+      entity_id: light.backyard_light
     service: light.turn_on
   - alias: ''
     data:
@@ -27,7 +27,7 @@
   action:
   - alias: ''
     data:
-      entity_id: light.backyard
+      entity_id: light.backyard_light
     service: light.turn_off
   - alias: ''
     data:

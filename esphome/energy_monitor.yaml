@@ -1,0 +1,53 @@
+esphome:
+  name: energy_monitor
+  platform: ESP32
+  board: esp32dev
+
+wifi:
+  ssid: "IOT"
+  password: "608980608980"
+
+  # Enable fallback hotspot (captive portal) in case wifi connection fails
+  ap:
+    ssid: "Energy Monitor Fallback Hotspot"
+    password: "48kKWJylkvmZ"
+
+captive_portal:
+
+# Enable logging
+logger:
+
+# Enable Home Assistant API
+api:
+
+ota:
+
+spi:
+  clk_pin: 18
+  miso_pin: 19
+  mosi_pin: 23
+
+sensor:
+  - platform: atm90e32
+    cs_pin: 5
+    phase_a:
+      voltage:
+        name: "EMON Line Voltage A"
+      current:
+        name: "EMON CT1 Current"
+      power:
+        name: "EMON Active Power CT1"
+      gain_voltage: 41820
+      gain_ct: 25498
+    phase_c:
+      current:
+        name: "EMON CT2 Current"
+      power:
+        name: "EMON Active Power CT2"
+      gain_voltage: 41820
+      gain_ct: 25498
+    frequency:
+      name: "EMON Line Frequency"
+    line_frequency: 60Hz
+    gain_pga: 2X
+    update_interval: 1s
