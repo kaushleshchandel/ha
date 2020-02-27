@@ -4,6 +4,7 @@
     "version": "0.0.1",
     "private": true,
     "dependencies": {
+        "node-red-contrib-watt2kwh": "~0.1.1",
         "node-red-node-mysql": "0.0.19"
     }
 }

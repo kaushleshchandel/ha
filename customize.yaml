@@ -1,3 +1,6 @@
+
+############### AQARA ZIGBEE SENSORS#####################333
+
 #Living Room Sensor
 sensor.lumi_lumi_weather_dfca7302_power:
   friendly_name: "Living Room Power"
@@ -39,7 +42,74 @@ light.leviton_dzpd3_1lw_plug_in_dimming_lamp_module_level_2:
   friendly_name: "Living Room Lamp"
 
 
-#Variables that should persist values after reboot
+#  Senosr 1
+binary_sensor.lumi_lumi_sensor_motion_aq2_dd775104_ias_zone:
+  friendly_name: Garage Motion
+sensor.lumi_lumi_sensor_motion_aq2_dd775104_illuminance:
+  friendly_name: Garage Lux
+binary_sensor.lumi_lumi_sensor_motion_aq2_dd775104_occupancy:
+  friendly_name: Garage Occupancy
+sensor.lumi_lumi_sensor_motion_aq2_dd775104_power:
+  friendly_name: Garage Occupancey Sensor Battery
+
+# Sensor 2
+binary_sensor.lumi_lumi_sensor_motion_aq2_daab1f04_ias_zone:
+  friendly_name: Living Room Motion
+sensor.lumi_lumi_sensor_motion_aq2_daab1f04_illuminance:
+  friendly_name: Living Room Lux
+binary_sensor.lumi_lumi_sensor_motion_aq2_daab1f04_occupancy:
+  friendly_name: Living Room Occupancy
+sensor.lumi_lumi_sensor_motion_aq2_daab1f04_power:
+  friendly_name: Living Occupancey Sensor Battery
+
+# Sensor 4
+binary_sensor.lumi_lumi_sensor_motion_aq2_dba45104_ias_zone:
+  friendly_name: Loft Motion
+sensor.lumi_lumi_sensor_motion_aq2_dba45104_illuminance:
+  friendly_name: Loft Lux
+binary_sensor.lumi_lumi_sensor_motion_aq2_dba45104_occupancy:
+  friendly_name: Loft Occupancy
+sensor.lumi_lumi_sensor_motion_aq2_dba45104_power:
+  friendly_name: Loft Occupancey Sensor Battery
+
+# Sensor 3
+binary_sensor.lumi_lumi_sensor_motion_aq2_074c5104_ias_zone:
+  friendly_name: Kitchen Motion
+sensor.lumi_lumi_sensor_motion_aq2_074c5104_illuminance:
+  friendly_name: Kitchen Lux
+binary_sensor.lumi_lumi_sensor_motion_aq2_074c5104_occupancy:
+  friendly_name: Kitchen Occupancy
+sensor.lumi_lumi_sensor_motion_aq2_074c5104_power:
+  friendly_name: Kithen Occupancey Sensor Battery
+
+############### Dimmers #####################333
+
+light.36017824d8f15ba5221f:
+  frinedly_name: Breakfast Table Dimmer
+  Entity_ID: Breakfast_Table_Dimmer
+
+light.360178242462ab2e57ae:
+  friendly_name: Dining Table Dimmer
+  Entity_ID: Dining_Table_Dimmer
+
+light.305227782462ab291d2f:
+  friendly_name: Living Room Lamp Dimmer
+  Entity_ID: Living_Room_Lamp_Dimmer
+
+light.064283052462ab28f944:
+  friendly_name: Bedroom Entrance Dimmer
+  Entity_ID: Bedroom_Entrance_Dimmer
+
+light.064283052462ab28e664:
+  friendly_name: Spotligits Dimmer
+  Entity_ID: Spotligits_Dimmer
+
+light.064283052462ab2923a7:
+  friendly_name: Master Bedroom Lamp Dimmer
+  Entity_ID: Master_Bedroom_Lamp_Dimmer
+
+
+  #Variables that should persist values after reboot
 
 input_number.garage_timer_slider:
   persistent: true

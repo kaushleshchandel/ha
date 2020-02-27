@@ -1443,7 +1443,7 @@
   "node-red-node-mysql": {
    "name": "node-red-node-mysql",
    "version": "0.0.19",
-   "local": false,
+   "local": true,
    "nodes": {
     "mysql": {
      "name": "mysql",
