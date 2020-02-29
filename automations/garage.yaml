@@ -3,7 +3,7 @@
   alias: 'LIGHT: Auto turn off Garage lights'
   description: Auto off in Set minutes
   trigger:
-  - entity_id: light.garage
+  - entity_id: light.garage_light
     for: '00:{{ states("input_number.garage_timer_slider") | int }} :00'
     from: 'off'
     platform: state
@@ -11,7 +11,7 @@
   condition: []
   action:
     data:
-      entity_id: light.garage
+      entity_id: light.garage_light
     service: light.turn_off
 
 #Turn ON Garage Lights
@@ -26,7 +26,7 @@
   condition: []
   action:
     data:
-      entity_id: light.garage
+      entity_id: light.garage_light
     service: light.turn_on
 
 #Turn ON Kitchen Lights

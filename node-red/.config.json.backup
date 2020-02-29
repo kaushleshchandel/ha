@@ -1457,6 +1457,23 @@
      "file": "/config/node-red/node_modules/node-red-node-mysql/68-mysql.js"
     }
    }
+  },
+  "node-red-contrib-watt2kwh": {
+   "name": "node-red-contrib-watt2kwh",
+   "version": "0.1.1",
+   "local": false,
+   "nodes": {
+    "simpletime": {
+     "name": "simpletime",
+     "types": [
+      "watt2kwh"
+     ],
+     "enabled": true,
+     "local": true,
+     "module": "node-red-contrib-watt2kwh",
+     "file": "/config/node-red/node_modules/node-red-contrib-watt2kwh/watt2kwh.js"
+    }
+   }
   }
  },
  "users": {

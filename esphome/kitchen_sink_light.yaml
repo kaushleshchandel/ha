@@ -1,12 +1,5 @@
 substitutions:
-  devicename: backyard_light
-  upper_devicename: Backyard
-
-<<: !include .base.common1m.yaml
-
-
-################## CODE STARTS HERFE #####################
-
+  devicename: kitchen_sink_light
 
 <<: !include .base.common1m.yaml
 

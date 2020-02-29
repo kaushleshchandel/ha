@@ -3,7 +3,7 @@
   alias: 'LIGHT: Kitchen Light on at night when Chandeleir is Turned On'
   description: Turn on Kitchen Sink Light with Chandleir
   trigger:
-  - entity_id: light.chandleir
+  - entity_id: light.chandelier
     from: 'off'
     platform: state
     to: 'on'
@@ -13,7 +13,7 @@
       before: '06:00:00'
   action:
     data:
-      entity_id: light.kitchen_sink_light
+      entity_id: light.kitchen_sink_light_2
     service: light.turn_on
 
 #Turn OFF Kitchen Lights with Chandleri lights at night
@@ -21,7 +21,7 @@
   alias: 'LIGHT: Kitchen Light OFF at night when Chandeleir is Turned OFF'
   description: Turn OFF Kitchen Sink Light with Chandleir
   trigger:
-  - entity_id: light.chandleir
+  - entity_id: light.chandelier
     from: 'on'
     platform: state
     to: 'off'
@@ -31,5 +31,5 @@
       before: '06:00:00'
   action:
     data:
-      entity_id: light.kitchen_sink_light
+      entity_id: light.kitchen_sink_light_2
     service: light.turn_off

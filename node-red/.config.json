@@ -1461,7 +1461,7 @@
   "node-red-contrib-watt2kwh": {
    "name": "node-red-contrib-watt2kwh",
    "version": "0.1.1",
-   "local": false,
+   "local": true,
    "nodes": {
     "simpletime": {
      "name": "simpletime",

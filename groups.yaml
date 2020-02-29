@@ -3,7 +3,7 @@
  
 # Whitelist contains entities that you expect to be there, that may not appear if the integration isn't ready on startup
 entity_whitelist:
-  - light.garage
+  - light.garage_light
   - light.360178242462ab2e57ae
   - light.36017824d8f15ba5221f
   - light.alans_night_lamp

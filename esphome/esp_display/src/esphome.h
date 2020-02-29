@@ -10,6 +10,7 @@
 #include "esphome/components/api/subscribe_state.h"
 #include "esphome/components/api/user_services.h"
 #include "esphome/components/api/util.h"
+#include "esphome/components/dht/dht.h"
 #include "esphome/components/display/display_buffer.h"
 #include "esphome/components/gpio/switch/gpio_switch.h"
 #include "esphome/components/homeassistant/text_sensor/homeassistant_text_sensor.h"

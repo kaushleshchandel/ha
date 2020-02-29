@@ -23,7 +23,7 @@
     light.360178242462ab2e57ae : off
     light.36017824d8f15ba5221f: off
     light.alans_night_lamp : off
-    light.garage: off
+    light.garage_light: off
     light.chandleir: off
     light.loft: off
     light.main_entrance: off
@@ -34,7 +34,7 @@
     light.360178242462ab2e57ae : off
     light.alans_night_lamp : off
     light.chandleir: off
-    light.garage: off
+    light.garage_light: off
     light.loft: off
     switch.setting_home_away_mode : on
     light.main_entrance: off
@@ -49,7 +49,7 @@
     light.360178242462ab2e57ae : off
     light.alans_night_lamp : off
     light.chandleir: off
-    light.garage: off
+    light.garage_light: off
     light.loft: on
     light.backyard: on
     light.porch: on
