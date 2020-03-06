@@ -1,9 +1,8 @@
 #################### COMMON SETTINGS #########################
 esphome:
   name: $devicename
-  platform: ESP8266
-  board: esp01_1m
-
+  platform: ESP32
+  
 wifi:
   networks:
   - ssid: !secret WIFI_SSID

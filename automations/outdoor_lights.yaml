@@ -7,13 +7,11 @@
     platform: sun
   condition: []
   action:
-  - alias: ''
     data:
       entity_id: light.backyard_light
     service: light.turn_on
-  - alias: ''
     data:
-      entity_id: light.porch
+      entity_id: light.porch_2
     service: light.turn_on
 
 #Auto Off lights when Sun rises
@@ -25,11 +23,9 @@
     platform: sun
   condition: []
   action:
-  - alias: ''
     data:
       entity_id: light.backyard_light
     service: light.turn_off
-  - alias: ''
     data:
-      entity_id: light.porch
+      entity_id: light.porch_2
     service: light.turn_off

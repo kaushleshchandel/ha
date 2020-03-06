@@ -23,7 +23,6 @@
     from: 'off'
     platform: state
     to: 'on'
-  condition: []
   action:
     data:
       entity_id: light.garage_light
@@ -38,10 +37,6 @@
     from: 'off'
     platform: state
     to: 'on'
-  condition:
-    condition: state  # from sunset until sunrise
-    entity_id: sun.sun
-    state: 'below_horizon'
   action:
     data:
       entity_id: light.kitchen_sink_light
@@ -59,5 +54,4 @@
     service: input_number.set_value
     data_template:
       entity_id: input_number.garage_timer_slider
-      value: 10
-
+      value: 5

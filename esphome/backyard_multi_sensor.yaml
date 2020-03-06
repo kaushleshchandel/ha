@@ -3,7 +3,7 @@ substitutions:
   device_shortname: backyard_multi_sensor
   id_prefix: backyard_  
 
-<<: !include .base.common.yaml
+<<: !include .base.common_8266.yaml
 
 # Example configuration entry
 binary_sensor:

@@ -2,6 +2,10 @@
 - alias: 'ALARM: Trigger alarm while armed away'
   trigger:
     - platform: state
+      entity_id: light.garage_light
+      from: 'off'
+      to: 'on'
+    - platform: state
       entity_id: binary_sensor.backyard_door
       from: 'off'
       to: 'on'
@@ -19,6 +23,26 @@
       to: 'on'
     - platform: state
       entity_id: binary_sensor.rf_kitchen_door
+      from: 'off'
+      to: 'on'
+    - platform: state
+      entity_id: binary_sensor.garage_motion
+      from: 'off'
+      to: 'on'
+    - platform: state
+      entity_id: binary_sensor.loft_motion_detect
+      from: 'off'
+      to: 'on'
+    - platform: state
+      entity_id: binary_sensor.kitchen_motion_detect
+      from: 'off'
+      to: 'on'
+    - platform: state
+      entity_id: binary_sensor.living_room_motion_detect
+      from: 'off'
+      to: 'on'
+    - platform: state
+      entity_id: binary_sensor.main_door_sensor
       from: 'off'
       to: 'on'
   condition:
@@ -43,6 +67,8 @@
       data_template:
         title: "HOME ALARM!"
         message: "Alarm has triggered"        
+    - service: script.turn_on
+      entity_id: script.light_loop
 
 - alias: 'ALARM: Send notification when alarm is Disarmed'
   trigger:
@@ -50,6 +76,8 @@
       entity_id: alarm_control_panel.home_alarm
       to: 'disarmed'
   action:
+    - service: script.turn_off
+      entity_id: script.light_loop
     - service: notify.notify
       data_template:
         message: "ALARM! The alarm is Disarmed at {{ states('sensor.date_time') }}"        
@@ -57,14 +85,3 @@
       data_template:
         title: "HOME ALARM!"
         message: "ALARM! The alarm is Disarmed at {{ states('sensor.date_time') }}"        
-
-
-#Disable the Home Alarm
-- alias: 'ALARM: Disarm alarm when known person arrives'
-  trigger:
-    - platform: state
-      entity_id: device_tracker.sm_g960u
-      to: 'home'
-  action:
-    - service: alarm_control_panel.alarm_disarm
-      entity_id: alarm_control_panel.house_alarm

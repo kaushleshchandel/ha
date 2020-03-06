@@ -2,7 +2,7 @@ substitutions:
   devicename: alans_bedroom_bme280
   device_shortname: Alans Bedroom
 
-<<: !include .base.common.yaml
+<<: !include .base.common_8266.yaml
 
 i2c:
   sda: D1

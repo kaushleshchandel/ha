@@ -16,9 +16,6 @@ wifi:
     ssid: $devicename
     password: !secret AP_password
 
-mqtt:
-  broker: 192.168.0.100
-
 logger: 
 
 api:

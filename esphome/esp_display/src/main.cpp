@@ -10,14 +10,11 @@ logger::Logger *logger_logger;
 status_led::StatusLED *status_led_statusled;
 wifi::WiFiComponent *wifi_wificomponent;
 ota::OTAComponent *myota;
-mqtt::MQTTClientComponent *mqtt_mqttclientcomponent;
 api::APIServer *api_apiserver;
 using namespace sensor;
-using namespace mqtt;
 using namespace api;
 using namespace i2c;
 i2c::I2CComponent *i2c_i2ccomponent;
-using namespace json;
 display::Font *font1;
 display::Font *font3;
 homeassistant::HomeassistantTextSensor *alarm_state;
@@ -27,17 +24,12 @@ homeassistant::HomeassistantTime *esptime;
 gpio::GPIOSwitch *gpio_gpioswitch;
 ssd1306_i2c::I2CSSD1306 *my_display;
 interval::IntervalTrigger *interval_intervaltrigger;
-mqtt::MQTTTextSensor *mqtt_mqtttextsensor;
-mqtt::MQTTSensorComponent *mqtt_mqttsensorcomponent;
-mqtt::MQTTSwitchComponent *mqtt_mqttswitchcomponent;
 Automation<> *automation;
 display::DisplayPageShowAction<> *display_displaypageshowaction;
 sensor::Sensor *sensor_sensor;
-mqtt::MQTTSensorComponent *mqtt_mqttsensorcomponent_2;
 display::DisplayPage *page_init;
-display::DisplayPage *page_status;
 sensor::Sensor *sensor_sensor_2;
-mqtt::MQTTSensorComponent *mqtt_mqttsensorcomponent_3;
+display::DisplayPage *page_status;
 display::DisplayPage *page_setting;
 display::DisplayPage *page_error;
 UpdateComponentAction<> *updatecomponentaction;
@@ -51,13 +43,13 @@ void setup() {
   //   name: esp_display
   //   platform: ESP8266
   //   board: d1_mini
-  //   includes: []
   //   arduino_version: espressif8266@2.2.3
-  //   libraries: []
-  //   platformio_options: {}
+  //   build_path: esp_display
   //   esp8266_restore_from_flash: false
   //   board_flash_mode: dout
-  //   build_path: esp_display
+  //   libraries: []
+  //   platformio_options: {}
+  //   includes: []
   App.pre_setup("esp_display", __DATE__ ", " __TIME__);
   // text_sensor:
   // time:
@@ -65,10 +57,10 @@ void setup() {
   // display:
   // logger:
   //   id: logger_logger
-  //   hardware_uart: UART0
-  //   esp8266_store_log_strings_in_flash: true
   //   baud_rate: 115200
+  //   hardware_uart: UART0
   //   tx_buffer_size: 512
+  //   esp8266_store_log_strings_in_flash: true
   //   logs: {}
   //   level: DEBUG
   logger_logger = new logger::Logger(115200, 512, logger::UART_SELECTION_UART0);
@@ -101,9 +93,9 @@ void setup() {
   //   id: wifi_wificomponent
   //   power_save_mode: NONE
   //   output_power: 20.0
+  //   reboot_timeout: 15min
   //   fast_connect: false
   //   domain: .local
-  //   reboot_timeout: 15min
   //   use_address: esp_display.local
   wifi_wificomponent = new wifi::WiFiComponent();
   wifi_wificomponent->set_use_address("esp_display.local");
@@ -130,86 +122,21 @@ void setup() {
   // ota:
   //   safe_mode: true
   //   id: myota
-  //   password: ''
   //   port: 8266
+  //   password: ''
   myota = new ota::OTAComponent();
   myota->set_port(8266);
   myota->set_auth_password("");
   App.register_component(myota);
   myota->start_safe_mode();
-  // mqtt:
-  //   broker: 192.168.0.100
-  //   discovery_prefix: homeassistant
-  //   password: ''
-  //   id: mqtt_mqttclientcomponent
-  //   discovery_retain: true
-  //   topic_prefix: esp_display
-  //   discovery: true
-  //   username: ''
-  //   keepalive: 15s
-  //   reboot_timeout: 15min
-  //   port: 1883
-  //   birth_message:
-  //     topic: esp_display/status
-  //     payload: online
-  //     qos: 0
-  //     retain: true
-  //   will_message:
-  //     topic: esp_display/status
-  //     payload: offline
-  //     qos: 0
-  //     retain: true
-  //   shutdown_message:
-  //     topic: esp_display/status
-  //     payload: offline
-  //     qos: 0
-  //     retain: true
-  //   log_topic:
-  //     topic: esp_display/debug
-  //     qos: 0
-  //     retain: true
-  mqtt_mqttclientcomponent = new mqtt::MQTTClientComponent();
-  App.register_component(mqtt_mqttclientcomponent);
   // api:
-  //   password: ''
   //   id: api_apiserver
   //   reboot_timeout: 15min
   //   port: 6053
+  //   password: ''
   api_apiserver = new api::APIServer();
   App.register_component(api_apiserver);
   // sensor:
-  mqtt_mqttclientcomponent->set_broker_address("192.168.0.100");
-  mqtt_mqttclientcomponent->set_broker_port(1883);
-  mqtt_mqttclientcomponent->set_username("");
-  mqtt_mqttclientcomponent->set_password("");
-  mqtt_mqttclientcomponent->set_discovery_info("homeassistant", true);
-  mqtt_mqttclientcomponent->set_topic_prefix("esp_display");
-  mqtt_mqttclientcomponent->set_birth_message(mqtt::MQTTMessage{
-      .topic = "esp_display/status",
-      .payload = "online",
-      .qos = 0,
-      .retain = true,
-  });
-  mqtt_mqttclientcomponent->set_last_will(mqtt::MQTTMessage{
-      .topic = "esp_display/status",
-      .payload = "offline",
-      .qos = 0,
-      .retain = true,
-  });
-  mqtt_mqttclientcomponent->set_shutdown_message(mqtt::MQTTMessage{
-      .topic = "esp_display/status",
-      .payload = "offline",
-      .qos = 0,
-      .retain = true,
-  });
-  mqtt_mqttclientcomponent->set_log_message_template(mqtt::MQTTMessage{
-      .topic = "esp_display/debug",
-      .payload = "",
-      .qos = 0,
-      .retain = true,
-  });
-  mqtt_mqttclientcomponent->set_keep_alive(15);
-  mqtt_mqttclientcomponent->set_reboot_timeout(900000);
   api_apiserver->set_port(6053);
   api_apiserver->set_password("");
   api_apiserver->set_reboot_timeout(900000);
@@ -221,7 +148,6 @@ void setup() {
   //   id: i2c_i2ccomponent
   i2c_i2ccomponent = new i2c::I2CComponent();
   App.register_component(i2c_i2ccomponent);
-  // json:
   // substitutions:
   //   devicename: esp_display
   //   device_shortname: esp
@@ -396,7 +322,6 @@ void setup() {
   //   entity_id: alarm_control_panel.my_alarm_system
   //   name: Alarm State
   //   id: alarm_state
-  //   mqtt_id: mqtt_mqtttextsensor
   alarm_state = new homeassistant::HomeassistantTextSensor();
   App.register_component(alarm_state);
   // sensor.rotary_encoder:
@@ -404,20 +329,19 @@ void setup() {
   //   name: Rotary Encoder
   //   pin_a:
   //     number: 14
-  //     mode: INPUT
   //     inverted: false
+  //     mode: INPUT
   //   pin_b:
   //     number: 12
-  //     mode: INPUT
   //     inverted: false
+  //     mode: INPUT
   //   min_value: 10
   //   max_value: 50
   //   id: rencoder
-  //   mqtt_id: mqtt_mqttsensorcomponent
+  //   unit_of_measurement: steps
   //   icon: mdi:rotate-right
   //   force_update: false
   //   resolution: 1
-  //   unit_of_measurement: steps
   //   accuracy_decimals: 0
   rencoder = new rotary_encoder::RotaryEncoderSensor();
   App.register_component(rencoder);
@@ -425,24 +349,22 @@ void setup() {
   //   platform: dht
   //   pin:
   //     number: 15
-  //     mode: INPUT
   //     inverted: false
+  //     mode: INPUT
   //   temperature:
   //     name: Loft Temperature
-  //     mqtt_id: mqtt_mqttsensorcomponent_2
   //     id: sensor_sensor
-  //     icon: mdi:thermometer
-  //     accuracy_decimals: 1
-  //     force_update: false
   //     unit_of_measurement: °C
+  //     accuracy_decimals: 1
+  //     icon: mdi:thermometer
+  //     force_update: false
   //   humidity:
   //     name: Loft Humidity
-  //     mqtt_id: mqtt_mqttsensorcomponent_3
   //     id: sensor_sensor_2
-  //     icon: mdi:water-percent
-  //     accuracy_decimals: 0
-  //     force_update: false
   //     unit_of_measurement: '%'
+  //     accuracy_decimals: 0
+  //     icon: mdi:water-percent
+  //     force_update: false
   //   update_interval: 60s
   //   id: dht_dht
   //   model: AUTO_DETECT
@@ -459,13 +381,12 @@ void setup() {
   //   platform: gpio
   //   pin:
   //     number: 13
-  //     mode: OUTPUT
   //     inverted: false
+  //     mode: OUTPUT
   //   name: Rotary Switch
-  //   mqtt_id: mqtt_mqttswitchcomponent
   //   id: gpio_gpioswitch
-  //   restore_mode: RESTORE_DEFAULT_OFF
   //   interlock_wait_time: 0ms
+  //   restore_mode: RESTORE_DEFAULT_OFF
   gpio_gpioswitch = new gpio::GPIOSwitch();
   App.register_component(gpio_gpioswitch);
   // display.ssd1306_i2c:
@@ -487,8 +408,8 @@ void setup() {
   //   - id: page_error
   //     lambda: !lambda |-
   //       it.printf(64, 0, id(font1), TextAlign::TOP_CENTER, "Error");
-  //   i2c_id: i2c_i2ccomponent
   //   update_interval: 1s
+  //   i2c_id: i2c_i2ccomponent
   my_display = new ssd1306_i2c::I2CSSD1306();
   my_display->set_update_interval(1000);
   App.register_component(my_display);
@@ -501,8 +422,8 @@ void setup() {
   //     - component.update:
   //         id: my_display
   //       type_id: updatecomponentaction
-  //     trigger_id: trigger
   //     id: interval_intervaltrigger
+  //     trigger_id: trigger
   //     automation_id: automation
   interval_intervaltrigger = new interval::IntervalTrigger();
   App.register_component(interval_intervaltrigger);
@@ -512,23 +433,18 @@ void setup() {
   i2c_i2ccomponent->set_scan(false);
   App.register_text_sensor(alarm_state);
   alarm_state->set_name("Alarm State");
-  mqtt_mqtttextsensor = new mqtt::MQTTTextSensor(alarm_state);
-  App.register_component(mqtt_mqtttextsensor);
   App.register_sensor(rencoder);
   rencoder->set_name("Rotary Encoder");
   rencoder->set_unit_of_measurement("steps");
   rencoder->set_icon("mdi:rotate-right");
   rencoder->set_accuracy_decimals(0);
   rencoder->set_force_update(false);
-  mqtt_mqttsensorcomponent = new mqtt::MQTTSensorComponent(rencoder);
-  App.register_component(mqtt_mqttsensorcomponent);
   App.register_component(esptime);
   App.register_switch(gpio_gpioswitch);
   gpio_gpioswitch->set_name("Rotary Switch");
-  mqtt_mqttswitchcomponent = new mqtt::MQTTSwitchComponent(gpio_gpioswitch);
-  App.register_component(mqtt_mqttswitchcomponent);
   automation = new Automation<>(interval_intervaltrigger);
   display_displaypageshowaction = new display::DisplayPageShowAction<>();
+  alarm_state->set_entity_id("alarm_control_panel.my_alarm_system");
   dht_dht->set_pin(new GPIOPin(15, INPUT, false));
   sensor_sensor = new sensor::Sensor();
   App.register_sensor(sensor_sensor);
@@ -537,18 +453,12 @@ void setup() {
   sensor_sensor->set_icon("mdi:thermometer");
   sensor_sensor->set_accuracy_decimals(1);
   sensor_sensor->set_force_update(false);
-  mqtt_mqttsensorcomponent_2 = new mqtt::MQTTSensorComponent(sensor_sensor);
-  App.register_component(mqtt_mqttsensorcomponent_2);
   page_init = new display::DisplayPage([=](display::DisplayBuffer & it) -> void {
       it.print(0, 10, font1, "Welcome!");
   });
-  alarm_state->set_entity_id("alarm_control_panel.my_alarm_system");
   rencoder->set_pin_a(new GPIOPin(14, INPUT, false));
   gpio_gpioswitch->set_pin(new GPIOPin(13, OUTPUT, false));
   gpio_gpioswitch->set_restore_mode(gpio::GPIO_SWITCH_RESTORE_DEFAULT_OFF);
-  page_status = new display::DisplayPage([=](display::DisplayBuffer & it) -> void {
-      it.printf(64, 0, font1, TextAlign::TOP_CENTER, "Humidity : %.1f", rencoder->state.c_str());
-  });
   rencoder->set_pin_b(new GPIOPin(12, INPUT, false));
   rencoder->set_resolution(rotary_encoder::ROTARY_ENCODER_1_PULSE_PER_CYCLE);
   rencoder->set_min_value(10);
@@ -561,8 +471,11 @@ void setup() {
   sensor_sensor_2->set_icon("mdi:water-percent");
   sensor_sensor_2->set_accuracy_decimals(0);
   sensor_sensor_2->set_force_update(false);
-  mqtt_mqttsensorcomponent_3 = new mqtt::MQTTSensorComponent(sensor_sensor_2);
-  App.register_component(mqtt_mqttsensorcomponent_3);
+  page_status = new display::DisplayPage([=](display::DisplayBuffer & it) -> void {
+      it.printf(64, 0, font1, TextAlign::TOP_CENTER, "Humidity : %.1f", rencoder->state.c_str());
+  });
+  dht_dht->set_humidity_sensor(sensor_sensor_2);
+  dht_dht->set_dht_model(dht::DHT_MODEL_AUTO_DETECT);
   display_displaypageshowaction->set_page(page_status);
   page_setting = new display::DisplayPage([=](display::DisplayBuffer & it) -> void {
       it.printf(64, 0, font1, TextAlign::TOP_CENTER, "Alarm State: %s", alarm_state->state.c_str());
@@ -571,8 +484,6 @@ void setup() {
       it.printf(64, 0, font1, TextAlign::TOP_CENTER, "Error");
   });
   my_display->set_pages({page_init, page_status, page_setting, page_error});
-  dht_dht->set_humidity_sensor(sensor_sensor_2);
-  dht_dht->set_dht_model(dht::DHT_MODEL_AUTO_DETECT);
   my_display->set_model(ssd1306_base::SH1106_MODEL_128_32);
   my_display->set_brightness(0.5f);
   updatecomponentaction = new UpdateComponentAction<>(my_display);

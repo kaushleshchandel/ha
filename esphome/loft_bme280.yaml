@@ -3,7 +3,7 @@ substitutions:
   device_shortname: Loft
   id_prefix: loft_
 
-<<: !include .base.common.yaml
+<<: !include .base.common_8266.yaml
 
 i2c:
   sda: D1

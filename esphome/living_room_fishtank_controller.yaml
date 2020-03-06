@@ -1,0 +1,23 @@
+esphome:
+  name: living_room_fishtank_controller
+  platform: ESP8266
+  board: nodemcuv2
+
+wifi:
+  ssid: "IOT"
+  password: "608980608980"
+
+  # Enable fallback hotspot (captive portal) in case wifi connection fails
+  ap:
+    ssid: "Living Room Fishtank Controller"
+    password: "zx2EZlNnvQBZ"
+
+captive_portal:
+
+# Enable logging
+logger:
+
+# Enable Home Assistant API
+api:
+
+ota:

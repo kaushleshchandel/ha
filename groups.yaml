@@ -36,8 +36,9 @@ entity_blacklist:
   - light.Philips_LWB006_4f104010_level
   - light.Philips_LWB006_6c005b10_level
   - sensor.philips_rwl020_bcac0b04_power
- # - zwave.leviton_dzpd3_1lw_plug_in_dimming_lamp_module
- # - zwave.leviton dzpd3 1lw plug in dimming lamp module level 2
-#  - light.philips_lwb006_6c005b10_level_on_off
-#  - light.philips_lwb006_2a5c5b10_level_on_off
   - zwave.z_wave_sigma_designs_uzb_z_wave_usb_adapter
+
+alarm_lights:
+#  - light.kitchen_sink_light_2
+#  - light.loft_2
+  - light.backyard_light

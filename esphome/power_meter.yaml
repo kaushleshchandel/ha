@@ -3,7 +3,7 @@ substitutions:
   devicename: power_meter
   device_shortname: Garage
 
-<<: !include .base.common.yaml
+<<: !include .base.common_8266.yaml
 
 spi:
   clk_pin: 18
@@ -22,15 +22,15 @@ sensor:
         name: "EMON Active Power CT1"
       gain_voltage: 41820
       gain_ct: 25498
-    phase_b:
+    phase_c:
       current:
         name: "EMON CT2 Current"
       power:
         name: "EMON Active Power CT2"
-      gain_voltage: 41820
-      gain_ct: 25498
+      gain_voltage: 3920
+      gain_ct: 39473
     frequency:
       name: "EMON Line Frequency"
-    line_frequency: 50Hz
+    line_frequency: 60Hz
     gain_pga: 2X
-    update_interval: 60s
+    update_interval: 1s

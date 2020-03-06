@@ -4,7 +4,7 @@ substitutions:
   device_shortname: Outdoor
 
 #Subsitution File inclues everything for the Wifi & Configuraitons
-<<: !include .base.common.yaml
+<<: !include .base.common_8266.yaml
 
 i2c:
   sda: D1

@@ -3,7 +3,7 @@ substitutions:
   device_shortname: hvac
 
 #Subsitution File inclues everything for the Wifi & Configuraitons
-<<: !include .base.common.yaml
+<<: !include .base.common_8266.yaml
 
 binary_sensor:
   - platform: template
