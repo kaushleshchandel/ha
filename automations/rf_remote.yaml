@@ -13,3 +13,4 @@
     data:
       entity_id: light.kitchen_sink_light
     service: light.turn_on
+

@@ -61,24 +61,6 @@ input_boolean: !include_dir_merge_named input_boolean
 input_number: !include_dir_merge_named input_number
 input_select: !include_dir_merge_named input_select
 
-
-history:
-  include:
-    domains:
-      - sensor
-      - switch
-      - media_player
-      - light
-      - binary_sensor
-      - cover
-
-  exclude:
-    entities:
-     - sensor.alans_room_pressure
-     - sensor.outdoor_pressure
-     - sensor.garage_pressure
-     - sensor.laundry_pressure
-
 mqtt:
   broker: 192.168.0.13
   port: 1883
@@ -100,3 +82,7 @@ alarm_control_panel:
       pending_time: 0
       delay_time: 0
 
+
+shelly:
+#  cloud_auth_key: "MTljYTJ1aWQB7297B525947EE8A7A6C84744D8A45D02044A8CC10CC1D32854AB4C07D87D3CD31B2E9D576A489F4"
+  #cloud_server: "shelly-11-eu.shelly.cloud"

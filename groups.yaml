@@ -39,6 +39,11 @@ entity_blacklist:
   - zwave.z_wave_sigma_designs_uzb_z_wave_usb_adapter
 
 alarm_lights:
-#  - light.kitchen_sink_light_2
-#  - light.loft_2
+  - light.kitchen_sink_light
+  - light.loft
   - light.backyard_light
+  - light.porch
+
+outdoor_lights:
+  - light.backyard_light
+  - light.porch

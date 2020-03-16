@@ -9,9 +9,6 @@ wifi:
   - ssid: !secret WIFI_SSID
     password: !secret WIFI_password
     priority: 0
-  - ssid: HOME2G
-    password: !secret WIFI_password
-    priority: 1
   ap:
     ssid: $devicename
     password: !secret AP_password

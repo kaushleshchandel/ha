@@ -1489,7 +1489,7 @@
     }
    },
    "menu-menu-item-sidebar": true,
-   "menu-menu-item-palette": false
+   "menu-menu-item-palette": true
   }
  }
 }

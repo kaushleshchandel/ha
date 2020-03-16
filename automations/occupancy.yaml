@@ -1,0 +1,41 @@
+#Turn OFF LOFT Lights
+- id: '8741115864512158007'
+  alias: 'LIGHT: Turn off Loft when not Occupied'
+  description: Turn off Loft Light
+  trigger:
+  - entity_id: binary_sensor.living_room_occupancy_aqara
+    from: 'Occupied'
+    platform: state
+    to: 'Clear'
+  action:
+    data:
+      entity_id: light.loft
+    service: light.turn_off
+
+#Turn OFF Kitchen Lights
+- id: '1587445111862158007'
+  alias: 'LIGHT: Turn off Kitchen Sink Light'
+  description: Turn off Sink Light
+  trigger:
+  - entity_id: binary_sensor.kitchen_occupancy_aqara
+    from: 'Occupied'
+    platform: state
+    to: 'Clear'
+  action:
+    data:
+      entity_id: light.kitchen_sink_light
+    service: light.turn_off
+
+#Turn OFF Kitchen Lights
+- id: '4515874162158118007'
+  alias: 'LIGHT: Turn off Garage Light'
+  description: Turn off Garage Light
+  trigger:
+  - entity_id: binary_sensor.living_room_occupancy_aqara
+    from: 'Occupied'
+    platform: state
+    to: 'Clear'
+  action:
+    data:
+      entity_id: light.garage_light
+    service: light.turn_off

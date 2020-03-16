@@ -1,50 +1,61 @@
 # Trigger Alartm when in Armed Mode
 - alias: 'ALARM: Trigger alarm while armed away'
   trigger:
+    # If Main door is opened
+    - platform: state
+      entity_id: binary_sensor.main_door_sensor_aqara
+      from: 'off'
+      to: 'on'
+    # If Kitchen door is opened
+    - platform: state
+      entity_id: binary_sensor.kitchen_door_sensor_aqara
+      from: 'off'
+      to: 'on'
+
+    # if Motion is Detected by any of the PIR Sensors
+    - platform: state
+      entity_id: binary_sensor.garage_motion_aqara
+      from: 'Clear'
+      to: 'Detected'
+    - platform: state
+      entity_id: binary_sensor.loft_motion_aqara
+      from: 'Clear'
+      to: 'Detected'
+    - platform: state
+      entity_id: binary_sensor.kitchen_motion_aqara
+      from: 'Clear'
+      to: 'Detected'
+    - platform: state
+      entity_id: binary_sensor.living_room_motion_aqara
+      from: 'Clear'
+      to: 'Detected'
+
+    # if Occupancy Status Changes in any area
+
+    - platform: state
+      entity_id: binary_sensor.living_room_occupancy_aqara
+      from: 'Clear'
+      to: 'Detected'
+    - platform: state
+      entity_id: binary_sensor.loft_occupancy_aqara
+      from: 'Clear'
+      to: 'Detected'
+    - platform: state
+      entity_id: binary_sensor.kitchen_occupancy_aqara
+      from: 'Clear'
+      to: 'Detected'
+    - platform: state
+      entity_id: binary_sensor.living_room_occupancy_aqara
+      from: 'Clear'
+      to: 'Detected'
+
+
+    # if an unexpected light is turned on
     - platform: state
       entity_id: light.garage_light
       from: 'off'
       to: 'on'
-    - platform: state
-      entity_id: binary_sensor.backyard_door
-      from: 'off'
-      to: 'on'
-    - platform: state
-      entity_id: binary_sensor.couch_window
-      from: 'off'
-      to: 'on'
-    - platform: state
-      entity_id: binary_sensor.rf_backyard_glass_door
-      from: 'off'
-      to: 'on'
-    - platform: state
-      entity_id: binary_sensor.rf_front_door
-      from: 'off'
-      to: 'on'
-    - platform: state
-      entity_id: binary_sensor.rf_kitchen_door
-      from: 'off'
-      to: 'on'
-    - platform: state
-      entity_id: binary_sensor.garage_motion
-      from: 'off'
-      to: 'on'
-    - platform: state
-      entity_id: binary_sensor.loft_motion_detect
-      from: 'off'
-      to: 'on'
-    - platform: state
-      entity_id: binary_sensor.kitchen_motion_detect
-      from: 'off'
-      to: 'on'
-    - platform: state
-      entity_id: binary_sensor.living_room_motion_detect
-      from: 'off'
-      to: 'on'
-    - platform: state
-      entity_id: binary_sensor.main_door_sensor
-      from: 'off'
-      to: 'on'
+
   condition:
     - condition: state
       entity_id: alarm_control_panel.ha_alarm

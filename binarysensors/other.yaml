@@ -12,3 +12,4 @@
   payload_not_available: "Offline"
   device_class: window   # also: window, garage_door or opening
   qos: 1
+

@@ -1,3 +1,14 @@
 #2261A6 - Kitchen Door
 #743B29 - Backyard Glass Door
 #D6E629 - Front Door
+
+- platform: mqtt
+  name: "RFKey 13"
+  state_topic: "001/tele/cambria/rf/RESULT"
+  value_template: '{{value_json.RfReceived.Data}}'
+  payload_on: "2375E6"
+  payload_off: "000000"
+  availability_topic: "001/tele/cambria/rf/LWT"
+  payload_available: "Online"
+  payload_not_available: "Offline"
+  qos: 1

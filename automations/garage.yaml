@@ -23,10 +23,26 @@
   alias: 'LIGHT: Turn on Garage Lights  Kitchen Door Open'
   description: Turn on Garage Light
   trigger:
-  - entity_id: binary_sensor.garage_motion
+  - entity_id: binary_sensor.kitchen_door
+    from: 'Off'
+    platform: state
+    to: 'On'
+  - entity_id: binary_sensor.garage_door
+    from: 'Closed'
+    platform: state
+    to: 'Open'
+  - entity_id: binary_sensor.garage_occupancy_aqara
     from: 'Clear'
     platform: state
     to: 'Detected'
+  - entity_id: binary_sensor.garage_motion_aqara
+    from: 'Off'
+    platform: state
+    to: 'On'
+  condition:
+    condition: state  # 'day' condition: from sunrise until sunset
+    entity_id: sun.sun
+    state: 'below_horizon'
   action:
     data:
       entity_id: light.garage_light
@@ -41,6 +57,10 @@
     from: 'off'
     platform: state
     to: 'on'
+  condition:
+    condition: state  # 'day' condition: from sunrise until sunset
+    entity_id: sun.sun
+    state: 'below_horizon'
   action:
     data:
       entity_id: light.kitchen_sink_light

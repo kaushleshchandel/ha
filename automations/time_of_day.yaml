@@ -13,7 +13,7 @@
       before: '06:00:00'
   action:
     data:
-      entity_id: light.kitchen_sink_light_2
+      entity_id: light.kitchen_sink_light
     service: light.turn_on
 
 #Turn OFF Kitchen Lights with Chandleri lights at night
@@ -31,5 +31,5 @@
       before: '06:00:00'
   action:
     data:
-      entity_id: light.kitchen_sink_light_2
+      entity_id: light.kitchen_sink_light
     service: light.turn_off
