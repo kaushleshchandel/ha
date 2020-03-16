@@ -21,6 +21,9 @@ switch:
     pin: GPIO12
     name: "Garage Door Close Switch"
     id: close_switch
+  - platform: restart
+    name: "$devicename Restart"
+
 cover:
   - platform: template
     name: "Garage Door"

@@ -13,6 +13,9 @@ substitutions:
 #GPIO14	Optional Sensor (C1 Pin 5)
 
 switch:
+  - platform: restart
+    name: "$devicename Restart"
+
   - platform: gpio
     pin: GPIO12
     name: "Garage Door Open Switch"
@@ -21,6 +24,7 @@ switch:
     pin: GPIO12
     name: "Garage Door Close Switch"
     id: close_switch
+    
 cover:
   - platform: template
     name: "Garage Door"

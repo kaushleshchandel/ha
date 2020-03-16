@@ -37,6 +37,10 @@ sensor:
     accuracy_decimals: 2
     update_interval: 15s
 
+switch:
+  - platform: restart
+    name: "$devicename Restart"
+
 
 status_led:
   pin:

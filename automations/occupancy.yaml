@@ -8,11 +8,10 @@
     platform: state
     to: 'Clear'
   action:
-    data:
-      entity_id: light.loft
-    service: light.turn_off
+    service: homeassistant.turn_off
+    entity_id: light.loft
 
-#Turn OFF Kitchen Lights
+###########################################################
 - id: '1587445111862158007'
   alias: 'LIGHT: Turn off Kitchen Sink Light'
   description: Turn off Sink Light
@@ -22,11 +21,10 @@
     platform: state
     to: 'Clear'
   action:
-    data:
-      entity_id: light.kitchen_sink_light
-    service: light.turn_off
+    service: homeassistant.turn_off
+    entity_id: light.kitchen_sink_light
 
-#Turn OFF Kitchen Lights
+###########################################################
 - id: '4515874162158118007'
   alias: 'LIGHT: Turn off Garage Light'
   description: Turn off Garage Light
@@ -36,6 +34,5 @@
     platform: state
     to: 'Clear'
   action:
-    data:
-      entity_id: light.garage_light
-    service: light.turn_off
+    service: homeassistant.turn_off
+    entity_id: light.garage_light

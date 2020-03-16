@@ -24,6 +24,11 @@ sensor:
     address: 0x76
     update_interval: 60s
 
+switch:
+  - platform: restart
+    name: "$devicename Restart"
+
+
 
 status_led:
   pin:

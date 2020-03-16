@@ -1,20 +1,21 @@
 #Turn on Humidifier if Humidity Drops below
 - id: '1578326990845'
-  alias: 'CLIMATE : Humidifier ON'
+  alias: 'CLIMATE : Humidifier ON when Fan is on'
   description: Alert when Humidity goes down
   trigger:
-    - platform: template
-      value_template: '{{ states.sensor.loft_humidity.state < states.input_number.min_humidity_slider.state }}'  
-      for: '5'
-  condition:
-    - condition: state
+    - platform: state
       entity_id: binary_sensor.fan
-      state: 'On'
+      from: 'Off'
+      to: 'On'
+      for: 00:01:00
+  condition:
+    - condition: template
+      value_template: '{{ states.sensor.loft_humidity.state < states.input_number.min_humidity_slider.state }}'  
   action:
-    data:
-      entity_id: switch.humidifier_relay
-    service: switch.turn_on
+    service: homeassistant.turn_on
+    entity_id: switch.humidifier_relay
 
+#############################################################
 #Turn OFF the Humidifier
 - id: '7158326945584'
   alias: 'CLIMATE: AUTO Humidifier OFF'
@@ -25,9 +26,12 @@
       from: 'On'
       to: 'Off'
     - platform: template
-      value_template: '{{ states.sensor.loft_humidity.state > states.input_number.max_humidity_slider.state }}'  
-      for: '5'
-  action:
-    data:
+      value_template: '{{ states.sensor.loft_humidity.state > states.input_number.max_humidity_slider.state }}' 
+      for: 00:05:00
+  condition:
+    - condition: state
       entity_id: switch.humidifier_relay
-    service: switch.turn_off
+      state: 'on'
+  action:
+    service: homeassistant.turn_off
+    entity_id: switch.humidifier_relay

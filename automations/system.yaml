@@ -25,3 +25,23 @@
       message: Rebooting...
     service: notify.kc_phone
   - service: hassio.host_reboot
+
+
+- trigger:
+    platform: numeric_state
+    entity_id: sensor.temperature
+    # Optional
+    value_template: "{{ state.attributes.battery }}"
+    # At least one of the following required
+    above: 17
+    below: 25
+    # If given, will trigger when condition has been for X time, can also use days and milliseconds.
+    for:
+      hours: 1
+      minutes: 10
+      seconds: 5
+  action:
+    service: notify.mobile_app_sm_g960u
+    data_template:
+      title: "Aqara Low Power"
+      message: "Sensor Battery Low"

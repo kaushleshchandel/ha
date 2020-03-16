@@ -14,10 +14,10 @@
     to: 'Clear'
   condition: []
   action:
-    data:
-      entity_id: light.garage_light
-    service: light.turn_off
+    service: homeassistant.turn_off
+    entity_id: light.garage_light
 
+##########################################################
 #Turn ON Garage Lights
 - id: '874115816452007'
   alias: 'LIGHT: Turn on Garage Lights  Kitchen Door Open'
@@ -44,10 +44,10 @@
     entity_id: sun.sun
     state: 'below_horizon'
   action:
-    data:
-      entity_id: light.garage_light
-    service: light.turn_on
+    service: homeassistant.turn_on
+    entity_id: light.garage_light
 
+##########################################################
 #Turn ON Kitchen Lights
 - id: '8741158164515812007'
   alias: 'LIGHT: Turn on Kitchen on Kitchen door Open at night'
@@ -62,11 +62,10 @@
     entity_id: sun.sun
     state: 'below_horizon'
   action:
-    data:
-      entity_id: light.kitchen_sink_light
-    service: light.turn_on
+    entity_id: light.kitchen_sink_light
+    service: homeassistant.turn_on
 
-
+##########################################################
 - id: aa5c03aa8c789a1cbe5806e274bc3989
   alias: 'SYSTEM: Reset Garage Timer'
   description: Reset Garage Timer at 6:00

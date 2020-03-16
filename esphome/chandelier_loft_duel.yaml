@@ -11,6 +11,10 @@ substitutions:
 
 <<: !include .base.common1m.yaml
 
+switch:
+  - platform: restart
+    name: "$devicename Restart"
+
 output:
   - platform: gpio
     pin: GPIO4

@@ -18,6 +18,11 @@ status_led:
     number: GPIO13
     inverted: yes
 
+
+switch:
+  - platform: restart
+    name: "$devicename Restart"
+
 binary_sensor:
   - platform: gpio
     id: button

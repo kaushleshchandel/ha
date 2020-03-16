@@ -23,6 +23,8 @@ sensor:
                 - switch.turn_on: my_custom_switch    
 
 switch:
+  - platform: restart
+    name: "$devicename Restart"
   - platform: template
     name: "ALans Room Dimmer Template Switch"
     id: my_custom_switch

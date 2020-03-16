@@ -49,7 +49,6 @@
       from: 'Clear'
       to: 'Detected'
 
-
     # if an unexpected light is turned on
     - platform: state
       entity_id: light.garage_light
@@ -61,8 +60,17 @@
       entity_id: alarm_control_panel.ha_alarm
       state: armed_away
   action:
-    service: alarm_control_panel.alarm_trigger
-    entity_id: alarm_control_panel.ha_alarm
+    - service: alarm_control_panel.alarm_trigger
+      entity_id: alarm_control_panel.ha_alarm
+    - service: notify.notify
+      data:
+        message: "ALARM! Intrusion Detected"
+    - service: notify.mypushbullet
+      data_template:
+        title: "HOME ALARM!"
+        message: "ALARM! Intrusion Detected"
+    - service: script.turn_on
+      entity_id: script.light_loop
 
 #Send a notification
 - alias: 'ALARM: Send notification when alarm triggered'

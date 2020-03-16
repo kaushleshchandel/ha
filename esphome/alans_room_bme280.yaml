@@ -9,6 +9,10 @@ i2c:
   scl: D2
   scan: True
 
+switch:
+  - platform: restart
+    name: "$devicename Restart"
+
 #BME 280 Sensor
 sensor:
   - platform: bme280

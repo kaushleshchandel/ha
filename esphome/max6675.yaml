@@ -37,6 +37,10 @@ sensor:
     cs_pin: D6
     update_interval: 300s
 
+switch:
+  - platform: restart
+    name: "$devicename Restart"
+
 status_led:
   pin:
     number: GPIO2

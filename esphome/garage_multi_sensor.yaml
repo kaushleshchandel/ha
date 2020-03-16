@@ -24,6 +24,10 @@ binary_sensor:
     pin: D6
     device_class: occupancy
 
+switch:
+  - platform: restart
+    name: "$devicename Restart"
+
 
 status_led:
   pin:

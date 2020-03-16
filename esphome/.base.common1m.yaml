@@ -4,12 +4,16 @@ esphome:
   platform: ESP8266
   board: esp01_1m
 
-wifi:
+
+  wifi:
   networks:
-  - ssid: !secret WIFI_SSID
+  - ssid: IOT
     password: !secret WIFI_password
-    priority: 0
+    priority: 3
   - ssid: HOME2G
+    password: !secret WIFI_password
+    priority: 2
+  - ssid: phone
     password: !secret WIFI_password
     priority: 1
   ap:
@@ -23,6 +27,18 @@ api:
 ota:
   safe_mode: True
   id: myota
+
+# Example configuration entry
+text_sensor:
+  - platform: wifi_info
+    ip_address:
+      name: $devicename IP
+    ssid:
+      name: $devicename SSID
+    bssid:
+      name: $devicename BSSID
+  - platform: version
+    name: "$devicename Version"
 
 #web_server:
 #  port: 80

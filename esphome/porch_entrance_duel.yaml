@@ -19,6 +19,11 @@ output:
     pin: GPIO15
     id: GPIOLIGHTB
 
+switch:
+  - platform: restart
+    name: "$devicename Restart"
+
+
 status_led:
   pin:
     number: GPIO0

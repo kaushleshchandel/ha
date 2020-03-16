@@ -46,6 +46,8 @@ time:
     id: esptime
      
 switch:
+  - platform: restart
+    name: "$devicename Restart"
   - platform: gpio
     pin: D7
     name: "Rotary Switch"

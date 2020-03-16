@@ -2,7 +2,7 @@
   trigger:
     platform: numeric_state
     entity_id: input_number.garage_timer_slider
-    above: 15
+    above: 50
   action:
     service: notify.mypushbullet
     data_template:

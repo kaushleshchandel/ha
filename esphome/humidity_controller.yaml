@@ -23,6 +23,9 @@ binary_sensor:
       - switch.toggle: relay
 
 switch:
+switch:
+  - platform: restart
+    name: "$devicename Restart"
   - platform: gpio
     name: "Humidifier Relay"
     pin: GPIO12

@@ -6,24 +6,10 @@
     platform: time
   condition: []
   action:
-    data:
-      entity_id: light.alans_night_lamp
-    service: light.turn_on
+    service: homeassistant.turn_off
+    entity_id: light.alans_night_lamp
 
-
-- id: aa5c0789a13aa8cc806ebe5274bc3989
-  alias: 'LIGHT: Alans Night Lamp OFF'
-  description: Turn off Alans Lamp at 6:00
-  trigger:
-  - at: 06:00:00
-    platform: time
-  condition: []
-  action:
-    data:
-      entity_id: light.alans_night_lamp
-    service: light.turn_ff
-
-
+##########################################################
 - id: '8111257484520207'
   alias: 'LIGHT: Alans Room Shelly Dimmer ON'
   description: Turn on Alans Room Light 
@@ -32,13 +18,14 @@
     from: 'off'
     platform: state
     to: 'on'
+  - platform: state
+    entity_id: sensor.alans_room_brightness
   condition: []
   action:
-    data:
-      entity_id: light.alns_room_dimmer
     service: light.turn_on
+    entity_id: light.alns_room_dimmer
 
-
+##########################################################
 - id: '1811251748450207'
   alias: 'LIGHT: Alans Room Shelly Dimmer  OFF'
   description: Turn off Alans Room Light
@@ -49,6 +36,7 @@
     to: 'off'
   condition: []
   action:
-    data:
-      entity_id: light.alns_room_dimmer
-    service: light.turn_off
+    service: homeassistant.turn_off
+    entity_id: light.alns_room_dimmer
+
+##########################################################

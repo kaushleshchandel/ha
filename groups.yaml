@@ -1,3 +1,4 @@
+
 #Groups
 # Example configuration.yaml entry
  
@@ -18,25 +19,9 @@ entity_whitelist:
 entity_blacklist:
   - sensor.unavailable_entities
   - sensor.available_entities
-  - sensor.Amps_1
-  - sensor.Amps_2
-  - sensor.Amps_Total
-  - sensor.Total_Watts
-  - sensor.Volts_1
-  - sensor.Volts_2
   - sensor.Updater
-  - sensor.Frequency
   - sensor.IPv4_address_eth0
   - sensor.IPv6_address_eth1
-  - sensor.Power_Factor
-  - zwave.leviton_dzpd3_1lw_plug_in_dimming_lamp_module
-  - zwave.leviton_dzpd3_1lw_plug_in_dimming_lamp_module_2
-  - light.philips_lwb006_2a5c5b10_level_on_off
-  - light.Philips_LWB006_2a5c5b10_level
-  - light.Philips_LWB006_4f104010_level
-  - light.Philips_LWB006_6c005b10_level
-  - sensor.philips_rwl020_bcac0b04_power
-  - zwave.z_wave_sigma_designs_uzb_z_wave_usb_adapter
 
 alarm_lights:
   - light.kitchen_sink_light
@@ -47,3 +32,9 @@ alarm_lights:
 outdoor_lights:
   - light.backyard_light
   - light.porch
+
+indoor_default_on_lights:
+  - light.loft
+  - light.entrance
+  - light.alns_room_dimmer
+

@@ -1,3 +1,6 @@
+substitutions:
+  devicename: audio_playback_garage
+
 esphome:
   name: audio_playback_garage
   platform: ESP8266
@@ -13,6 +16,8 @@ wifi:
     password: "kvLxaXyumFys"
 
 switch:
+  - platform: restart
+    name: "$devicename Restart"
   - platform: template
     name: "Turning on Outdoor lights"
     id: template_swi_1
