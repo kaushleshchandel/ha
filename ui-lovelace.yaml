@@ -18,7 +18,7 @@ views:
             icon: 'mdi:ceiling-light'
           - entity: light.dining_table
             icon: 'mdi:ceiling-light'
-          - entity: light.garage
+          - entity: light.garage_light
           - entity: light.main_entrance
             name: Entrance
           - entity: light.chandleir
@@ -221,7 +221,7 @@ views:
     title: Climate
   - badges:
       - entity: switch.garage_opener
-      - entity: light.garage
+      - entity: light.garage_light
     cards:
       - entities:
           - entity: binary_sensor.rfkey_1

@@ -1,4 +1,4 @@
-- alias: TestPush
+- alias: "Z: TestPush"
   trigger:
     platform: numeric_state
     entity_id: input_number.garage_timer_slider

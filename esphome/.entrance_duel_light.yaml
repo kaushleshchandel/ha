@@ -1,0 +1,48 @@
+substitutions:
+  devicename: entrance_duel_light
+  device_shortname: Entrance
+
+<<: !include .base.common1m.yaml
+
+#Sonoff pin mapping
+#GPIO0	Button (inverted)
+#GPIO1	TX pin (C1 Pin 2)
+#GPIO3	RX pin (C1 Pin 3)
+#GPIO12	Relay
+#GPIO13	Green LED (inverted)
+#GPIO14	Optional Sensor (C1 Pin 5)
+
+switch:
+  - platform: gpio
+    pin: GPIO12
+    name: "Garage Door Open Switch"
+    id: open_switch
+  - platform: gpio
+    pin: GPIO12
+    name: "Garage Door Close Switch"
+    id: close_switch
+cover:
+  - platform: template
+    name: "Garage Door"
+    open_action:
+      # Cancel any previous action
+      - switch.turn_off: close_switch
+      # Turn the OPEN switch on briefly
+      - switch.turn_on: open_switch
+      - delay: 0.1s
+      - switch.turn_off: open_switch
+    close_action:
+      - switch.turn_off: open_switch
+      - switch.turn_on: close_switch
+      - delay: 0.1s
+      - switch.turn_off: close_switch
+    stop_action:
+      - switch.turn_off: close_switch
+      - switch.turn_off: open_switch
+    optimistic: true
+    assumed_state: true
+
+status_led:
+  pin:
+    number: GPIO13
+    inverted: yes

@@ -1,0 +1,68 @@
+substitutions:
+  devicename: chandelier_loft_duel
+  lightname_A: Chandelier
+  lightname_B: Loft
+
+<<: !include .base.common1m.yaml
+
+
+################## CODE STARTS HERFE #####################
+
+
+<<: !include .base.common1m.yaml
+
+output:
+  - platform: gpio
+    pin: GPIO4
+    id: GPIOLIGHTA
+  - platform: gpio
+    pin: GPIO15
+    id: GPIOLIGHTB
+
+status_led:
+  pin:
+    number: GPIO0
+    inverted: true
+
+binary_sensor:
+  - platform: gpio
+    internal: true
+    pin: GPIO13
+    id: switch_1
+    on_press:
+      - light.toggle:
+            id: Relay_1
+    on_release:
+      - light.toggle:
+            id: Relay_1
+
+  - platform: gpio
+    internal: true
+    pin: GPIO5
+    id: switch_2
+    on_press:
+      - light.toggle:
+            id: Relay_2
+    on_release:
+      - light.toggle:
+            id: Relay_2
+
+light:
+  - platform: binary
+    name: "$lightname_A"
+    output: GPIOLIGHTA
+    id: Relay_1
+  - platform: binary
+    name: "$lightname_B"
+    output: GPIOLIGHTB
+    id: Relay_2
+
+# GPIO0 - Led
+# GPIO02 - Button 1
+# GPIO04 - Relay 1
+# GPIO05 - Switch 2
+# GPIO12 I2C SDA
+# GPIO13 - Switch 1
+# GPIO14 - I2C SCL
+# GPIO15 - Relay 2
+# GPIO16 - ADE7953 IRQ

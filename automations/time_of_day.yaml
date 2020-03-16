@@ -1,0 +1,35 @@
+#Turn ON Kitchen Lights with Chandleri lights at night
+- id: '874114528165816007'
+  alias: 'LIGHT: Kitchen Light on at night when Chandeleir is Turned On'
+  description: Turn on Kitchen Sink Light with Chandleir
+  trigger:
+  - entity_id: light.chandelier
+    from: 'off'
+    platform: state
+    to: 'on'
+  condition:
+    - condition: time
+      after: '22:00:00'
+      before: '06:00:00'
+  action:
+    data:
+      entity_id: light.kitchen_sink_light
+    service: light.turn_on
+
+#Turn OFF Kitchen Lights with Chandleri lights at night
+- id: '8744528114528165816007'
+  alias: 'LIGHT: Kitchen Light OFF at night when Chandeleir is Turned OFF'
+  description: Turn OFF Kitchen Sink Light with Chandleir
+  trigger:
+  - entity_id: light.chandelier
+    from: 'on'
+    platform: state
+    to: 'off'
+  condition:
+    - condition: time
+      after: '22:00:00'
+      before: '06:00:00'
+  action:
+    data:
+      entity_id: light.kitchen_sink_light
+    service: light.turn_off

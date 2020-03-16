@@ -1,0 +1,31 @@
+substitutions:
+  devicename: garage_multi_sensor
+  device_shortname: garage_multi_sensor
+
+<<: !include .base.common_8266.yaml
+
+# Example configuration entry
+binary_sensor:
+  - platform: gpio
+    name: "Garage Door"
+    pin: D1
+    device_class: garage_door
+  - platform: gpio
+    name: "Homelink B"
+    pin: D2
+    filters:
+      - invert:
+  - platform: gpio
+    name: "Kitchen Door"
+    pin: D5
+    device_class: door
+  - platform: gpio
+    name: "Garage PIR Sensor"
+    pin: D6
+    device_class: occupancy
+
+
+status_led:
+  pin:
+    number: GPIO2
+    inverted: yes        

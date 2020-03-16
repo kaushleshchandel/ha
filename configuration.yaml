@@ -16,12 +16,12 @@ default_config:
     ssl_key: /ssl/privkey.pem
 
 
-zha: 
-  usb_path: /dev/ttyUSB1
-  database_path: /config/zigbee.db
+#zha: 
+#  usb_path: /dev/ttyUSB1
+#  database_path: /config/zigbee.db
 
-zwave:
-  usb_path: /dev/ttyUSB0
+#zwave:
+#  usb_path: /dev/ttyUSB0
 
 tuya:
   username: !secret tuya_user
@@ -52,32 +52,14 @@ automation: !include_dir_merge_list automations
 
 #Load from Single files
 group: !include groups.yaml
-#climate: !include climate.yaml
-#emulated_hue: !include emulated_hue.yaml
+climate: !include climate.yaml
+emulated_hue: !include emulated_hue.yaml
 
 
 #Input Variables
 input_boolean: !include_dir_merge_named input_boolean
 input_number: !include_dir_merge_named input_number
 input_select: !include_dir_merge_named input_select
-
-
-history:
-  include:
-    domains:
-      - sensor
-      - switch
-      - media_player
-      - light
-      - binary_sensor
-      - cover
-
-  exclude:
-    entities:
-     - sensor.alans_room_pressure
-     - sensor.outdoor_pressure
-     - sensor.garage_pressure
-     - sensor.laundry_pressure
 
 mqtt:
   broker: 192.168.0.13
@@ -86,15 +68,21 @@ mqtt:
   username: ""
   password: ""
 
+# Example configuration.yaml entry
+alarm_control_panel:
+  - platform: manual
+    name: Home Alarm
+    code: !secret control_panel_password
+    pending_time: 30
+    delay_time: 20
+    trigger_time: 4
+    disarmed:
+      trigger_time: 0
+    armed_home:
+      pending_time: 0
+      delay_time: 0
 
-lock:
-  - platform: mqtt
-    name: Frontdoor
-    state_topic: "home-assistant/frontdoor/"
-    command_topic: "home-assistant/frontdoor/set"
-    payload_lock: "LOCK"
-    payload_unlock: "UNLOCK"
-    optimistic: false
-    qos: 1
-    retain: true
-    value_template: '{{ value.x }}'
+
+shelly:
+#  cloud_auth_key: "MTljYTJ1aWQB7297B525947EE8A7A6C84744D8A45D02044A8CC10CC1D32854AB4C07D87D3CD31B2E9D576A489F4"
+  #cloud_server: "shelly-11-eu.shelly.cloud"

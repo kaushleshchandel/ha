@@ -1,0 +1,31 @@
+
+substitutions:
+  devicename: outdoor_bme280
+  device_shortname: Outdoor
+
+#Subsitution File inclues everything for the Wifi & Configuraitons
+<<: !include .base.common_8266.yaml
+
+i2c:
+  sda: D1
+  scl: D2
+  scan: True
+
+#BME 280 Sensor
+sensor:
+  - platform: bme280
+    temperature:
+      name: ${device_shortname} Temperature
+      oversampling: 16x
+    pressure:
+      name: ${device_shortname} Pressure
+    humidity:
+      name: ${device_shortname} Humidity
+    address: 0x76
+    update_interval: 60s
+
+
+status_led:
+  pin:
+    number: GPIO2
+    inverted: yes    

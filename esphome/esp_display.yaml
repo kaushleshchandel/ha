@@ -1,0 +1,82 @@
+substitutions:
+  devicename: esp_display
+  device_shortname: esp
+
+<<: !include .base.common_8266.yaml
+
+font:
+  - file: 'slkscr.ttf'
+    id: font1
+    size: 8
+
+  - file: 'arial.ttf'
+    id: font3
+    size: 14
+
+i2c:
+  sda: D2
+  scl: D1
+  scan: false
+  frequency: 700khz
+
+text_sensor:
+  - platform: homeassistant
+    entity_id: alarm_control_panel.my_alarm_system
+    name: "Alarm State"
+    id: alarm_state
+
+sensor:
+  - platform: rotary_encoder
+    name: "Rotary Encoder"
+    pin_a: D5
+    pin_b: D6
+    min_value: 10
+    max_value: 50
+    id: rencoder  
+  - platform: dht
+    pin: D8
+    temperature:
+      name: "Loft Temperature"
+    humidity:
+      name: "Loft Humidity"
+    update_interval: 60s
+    
+time:
+  - platform: homeassistant
+    id: esptime
+     
+switch:
+  - platform: gpio
+    pin: D7
+    name: "Rotary Switch"
+
+display:
+  - platform: ssd1306_i2c
+    model: "SH1106 128x32"
+    address: 0x3C
+    id: my_display
+    brightness : 0.5
+    pages:
+      - id: page_init
+        lambda: |-
+          it.print(0, 10, id(font1), "Welcome!");
+      - id: page_status
+        lambda: |-
+          it.printf(64, 0, id(font1), TextAlign::TOP_CENTER, "Humidity : %.1f", id(rencoder).state.c_str());
+      - id: page_setting
+        lambda: |-
+          it.printf(64, 0, id(font1), TextAlign::TOP_CENTER, "Alarm State: %s", id(alarm_state).state.c_str());
+      - id: page_error
+        lambda: |-
+          it.printf(64, 0, id(font1), TextAlign::TOP_CENTER, "Error");
+          
+interval:
+  - interval: 5s
+    then:
+      - display.page.show: page_status
+      - component.update: my_display
+      
+status_led:
+  pin:
+    number: GPIO2
+    inverted: yes    

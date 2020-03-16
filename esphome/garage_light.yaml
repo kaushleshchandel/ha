@@ -1,0 +1,48 @@
+substitutions:
+  devicename: garage_light
+
+<<: !include .base.common1m.yaml
+
+output:
+  - platform: gpio
+    pin: GPIO12
+    id: GPIOLIGHT
+
+status_led:
+  pin:
+    number: GPIO13
+    inverted: true
+
+binary_sensor:
+  - platform: gpio
+    pin: GPIO00
+    id: reset
+    internal: true
+    filters:
+      - invert:
+      - delayed_off: 10ms
+    on_press:
+      - light.toggle: 
+          id: Relay_1
+
+  - platform: gpio
+    internal: true
+    pin: GPIO04
+    id: switch_1
+    on_press:
+      - light.toggle:
+            id: Relay_1
+    on_release:
+      - light.toggle:
+            id: Relay_1
+
+light:
+  - platform: binary
+    name: "$devicename"
+    output: GPIOLIGHT
+    id: Relay_1
+
+# BPIO0 - Push Button 
+# GPIO04 - Switch 
+# GPIO12 - Relay
+# GPIO13 - Led Inverted

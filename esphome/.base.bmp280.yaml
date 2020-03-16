@@ -1,0 +1,13 @@
+i2c:
+  sda: D1
+  scl: D2
+  scan: True
+
+#BMP280 Sensor
+sensor:
+  - platform: bmp280
+    temperature:
+      name: ${device_shortname} Temperature
+      oversampling: 16x
+    address: 0x76
+    update_interval: 60s

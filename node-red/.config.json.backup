@@ -416,7 +416,7 @@
   },
   "node-red-contrib-cast": {
    "name": "node-red-contrib-cast",
-   "version": "0.2.12",
+   "version": "0.2.13",
    "local": false,
    "nodes": {
     "cast-to-client": {
@@ -450,7 +450,7 @@
   },
   "node-red-contrib-home-assistant-websocket": {
    "name": "node-red-contrib-home-assistant-websocket",
-   "version": "0.19.1",
+   "version": "0.19.5",
    "local": false,
    "nodes": {
     "server": {
@@ -1195,7 +1195,7 @@
   },
   "node-red-node-email": {
    "name": "node-red-node-email",
-   "version": "1.7.3",
+   "version": "1.7.6",
    "local": false,
    "nodes": {
     "email": {
@@ -1318,7 +1318,7 @@
   },
   "node-red-node-rbe": {
    "name": "node-red-node-rbe",
-   "version": "0.2.6",
+   "version": "0.2.8",
    "local": false,
    "nodes": {
     "rbe": {
@@ -1439,6 +1439,57 @@
      "file": "/opt/node_modules/node-red-node-twitter/27-twitter.js"
     }
    }
+  },
+  "node-red-node-mysql": {
+   "name": "node-red-node-mysql",
+   "version": "0.0.19",
+   "local": true,
+   "nodes": {
+    "mysql": {
+     "name": "mysql",
+     "types": [
+      "MySQLdatabase",
+      "mysql"
+     ],
+     "enabled": true,
+     "local": true,
+     "module": "node-red-node-mysql",
+     "file": "/config/node-red/node_modules/node-red-node-mysql/68-mysql.js"
+    }
+   }
+  },
+  "node-red-contrib-watt2kwh": {
+   "name": "node-red-contrib-watt2kwh",
+   "version": "0.1.1",
+   "local": true,
+   "nodes": {
+    "simpletime": {
+     "name": "simpletime",
+     "types": [
+      "watt2kwh"
+     ],
+     "enabled": true,
+     "local": true,
+     "module": "node-red-contrib-watt2kwh",
+     "file": "/config/node-red/node_modules/node-red-contrib-watt2kwh/watt2kwh.js"
+    }
+   }
+  }
+ },
+ "users": {
+  "_": {
+   "editor": {
+    "view": {
+     "view-show-grid": true,
+     "view-snap-grid": true,
+     "view-grid-size": "20",
+     "view-node-status": true,
+     "view-node-show-label": true,
+     "view-show-tips": true
+    }
+   },
+   "menu-menu-item-sidebar": true,
+   "menu-menu-item-palette": false
   }
  }
 }

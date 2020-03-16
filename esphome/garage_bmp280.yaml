@@ -1,0 +1,25 @@
+substitutions:
+  devicename: garage_bmp280
+  device_shortname: Garage
+
+<<: !include .base.common_8266.yaml
+
+i2c:
+  sda: D1
+  scl: D2
+  scan: True
+
+#BMP280 Sensor
+sensor:
+  - platform: bmp280
+    temperature:
+      name: ${device_shortname} Temperature
+      oversampling: 16x
+    address: 0x76
+    update_interval: 60s
+
+
+status_led:
+  pin:
+    number: GPIO2
+    inverted: yes    

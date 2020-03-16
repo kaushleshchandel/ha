@@ -1,0 +1,98 @@
+# Trigger Alartm when in Armed Mode
+- alias: 'ALARM: Trigger alarm while armed away'
+  trigger:
+    # If Main door is opened
+    - platform: state
+      entity_id: binary_sensor.main_door_sensor_aqara
+      from: 'off'
+      to: 'on'
+    # If Kitchen door is opened
+    - platform: state
+      entity_id: binary_sensor.kitchen_door_sensor_aqara
+      from: 'off'
+      to: 'on'
+
+    # if Motion is Detected by any of the PIR Sensors
+    - platform: state
+      entity_id: binary_sensor.garage_motion_aqara
+      from: 'Clear'
+      to: 'Detected'
+    - platform: state
+      entity_id: binary_sensor.loft_motion_aqara
+      from: 'Clear'
+      to: 'Detected'
+    - platform: state
+      entity_id: binary_sensor.kitchen_motion_aqara
+      from: 'Clear'
+      to: 'Detected'
+    - platform: state
+      entity_id: binary_sensor.living_room_motion_aqara
+      from: 'Clear'
+      to: 'Detected'
+
+    # if Occupancy Status Changes in any area
+
+    - platform: state
+      entity_id: binary_sensor.living_room_occupancy_aqara
+      from: 'Clear'
+      to: 'Detected'
+    - platform: state
+      entity_id: binary_sensor.loft_occupancy_aqara
+      from: 'Clear'
+      to: 'Detected'
+    - platform: state
+      entity_id: binary_sensor.kitchen_occupancy_aqara
+      from: 'Clear'
+      to: 'Detected'
+    - platform: state
+      entity_id: binary_sensor.living_room_occupancy_aqara
+      from: 'Clear'
+      to: 'Detected'
+
+
+    # if an unexpected light is turned on
+    - platform: state
+      entity_id: light.garage_light
+      from: 'off'
+      to: 'on'
+
+  condition:
+    - condition: state
+      entity_id: alarm_control_panel.ha_alarm
+      state: armed_away
+  action:
+    service: alarm_control_panel.alarm_trigger
+    entity_id: alarm_control_panel.ha_alarm
+
+#Send a notification
+- alias: 'ALARM: Send notification when alarm triggered'
+  trigger:
+    - platform: state
+      entity_id: alarm_control_panel.ha_alarm
+      to: 'triggered'
+  action:
+    - service: notify.notify
+      data:
+        message: "ALARM! The alarm has been triggered"
+    - service: notify.mypushbullet
+      data_template:
+        title: "HOME ALARM!"
+        message: "Alarm has triggered"        
+    - service: script.turn_on
+      entity_id: script.light_loop
+
+- alias: 'ALARM: Send notification when alarm is Disarmed'
+  trigger:
+    - platform: state
+      entity_id: alarm_control_panel.home_alarm
+      to: 'disarmed'
+  action:
+    - service: script.turn_off
+      entity_id: script.light_loop
+    - service: notify.notify
+      data_template:
+        message: "ALARM! The alarm is Disarmed at {{ states('sensor.date_time') }}"        
+    - service: notify.mypushbullet
+      data_template:
+        title: "HOME ALARM!"
+        message: "ALARM! The alarm is Disarmed at {{ states('sensor.date_time') }}"        

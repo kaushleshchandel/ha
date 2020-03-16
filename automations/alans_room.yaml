@@ -6,7 +6,6 @@
     platform: time
   condition: []
   action:
-  - alias: ''
     data:
       entity_id: light.alans_night_lamp
     service: light.turn_on
@@ -20,7 +19,36 @@
     platform: time
   condition: []
   action:
-  - alias: ''
     data:
       entity_id: light.alans_night_lamp
     service: light.turn_ff
+
+
+- id: '8111257484520207'
+  alias: 'LIGHT: Alans Room Shelly Dimmer ON'
+  description: Turn on Alans Room Light 
+  trigger:
+  - entity_id: switch.alans_room_dimmer_template_switch
+    from: 'off'
+    platform: state
+    to: 'on'
+  condition: []
+  action:
+    data:
+      entity_id: light.alns_room_dimmer
+    service: light.turn_on
+
+
+- id: '1811251748450207'
+  alias: 'LIGHT: Alans Room Shelly Dimmer  OFF'
+  description: Turn off Alans Room Light
+  trigger:
+  - entity_id: switch.alans_room_dimmer_template_switch
+    from: 'on'
+    platform: state
+    to: 'off'
+  condition: []
+  action:
+    data:
+      entity_id: light.alns_room_dimmer
+    service: light.turn_off

@@ -7,17 +7,12 @@
     platform: sun
   condition: []
   action:
-  - alias: ''
-    data:
-      entity_id: light.backyard
     service: light.turn_on
-  - alias: ''
     data:
-      entity_id: light.porch
-    service: light.turn_on
+      entity_id: group.outdoor_lights
 
 #Auto Off lights when Sun rises
-- id: aa5c07ebe5274b89a13aa8cc806c3989
+- id: e5274b89a1aa5c07eb3a07ebe5a8cc806c3989
   alias: 'LIGHT: Outdoor Lights OFF'
   description: Turn off Outdoor lights when Sun is up
   trigger:
@@ -25,11 +20,6 @@
     platform: sun
   condition: []
   action:
-  - alias: ''
-    data:
-      entity_id: light.backyard
     service: light.turn_off
-  - alias: ''
     data:
-      entity_id: light.porch
-    service: light.turn_off
+      entity_id: group.outdoor_lights

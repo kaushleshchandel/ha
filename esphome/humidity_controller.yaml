@@ -1,0 +1,36 @@
+substitutions:
+  devicename: humidity_controller
+  device_shortname: Controller
+
+<<: !include .base.common1m.yaml
+
+#Sonoff pin mapping
+#GPIO0	Button (inverted)
+#GPIO1	TX pin (C1 Pin 2)
+#GPIO3	RX pin (C1 Pin 3)
+#GPIO12	Relay
+#GPIO13	Green LED (inverted)
+#GPIO14	Optional Sensor (C1 Pin 5)
+
+binary_sensor:
+  - platform: gpio
+    pin:
+      number: GPIO0
+      mode: INPUT_PULLUP
+      inverted: True
+    name: "Button"
+    on_press:
+      - switch.toggle: relay
+
+switch:
+  - platform: gpio
+    name: "Humidifier Relay"
+    pin: GPIO12
+    id: relay
+  - platform: restart
+    name: ${devicename} Restart
+
+status_led:
+  pin:
+    number: GPIO13
+    inverted: yes

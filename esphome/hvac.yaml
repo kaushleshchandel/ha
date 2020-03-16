@@ -1,0 +1,77 @@
+substitutions:
+  devicename: hvac
+  device_shortname: hvac
+
+#Subsitution File inclues everything for the Wifi & Configuraitons
+<<: !include .base.common_8266.yaml
+
+binary_sensor:
+  - platform: template
+    name: "Heat Low"
+    lambda: |-
+      if (id(counter_heat).state > 2500) {
+        return true;
+      } else {
+        return false;
+      }
+  - platform: template
+    name: "Heat High"
+    lambda: |-
+      if (id(counter_high).state > 2500) {
+        return true;
+      } else {
+        return false;
+      }
+  - platform: template
+    name: "Fan"
+    lambda: |-
+      if (id(counter_fan).state > 2500) {
+        return true;
+      } else {
+        return false;
+      }
+  - platform: template
+    name: "Cool"
+    lambda: |-
+      if (id(counter_cool).state > 2500) {
+        return true;
+      } else {
+        return false;
+      }
+
+
+sensor:
+  - platform: pulse_counter
+    pin: D5
+    name: "Heat Counter"
+    id: counter_heat
+    accuracy_decimals: 0
+    update_interval: 5s
+
+  - platform: pulse_counter
+    pin: D2
+    name: "High Counter"
+    id: counter_high
+    accuracy_decimals: 0
+    update_interval: 5s
+    filters:
+
+  - platform: pulse_counter
+    pin: D1
+    name: "Cool Counter"
+    id: counter_cool
+    accuracy_decimals: 0
+    update_interval: 5s
+
+  - platform: pulse_counter
+    pin: D6
+    name: "Fan Counter"
+    id: counter_fan
+    accuracy_decimals: 0
+    update_interval: 5s
+
+
+status_led:
+  pin:
+    number: GPIO2
+    inverted: yes        

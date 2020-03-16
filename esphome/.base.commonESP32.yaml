@@ -1,0 +1,26 @@
+#################### COMMON SETTINGS #########################
+esphome:
+  name: $devicename
+  platform: ESP32
+  board: esp-wrover-kit
+  
+  
+
+wifi:
+  networks:
+  - ssid: !secret WIFI_SSID
+    password: !secret WIFI_password
+    priority: 0
+  ap:
+    ssid: $devicename
+    password: !secret AP_password
+
+logger: 
+
+api:
+
+ota:
+  safe_mode: True
+  id: myota
+
+#################### COMMON SETTINGS #########################

@@ -3,17 +3,58 @@
     zwave.leviton_dzpd3_1lw_plug_in_dimming_lamp_module:
       state: on
       brightness: 10
+
 - name: Home
   entities:
+    switch.welcome_home : on
     light.tv_back_light:
       state: on
       brightness: 125
+    light.chandleir: on
+    light.loft: on
+    light.main_entrance: on
+    light.kitchen_sink_light: on
+
 - name: Sleeping
   entities:
     zwave.leviton_dzpd3_1lw_plug_in_dimming_lamp_module:
       state: on
-      brightness: 10
-    light.garage: off
-- name: Away
+      brightness: 1
+    light.360178242462ab2e57ae : off
+    light.36017824d8f15ba5221f: off
+    light.alans_night_lamp : off
+    light.garage_light: off
+    light.chandleir: off
+    light.loft: off
+    light.main_entrance: off
+    light.kitchen_sink_light: off
+
+- name: Away-day
   entities:
-    light.tv_back_light: off
+    light.360178242462ab2e57ae : off
+    light.alans_night_lamp : off
+    light.chandleir: off
+    light.garage_light: off
+    light.loft: off
+    switch.setting_home_away_mode : on
+    light.main_entrance: off
+    light.kitchen_sink_light: off
+    light.36017824d8f15ba5221f: off
+    light.leviton_dzpd3_1lw_plug_in_dimming_lamp_module_level: off
+    light.leviton_dzpd3_1lw_plug_in_dimming_lamp_module_level_2: off
+
+- name: Away-night
+  entities:
+    switch.setting_home_away_mode : on
+    light.360178242462ab2e57ae : off
+    light.alans_night_lamp : off
+    light.chandleir: off
+    light.garage_light: off
+    light.loft: on
+    light.backyard: on
+    light.porch: on
+    light.main_entrance: on
+    light.kitchen_sink_light: off
+    light.36017824d8f15ba5221f: off
+    light.leviton_dzpd3_1lw_plug_in_dimming_lamp_module_level: off
+    light.leviton_dzpd3_1lw_plug_in_dimming_lamp_module_level_2: off

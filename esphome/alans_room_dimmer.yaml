@@ -1,0 +1,38 @@
+substitutions:
+  devicename: alans_room_dimmer
+  device_shortname: Alans Beroom
+
+<<: !include .base.common_8266.yaml
+
+# Example configuration entry
+sensor:
+  - platform: adc
+    pin: A0
+    name: "Alans Room Custom Dimmer Switch"
+    id: custom_dimmer_switch_alans_room
+    update_interval: 1s
+    accuracy_decimals: 0
+    filters:
+      - multiply: 255
+    on_value_range:
+            - below: 2
+              then:
+                - switch.turn_off: my_custom_switch
+            - above: 250
+              then:
+                - switch.turn_on: my_custom_switch    
+
+switch:
+  - platform: template
+    name: "ALans Room Dimmer Template Switch"
+    id: my_custom_switch
+    lambda: |-
+          if (id(custom_dimmer_switch_alans_room).state <2) {
+            return false;
+          } else {
+            return true;
+          }
+status_led:
+  pin:
+    number: GPIO2
+    inverted: yes
