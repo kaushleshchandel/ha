@@ -15,39 +15,21 @@
     # if Motion is Detected by any of the PIR Sensors
     - platform: state
       entity_id: binary_sensor.garage_motion_aqara
-      from: 'Clear'
-      to: 'Detected'
+      from: 'off'
+      to: 'on'
     - platform: state
       entity_id: binary_sensor.loft_motion_aqara
-      from: 'Clear'
-      to: 'Detected'
+      from: 'off'
+      to: 'on'
     - platform: state
       entity_id: binary_sensor.kitchen_motion_aqara
-      from: 'Clear'
-      to: 'Detected'
+      from: 'off'
+      to: 'on'
     - platform: state
       entity_id: binary_sensor.living_room_motion_aqara
-      from: 'Clear'
-      to: 'Detected'
+      from: 'off'
+      to: 'on'
 
-    # if Occupancy Status Changes in any area
-
-    - platform: state
-      entity_id: binary_sensor.living_room_occupancy_aqara
-      from: 'Clear'
-      to: 'Detected'
-    - platform: state
-      entity_id: binary_sensor.loft_occupancy_aqara
-      from: 'Clear'
-      to: 'Detected'
-    - platform: state
-      entity_id: binary_sensor.kitchen_occupancy_aqara
-      from: 'Clear'
-      to: 'Detected'
-    - platform: state
-      entity_id: binary_sensor.living_room_occupancy_aqara
-      from: 'Clear'
-      to: 'Detected'
 
     # if an unexpected light is turned on
     - platform: state
@@ -93,14 +75,14 @@
   trigger:
     - platform: state
       entity_id: alarm_control_panel.home_alarm
-      to: 'disarmed'
+      to: 'Disarmed'
   action:
     - service: script.turn_off
       entity_id: script.light_loop
     - service: notify.notify
       data_template:
-        message: "ALARM! The alarm is Disarmed at {{ states('sensor.date_time') }}"        
+        message: "ALARM! The alarm is Disarmed at {{ states('sensor.date_time') }}"
     - service: notify.mypushbullet
       data_template:
         title: "HOME ALARM!"
-        message: "ALARM! The alarm is Disarmed at {{ states('sensor.date_time') }}"        
+        message: "ALARM! The alarm is Disarmed at {{ states('sensor.date_time') }}"

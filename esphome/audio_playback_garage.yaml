@@ -1,19 +1,14 @@
 substitutions:
   devicename: audio_playback_garage
+  device_shortname: garage_audio
 
-esphome:
-  name: audio_playback_garage
-  platform: ESP8266
-  board: nodemcuv2
+<<: !include .base.common_8266.yaml
 
-wifi:
-  ssid: "IOT"
-  password: "608980608980"
+sensor:
+  - platform: wifi_signal
+    name: "$devicename WiFi Signal"
+    update_interval: 60s
 
-  # Enable fallback hotspot (captive portal) in case wifi connection fails
-  ap:
-    ssid: "Audio Playback Garage"
-    password: "kvLxaXyumFys"
 
 switch:
   - platform: restart
@@ -69,13 +64,3 @@ dfplayer:
   on_finished_playback:
     then:
       logger.log: 'Playback finished event'
-
-captive_portal:
-
-# Enable logging
-logger:
-  level: VERBOSE
-# Enable Home Assistant API
-api:
-
-ota:

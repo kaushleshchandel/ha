@@ -3,15 +3,12 @@ esphome:
   name: $devicename
   platform: ESP8266
   board: d1_mini
-
+  arduino_version: espressif8266@2.2.3
 wifi:
   networks:
   - ssid: IOT
     password: !secret WIFI_password
     priority: 3
-  - ssid: HOME2G
-    password: !secret WIFI_password
-    priority: 2
   - ssid: phone
     password: !secret WIFI_password
     priority: 1

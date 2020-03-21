@@ -33,6 +33,12 @@ binary_sensor:
     on_press:
       - light.toggle: $devicename
 
+sensor:
+  - platform: wifi_signal
+    name: "$devicename WiFi Signal"
+    update_interval: 60s
+
+
 output:
   - platform: gpio
     id: light_relay

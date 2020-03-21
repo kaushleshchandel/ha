@@ -9,8 +9,6 @@ substitutions:
 ################## CODE STARTS HERFE #####################
 
 
-<<: !include .base.common1m.yaml
-
 switch:
   - platform: restart
     name: "$devicename Restart"
@@ -60,6 +58,10 @@ light:
     name: "$lightname_B"
     output: GPIOLIGHTB
     id: Relay_2
+sensor:
+  - platform: wifi_signal
+    name: "$devicename WiFi Signal"
+    update_interval: 60s
 
 # GPIO0 - Led
 # GPIO02 - Button 1

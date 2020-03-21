@@ -13,6 +13,9 @@ i2c:
 
 #BME 280 Sensor
 sensor:
+  - platform: wifi_signal
+    name: "$devicename WiFi Signal"
+    update_interval: 60s
   - platform: bme280
     temperature:
       name: ${device_shortname} Temperature

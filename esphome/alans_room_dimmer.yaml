@@ -6,6 +6,9 @@ substitutions:
 
 # Example configuration entry
 sensor:
+  - platform: wifi_signal
+    name: "$devicename WiFi Signal"
+    update_interval: 60s
   - platform: adc
     pin: A0
     name: "Alans Room Custom Dimmer Switch"
@@ -13,14 +16,14 @@ sensor:
     update_interval: 1s
     accuracy_decimals: 0
     filters:
-      - multiply: 255
+      - multiply: 180
     on_value_range:
-            - below: 2
+            - below: 1
               then:
                 - switch.turn_off: my_custom_switch
-            - above: 250
+            - above: 1
               then:
-                - switch.turn_on: my_custom_switch    
+                - switch.turn_on: my_custom_switch
 
 switch:
   - platform: restart

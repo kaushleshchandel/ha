@@ -5,7 +5,7 @@ light_flash:
       data:
         entity_id: group.alarm_lights
     - delay:
-        seconds: 1
+        seconds: 0.5
     - service: homeassistant.turn_off
       data:
         entity_id: group.alarm_lights
@@ -18,8 +18,7 @@ light_loop:
   sequence:
     - delay:
         # time for flash light off
-        seconds: 1
+        seconds: 0.5
     - service: script.turn_on
       data:
         entity_id: script.light_flash
-

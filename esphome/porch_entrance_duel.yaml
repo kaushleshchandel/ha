@@ -8,9 +8,6 @@ substitutions:
 
 ################## CODE STARTS HERFE #####################
 
-
-<<: !include .base.common1m.yaml
-
 output:
   - platform: gpio
     pin: GPIO4

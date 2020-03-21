@@ -24,6 +24,12 @@ switch:
   - platform: restart
     name: "$devicename Restart"
 
+sensor:
+    - platform: wifi_signal
+    name: "$devicename WiFi Signal"
+    update_interval: 60s
+
+
 cover:
   - platform: template
     name: "Garage Door"

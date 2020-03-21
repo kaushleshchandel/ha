@@ -5,14 +5,17 @@
   trigger:
   - entity_id: light.garage_light
     for: '00:{{ states("input_number.garage_timer_slider") | int }} :00'
-    from: 'off'
     platform: state
+    from: 'off'
     to: 'on'
   - entity_id: binary_sensor.garage_motion
-    from: 'Detected'
     platform: state
-    to: 'Clear'
-  condition: []
+    from: 'on'
+    to: 'off'
+  condition:
+    condition: state 
+    entity_id: binary_sensor.garage_occupancy_aqara
+    state: 'off'
   action:
     service: homeassistant.turn_off
     entity_id: light.garage_light
@@ -23,26 +26,26 @@
   alias: 'LIGHT: Turn on Garage Lights  Kitchen Door Open'
   description: Turn on Garage Light
   trigger:
-  - entity_id: binary_sensor.kitchen_door
-    from: 'Off'
+  - entity_id: binary_sensor.kitchen_door_sensor_aqara
     platform: state
-    to: 'On'
+    from: 'off'
+    to: 'on'
   - entity_id: binary_sensor.garage_door
-    from: 'Closed'
     platform: state
-    to: 'Open'
+    from: 'off'
+    to: 'on'
   - entity_id: binary_sensor.garage_occupancy_aqara
-    from: 'Clear'
     platform: state
-    to: 'Detected'
+    from: 'off'
+    to: 'on'
   - entity_id: binary_sensor.garage_motion_aqara
-    from: 'Off'
     platform: state
-    to: 'On'
-  condition:
-    condition: state  # 'day' condition: from sunrise until sunset
-    entity_id: sun.sun
-    state: 'below_horizon'
+    from: 'off'
+    to: 'on'
+  #condition:
+#    condition: state  # 'day' condition: from sunrise until sunset
+#    entity_id: sun.sun
+#    state: 'below_horizon'
   action:
     service: homeassistant.turn_on
     entity_id: light.garage_light
@@ -53,7 +56,7 @@
   alias: 'LIGHT: Turn on Kitchen on Kitchen door Open at night'
   description: Turn on Kitchen Light
   trigger:
-  - entity_id: binary_sensor.garage_motion
+  - entity_id: binary_sensor.kitchen_door_sensor_aqara
     from: 'off'
     platform: state
     to: 'on'

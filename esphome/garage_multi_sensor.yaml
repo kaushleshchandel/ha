@@ -6,6 +6,9 @@ substitutions:
 
 # Example configuration entry
 binary_sensor:
+  - platform: wifi_signal
+    name: "$devicename WiFi Signal"
+    update_interval: 60s
   - platform: gpio
     name: "Garage Door"
     pin: D1

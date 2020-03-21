@@ -4,12 +4,6 @@ substitutions:
 
 <<: !include .base.common1m.yaml
 
-
-################## CODE STARTS HERFE #####################
-
-
-<<: !include .base.common1m.yaml
-
 output:
   - platform: gpio
     pin: GPIO12
@@ -43,11 +37,16 @@ binary_sensor:
     id: switch_1
     on_press:
       - light.toggle:
-            id: Relay_1
+          id: Relay_1
     on_release:
       - light.toggle:
-            id: Relay_1
+          id: Relay_1
 
+sensor:
+  - platform: wifi_signal
+    name: "$devicename WiFi Signal"
+    update_interval: 60s
+          
 light:
   - platform: binary
     name: "$devicename"

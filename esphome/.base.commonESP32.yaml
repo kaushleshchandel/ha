@@ -10,9 +10,6 @@ wifi:
   - ssid: IOT
     password: !secret WIFI_password
     priority: 3
-  - ssid: HOME2G
-    password: !secret WIFI_password
-    priority: 2
   - ssid: phone
     password: !secret WIFI_password
     priority: 1

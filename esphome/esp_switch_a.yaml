@@ -1,0 +1,43 @@
+substitutions:
+  devicename: esp_switch_a
+
+<<: !include .base.common1m.yaml
+
+output:
+  - platform: gpio
+    pin: GPIO12
+    id: GPIOLIGHT
+
+switch:
+  - platform: restart
+    name: "$devicename Restart"
+
+status_led:
+  pin:
+    number: GPIO13
+    inverted: true
+
+binary_sensor:
+  - platform: gpio
+    pin: GPIO00
+    id: reset
+    filters:
+      - invert:
+      - delayed_off: 10ms
+
+light:
+  - platform: binary
+    name: "$devicename"
+    output: GPIOLIGHT
+    id: Relay_1
+
+sensor:
+  - platform: wifi_signal
+    name: "$devicename WiFi Signal"
+    update_interval: 60s
+
+
+# BPIO0 - Push Button 
+# GPIO04 - Switch 
+# GPIO12 - Relay
+# GPIO13 - Led Inverted

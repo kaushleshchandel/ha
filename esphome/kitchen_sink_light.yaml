@@ -39,6 +39,10 @@ binary_sensor:
     on_release:
       - light.toggle:
             id: Relay_1
+sensor:
+  - platform: wifi_signal
+    name: "$devicename WiFi Signal"
+    update_interval: 60s
 
 light:
   - platform: binary

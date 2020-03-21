@@ -24,10 +24,10 @@ entity_blacklist:
   - sensor.IPv6_address_eth1
 
 alarm_lights:
-  - light.kitchen_sink_light
+#  - light.kitchen_sink_light
   - light.loft
-  - light.backyard_light
-  - light.porch
+#  - light.backyard_light
+#  - light.porch
 
 outdoor_lights:
   - light.backyard_light

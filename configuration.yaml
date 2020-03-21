@@ -39,7 +39,7 @@ tts:
   - platform: google_translate
 
 #Load from Directories
-script: !include_dir_merge_list scripts
+#script: !include_dir_merge_list scripts
 scene: !include_dir_merge_list scenes
 light: !include_dir_merge_list lights
 switch: !include_dir_merge_list switches
@@ -84,5 +84,30 @@ alarm_control_panel:
 
 
 shelly:
-#  cloud_auth_key: "MTljYTJ1aWQB7297B525947EE8A7A6C84744D8A45D02044A8CC10CC1D32854AB4C07D87D3CD31B2E9D576A489F4"
-  #cloud_server: "shelly-11-eu.shelly.cloud"
+
+
+script:
+  light_flash:
+    alias: Light flash on
+    sequence:
+      - service: homeassistant.turn_on
+        data:
+          entity_id: group.alarm_lights
+      - delay:
+          seconds: 1
+      - service: homeassistant.turn_off
+        data:
+          entity_id: group.alarm_lights
+      - service: script.turn_on
+        data:
+          entity_id: script.light_loop
+
+  light_loop:
+    alias: Light flash loop
+    sequence:
+      - delay:
+          # time for flash light off
+          seconds: 1
+      - service: script.turn_on
+        data:
+          entity_id: script.light_flash

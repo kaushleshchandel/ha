@@ -41,6 +41,9 @@ binary_sensor:
 
 
 sensor:
+  - platform: wifi_signal
+    name: "$devicename WiFi Signal"
+    update_interval: 60s
   - platform: pulse_counter
     pin: D5
     name: "Heat Counter"

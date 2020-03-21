@@ -40,3 +40,20 @@
     entity_id: light.alns_room_dimmer
 
 ##########################################################
+
+- id: '1811284505174207'
+  alias: 'LIGHT: Alans Room Shelly Dimmer DIM'
+  description: Turn off Alans Room DIM
+  trigger:
+  - entity_id: sensor.alans_room_brightness
+    platform: state
+  condition: []
+  action:
+    service: input_number.set_value
+    service: light.turn_on
+    entity_id: light.alns_room_dimmer
+    data_template:
+      brightness: "{{ states.sensor.alans_room_brightness.state | int }}"
+
+##########################################################
+
