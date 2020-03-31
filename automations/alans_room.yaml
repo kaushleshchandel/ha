@@ -1,59 +1,12 @@
-- id: aa5c07ebe5213aa8cc806c3974b89a88
-  alias: 'LIGHT: AUTO Alans Lamp ON'
-  description: Turn on Alans bedroom lamp at night
+
+##########################################################
+- id: aa5a8c789a1cbe5c03a806e274bc3989
+  alias: 'TV : Turn on TV & Playstation'
   trigger:
-  - at: '20:00:00'
+  - at: 09:59
     platform: time
-  condition: []
   action:
-    service: homeassistant.turn_off
-    entity_id: light.alans_night_lamp
-
-##########################################################
-- id: '8111257484520207'
-  alias: 'LIGHT: Alans Room Shelly Dimmer ON'
-  description: Turn on Alans Room Light 
-  trigger:
-  - entity_id: switch.alans_room_dimmer_template_switch
-    from: 'off'
-    platform: state
-    to: 'on'
-  - platform: state
-    entity_id: sensor.alans_room_brightness
-  condition: []
-  action:
-    service: light.turn_on
-    entity_id: light.alns_room_dimmer
-
-##########################################################
-- id: '1811251748450207'
-  alias: 'LIGHT: Alans Room Shelly Dimmer  OFF'
-  description: Turn off Alans Room Light
-  trigger:
-  - entity_id: switch.alans_room_dimmer_template_switch
-    from: 'on'
-    platform: state
-    to: 'off'
-  condition: []
-  action:
-    service: homeassistant.turn_off
-    entity_id: light.alns_room_dimmer
-
-##########################################################
-
-- id: '1811284505174207'
-  alias: 'LIGHT: Alans Room Shelly Dimmer DIM'
-  description: Turn off Alans Room DIM
-  trigger:
-  - entity_id: sensor.alans_room_brightness
-    platform: state
-  condition: []
-  action:
-    service: input_number.set_value
-    service: light.turn_on
-    entity_id: light.alns_room_dimmer
-    data_template:
-      brightness: "{{ states.sensor.alans_room_brightness.state | int }}"
-
-##########################################################
-
+    - service: homeassistant.turn_on
+      entity_id: switch.alans_tv_shelly
+    - service: homeassistant.turn_on
+      entity_id: switch.playstation_shelly

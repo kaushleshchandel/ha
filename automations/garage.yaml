@@ -1,30 +1,18 @@
 #Turn OFF Garage Lights
-- id: '1578160744520'
-  alias: 'LIGHT: Auto turn off Garage lights'
-  description: Auto off in Set minutes
+- alias: 'LIGHT: Auto turn off Garage lights'
   trigger:
   - entity_id: light.garage_light
-    for: '00:{{ states("input_number.garage_timer_slider") | int }} :00'
     platform: state
-    from: 'off'
     to: 'on'
-  - entity_id: binary_sensor.garage_motion
-    platform: state
-    from: 'on'
-    to: 'off'
-  condition:
-    condition: state 
-    entity_id: binary_sensor.garage_occupancy_aqara
-    state: 'off'
+    for: '00:{{ states("input_number.garage_timer_slider") | int }} :00'
   action:
     service: homeassistant.turn_off
     entity_id: light.garage_light
 
 ##########################################################
+
 #Turn ON Garage Lights
-- id: '874115816452007'
-  alias: 'LIGHT: Turn on Garage Lights  Kitchen Door Open'
-  description: Turn on Garage Light
+- alias: 'LIGHT: Turn on Garage Lights  Kitchen Door Open'
   trigger:
   - entity_id: binary_sensor.kitchen_door_sensor_aqara
     platform: state
@@ -42,36 +30,12 @@
     platform: state
     from: 'off'
     to: 'on'
-  #condition:
-#    condition: state  # 'day' condition: from sunrise until sunset
-#    entity_id: sun.sun
-#    state: 'below_horizon'
   action:
     service: homeassistant.turn_on
     entity_id: light.garage_light
 
 ##########################################################
-#Turn ON Kitchen Lights
-- id: '8741158164515812007'
-  alias: 'LIGHT: Turn on Kitchen on Kitchen door Open at night'
-  description: Turn on Kitchen Light
-  trigger:
-  - entity_id: binary_sensor.kitchen_door_sensor_aqara
-    from: 'off'
-    platform: state
-    to: 'on'
-  condition:
-    condition: state  # 'day' condition: from sunrise until sunset
-    entity_id: sun.sun
-    state: 'below_horizon'
-  action:
-    entity_id: light.kitchen_sink_light
-    service: homeassistant.turn_on
-
-##########################################################
-- id: aa5c03aa8c789a1cbe5806e274bc3989
-  alias: 'SYSTEM: Reset Garage Timer'
-  description: Reset Garage Timer at 6:00
+- alias: 'SYSTEM: Reset Garage Timer'
   trigger:
   - at: 06:00:00
     platform: time

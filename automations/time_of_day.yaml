@@ -1,7 +1,5 @@
 #Turn ON Kitchen Lights with Chandleri lights at night
-- id: '874114528165816007'
-  alias: 'LIGHT: Kitchen Light on at night when Chandeleir is Turned On'
-  description: Turn on Kitchen Sink Light with Chandleir
+- alias: 'LIGHT: Kitchen Light on at night when Chandeleir is Turned On'
   trigger:
   - entity_id: light.chandelier
     from: 'off'
@@ -15,10 +13,8 @@
     service: homeassistant.turn_on
     entity_id: light.kitchen_sink_light
 
-#Turn OFF Kitchen Lights with Chandleri lights at night
-- id: '8744528114528165816007'
-  alias: 'LIGHT: Kitchen Light OFF at night when Chandeleir is Turned OFF'
-  description: Turn OFF Kitchen Sink Light with Chandleir
+#################################################
+- alias: 'LIGHT: Kitchen Light OFF at night when Chandeleir is Turned OFF'
   trigger:
   - entity_id: light.chandelier
     from: 'on'
@@ -32,9 +28,8 @@
     service: homeassistant.turn_off
     entity_id: light.kitchen_sink_light
 
-- id: aa5c07ebe5274b89a13aa8cc806c3988
-  alias: 'LIGHT: Outdoor Lights ON'
-  description: Turn on outdoor lights in the Evening
+################################################
+- alias: 'LIGHT: Outdoor Lights ON'
   trigger:
     platform: sun
     event: sunset
@@ -44,10 +39,9 @@
     service: homeassistant.turn_on
     entity_id: group.outdoor_lights
 
-#Auto Off lights when Sun rises
-- id: e5274b89a1aa5c07eb3a07ebe5a8cc806c3989
-  alias: 'LIGHT: Outdoor Lights OFF'
-  description: Turn off Outdoor lights when Sun is up
+
+#################################################
+- alias: 'LIGHT: Outdoor Lights OFF'
   trigger:
     platform: sun
     event: sunrise
@@ -57,10 +51,8 @@
     service: homeassistant.turn_off
     entity_id: group.outdoor_lights
 
-
-- id: 5274b8cc80689a13aaaa5c07ebec3988
-  alias: 'LIGHT: Auto on at night'
-  description: Turn on some lights in the Evening
+#################################################
+- alias: 'LIGHT: Auto on at night'
   trigger:
     platform: sun
     event: sunset

@@ -38,3 +38,11 @@ indoor_default_on_lights:
   - light.entrance
   - light.alns_room_dimmer
 
+loft_lights:
+  - light.loft_lamp_lower_hue
+  - light.loft_lamp_upper_hue
+  - light.loft
+
+loft_lamp:
+  - light.loft_lamp_lower_hue
+  - light.loft_lamp_upper_hue

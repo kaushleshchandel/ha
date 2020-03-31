@@ -1,0 +1,187 @@
+substitutions:
+  devicename: rf_bridge_sonoff
+  push_delay: 2s
+
+<<: !include .base.common1m.yaml
+
+# '001000100110000110100110' Laundry Door
+# '000010011000011010101001' Alans Room - TV Window
+# '111010101101101000101001' Master Bedroom Window
+# '100111010101101010101001' Alans Window
+# '111100100010101000101001' Computer side Window
+# '001001011101111010101001' Loft Roadside window
+
+#
+#    REMOTE 
+# A1       A2
+# B1       B2
+# C1       C2
+# D1       D2
+#
+# A1 '101001111111100110001000'
+# A2 '101001111111100110001100'
+# B1 '101001111111100110000100'
+# B2 '101001111111100110001001'
+# C1 '101001111111100110000010'
+# C2 '101001111111100110000101'
+# D1 '101001111111100110000001'
+# D2 '101001111111100110000011'
+#
+
+status_led:
+  pin:
+    number: GPIO13
+    inverted: yes
+    
+sensor:
+  - platform: wifi_signal
+    name: "$devicename WiFi Signal"
+    update_interval: 60s
+  - platform: uptime
+    name: "$devicename uptime"
+
+binary_sensor:
+  - platform: status
+    name: Sonoff RF Bridge Status
+  ######### SONOFF REMOTE BUTTONS ############
+  - platform: remote_receiver
+    name: Remote A1
+    id: remote_a1_sonoff
+    rc_switch_raw:
+      code: '101001111111100110001000'
+      protocol: 1
+    filters:
+      delayed_off: $push_delay
+  - platform: remote_receiver
+    name: Remote A2
+    id: remote_a2_sonoff
+    rc_switch_raw:
+      code: '101001111111100110001100'
+      protocol: 1
+    filters:
+      delayed_off: $push_delay
+  - platform: remote_receiver
+    name: Remote B1
+    id: remote_b1_sonoff
+    rc_switch_raw:
+      code: '101001111111100110000100'
+      protocol: 1
+    filters:
+      delayed_off: $push_delay
+  - platform: remote_receiver
+    name: Remote B2
+    id: remote_b2_sonoff
+    rc_switch_raw:
+      code: '101001111111100110001001'
+      protocol: 1
+    filters:
+      delayed_off: $push_delay
+  - platform: remote_receiver
+    name: Remote C1
+    id: remote_c1_sonoff
+    rc_switch_raw:
+      code: '101001111111100110000010'
+      protocol: 1
+    filters:
+      delayed_off: $push_delay
+  - platform: remote_receiver
+    name: Remote C2
+    id: remote_c2_sonoff
+    rc_switch_raw:
+      code: '101001111111100110000101'
+      protocol: 1
+    filters:
+      delayed_off: $push_delay
+  - platform: remote_receiver
+    name: Remote D1
+    id: remote_d1_sonoff
+    rc_switch_raw:
+      code: '101001111111100110000001'
+      protocol: 1
+    filters:
+      delayed_off: $push_delay
+  - platform: remote_receiver
+    name: Remote D2
+    id: remote_d2_sonoff
+    rc_switch_raw:
+      code: '101001111111100110000011'
+      protocol: 1
+    filters:
+      delayed_off: $push_delay
+
+############# Widnow & Door sensors
+  - platform: remote_receiver
+    name: Alans Window
+    id: alans_window_open
+    device_class: window
+    rc_switch_raw:
+      code: '100111010101101010101001'
+      protocol: 1
+    filters:
+      delayed_off: $push_delay
+  - platform: remote_receiver
+    name: Laundry Door
+    id: laundry_door_open
+    device_class: door
+    rc_switch_raw:
+      code: '001000100110000110100110'
+      protocol: 1
+    filters:
+      delayed_off: $push_delay
+  - platform: remote_receiver
+    name: Alans Room TV Side WIndow
+    id: alans_tv_window_open
+    device_class: window
+    rc_switch_raw:
+      code: '000010011000011010101001'
+      protocol: 1
+    filters:
+      delayed_off: $push_delay
+  - platform: remote_receiver
+    name: Master Bedroom Window
+    id: master_bed_window_open
+    device_class: window
+    rc_switch_raw:
+      code: '111010101101101000101001'
+      protocol: 1
+    filters:
+      delayed_off: $push_delay
+  - platform: remote_receiver
+    name: Computer Side Window
+    id: computer_side_window_open
+    device_class: window
+    rc_switch_raw:
+      code: '111100100010101000101001'
+      protocol: 1
+    filters:
+      delayed_off: $push_delay
+  - platform: remote_receiver
+    name: Loft Road Side Window
+    id: loft_road_side_window_open
+    device_class: window
+    rc_switch_raw:
+      code: '001001011101111010101001'
+      protocol: 1
+    filters:
+      delayed_off: $push_delay
+
+
+remote_receiver:
+  pin: 4
+  dump: rc_switch
+  tolerance: 50
+  filter: 4us
+  idle: 4ms
+
+remote_transmitter:
+  pin: 5
+  carrier_duty_percent: 100%
+
+status_led:
+  pin:
+    number: GPIO13
+    inverted: yes
+    
+  
+web_server:
+  port: 80

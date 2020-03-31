@@ -1,0 +1,88 @@
+substitutions:
+  devicename: workbench
+  device_shortname: workbench
+  device_location: workbench
+  dim_bulb : light.loft_lamp_upper_hue
+
+#################### COMMON SETTINGS #########################
+esphome:
+  name: $devicename
+  platform: ESP8266
+  board: d1_mini
+  arduino_version: espressif8266@2.2.3
+wifi:
+  networks:
+  - ssid: IOT
+    password: '608980608980'
+    priority: 1
+  - ssid: HOME2G
+    password: '608980608980'
+    priority: 2
+  ap:
+    ssid: $devicename
+    password: !secret AP_password
+
+logger:
+
+api:
+
+ota:
+  safe_mode: True
+  id: myota
+
+# Example configuration entry
+text_sensor:
+  - platform: wifi_info
+    ip_address:
+      name: $devicename IP
+    ssid:
+      name: $devicename SSID
+    bssid:
+      name: $devicename BSSID
+  - platform: version
+    name: "$devicename Version"
+
+web_server:
+  port: 80
+
+#################### COMMON SETTINGS #########################
+
+globals:
+   - id: my_dim_level
+     type: int
+     restore_value: no
+     initial_value: '0'
+
+# Example configuration entry
+sensor:
+  - platform: adc
+    pin: A0
+    name: "ADC Value"
+    id: "adc_v"
+    update_interval: 100ms
+    accuracy_decimals: 0
+    internal: true
+    filters:
+      - lambda: return x * 180;
+
+    on_value_range:
+      - above: 5
+        below: 10
+        then:
+          - homeassistant.service:
+              service: light.turn_on
+              data:
+                entity_id: $dim_bulb
+                brightness: !lambda return x;
+      - below: 5
+        then:
+          - homeassistant.service:
+              service: light.turn_off
+              data:
+                entity_id: $dim_bulb
+
+
+status_led:
+  pin:
+    number: GPIO2
+    inverted: yes

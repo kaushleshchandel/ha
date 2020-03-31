@@ -1,0 +1,162 @@
+substitutions:
+  devicename: humidifier
+  device_shortname: humidifier
+  id_prefix: hum_
+
+
+#################### COMMON SETTINGS #########################
+esphome:
+  name: $devicename
+  platform: ESP8266
+  board: d1_mini
+  arduino_version: espressif8266@2.2.3
+wifi:
+  networks:
+  - ssid: HOME2G
+    password: !secret WIFI_password
+    priority: 3
+  - ssid: IOT
+    password: !secret WIFI_password
+    priority: 1
+  ap:
+    ssid: $devicename
+    password: !secret AP_password
+
+logger: 
+  level: DEBUG
+  
+api:
+
+ota:
+  safe_mode: True
+  id: myota
+
+# Example configuration entry
+text_sensor:
+  - platform: wifi_info
+    ip_address:
+      name: $devicename IP
+    ssid:
+      name: $devicename SSID
+    bssid:
+      name: $devicename BSSID
+  - platform: version
+    name: "$devicename Version"
+
+#web_server:
+#  port: 80
+
+#################### COMMON SETTINGS #########################
+
+
+i2c:
+  sda: D1
+  scl: D2
+  scan: True
+
+switch:
+  - platform: restart
+    name: "$devicename Restart"
+  - platform: gpio
+    pin: GPIO14
+    name: "Device On"
+    id: led_on
+    internal: true
+  - platform: gpio
+    pin: GPIO13
+    name: "Manual Override"
+    id: led_manual
+    internal: true
+    on_turn_on:
+      - homeassistant.service:
+          service: switch.turn_on
+          data:
+            entity_id: switch.humidifier_relay
+    on_turn_off:
+      - homeassistant.service:
+          service: switch.turn_off
+          data:
+            entity_id: switch.humidifier_relay
+  - platform: gpio
+    pin: GPIO12
+    name: "Humidifier Status"
+    id: led_Status
+    internal: true
+    on_turn_on:
+      - homeassistant.service:
+          service: switch.turn_on
+          data:
+            entity_id: switch.humidifier_relay
+    on_turn_off:
+      - homeassistant.service:
+          service: switch.turn_off
+          data:
+            entity_id: switch.humidifier_relay
+  - platform: restart
+    name: "$devicename Restart"
+
+
+#BME 280 Sensor
+sensor:
+  - platform: uptime
+    name: "$devicename uptime"
+  - platform: wifi_signal
+    name: "$devicename WiFi Signal"
+    update_interval: 5s
+  - platform: bme280
+    temperature:
+      name: ${device_shortname} Temperature
+      oversampling: 16x
+      internal: true
+    pressure:
+      name: ${device_shortname} Pressure
+      internal: true
+    humidity:
+      name: ${device_shortname} Humidity
+      id: bme280_humidity
+      on_value:
+        - lambda: |-
+            if (id(bme280_humidity).state < id(humidity_set_point).state ) {
+              id(led_Status).turn_on();
+            } else {
+              id(led_Status).turn_off();
+            }
+      
+    address: 0x76
+    update_interval: 5s
+  - platform: adc
+    pin: A0
+    name: "Set Point"
+    id: "humidity_set_point"
+    unit_of_measurement: "%"
+    icon: "mdi:water-percent"
+    update_interval: 1s
+    accuracy_decimals: 0
+    #internal: true
+    filters:
+#      - lambda: return x * 100;
+        - calibrate_linear:
+            - 0.0 -> 0.0
+            - 0.2 -> 10
+            - 0.54 -> 30
+            - 0.92 -> 50
+    on_value_range:
+        - below: 9
+          then:
+            - switch.turn_off: led_on
+            - switch.turn_off: led_manual
+
+        - above: 9
+          then:
+            - switch.turn_on: led_on
+            - switch.turn_off: led_manual
+
+binary_sensor:
+  - platform: status
+    name:  "$devicename Status"
+
+
+status_led:
+  pin:
+    number: GPIO2
+    inverted: yes

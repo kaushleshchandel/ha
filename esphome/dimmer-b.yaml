@@ -1,0 +1,227 @@
+substitutions:
+  devicename: dimmer_b
+  device_shortname: Dimmer B
+  device_location: B
+
+#################### COMMON SETTINGS #########################
+esphome:
+  name: $devicename
+  platform: ESP8266
+  board: d1_mini
+  arduino_version: espressif8266@2.2.3
+wifi:
+  networks:
+  - ssid: IOT
+    password: !secret WIFI_password
+    priority: 3
+  - ssid: phone
+    password: !secret WIFI_password
+    priority: 1
+  ap:
+    ssid: $devicename
+    password: !secret AP_password
+
+logger: 
+  level: DEBUG
+
+api:
+
+ota:
+  safe_mode: True
+  id: myota
+
+# Example configuration entry
+text_sensor:
+  - platform: wifi_info
+    ip_address:
+      name: $devicename IP
+    ssid:
+      name: $devicename SSID
+    bssid:
+      name: $devicename BSSID
+  - platform: version
+    name: "$devicename Version"
+
+web_server:
+  port: 80
+
+#################### COMMON SETTINGS #########################
+
+
+# Example configuration entry
+sensor:
+  - platform: adc
+    pin: A0
+    name: "ADC Value"
+    id: "adc_v"
+    update_interval: 100ms
+    accuracy_decimals: 1
+    internal: true
+    filters:
+      - lambda: return x * 180;
+
+    on_value_range:
+      - above: 5
+        below: 10
+        then:
+          - homeassistant.service:
+              service: light.turn_on
+              data:
+                entity_id: light.alans_room_dimmer_shelly
+                brightness: "1"
+      - above: 11
+        below: 20
+        then:
+          - homeassistant.service:
+              service: light.turn_on
+              data:
+                entity_id: light.alans_room_dimmer_shelly
+                brightness: "5"
+      - above: 21
+        below: 30
+        then:
+          - homeassistant.service:
+              service: light.turn_on
+              data:
+                entity_id: light.alans_room_dimmer_shelly
+                brightness: "15"
+      - above: 31
+        below: 40
+        then:
+          - homeassistant.service:
+              service: light.turn_on
+              data:
+                entity_id: light.alans_room_dimmer_shelly
+                brightness: "25"
+      - above: 41
+        below: 50
+        then:
+          - homeassistant.service:
+              service: light.turn_on
+              data:
+                entity_id: light.alans_room_dimmer_shelly
+                brightness: "40"
+      - above: 51
+        below: 60
+        then:
+          - homeassistant.service:
+              service: light.turn_on
+              data:
+                entity_id: light.alans_room_dimmer_shelly
+                brightness: "55"
+      - above: 61
+        below: 70
+        then:
+          - homeassistant.service:
+              service: light.turn_on
+              data:
+                entity_id: light.alans_room_dimmer_shelly
+                brightness: "70"
+      - above: 71
+        below: 80
+        then:
+          - homeassistant.service:
+              service: light.turn_on
+              data:
+                entity_id: light.alans_room_dimmer_shelly
+                brightness: "80"
+      - above: 81
+        below: 90
+        then:
+          - homeassistant.service:
+              service: light.turn_on
+              data:
+                entity_id: light.alans_room_dimmer_shelly
+                brightness: "90"
+      - above: 91
+        below: 100
+        then:
+          - homeassistant.service:
+              service: light.turn_on
+              data:
+                entity_id: light.alans_room_dimmer_shelly
+                brightness: "100"
+      - above: 101
+        below: 110
+        then:
+          - homeassistant.service:
+              service: light.turn_on
+              data:
+                entity_id: light.alans_room_dimmer_shelly
+                brightness: "110"
+      - above: 111
+        below: 120
+        then:
+          - homeassistant.service:
+              service: light.turn_on
+              data:
+                entity_id: light.alans_room_dimmer_shelly
+                brightness: "120"
+      - above: 121
+        below: 130
+        then:
+          - homeassistant.service:
+              service: light.turn_on
+              data:
+                entity_id: light.alans_room_dimmer_shelly
+                brightness: "130"
+      - above: 131
+        below: 140
+        then:
+          - homeassistant.service:
+              service: light.turn_on
+              data:
+                entity_id: light.alans_room_dimmer_shelly
+                brightness: "140"
+      - above: 141
+        below: 150
+        then:
+          - homeassistant.service:
+              service: light.turn_on
+              data:
+                entity_id: light.alans_room_dimmer_shelly
+                brightness: "150"
+      - above: 151
+        below: 160
+        then:
+          - homeassistant.service:
+              service: light.turn_on
+              data:
+                entity_id: light.alans_room_dimmer_shelly
+                brightness: "160"
+      - above: 161
+        below: 170
+        then:
+          - homeassistant.service:
+              service: light.turn_on
+              data:
+                entity_id: light.alans_room_dimmer_shelly
+                brightness: "170"
+      - above: 171
+        below: 180
+        then:
+          - homeassistant.service:
+              service: light.turn_on
+              data:
+                entity_id: light.alans_room_dimmer_shelly
+                brightness: "180"
+      - above: 181
+        below: 190
+        then:
+          - homeassistant.service:
+              service: light.turn_on
+              data:
+                entity_id: light.alans_room_dimmer_shelly
+                brightness: "190"
+      - below: 5
+        then:
+          - homeassistant.service:
+              service: light.turn_off
+              data:
+                entity_id: light.alans_room_dimmer_shelly
+
+
+status_led:
+  pin:
+    number: GPIO2
+    inverted: yes

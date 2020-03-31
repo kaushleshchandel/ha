@@ -15,6 +15,9 @@ switch:
 
 #BME 280 Sensor
 sensor:
+  - platform: uptime
+    name: "$devicename uptime"
+
   - platform: wifi_signal
     name: "$devicename WiFi Signal"
     update_interval: 60s
@@ -28,6 +31,11 @@ sensor:
       name: ${device_shortname} Humidity
     address: 0x76
     update_interval: 60s
+
+binary_sensor:
+  - platform: status
+    name:  "$devicename Status"
+
 
 status_led:
   pin:

@@ -5,12 +5,15 @@ substitutions:
 <<: !include .base.common_8266.yaml
 
 # Example configuration entry
-binary_sensor:
+sensor:
   - platform: wifi_signal
     name: "$devicename WiFi Signal"
     update_interval: 60s
+
+binary_sensor:
   - platform: gpio
     name: "Garage Door"
+    id: "garage_door_state"
     pin: D1
     device_class: garage_door
   - platform: gpio
@@ -19,17 +22,47 @@ binary_sensor:
     filters:
       - invert:
   - platform: gpio
-    name: "Kitchen Door"
+    name: "Homelink A"
     pin: D5
-    device_class: door
-  - platform: gpio
-    name: "Garage PIR Sensor"
-    pin: D6
-    device_class: occupancy
+    filters:
+      - invert:
 
 switch:
   - platform: restart
     name: "$devicename Restart"
+  - platform: gpio
+    pin: D6
+    name: "Garage Door Open Switch"
+    id: open_switch
+  - platform: gpio
+    pin: D6
+    name: "Garage Door Close Switch"
+    id: close_switch
+cover:
+  - platform: template
+    name: "Garage Door"
+    lambda: |-
+      if (id(garage_door_state).state) {
+        return COVER_OPEN;
+      } else {
+        return COVER_CLOSED;
+      }
+    open_action:
+      # Cancel any previous action
+      - switch.turn_off: close_switch
+      # Turn the OPEN switch on briefly
+      - switch.turn_on: open_switch
+      - delay: 0.1s
+      - switch.turn_off: open_switch
+    close_action:
+      # Cancel any previous action
+      - switch.turn_off: close_switch
+      # Turn the OPEN switch on briefly
+      - switch.turn_on: open_switch
+      - delay: 0.1s
+      - switch.turn_off: open_switch
+#    optimistic: true
+#    assumed_state: true
 
 
 status_led:

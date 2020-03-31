@@ -20,6 +20,8 @@ status_led:
     inverted: true
 
 binary_sensor:
+  - platform: status
+    name: Sonoff RF Bridge Status
   - platform: gpio
     pin: GPIO00
     id: reset

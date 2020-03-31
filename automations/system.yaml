@@ -1,5 +1,4 @@
-- id: letsencrypt-renewal
-  alias: 'SYSTEM: Let''s Encrypt Renewal'
+- alias: 'SYSTEM: Let''s Encrypt Renewal'
   trigger:
   - at: 00:00:00
     platform: time
@@ -8,8 +7,7 @@
       addon: core_letsencrypt
     service: hassio.addon_restart
 
-- id: '1555848744587'
-  alias: 'SYSTEM : Weekly : Hassio Reboot'
+- alias: 'SYSTEM : Weekly : Hassio Reboot'
   trigger:
   - at: 03:45:00
     platform: time
