@@ -42,7 +42,7 @@ sensor:
 
 binary_sensor:
   - platform: status
-    name: Sonoff RF Bridge Status
+    name:  "$devicename Status"
   ######### SONOFF REMOTE BUTTONS ############
   - platform: remote_receiver
     name: Remote A1

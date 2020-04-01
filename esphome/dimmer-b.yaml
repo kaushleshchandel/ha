@@ -47,9 +47,14 @@ web_server:
 
 #################### COMMON SETTINGS #########################
 
+binary_sensor:
+  - platform: status
+    name:  "$devicename Status"
 
 # Example configuration entry
 sensor:
+  - platform: uptime
+    name: "$devicename uptime"
   - platform: adc
     pin: A0
     name: "ADC Value"
@@ -219,7 +224,9 @@ sensor:
               service: light.turn_off
               data:
                 entity_id: light.alans_room_dimmer_shelly
-
+  - platform: wifi_signal
+    name: "$devicename WiFi Signal"
+    update_interval: 60s
 
 status_led:
   pin:

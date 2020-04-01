@@ -3,41 +3,40 @@ esphome:
   name: $devicename
   platform: ESP32
   board: esp-wrover-kit
+  arduino_version: espressif8266@2.2.3
+  wifi:
+    networks:
+    - ssid: IOT
+      password: !secret WIFI_password
+      priority: 3
+    - ssid: phone
+      password: !secret WIFI_password
+      priority: 1
+    ap:
+      ssid: $devicename
+      password: !secret AP_password
   
+  logger: 
   
-wifi:
-  networks:
-  - ssid: IOT
-    password: !secret WIFI_password
-    priority: 3
-  - ssid: phone
-    password: !secret WIFI_password
-    priority: 1
-  ap:
-    ssid: $devicename
-    password: !secret AP_password
-
-logger: 
-
-api:
-
-ota:
-  safe_mode: True
-  id: myota
-
-# Example configuration entry
-text_sensor:
-  - platform: wifi_info
-    ip_address:
-      name: $devicename IP
-    ssid:
-      name: $devicename SSID
-    bssid:
-      name: $devicename BSSID
-  - platform: version
-    name: "$devicename Version"
-
-#web_server:
-#  port: 80
-
-#################### COMMON SETTINGS #########################
+  api:
+  
+  ota:
+    safe_mode: True
+    id: myota
+  
+  # Example configuration entry
+  text_sensor:
+    - platform: wifi_info
+      ip_address:
+        name: $devicename IP
+      ssid:
+        name: $devicename SSID
+      bssid:
+        name: $devicename BSSID
+    - platform: version
+      name: "$devicename Version"
+  
+  #web_server:
+    #port: 80
+  
+  #################### COMMON SETTINGS #########################

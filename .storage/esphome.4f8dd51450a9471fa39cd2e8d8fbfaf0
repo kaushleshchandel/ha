@@ -1,0 +1,108 @@
+{
+    "data": {
+        "device_info": {
+            "compilation_time": "Mar 21 2020, 09:23:34",
+            "esphome_version": "1.14.3",
+            "has_deep_sleep": false,
+            "mac_address": "DC:4F:22:7E:58:68",
+            "model": "PLATFORMIO_D1_MINI",
+            "name": "loft_bme280",
+            "uses_password": false
+        },
+        "sensor": [
+            {
+                "accuracy_decimals": 0,
+                "force_update": false,
+                "icon": "mdi:wifi",
+                "key": 769382538,
+                "name": "loft_bme280 WiFi Signal",
+                "object_id": "loft_bme280_wifi_signal",
+                "unique_id": "dc4f227e5868-wifisignal",
+                "unit_of_measurement": "dB"
+            },
+            {
+                "accuracy_decimals": 2,
+                "force_update": false,
+                "icon": "",
+                "key": 3175878204,
+                "name": "Loft Absolute Humidity",
+                "object_id": "loft_absolute_humidity",
+                "unique_id": "loft_bme280sensorloft_absolute_humidity",
+                "unit_of_measurement": ""
+            },
+            {
+                "accuracy_decimals": 1,
+                "force_update": false,
+                "icon": "mdi:thermometer",
+                "key": 2724760887,
+                "name": "Loft Temperature",
+                "object_id": "loft_temperature",
+                "unique_id": "loft_bme280sensorloft_temperature",
+                "unit_of_measurement": "\u00b0C"
+            },
+            {
+                "accuracy_decimals": 1,
+                "force_update": false,
+                "icon": "mdi:gauge",
+                "key": 4048274870,
+                "name": "Loft Pressure",
+                "object_id": "loft_pressure",
+                "unique_id": "loft_bme280sensorloft_pressure",
+                "unit_of_measurement": "hPa"
+            },
+            {
+                "accuracy_decimals": 1,
+                "force_update": false,
+                "icon": "mdi:water-percent",
+                "key": 183702912,
+                "name": "Loft Humidity",
+                "object_id": "loft_humidity",
+                "unique_id": "loft_bme280sensorloft_humidity",
+                "unit_of_measurement": "%"
+            }
+        ],
+        "services": [],
+        "switch": [
+            {
+                "assumed_state": false,
+                "icon": "mdi:restart",
+                "key": 3063312425,
+                "name": "loft_bme280 Restart",
+                "object_id": "loft_bme280_restart",
+                "unique_id": "loft_bme280switchloft_bme280_restart"
+            }
+        ],
+        "text_sensor": [
+            {
+                "icon": "mdi:new-box",
+                "key": 3825626340,
+                "name": "loft_bme280 Version",
+                "object_id": "loft_bme280_version",
+                "unique_id": "dc4f227e5868-version"
+            },
+            {
+                "icon": "",
+                "key": 704483355,
+                "name": "loft_bme280 IP",
+                "object_id": "loft_bme280_ip",
+                "unique_id": "dc4f227e5868-wifiinfo-ip"
+            },
+            {
+                "icon": "",
+                "key": 3878015009,
+                "name": "loft_bme280 SSID",
+                "object_id": "loft_bme280_ssid",
+                "unique_id": "dc4f227e5868-wifiinfo-ssid"
+            },
+            {
+                "icon": "",
+                "key": 2202012419,
+                "name": "loft_bme280 BSSID",
+                "object_id": "loft_bme280_bssid",
+                "unique_id": "dc4f227e5868-wifiinfo-bssid"
+            }
+        ]
+    },
+    "key": "esphome.4f8dd51450a9471fa39cd2e8d8fbfaf0",
+    "version": 1
+}

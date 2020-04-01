@@ -1,0 +1,49 @@
+{
+    "data": {
+        "device_info": {
+            "compilation_time": "Feb 17 2020, 13:21:55",
+            "esphome_version": "1.14.3",
+            "has_deep_sleep": false,
+            "mac_address": "DC:4F:22:7E:58:68",
+            "model": "PLATFORMIO_D1_MINI",
+            "name": "garage_bme280",
+            "uses_password": false
+        },
+        "sensor": [
+            {
+                "accuracy_decimals": 1,
+                "force_update": false,
+                "icon": "mdi:thermometer",
+                "key": 860520201,
+                "name": "Garage Temperature",
+                "object_id": "garage_temperature",
+                "unique_id": "garage_bme280sensorgarage_temperature",
+                "unit_of_measurement": "\u00b0C"
+            },
+            {
+                "accuracy_decimals": 1,
+                "force_update": false,
+                "icon": "mdi:gauge",
+                "key": 2458484836,
+                "name": "Garage Pressure",
+                "object_id": "garage_pressure",
+                "unique_id": "garage_bme280sensorgarage_pressure",
+                "unit_of_measurement": "hPa"
+            },
+            {
+                "accuracy_decimals": 1,
+                "force_update": false,
+                "icon": "mdi:water-percent",
+                "key": 1815995886,
+                "name": "Garage Humidity",
+                "object_id": "garage_humidity",
+                "unique_id": "garage_bme280sensorgarage_humidity",
+                "unit_of_measurement": "%"
+            }
+        ],
+        "services": [],
+        "text_sensor": []
+    },
+    "key": "esphome.dc7da0ed77b34bbd9704ca0ed976b38d",
+    "version": 1
+}

@@ -1,0 +1,1002 @@
+{
+    "data": {
+        "devices": [
+            {
+                "area_id": null,
+                "config_entries": [
+                    "7818118f40ea4388a445cbae2026ba86"
+                ],
+                "connections": [],
+                "id": "ccfb249c3e6d42c2ad36123c5418fbe6",
+                "identifiers": [
+                    [
+                        "mobile_app",
+                        "f4f2314b10ac15e5"
+                    ]
+                ],
+                "manufacturer": "samsung",
+                "model": "SM-G960U",
+                "name": "SM-G960U",
+                "name_by_user": "kc_phone",
+                "sw_version": "29",
+                "via_device_id": null
+            },
+            {
+                "area_id": null,
+                "config_entries": [
+                    "023b849052ff4fc1b104f5d3dd9b3045"
+                ],
+                "connections": [],
+                "id": "6a4b503ae4f646df83e9f78c6dc97398",
+                "identifiers": [
+                    [
+                        "mobile_app",
+                        "8e8907a9d5db4ee7a05ef7796f8350ad"
+                    ]
+                ],
+                "manufacturer": "Apple",
+                "model": "iPhone X\u0280",
+                "name": "iPhone",
+                "name_by_user": "ec_phone",
+                "sw_version": "13.3.1",
+                "via_device_id": null
+            },
+            {
+                "area_id": null,
+                "config_entries": [
+                    "4f8dd51450a9471fa39cd2e8d8fbfaf0"
+                ],
+                "connections": [
+                    [
+                        "mac",
+                        "dc:4f:22:7e:58:68"
+                    ]
+                ],
+                "id": "558e281a6cfb41119254e489b18a7022",
+                "identifiers": [],
+                "manufacturer": "espressif",
+                "model": "PLATFORMIO_D1_MINI",
+                "name": "loft_bme280",
+                "name_by_user": null,
+                "sw_version": "1.14.3 (Mar 21 2020, 09:23:34)",
+                "via_device_id": null
+            },
+            {
+                "area_id": null,
+                "config_entries": [
+                    "e5ee13f3faf34ef4941a7eddabfae334",
+                    "eef34556a9f34bac9028ffc83f9917f1"
+                ],
+                "connections": [
+                    [
+                        "mac",
+                        "dc:4f:22:7d:cb:ba"
+                    ]
+                ],
+                "id": "c0b2ec03a2d7461c811e6349a9224b9f",
+                "identifiers": [],
+                "manufacturer": "espressif",
+                "model": "PLATFORMIO_D1_MINI",
+                "name": "garage_bmp280",
+                "name_by_user": null,
+                "sw_version": "1.14.3 (Mar 31 2020, 13:47:33)",
+                "via_device_id": null
+            },
+            {
+                "area_id": null,
+                "config_entries": [
+                    "316d451827e848119cfe8c9119a56e9f"
+                ],
+                "connections": [
+                    [
+                        "mac",
+                        "50:02:91:c8:b8:c8"
+                    ]
+                ],
+                "id": "1eb04dd287be4d779a7d2ecbd4388c6b",
+                "identifiers": [],
+                "manufacturer": "espressif",
+                "model": "PLATFORMIO_D1_MINI",
+                "name": "hvac",
+                "name_by_user": null,
+                "sw_version": "1.14.3 (Mar 31 2020, 13:50:57)",
+                "via_device_id": null
+            },
+            {
+                "area_id": null,
+                "config_entries": [
+                    "e5ee13f3faf34ef4941a7eddabfae334"
+                ],
+                "connections": [
+                    [
+                        "mac",
+                        "dc:4f:22:7d:d1:2a"
+                    ]
+                ],
+                "id": "df711a942032478ea7ca129222b60499",
+                "identifiers": [],
+                "manufacturer": "espressif",
+                "model": "PLATFORMIO_D1_MINI",
+                "name": "laundry_bmp280",
+                "name_by_user": null,
+                "sw_version": "1.14.3 (Mar 31 2020, 13:52:10)",
+                "via_device_id": null
+            },
+            {
+                "area_id": "2c4d779ac6824f219d5ab7d02c14cf2d",
+                "config_entries": [
+                    "e2028b32508d419cb0322220101e59c1",
+                    "316d451827e848119cfe8c9119a56e9f"
+                ],
+                "connections": [
+                    [
+                        "mac",
+                        "18:fe:34:a2:ad:6e"
+                    ]
+                ],
+                "id": "5f5efc9ffd9d4ffaada9474b83de934f",
+                "identifiers": [],
+                "manufacturer": "espressif",
+                "model": "PLATFORMIO_D1_MINI",
+                "name": "alans_bedroom_bme280",
+                "name_by_user": null,
+                "sw_version": "1.14.3 (Mar 31 2020, 13:44:05)",
+                "via_device_id": null
+            },
+            {
+                "area_id": null,
+                "config_entries": [
+                    "37c10c383eb54441a84fdb50bea423b0",
+                    "316d451827e848119cfe8c9119a56e9f"
+                ],
+                "connections": [
+                    [
+                        "mac",
+                        "80:7d:3a:45:86:c2"
+                    ]
+                ],
+                "id": "a2ed23ca7abf4301a39489866d97aa24",
+                "identifiers": [],
+                "manufacturer": "espressif",
+                "model": "PLATFORMIO_ESP01_1M",
+                "name": "humidity_controller",
+                "name_by_user": null,
+                "sw_version": "1.14.3 (Mar 31 2020, 13:50:15)",
+                "via_device_id": null
+            },
+            {
+                "area_id": "be22218b27c243f180e34029233bc7bc",
+                "config_entries": [
+                    "316d451827e848119cfe8c9119a56e9f",
+                    "32743cac5b264d29a9971ee6a3b4d643"
+                ],
+                "connections": [
+                    [
+                        "mac",
+                        "60:01:94:e0:27:8f"
+                    ]
+                ],
+                "id": "cc86f7b3affa4a619ad6eb75ca54adc0",
+                "identifiers": [],
+                "manufacturer": "espressif",
+                "model": "PLATFORMIO_ESP01_1M",
+                "name": "backyard_light",
+                "name_by_user": null,
+                "sw_version": "1.14.3 (Mar 31 2020, 13:45:30)",
+                "via_device_id": null
+            },
+            {
+                "area_id": null,
+                "config_entries": [
+                    "7a73b18ab4004c68ab7fb005e9918f22"
+                ],
+                "connections": [
+                    [
+                        "zigbee",
+                        "00:0d:6f:00:12:00:ac:fc"
+                    ]
+                ],
+                "id": "076ecebc4f0340f8ba331eb49b445efc",
+                "identifiers": [
+                    [
+                        "zha",
+                        "00:0d:6f:00:12:00:ac:fc"
+                    ]
+                ],
+                "manufacturer": "ZHA",
+                "model": "EZSP",
+                "name": "Zigbee Coordinator",
+                "name_by_user": null,
+                "sw_version": null,
+                "via_device_id": null
+            },
+            {
+                "area_id": null,
+                "config_entries": [
+                    "7a73b18ab4004c68ab7fb005e9918f22"
+                ],
+                "connections": [
+                    [
+                        "zigbee",
+                        "00:15:8d:00:02:04:a2:a3"
+                    ]
+                ],
+                "id": "7f26c6c152ea415da23e4ac061c6f35a",
+                "identifiers": [
+                    [
+                        "zha",
+                        "00:15:8d:00:02:04:a2:a3"
+                    ]
+                ],
+                "manufacturer": "LUMI",
+                "model": "lumi.sensor_switch.aq2",
+                "name": "LUMI lumi.sensor_switch.aq2",
+                "name_by_user": "Button A Aqara",
+                "sw_version": null,
+                "via_device_id": "076ecebc4f0340f8ba331eb49b445efc"
+            },
+            {
+                "area_id": null,
+                "config_entries": [
+                    "6d78be3d6b3b4fcfb64af37202f4fae9"
+                ],
+                "connections": [],
+                "id": "2c615901e8604729999ab05574c3d032",
+                "identifiers": [
+                    [
+                        "zwave",
+                        1
+                    ]
+                ],
+                "manufacturer": "Z-Wave (Sigma Designs)",
+                "model": "UZB Z-Wave USB Adapter",
+                "name": "Z-Wave (Sigma Designs) UZB Z-Wave USB Adapter",
+                "name_by_user": null,
+                "sw_version": null,
+                "via_device_id": null
+            },
+            {
+                "area_id": null,
+                "config_entries": [
+                    "6d78be3d6b3b4fcfb64af37202f4fae9"
+                ],
+                "connections": [],
+                "id": "201a9638b05340e781e635abd48fb608",
+                "identifiers": [
+                    [
+                        "zwave",
+                        2
+                    ]
+                ],
+                "manufacturer": "Leviton",
+                "model": "DZPD3-1LW Plug-In Dimming Lamp Module",
+                "name": "Leviton DZPD3-1LW Plug-In Dimming Lamp Module",
+                "name_by_user": null,
+                "sw_version": null,
+                "via_device_id": "2c615901e8604729999ab05574c3d032"
+            },
+            {
+                "area_id": null,
+                "config_entries": [
+                    "6d78be3d6b3b4fcfb64af37202f4fae9"
+                ],
+                "connections": [],
+                "id": "c4516cf5c6ba451486f31e1a59c97250",
+                "identifiers": [
+                    [
+                        "zwave",
+                        5
+                    ]
+                ],
+                "manufacturer": "Leviton",
+                "model": "DZPD3-1LW Plug-In Dimming Lamp Module",
+                "name": "Leviton DZPD3-1LW Plug-In Dimming Lamp Module",
+                "name_by_user": null,
+                "sw_version": null,
+                "via_device_id": "2c615901e8604729999ab05574c3d032"
+            },
+            {
+                "area_id": null,
+                "config_entries": [
+                    "7a73b18ab4004c68ab7fb005e9918f22"
+                ],
+                "connections": [
+                    [
+                        "zigbee",
+                        "00:15:8d:00:04:51:77:dd"
+                    ]
+                ],
+                "id": "f020357f6a20440496a28e9b3b17ed90",
+                "identifiers": [
+                    [
+                        "zha",
+                        "00:15:8d:00:04:51:77:dd"
+                    ]
+                ],
+                "manufacturer": "LUMI",
+                "model": "lumi.sensor_motion.aq2",
+                "name": "LUMI lumi.sensor_motion.aq2",
+                "name_by_user": "Occupancy Sensor 1",
+                "sw_version": null,
+                "via_device_id": "076ecebc4f0340f8ba331eb49b445efc"
+            },
+            {
+                "area_id": null,
+                "config_entries": [
+                    "7a73b18ab4004c68ab7fb005e9918f22"
+                ],
+                "connections": [
+                    [
+                        "zigbee",
+                        "00:15:8d:00:04:1f:ab:da"
+                    ]
+                ],
+                "id": "fbb71d0541494e16bc959c367908f15f",
+                "identifiers": [
+                    [
+                        "zha",
+                        "00:15:8d:00:04:1f:ab:da"
+                    ]
+                ],
+                "manufacturer": "LUMI",
+                "model": "lumi.sensor_motion.aq2",
+                "name": "LUMI lumi.sensor_motion.aq2",
+                "name_by_user": "Occupancy Sensor 2",
+                "sw_version": null,
+                "via_device_id": "076ecebc4f0340f8ba331eb49b445efc"
+            },
+            {
+                "area_id": null,
+                "config_entries": [
+                    "7a73b18ab4004c68ab7fb005e9918f22"
+                ],
+                "connections": [
+                    [
+                        "zigbee",
+                        "00:17:88:01:04:0b:ac:bc"
+                    ]
+                ],
+                "id": "aa3c9a4fb5894eb3bcce85436db0374d",
+                "identifiers": [
+                    [
+                        "zha",
+                        "00:17:88:01:04:0b:ac:bc"
+                    ]
+                ],
+                "manufacturer": "Philips",
+                "model": "RWL020",
+                "name": "Philips RWL020",
+                "name_by_user": null,
+                "sw_version": null,
+                "via_device_id": "076ecebc4f0340f8ba331eb49b445efc"
+            },
+            {
+                "area_id": null,
+                "config_entries": [
+                    "7a73b18ab4004c68ab7fb005e9918f22"
+                ],
+                "connections": [
+                    [
+                        "zigbee",
+                        "00:15:8d:00:04:51:a4:db"
+                    ]
+                ],
+                "id": "7af7747236dd48d49fb4973e71981b16",
+                "identifiers": [
+                    [
+                        "zha",
+                        "00:15:8d:00:04:51:a4:db"
+                    ]
+                ],
+                "manufacturer": "LUMI",
+                "model": "lumi.sensor_motion.aq2",
+                "name": "LUMI lumi.sensor_motion.aq2",
+                "name_by_user": "Occupancy Sensor 4",
+                "sw_version": null,
+                "via_device_id": "076ecebc4f0340f8ba331eb49b445efc"
+            },
+            {
+                "area_id": null,
+                "config_entries": [
+                    "7a73b18ab4004c68ab7fb005e9918f22"
+                ],
+                "connections": [
+                    [
+                        "zigbee",
+                        "00:15:8d:00:04:51:4c:07"
+                    ]
+                ],
+                "id": "8ed6968f9d764f98969f7cb323e46c97",
+                "identifiers": [
+                    [
+                        "zha",
+                        "00:15:8d:00:04:51:4c:07"
+                    ]
+                ],
+                "manufacturer": "LUMI",
+                "model": "lumi.sensor_motion.aq2",
+                "name": "LUMI lumi.sensor_motion.aq2",
+                "name_by_user": "Occupancy Sensor 3",
+                "sw_version": null,
+                "via_device_id": "076ecebc4f0340f8ba331eb49b445efc"
+            },
+            {
+                "area_id": null,
+                "config_entries": [
+                    "7a73b18ab4004c68ab7fb005e9918f22"
+                ],
+                "connections": [
+                    [
+                        "zigbee",
+                        "00:15:8d:00:02:72:ef:c7"
+                    ]
+                ],
+                "id": "4cff72a89df84e49ba7ca920308b19e5",
+                "identifiers": [
+                    [
+                        "zha",
+                        "00:15:8d:00:02:72:ef:c7"
+                    ]
+                ],
+                "manufacturer": "LUMI",
+                "model": "lumi.sensor_magnet.aq2",
+                "name": "LUMI lumi.sensor_magnet.aq2",
+                "name_by_user": "Main Door Aqara",
+                "sw_version": null,
+                "via_device_id": "076ecebc4f0340f8ba331eb49b445efc"
+            },
+            {
+                "area_id": null,
+                "config_entries": [
+                    "7a73b18ab4004c68ab7fb005e9918f22"
+                ],
+                "connections": [
+                    [
+                        "zigbee",
+                        "00:15:8d:00:02:73:d4:e7"
+                    ]
+                ],
+                "id": "7e34595ca24f45e797f3446d7649ff95",
+                "identifiers": [
+                    [
+                        "zha",
+                        "00:15:8d:00:02:73:d4:e7"
+                    ]
+                ],
+                "manufacturer": "LUMI",
+                "model": "lumi.weather",
+                "name": "LUMI lumi.weather",
+                "name_by_user": "Living Room Multi Sensor",
+                "sw_version": null,
+                "via_device_id": "076ecebc4f0340f8ba331eb49b445efc"
+            },
+            {
+                "area_id": null,
+                "config_entries": [
+                    "7a73b18ab4004c68ab7fb005e9918f22"
+                ],
+                "connections": [
+                    [
+                        "zigbee",
+                        "00:15:8d:00:02:73:ca:df"
+                    ]
+                ],
+                "id": "b563468e7313438687df4c9ec21773ce",
+                "identifiers": [
+                    [
+                        "zha",
+                        "00:15:8d:00:02:73:ca:df"
+                    ]
+                ],
+                "manufacturer": "LUMI",
+                "model": "lumi.weather",
+                "name": "LUMI lumi.weather",
+                "name_by_user": "Master Bedroom Multi Sensor",
+                "sw_version": null,
+                "via_device_id": "076ecebc4f0340f8ba331eb49b445efc"
+            },
+            {
+                "area_id": null,
+                "config_entries": [
+                    "56dd4be6b9454f9ca763f3ee79deac9f"
+                ],
+                "connections": [
+                    [
+                        "mac",
+                        "d8:f1:5b:8e:58:59"
+                    ]
+                ],
+                "id": "2cef418545e043e6b043266d2f7f2f3b",
+                "identifiers": [],
+                "manufacturer": "espressif",
+                "model": "PLATFORMIO_ESP01_1M",
+                "name": "garage_light",
+                "name_by_user": null,
+                "sw_version": "1.14.3 (Mar 31 2020, 13:47:56)",
+                "via_device_id": null
+            },
+            {
+                "area_id": null,
+                "config_entries": [
+                    "f1c7e1285864465d9ed2b5b7c98c9cc7"
+                ],
+                "connections": [
+                    [
+                        "mac",
+                        "c8:2b:96:11:0a:e9"
+                    ]
+                ],
+                "id": "47972084fbaf49e681b5f396e605eb55",
+                "identifiers": [],
+                "manufacturer": "espressif",
+                "model": "PLATFORMIO_ESP01_1M",
+                "name": "porch_entrance_duel",
+                "name_by_user": null,
+                "sw_version": "1.14.3 (Mar 31 2020, 13:53:40)",
+                "via_device_id": null
+            },
+            {
+                "area_id": "1ba018334e1f4a77b2151a5f9d2f27f2",
+                "config_entries": [
+                    "a18f78b7cc1a42eda53f0055c7495c0e"
+                ],
+                "connections": [],
+                "id": "65952de340b04922b820fddf03b80099",
+                "identifiers": [
+                    [
+                        "cast",
+                        "b23d932a77fad238da0bc9f3521c7c86"
+                    ]
+                ],
+                "manufacturer": "Unknown manufacturer",
+                "model": "Chromecast",
+                "name": "Living Room TV",
+                "name_by_user": null,
+                "sw_version": null,
+                "via_device_id": null
+            },
+            {
+                "area_id": null,
+                "config_entries": [
+                    "0828f3a523194fb6aaca997f0adc09db"
+                ],
+                "connections": [],
+                "id": "e62279cc87ae4bebb5daeee853ad8383",
+                "identifiers": [
+                    [
+                        "shelly",
+                        "DB33AC"
+                    ]
+                ],
+                "manufacturer": "Allterco",
+                "model": "Shelly Dimmer",
+                "name": "Shelly Dimmer - DB33AC",
+                "name_by_user": null,
+                "sw_version": "20191014-073321/master@a1f9acb9",
+                "via_device_id": null
+            },
+            {
+                "area_id": null,
+                "config_entries": [
+                    "d19df8a4010c467bb5eb49c3bda5faa5"
+                ],
+                "connections": [
+                    [
+                        "mac",
+                        "dc:4f:22:7e:65:fb"
+                    ]
+                ],
+                "id": "341a28acd5054d75870d6336a306936d",
+                "identifiers": [],
+                "manufacturer": "espressif",
+                "model": "PLATFORMIO_D1_MINI",
+                "name": "humidifier",
+                "name_by_user": null,
+                "sw_version": "1.14.3 (Apr  1 2020, 07:15:45)",
+                "via_device_id": null
+            },
+            {
+                "area_id": "c00fe01e1f1c4b54a3c7f5a4fb279019",
+                "config_entries": [
+                    "7a73b18ab4004c68ab7fb005e9918f22"
+                ],
+                "connections": [
+                    [
+                        "zigbee",
+                        "00:15:8d:00:02:72:ee:cb"
+                    ]
+                ],
+                "id": "84fa726ad21f48e8991529c62fe337c9",
+                "identifiers": [
+                    [
+                        "zha",
+                        "00:15:8d:00:02:72:ee:cb"
+                    ]
+                ],
+                "manufacturer": "LUMI",
+                "model": "lumi.sensor_magnet.aq2",
+                "name": "LUMI lumi.sensor_magnet.aq2",
+                "name_by_user": "Kitchen Door Sensor Aqara",
+                "sw_version": null,
+                "via_device_id": "076ecebc4f0340f8ba331eb49b445efc"
+            },
+            {
+                "area_id": null,
+                "config_entries": [
+                    "7a73b18ab4004c68ab7fb005e9918f22"
+                ],
+                "connections": [
+                    [
+                        "zigbee",
+                        "00:15:8d:00:02:04:a3:fc"
+                    ]
+                ],
+                "id": "080dce3ef76543f681f602c727d64d8e",
+                "identifiers": [
+                    [
+                        "zha",
+                        "00:15:8d:00:02:04:a3:fc"
+                    ]
+                ],
+                "manufacturer": "LUMI",
+                "model": "lumi.sensor_switch.aq2",
+                "name": "LUMI lumi.sensor_switch.aq2",
+                "name_by_user": "Button B Aqara",
+                "sw_version": null,
+                "via_device_id": "076ecebc4f0340f8ba331eb49b445efc"
+            },
+            {
+                "area_id": "33d44f8dde2f432ba7b81fb4684abe0a",
+                "config_entries": [
+                    "b9240a2005b84ded87780adcd63b8a4f"
+                ],
+                "connections": [
+                    [
+                        "mac",
+                        "dc:4f:22:7d:d0:0f"
+                    ]
+                ],
+                "id": "9258d02110064c01a2306e4c48079c99",
+                "identifiers": [],
+                "manufacturer": "espressif",
+                "model": "PLATFORMIO_D1_MINI",
+                "name": "audio_playback_garage",
+                "name_by_user": null,
+                "sw_version": "1.14.3 (Mar 31 2020, 13:45:08)",
+                "via_device_id": null
+            },
+            {
+                "area_id": null,
+                "config_entries": [
+                    "f0463310e5334d7ca74a414c99c634e2"
+                ],
+                "connections": [
+                    [
+                        "mac",
+                        "bc:dd:c2:6b:e6:04"
+                    ]
+                ],
+                "id": "d207d790f47f4b4fb1932f02acf77246",
+                "identifiers": [],
+                "manufacturer": "espressif",
+                "model": "PLATFORMIO_D1_MINI",
+                "name": "garage_multi_sensor",
+                "name_by_user": null,
+                "sw_version": "1.14.3 (Mar 31 2020, 13:48:52)",
+                "via_device_id": null
+            },
+            {
+                "area_id": null,
+                "config_entries": [
+                    "6bc787d1fe7543bbbaecda8e6495cd3c"
+                ],
+                "connections": [
+                    [
+                        "mac",
+                        "60:01:94:e0:20:d1"
+                    ]
+                ],
+                "id": "da44d89837c4411d8855d4af4f49eba3",
+                "identifiers": [],
+                "manufacturer": "espressif",
+                "model": "PLATFORMIO_ESP01_1M",
+                "name": "kitchen_sink_light",
+                "name_by_user": null,
+                "sw_version": "1.14.3 (Mar 31 2020, 13:51:20)",
+                "via_device_id": null
+            },
+            {
+                "area_id": null,
+                "config_entries": [
+                    "f0bdf9fb2541417bb0596b1132d5376c"
+                ],
+                "connections": [
+                    [
+                        "mac",
+                        "dc:4f:22:7d:cc:51"
+                    ]
+                ],
+                "id": "7272cfe6f42e4d2f9a6dbed61a1ee2a3",
+                "identifiers": [],
+                "manufacturer": "espressif",
+                "model": "PLATFORMIO_D1_MINI",
+                "name": "outdoor_bme280",
+                "name_by_user": null,
+                "sw_version": "1.14.3 (Mar 31 2020, 13:52:53)",
+                "via_device_id": null
+            },
+            {
+                "area_id": null,
+                "config_entries": [
+                    "dfb6da4ff1494ae9ad5b7d300dba7cf4"
+                ],
+                "connections": [
+                    [
+                        "mac",
+                        "b4:e6:2d:28:97:26"
+                    ]
+                ],
+                "id": "aa40ba8599964fa3a26699fdd4759a11",
+                "identifiers": [],
+                "manufacturer": "espressif",
+                "model": "PLATFORMIO_ESP01_1M",
+                "name": "esp_switch_a",
+                "name_by_user": null,
+                "sw_version": "1.14.3 (Mar 21 2020, 09:19:02)",
+                "via_device_id": null
+            },
+            {
+                "area_id": "a0134b26410b496680687c802f28dafb",
+                "config_entries": [
+                    "7a73b18ab4004c68ab7fb005e9918f22"
+                ],
+                "connections": [
+                    [
+                        "zigbee",
+                        "00:17:88:01:10:40:10:4f"
+                    ]
+                ],
+                "id": "e684d586f1d1428fb54474db4ebd8ea2",
+                "identifiers": [
+                    [
+                        "zha",
+                        "00:17:88:01:10:40:10:4f"
+                    ]
+                ],
+                "manufacturer": "Philips",
+                "model": "LWB006",
+                "name": "Philips LWB006",
+                "name_by_user": "Loft Lamp Upper",
+                "sw_version": null,
+                "via_device_id": "076ecebc4f0340f8ba331eb49b445efc"
+            },
+            {
+                "area_id": null,
+                "config_entries": [
+                    "7a73b18ab4004c68ab7fb005e9918f22"
+                ],
+                "connections": [
+                    [
+                        "zigbee",
+                        "00:17:88:01:10:5b:5c:2a"
+                    ]
+                ],
+                "id": "098aa8c418de437db4808cae63cacdf1",
+                "identifiers": [
+                    [
+                        "zha",
+                        "00:17:88:01:10:5b:5c:2a"
+                    ]
+                ],
+                "manufacturer": "Philips",
+                "model": "LWB006",
+                "name": "Philips LWB006",
+                "name_by_user": "Loft Lamp Lower",
+                "sw_version": null,
+                "via_device_id": "076ecebc4f0340f8ba331eb49b445efc"
+            },
+            {
+                "area_id": null,
+                "config_entries": [
+                    "4b05cd9dd3be44ac9d48eabf8e0b1094"
+                ],
+                "connections": [
+                    [
+                        "mac",
+                        "c8:2b:96:10:d2:d5"
+                    ]
+                ],
+                "id": "232706d4b30e4cbb83a7f9c71f8991f2",
+                "identifiers": [],
+                "manufacturer": "espressif",
+                "model": "PLATFORMIO_ESP01_1M",
+                "name": "chandelier_loft_duel",
+                "name_by_user": null,
+                "sw_version": "1.14.3 (Mar 31 2020, 13:45:54)",
+                "via_device_id": null
+            },
+            {
+                "area_id": null,
+                "config_entries": [
+                    "0828f3a523194fb6aaca997f0adc09db"
+                ],
+                "connections": [],
+                "id": "757e8f42973047ef84f3612b5f9aa189",
+                "identifiers": [
+                    [
+                        "shelly",
+                        "98F4ABF30E36"
+                    ]
+                ],
+                "manufacturer": "Allterco",
+                "model": "Shelly 2.5",
+                "name": "Shelly 2.5 - 98F4ABF30E36-2",
+                "name_by_user": "Alans TV and PS4",
+                "sw_version": "1.6.0 (200309)",
+                "via_device_id": null
+            },
+            {
+                "area_id": null,
+                "config_entries": [
+                    "0fe784cafcba475a8cbda4c923cca9ea"
+                ],
+                "connections": [
+                    [
+                        "mac",
+                        "2c:f4:32:4b:2a:ef"
+                    ]
+                ],
+                "id": "5b03ac56b454431f92eab2c1d491ac7e",
+                "identifiers": [],
+                "manufacturer": "espressif",
+                "model": "PLATFORMIO_D1_MINI",
+                "name": "dimmer_b",
+                "name_by_user": null,
+                "sw_version": "1.14.3 (Mar 31 2020, 13:46:32)",
+                "via_device_id": null
+            },
+            {
+                "area_id": null,
+                "config_entries": [
+                    "225b7d550cc94e15868a4c1b0c563c12"
+                ],
+                "connections": [
+                    [
+                        "mac",
+                        "bc:dd:c2:6b:e2:6f"
+                    ]
+                ],
+                "id": "bb478037c50841eda33731e2ce599ee0",
+                "identifiers": [],
+                "manufacturer": "espressif",
+                "model": "PLATFORMIO_D1_MINI",
+                "name": "workbench",
+                "name_by_user": null,
+                "sw_version": "1.14.3 (Mar 27 2020, 08:54:09)",
+                "via_device_id": null
+            },
+            {
+                "area_id": null,
+                "config_entries": [
+                    "d168a08781fa45dba0141c24bb8562bf"
+                ],
+                "connections": [
+                    [
+                        "mac",
+                        "2c:f4:32:c2:8b:f6"
+                    ]
+                ],
+                "id": "0ba24f3826be438f812d1ac274c8f057",
+                "identifiers": [],
+                "manufacturer": "espressif",
+                "model": "PLATFORMIO_ESP01_1M",
+                "name": "rf_bridge_sonoff",
+                "name_by_user": null,
+                "sw_version": "1.14.3 (Mar 31 2020, 13:54:13)",
+                "via_device_id": null
+            },
+            {
+                "area_id": "be22218b27c243f180e34029233bc7bc",
+                "config_entries": [
+                    "7a73b18ab4004c68ab7fb005e9918f22"
+                ],
+                "connections": [
+                    [
+                        "zigbee",
+                        "00:15:8d:00:03:cf:f6:da"
+                    ]
+                ],
+                "id": "626d9bc4ea6c4c9d94f429b1bada8b4c",
+                "identifiers": [
+                    [
+                        "zha",
+                        "00:15:8d:00:03:cf:f6:da"
+                    ]
+                ],
+                "manufacturer": "LUMI",
+                "model": "lumi.sensor_magnet",
+                "name": "LUMI lumi.sensor_magnet",
+                "name_by_user": "Backyard Door Aqara",
+                "sw_version": null,
+                "via_device_id": "076ecebc4f0340f8ba331eb49b445efc"
+            },
+            {
+                "area_id": null,
+                "config_entries": [
+                    "7a73b18ab4004c68ab7fb005e9918f22"
+                ],
+                "connections": [
+                    [
+                        "zigbee",
+                        "00:15:8d:00:04:2a:07:bd"
+                    ]
+                ],
+                "id": "19bbf89e60a34a79953d795a1e9101ba",
+                "identifiers": [
+                    [
+                        "zha",
+                        "00:15:8d:00:04:2a:07:bd"
+                    ]
+                ],
+                "manufacturer": "LUMI",
+                "model": "lumi.sensor_magnet",
+                "name": "LUMI lumi.sensor_magnet",
+                "name_by_user": "Couch Side window Aqara",
+                "sw_version": null,
+                "via_device_id": "076ecebc4f0340f8ba331eb49b445efc"
+            },
+            {
+                "area_id": null,
+                "config_entries": [
+                    "7a73b18ab4004c68ab7fb005e9918f22"
+                ],
+                "connections": [
+                    [
+                        "zigbee",
+                        "00:15:8d:00:04:27:1f:44"
+                    ]
+                ],
+                "id": "825f4fc68b5c41c883f1819a10619f9d",
+                "identifiers": [
+                    [
+                        "zha",
+                        "00:15:8d:00:04:27:1f:44"
+                    ]
+                ],
+                "manufacturer": "LUMI",
+                "model": "lumi.sensor_magnet",
+                "name": "LUMI lumi.sensor_magnet",
+                "name_by_user": "TV Side Window",
+                "sw_version": null,
+                "via_device_id": "076ecebc4f0340f8ba331eb49b445efc"
+            },
+            {
+                "area_id": "1635ed0988d64c6db783d11b1f0a32d1",
+                "config_entries": [
+                    "7a73b18ab4004c68ab7fb005e9918f22"
+                ],
+                "connections": [
+                    [
+                        "zigbee",
+                        "00:15:8d:00:04:0b:fe:99"
+                    ]
+                ],
+                "id": "f3942565d159413cb31e33871ea55cfc",
+                "identifiers": [
+                    [
+                        "zha",
+                        "00:15:8d:00:04:0b:fe:99"
+                    ]
+                ],
+                "manufacturer": "LUMI",
+                "model": "lumi.sensor_magnet",
+                "name": "LUMI lumi.sensor_magnet",
+                "name_by_user": "Screen Door Aqara",
+                "sw_version": null,
+                "via_device_id": "076ecebc4f0340f8ba331eb49b445efc"
+            }
+        ]
+    },
+    "key": "core.device_registry",
+    "version": 1
+}

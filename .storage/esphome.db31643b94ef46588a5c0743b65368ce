@@ -1,0 +1,122 @@
+{
+    "data": {
+        "device_info": {
+            "compilation_time": "Mar 30 2020, 15:58:28",
+            "esphome_version": "1.14.3",
+            "has_deep_sleep": false,
+            "mac_address": "DC:4F:22:7E:65:FB",
+            "model": "PLATFORMIO_ESP01_1M",
+            "name": "humidifier",
+            "uses_password": false
+        },
+        "sensor": [
+            {
+                "accuracy_decimals": 1,
+                "force_update": false,
+                "icon": "mdi:water-percent",
+                "key": 585870720,
+                "name": "Set Point",
+                "object_id": "set_point",
+                "unique_id": "dc4f227e65fb-adc",
+                "unit_of_measurement": "%"
+            },
+            {
+                "accuracy_decimals": 1,
+                "force_update": false,
+                "icon": "mdi:thermometer",
+                "key": 1168764344,
+                "name": "BME280 Temperature",
+                "object_id": "bme280_temperature",
+                "unique_id": "humidifiersensorbme280_temperature",
+                "unit_of_measurement": "\u00b0C"
+            },
+            {
+                "accuracy_decimals": 1,
+                "force_update": false,
+                "icon": "mdi:gauge",
+                "key": 849378863,
+                "name": "BME280 Pressure",
+                "object_id": "bme280_pressure",
+                "unique_id": "humidifiersensorbme280_pressure",
+                "unit_of_measurement": "hPa"
+            },
+            {
+                "accuracy_decimals": 1,
+                "force_update": false,
+                "icon": "mdi:water-percent",
+                "key": 4217600373,
+                "name": "BME280 Humidity",
+                "object_id": "bme280_humidity",
+                "unique_id": "humidifiersensorbme280_humidity",
+                "unit_of_measurement": "%"
+            }
+        ],
+        "services": [],
+        "switch": [
+            {
+                "assumed_state": false,
+                "icon": "",
+                "key": 435853453,
+                "name": "Device On",
+                "object_id": "device_on",
+                "unique_id": "humidifierswitchdevice_on"
+            },
+            {
+                "assumed_state": false,
+                "icon": "",
+                "key": 2044534326,
+                "name": "Manual Override",
+                "object_id": "manual_override",
+                "unique_id": "humidifierswitchmanual_override"
+            },
+            {
+                "assumed_state": false,
+                "icon": "",
+                "key": 238972450,
+                "name": "Humidifier Status",
+                "object_id": "humidifier_status",
+                "unique_id": "humidifierswitchhumidifier_status"
+            },
+            {
+                "assumed_state": false,
+                "icon": "mdi:restart",
+                "key": 2618102205,
+                "name": "humidifier Restart",
+                "object_id": "humidifier_restart",
+                "unique_id": "humidifierswitchhumidifier_restart"
+            }
+        ],
+        "text_sensor": [
+            {
+                "icon": "mdi:new-box",
+                "key": 2605249328,
+                "name": "humidifier Version",
+                "object_id": "humidifier_version",
+                "unique_id": "dc4f227e65fb-version"
+            },
+            {
+                "icon": "",
+                "key": 913032159,
+                "name": "humidifier IP",
+                "object_id": "humidifier_ip",
+                "unique_id": "dc4f227e65fb-wifiinfo-ip"
+            },
+            {
+                "icon": "",
+                "key": 345266429,
+                "name": "humidifier SSID",
+                "object_id": "humidifier_ssid",
+                "unique_id": "dc4f227e65fb-wifiinfo-ssid"
+            },
+            {
+                "icon": "",
+                "key": 202577015,
+                "name": "humidifier BSSID",
+                "object_id": "humidifier_bssid",
+                "unique_id": "dc4f227e65fb-wifiinfo-bssid"
+            }
+        ]
+    },
+    "key": "esphome.db31643b94ef46588a5c0743b65368ce",
+    "version": 1
+}

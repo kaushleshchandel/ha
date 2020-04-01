@@ -1,0 +1,118 @@
+{
+    "data": {
+        "binary_sensor": [
+            {
+                "device_class": "connectivity",
+                "is_status_binary_sensor": true,
+                "key": 763350421,
+                "name": "outdoor_bme280 Status",
+                "object_id": "outdoor_bme280_status",
+                "unique_id": "outdoor_bme280binary_sensoroutdoor_bme280_status"
+            }
+        ],
+        "device_info": {
+            "compilation_time": "Mar 31 2020, 13:52:53",
+            "esphome_version": "1.14.3",
+            "has_deep_sleep": false,
+            "mac_address": "DC:4F:22:7D:CC:51",
+            "model": "PLATFORMIO_D1_MINI",
+            "name": "outdoor_bme280",
+            "uses_password": false
+        },
+        "sensor": [
+            {
+                "accuracy_decimals": 0,
+                "force_update": false,
+                "icon": "mdi:timer",
+                "key": 1771335491,
+                "name": "outdoor_bme280 uptime",
+                "object_id": "outdoor_bme280_uptime",
+                "unique_id": "dc4f227dcc51-uptime",
+                "unit_of_measurement": "s"
+            },
+            {
+                "accuracy_decimals": 0,
+                "force_update": false,
+                "icon": "mdi:wifi",
+                "key": 183826819,
+                "name": "outdoor_bme280 WiFi Signal",
+                "object_id": "outdoor_bme280_wifi_signal",
+                "unique_id": "dc4f227dcc51-wifisignal",
+                "unit_of_measurement": "dB"
+            },
+            {
+                "accuracy_decimals": 1,
+                "force_update": false,
+                "icon": "mdi:thermometer",
+                "key": 2033033012,
+                "name": "Outdoor Temperature",
+                "object_id": "outdoor_temperature",
+                "unique_id": "outdoor_bme280sensoroutdoor_temperature",
+                "unit_of_measurement": "\u00b0C"
+            },
+            {
+                "accuracy_decimals": 1,
+                "force_update": false,
+                "icon": "mdi:gauge",
+                "key": 2972771107,
+                "name": "Outdoor Pressure",
+                "object_id": "outdoor_pressure",
+                "unique_id": "outdoor_bme280sensoroutdoor_pressure",
+                "unit_of_measurement": "hPa"
+            },
+            {
+                "accuracy_decimals": 1,
+                "force_update": false,
+                "icon": "mdi:water-percent",
+                "key": 113077473,
+                "name": "Outdoor Humidity",
+                "object_id": "outdoor_humidity",
+                "unique_id": "outdoor_bme280sensoroutdoor_humidity",
+                "unit_of_measurement": "%"
+            }
+        ],
+        "services": [],
+        "switch": [
+            {
+                "assumed_state": false,
+                "icon": "mdi:restart",
+                "key": 3757486916,
+                "name": "outdoor_bme280 Restart",
+                "object_id": "outdoor_bme280_restart",
+                "unique_id": "outdoor_bme280switchoutdoor_bme280_restart"
+            }
+        ],
+        "text_sensor": [
+            {
+                "icon": "mdi:new-box",
+                "key": 4254622669,
+                "name": "outdoor_bme280 Version",
+                "object_id": "outdoor_bme280_version",
+                "unique_id": "dc4f227dcc51-version"
+            },
+            {
+                "icon": "",
+                "key": 2119703956,
+                "name": "outdoor_bme280 IP",
+                "object_id": "outdoor_bme280_ip",
+                "unique_id": "dc4f227dcc51-wifiinfo-ip"
+            },
+            {
+                "icon": "",
+                "key": 3131246266,
+                "name": "outdoor_bme280 SSID",
+                "object_id": "outdoor_bme280_ssid",
+                "unique_id": "dc4f227dcc51-wifiinfo-ssid"
+            },
+            {
+                "icon": "",
+                "key": 2271031962,
+                "name": "outdoor_bme280 BSSID",
+                "object_id": "outdoor_bme280_bssid",
+                "unique_id": "dc4f227dcc51-wifiinfo-bssid"
+            }
+        ]
+    },
+    "key": "esphome.f0bdf9fb2541417bb0596b1132d5376c",
+    "version": 1
+}

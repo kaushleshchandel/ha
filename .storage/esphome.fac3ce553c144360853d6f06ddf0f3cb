@@ -1,0 +1,91 @@
+{
+    "data": {
+        "binary_sensor": [
+            {
+                "device_class": "garage_door",
+                "is_status_binary_sensor": false,
+                "key": 1402501725,
+                "name": "Garage Door",
+                "object_id": "garage_door",
+                "unique_id": "garage_multi_sensorbinary_sensorgarage_door"
+            },
+            {
+                "device_class": "",
+                "is_status_binary_sensor": false,
+                "key": 399565059,
+                "name": "Homelink B",
+                "object_id": "homelink_b",
+                "unique_id": "garage_multi_sensorbinary_sensorhomelink_b"
+            },
+            {
+                "device_class": "door",
+                "is_status_binary_sensor": false,
+                "key": 2996304490,
+                "name": "Kitchen Door",
+                "object_id": "kitchen_door",
+                "unique_id": "garage_multi_sensorbinary_sensorkitchen_door"
+            },
+            {
+                "device_class": "occupancy",
+                "is_status_binary_sensor": false,
+                "key": 1973675643,
+                "name": "Garage PIR Sensor",
+                "object_id": "garage_pir_sensor",
+                "unique_id": "garage_multi_sensorbinary_sensorgarage_pir_sensor"
+            }
+        ],
+        "device_info": {
+            "compilation_time": "Mar 19 2020, 14:51:56",
+            "esphome_version": "1.14.3",
+            "has_deep_sleep": false,
+            "mac_address": "BC:DD:C2:6B:E6:04",
+            "model": "PLATFORMIO_D1_MINI",
+            "name": "garage_multi_sensor",
+            "uses_password": false
+        },
+        "sensor": [],
+        "services": [],
+        "switch": [
+            {
+                "assumed_state": false,
+                "icon": "mdi:restart",
+                "key": 2935828637,
+                "name": "garage_multi_sensor Restart",
+                "object_id": "garage_multi_sensor_restart",
+                "unique_id": "garage_multi_sensorswitchgarage_multi_sensor_restart"
+            }
+        ],
+        "text_sensor": [
+            {
+                "icon": "mdi:new-box",
+                "key": 3706883088,
+                "name": "garage_multi_sensor Version",
+                "object_id": "garage_multi_sensor_version",
+                "unique_id": "bcddc26be604-version"
+            },
+            {
+                "icon": "",
+                "key": 3491835711,
+                "name": "garage_multi_sensor IP",
+                "object_id": "garage_multi_sensor_ip",
+                "unique_id": "bcddc26be604-wifiinfo-ip"
+            },
+            {
+                "icon": "",
+                "key": 1810415197,
+                "name": "garage_multi_sensor SSID",
+                "object_id": "garage_multi_sensor_ssid",
+                "unique_id": "bcddc26be604-wifiinfo-ssid"
+            },
+            {
+                "icon": "",
+                "key": 3857726807,
+                "name": "garage_multi_sensor BSSID",
+                "object_id": "garage_multi_sensor_bssid",
+                "unique_id": "bcddc26be604-wifiinfo-bssid"
+            }
+        ]
+    },
+    "key": "esphome.fac3ce553c144360853d6f06ddf0f3cb",
+    "version": 1
+}

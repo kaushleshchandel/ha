@@ -1,0 +1,190 @@
+{
+    "data": {
+        "binary_sensor": [
+            {
+                "device_class": "connectivity",
+                "is_status_binary_sensor": true,
+                "key": 1913274282,
+                "name": "rf_bridge_sonoff Status",
+                "object_id": "rf_bridge_sonoff_status",
+                "unique_id": "rf_bridge_sonoffbinary_sensorrf_bridge_sonoff_status"
+            },
+            {
+                "device_class": "",
+                "is_status_binary_sensor": false,
+                "key": 1157341348,
+                "name": "Remote A1",
+                "object_id": "remote_a1",
+                "unique_id": "rf_bridge_sonoffbinary_sensorremote_a1"
+            },
+            {
+                "device_class": "",
+                "is_status_binary_sensor": false,
+                "key": 1157341351,
+                "name": "Remote A2",
+                "object_id": "remote_a2",
+                "unique_id": "rf_bridge_sonoffbinary_sensorremote_a2"
+            },
+            {
+                "device_class": "",
+                "is_status_binary_sensor": false,
+                "key": 1107008493,
+                "name": "Remote B1",
+                "object_id": "remote_b1",
+                "unique_id": "rf_bridge_sonoffbinary_sensorremote_b1"
+            },
+            {
+                "device_class": "",
+                "is_status_binary_sensor": false,
+                "key": 1107008494,
+                "name": "Remote B2",
+                "object_id": "remote_b2",
+                "unique_id": "rf_bridge_sonoffbinary_sensorremote_b2"
+            },
+            {
+                "device_class": "",
+                "is_status_binary_sensor": false,
+                "key": 1123786078,
+                "name": "Remote C1",
+                "object_id": "remote_c1",
+                "unique_id": "rf_bridge_sonoffbinary_sensorremote_c1"
+            },
+            {
+                "device_class": "",
+                "is_status_binary_sensor": false,
+                "key": 1123786077,
+                "name": "Remote C2",
+                "object_id": "remote_c2",
+                "unique_id": "rf_bridge_sonoffbinary_sensorremote_c2"
+            },
+            {
+                "device_class": "",
+                "is_status_binary_sensor": false,
+                "key": 1073453191,
+                "name": "Remote D1",
+                "object_id": "remote_d1",
+                "unique_id": "rf_bridge_sonoffbinary_sensorremote_d1"
+            },
+            {
+                "device_class": "",
+                "is_status_binary_sensor": false,
+                "key": 1073453188,
+                "name": "Remote D2",
+                "object_id": "remote_d2",
+                "unique_id": "rf_bridge_sonoffbinary_sensorremote_d2"
+            },
+            {
+                "device_class": "window",
+                "is_status_binary_sensor": false,
+                "key": 4031778781,
+                "name": "Alans Window",
+                "object_id": "alans_window",
+                "unique_id": "rf_bridge_sonoffbinary_sensoralans_window"
+            },
+            {
+                "device_class": "door",
+                "is_status_binary_sensor": false,
+                "key": 1988562471,
+                "name": "Laundry Door",
+                "object_id": "laundry_door",
+                "unique_id": "rf_bridge_sonoffbinary_sensorlaundry_door"
+            },
+            {
+                "device_class": "window",
+                "is_status_binary_sensor": false,
+                "key": 421251720,
+                "name": "Alans Room TV Side WIndow",
+                "object_id": "alans_room_tv_side_window",
+                "unique_id": "rf_bridge_sonoffbinary_sensoralans_room_tv_side_window"
+            },
+            {
+                "device_class": "window",
+                "is_status_binary_sensor": false,
+                "key": 1164925141,
+                "name": "Master Bedroom Window",
+                "object_id": "master_bedroom_window",
+                "unique_id": "rf_bridge_sonoffbinary_sensormaster_bedroom_window"
+            },
+            {
+                "device_class": "window",
+                "is_status_binary_sensor": false,
+                "key": 903015615,
+                "name": "Computer Side Window",
+                "object_id": "computer_side_window",
+                "unique_id": "rf_bridge_sonoffbinary_sensorcomputer_side_window"
+            },
+            {
+                "device_class": "window",
+                "is_status_binary_sensor": false,
+                "key": 2022997308,
+                "name": "Loft Road Side Window",
+                "object_id": "loft_road_side_window",
+                "unique_id": "rf_bridge_sonoffbinary_sensorloft_road_side_window"
+            }
+        ],
+        "device_info": {
+            "compilation_time": "Mar 31 2020, 13:54:13",
+            "esphome_version": "1.14.3",
+            "has_deep_sleep": false,
+            "mac_address": "2C:F4:32:C2:8B:F6",
+            "model": "PLATFORMIO_ESP01_1M",
+            "name": "rf_bridge_sonoff",
+            "uses_password": false
+        },
+        "sensor": [
+            {
+                "accuracy_decimals": 0,
+                "force_update": false,
+                "icon": "mdi:wifi",
+                "key": 656389198,
+                "name": "rf_bridge_sonoff WiFi Signal",
+                "object_id": "rf_bridge_sonoff_wifi_signal",
+                "unique_id": "2cf432c28bf6-wifisignal",
+                "unit_of_measurement": "dB"
+            },
+            {
+                "accuracy_decimals": 0,
+                "force_update": false,
+                "icon": "mdi:timer",
+                "key": 3697271984,
+                "name": "rf_bridge_sonoff uptime",
+                "object_id": "rf_bridge_sonoff_uptime",
+                "unique_id": "2cf432c28bf6-uptime",
+                "unit_of_measurement": "s"
+            }
+        ],
+        "services": [],
+        "text_sensor": [
+            {
+                "icon": "mdi:new-box",
+                "key": 1926896376,
+                "name": "rf_bridge_sonoff Version",
+                "object_id": "rf_bridge_sonoff_version",
+                "unique_id": "2cf432c28bf6-version"
+            },
+            {
+                "icon": "",
+                "key": 39100503,
+                "name": "rf_bridge_sonoff IP",
+                "object_id": "rf_bridge_sonoff_ip",
+                "unique_id": "2cf432c28bf6-wifiinfo-ip"
+            },
+            {
+                "icon": "",
+                "key": 2610610645,
+                "name": "rf_bridge_sonoff SSID",
+                "object_id": "rf_bridge_sonoff_ssid",
+                "unique_id": "2cf432c28bf6-wifiinfo-ssid"
+            },
+            {
+                "icon": "",
+                "key": 2734906463,
+                "name": "rf_bridge_sonoff BSSID",
+                "object_id": "rf_bridge_sonoff_bssid",
+                "unique_id": "2cf432c28bf6-wifiinfo-bssid"
+            }
+        ]
+    },
+    "key": "esphome.d168a08781fa45dba0141c24bb8562bf",
+    "version": 1
+}

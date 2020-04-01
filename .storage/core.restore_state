@@ -1,0 +1,2206 @@
+{
+    "data": [
+        {
+            "last_seen": "2020-04-01T16:31:34.005203+00:00",
+            "state": {
+                "attributes": {
+                    "editable": true,
+                    "friendly_name": "Cambria-A",
+                    "id": "cambria_a",
+                    "user_id": "1bda3d6e9f7248e38892e9b8d924709d"
+                },
+                "context": {
+                    "id": "f8f2a12e64194623adf383e32f12dd29",
+                    "parent_id": null,
+                    "user_id": null
+                },
+                "entity_id": "person.cambria_a",
+                "last_changed": "2020-03-31T18:14:47.956557+00:00",
+                "last_updated": "2020-03-31T18:15:09.988812+00:00",
+                "state": "unknown"
+            }
+        },
+        {
+            "last_seen": "2020-04-01T16:31:34.005203+00:00",
+            "state": {
+                "attributes": {
+                    "editable": false,
+                    "friendly_name": "Garage Timer",
+                    "initial": null,
+                    "max": 60.0,
+                    "min": 1.0,
+                    "mode": "slider",
+                    "persistent": true,
+                    "step": 1.0
+                },
+                "context": {
+                    "id": "1cd7daf9b2574231bfe81ae57d33daf3",
+                    "parent_id": null,
+                    "user_id": null
+                },
+                "entity_id": "input_number.garage_timer_slider",
+                "last_changed": "2020-03-31T18:14:47.970704+00:00",
+                "last_updated": "2020-03-31T18:14:47.970704+00:00",
+                "state": "5.0"
+            }
+        },
+        {
+            "last_seen": "2020-04-01T16:31:34.005203+00:00",
+            "state": {
+                "attributes": {
+                    "friendly_name": "automation 13",
+                    "last_triggered": null
+                },
+                "context": {
+                    "id": "aa789f0a66a94bc08b0b5fac66512038",
+                    "parent_id": null,
+                    "user_id": null
+                },
+                "entity_id": "automation.automation_13",
+                "last_changed": "2020-03-31T18:14:47.971072+00:00",
+                "last_updated": "2020-03-31T18:14:47.971072+00:00",
+                "state": "on"
+            }
+        },
+        {
+            "last_seen": "2020-04-01T16:31:34.005203+00:00",
+            "state": {
+                "attributes": {
+                    "friendly_name": "TV : Turn on TV & Playstation",
+                    "id": "aa5a8c789a1cbe5c03a806e274bc3989",
+                    "last_triggered": "2020-03-24T14:59:00.438084+00:00"
+                },
+                "context": {
+                    "id": "c33e69ac80d44ca7a287dc5da9dc575b",
+                    "parent_id": null,
+                    "user_id": null
+                },
+                "entity_id": "automation.tv_turn_on_tv_playstation",
+                "last_changed": "2020-03-31T18:14:47.971433+00:00",
+                "last_updated": "2020-03-31T18:14:47.971433+00:00",
+                "state": "off"
+            }
+        },
+        {
+            "last_seen": "2020-04-01T16:31:34.005203+00:00",
+            "state": {
+                "attributes": {
+                    "friendly_name": "Z: TestPush",
+                    "last_triggered": "2020-03-17T02:01:11.700076+00:00"
+                },
+                "context": {
+                    "id": "5f2c2900c90f4e6d90c5f5540e729d22",
+                    "parent_id": null,
+                    "user_id": null
+                },
+                "entity_id": "automation.z_testpush",
+                "last_changed": "2020-03-31T18:14:47.971725+00:00",
+                "last_updated": "2020-03-31T18:14:47.971725+00:00",
+                "state": "on"
+            }
+        },
+        {
+            "last_seen": "2020-04-01T16:31:34.005203+00:00",
+            "state": {
+                "attributes": {
+                    "friendly_name": "LIGHT: Auto turn off Garage lights",
+                    "last_triggered": "2020-04-01T15:16:52.023274+00:00"
+                },
+                "context": {
+                    "id": "c38c33bc434d478c9268cfdd0bab1a76",
+                    "parent_id": "6a1a50f12bee4ff5b5a1429464730f9a",
+                    "user_id": null
+                },
+                "entity_id": "automation.light_auto_turn_off_garage_lights",
+                "last_changed": "2020-03-31T18:14:47.972024+00:00",
+                "last_updated": "2020-04-01T15:16:52.023391+00:00",
+                "state": "on"
+            }
+        },
+        {
+            "last_seen": "2020-04-01T16:31:34.005203+00:00",
+            "state": {
+                "attributes": {
+                    "friendly_name": "Z: TestPushBullet",
+                    "last_triggered": "2020-03-17T02:01:11.649730+00:00"
+                },
+                "context": {
+                    "id": "91648002f09241caa2463b5586d77d39",
+                    "parent_id": null,
+                    "user_id": null
+                },
+                "entity_id": "automation.z_testpushbullet",
+                "last_changed": "2020-03-31T18:14:47.972327+00:00",
+                "last_updated": "2020-03-31T18:14:47.972327+00:00",
+                "state": "on"
+            }
+        },
+        {
+            "last_seen": "2020-04-01T16:31:34.005203+00:00",
+            "state": {
+                "attributes": {
+                    "friendly_name": "LIGHT: Turn on Garage Lights  Kitchen Door Open",
+                    "last_triggered": "2020-04-01T15:14:27.956808+00:00"
+                },
+                "context": {
+                    "id": "435936f6a9f344b1bccb7d12575f791f",
+                    "parent_id": "83f63a6533104c9eb3d2c6675df73cbe",
+                    "user_id": null
+                },
+                "entity_id": "automation.light_turn_on_garage_lights_kitchen_door_open",
+                "last_changed": "2020-03-31T18:14:47.972667+00:00",
+                "last_updated": "2020-04-01T15:14:27.956930+00:00",
+                "state": "on"
+            }
+        },
+        {
+            "last_seen": "2020-04-01T16:31:34.005203+00:00",
+            "state": {
+                "attributes": {
+                    "friendly_name": "LIGHT: Kitchen Light on at night when Chandeleir is Turned On",
+                    "last_triggered": "2020-03-31T10:19:30.370915+00:00"
+                },
+                "context": {
+                    "id": "9e5ce92574df4b1e860986f6ba2f7c55",
+                    "parent_id": null,
+                    "user_id": null
+                },
+                "entity_id": "automation.light_kitchen_light_on_at_night_when_chandeleir_is_turned_on_2",
+                "last_changed": "2020-03-31T18:14:47.972969+00:00",
+                "last_updated": "2020-03-31T18:14:47.972969+00:00",
+                "state": "on"
+            }
+        },
+        {
+            "last_seen": "2020-04-01T16:31:34.005203+00:00",
+            "state": {
+                "attributes": {
+                    "friendly_name": "SYSTEM: Reset Garage Timer",
+                    "last_triggered": "2020-04-01T11:00:00.011452+00:00"
+                },
+                "context": {
+                    "id": "22cde739fc7c4872b52b1d37dc460bee",
+                    "parent_id": null,
+                    "user_id": null
+                },
+                "entity_id": "automation.system_reset_garage_timer",
+                "last_changed": "2020-03-31T18:14:47.973259+00:00",
+                "last_updated": "2020-04-01T11:00:00.011616+00:00",
+                "state": "on"
+            }
+        },
+        {
+            "last_seen": "2020-04-01T16:31:34.005203+00:00",
+            "state": {
+                "attributes": {
+                    "friendly_name": "LIGHT: Kitchen Light OFF at night when Chandeleir is Turned OFF",
+                    "last_triggered": "2020-03-31T10:19:32.003483+00:00"
+                },
+                "context": {
+                    "id": "16b3a2736a824081b1b116a736e82947",
+                    "parent_id": null,
+                    "user_id": null
+                },
+                "entity_id": "automation.light_kitchen_light_off_at_night_when_chandeleir_is_turned_off_2",
+                "last_changed": "2020-03-31T18:14:47.973543+00:00",
+                "last_updated": "2020-03-31T18:14:47.973543+00:00",
+                "state": "on"
+            }
+        },
+        {
+            "last_seen": "2020-04-01T16:31:34.005203+00:00",
+            "state": {
+                "attributes": {
+                    "friendly_name": "ALARM: Trigger alarm while armed away",
+                    "last_triggered": "2020-03-17T01:35:58.138012+00:00"
+                },
+                "context": {
+                    "id": "b2d227c0e50149d8a604549bd6d85121",
+                    "parent_id": null,
+                    "user_id": null
+                },
+                "entity_id": "automation.alarm_trigger_alarm_while_armed_away",
+                "last_changed": "2020-03-31T18:14:47.973818+00:00",
+                "last_updated": "2020-03-31T18:14:47.973818+00:00",
+                "state": "on"
+            }
+        },
+        {
+            "last_seen": "2020-04-01T16:31:34.005203+00:00",
+            "state": {
+                "attributes": {
+                    "friendly_name": "LIGHT: Outdoor Lights ON",
+                    "last_triggered": "2020-03-31T23:45:52.041419+00:00"
+                },
+                "context": {
+                    "id": "3d2f05a50b4445b49329ded913e3084d",
+                    "parent_id": null,
+                    "user_id": null
+                },
+                "entity_id": "automation.light_outdoor_lights_on_2",
+                "last_changed": "2020-03-31T18:14:47.974081+00:00",
+                "last_updated": "2020-03-31T23:45:52.041562+00:00",
+                "state": "on"
+            }
+        },
+        {
+            "last_seen": "2020-04-01T16:31:34.005203+00:00",
+            "state": {
+                "attributes": {
+                    "friendly_name": "ALARM: Send notification when alarm triggered",
+                    "last_triggered": "2020-03-17T00:54:26.883062+00:00"
+                },
+                "context": {
+                    "id": "303ac5cf56374a4bbdaccddb84a4a643",
+                    "parent_id": null,
+                    "user_id": null
+                },
+                "entity_id": "automation.alarm_send_notification_when_alarm_triggered",
+                "last_changed": "2020-03-31T18:14:47.974752+00:00",
+                "last_updated": "2020-03-31T18:14:47.974752+00:00",
+                "state": "on"
+            }
+        },
+        {
+            "last_seen": "2020-04-01T16:31:34.005203+00:00",
+            "state": {
+                "attributes": {
+                    "friendly_name": "LIGHT: Outdoor Lights OFF",
+                    "last_triggered": "2020-04-01T12:04:37.027617+00:00"
+                },
+                "context": {
+                    "id": "6c74eaf5900b40f6a854e428e9b8f639",
+                    "parent_id": null,
+                    "user_id": null
+                },
+                "entity_id": "automation.light_outdoor_lights_off_3",
+                "last_changed": "2020-03-31T18:14:47.975113+00:00",
+                "last_updated": "2020-04-01T12:04:37.027755+00:00",
+                "state": "on"
+            }
+        },
+        {
+            "last_seen": "2020-04-01T16:31:34.005203+00:00",
+            "state": {
+                "attributes": {
+                    "friendly_name": "ALARM: Send notification when alarm is Disarmed",
+                    "last_triggered": "2020-03-18T13:52:49.030325+00:00"
+                },
+                "context": {
+                    "id": "46268ba57d784774a9e0d8b56cf2f76f",
+                    "parent_id": null,
+                    "user_id": null
+                },
+                "entity_id": "automation.alarm_send_notification_when_alarm_is_disarmed",
+                "last_changed": "2020-03-31T18:14:47.975411+00:00",
+                "last_updated": "2020-03-31T18:14:47.975411+00:00",
+                "state": "on"
+            }
+        },
+        {
+            "last_seen": "2020-04-01T16:31:34.005203+00:00",
+            "state": {
+                "attributes": {
+                    "friendly_name": "LIGHT: Auto on at night",
+                    "last_triggered": "2020-03-31T23:45:52.065253+00:00"
+                },
+                "context": {
+                    "id": "6381758b40fe404bbc6d4d5abfd09f82",
+                    "parent_id": null,
+                    "user_id": null
+                },
+                "entity_id": "automation.light_auto_on_at_night_2",
+                "last_changed": "2020-03-31T18:14:47.975693+00:00",
+                "last_updated": "2020-03-31T23:45:52.065359+00:00",
+                "state": "on"
+            }
+        },
+        {
+            "last_seen": "2020-04-01T16:31:34.005203+00:00",
+            "state": {
+                "attributes": {
+                    "friendly_name": "LIGHT: Turn off Loft when not Occupied",
+                    "last_triggered": null
+                },
+                "context": {
+                    "id": "be240d69d41f4c02aba34cbe307337d6",
+                    "parent_id": null,
+                    "user_id": null
+                },
+                "entity_id": "automation.light_turn_off_loft_when_not_occupied_2",
+                "last_changed": "2020-03-31T18:14:47.976016+00:00",
+                "last_updated": "2020-03-31T18:14:47.976016+00:00",
+                "state": "on"
+            }
+        },
+        {
+            "last_seen": "2020-04-01T16:31:34.005203+00:00",
+            "state": {
+                "attributes": {
+                    "friendly_name": "LIGHT: Turn off Kitchen Sink Light",
+                    "last_triggered": null
+                },
+                "context": {
+                    "id": "d057e64249f949cfa6fa436a7822730a",
+                    "parent_id": null,
+                    "user_id": null
+                },
+                "entity_id": "automation.light_turn_off_kitchen_sink_light_2",
+                "last_changed": "2020-03-31T18:14:47.976307+00:00",
+                "last_updated": "2020-03-31T18:14:47.976307+00:00",
+                "state": "on"
+            }
+        },
+        {
+            "last_seen": "2020-04-01T16:31:34.005203+00:00",
+            "state": {
+                "attributes": {
+                    "friendly_name": "LIGHT: Turn off Garage Light",
+                    "last_triggered": null
+                },
+                "context": {
+                    "id": "6302ae9602814c3f8b6479b8e675e1ec",
+                    "parent_id": null,
+                    "user_id": null
+                },
+                "entity_id": "automation.light_turn_off_garage_light_2",
+                "last_changed": "2020-03-31T18:14:47.976589+00:00",
+                "last_updated": "2020-03-31T18:14:47.976589+00:00",
+                "state": "on"
+            }
+        },
+        {
+            "last_seen": "2020-04-01T16:31:34.005203+00:00",
+            "state": {
+                "attributes": {
+                    "friendly_name": "LIGHT: RF Remote",
+                    "last_triggered": null
+                },
+                "context": {
+                    "id": "61e6937459e94f66a1f02648e4a66a6d",
+                    "parent_id": null,
+                    "user_id": null
+                },
+                "entity_id": "automation.light_rf_remote_2",
+                "last_changed": "2020-03-31T18:14:47.976866+00:00",
+                "last_updated": "2020-03-31T18:14:47.976866+00:00",
+                "state": "on"
+            }
+        },
+        {
+            "last_seen": "2020-04-01T16:31:34.005203+00:00",
+            "state": {
+                "attributes": {
+                    "friendly_name": "SYSTEM: Let's Encrypt Renewal",
+                    "last_triggered": "2020-04-01T05:00:00.482089+00:00"
+                },
+                "context": {
+                    "id": "28f698adf0da4537ad04152cd34073f8",
+                    "parent_id": null,
+                    "user_id": null
+                },
+                "entity_id": "automation.system_let_s_encrypt_renewal_2",
+                "last_changed": "2020-03-31T18:14:47.977148+00:00",
+                "last_updated": "2020-04-01T05:00:00.482236+00:00",
+                "state": "on"
+            }
+        },
+        {
+            "last_seen": "2020-04-01T16:31:34.005203+00:00",
+            "state": {
+                "attributes": {
+                    "friendly_name": "SYSTEM : Weekly : Hassio Reboot",
+                    "last_triggered": "2020-04-01T08:45:00.013993+00:00"
+                },
+                "context": {
+                    "id": "e7d86fa415d8465c9db32c1c2839ff9f",
+                    "parent_id": null,
+                    "user_id": null
+                },
+                "entity_id": "automation.system_weekly_hassio_reboot_2",
+                "last_changed": "2020-03-31T18:14:47.977419+00:00",
+                "last_updated": "2020-04-01T08:45:00.014131+00:00",
+                "state": "on"
+            }
+        },
+        {
+            "last_seen": "2020-04-01T16:31:34.005203+00:00",
+            "state": {
+                "attributes": {
+                    "changed_by": null,
+                    "code_arm_required": true,
+                    "code_format": "number",
+                    "friendly_name": "Home Alarm",
+                    "supported_features": 31
+                },
+                "context": {
+                    "id": "c1eee89c89254f59ab73e4a39cb2c2a2",
+                    "parent_id": null,
+                    "user_id": null
+                },
+                "entity_id": "alarm_control_panel.home_alarm",
+                "last_changed": "2020-03-31T18:14:47.978008+00:00",
+                "last_updated": "2020-03-31T18:14:47.978008+00:00",
+                "state": "disarmed"
+            }
+        },
+        {
+            "last_seen": "2020-04-01T16:31:34.005203+00:00",
+            "state": {
+                "attributes": {
+                    "assumed_state": true,
+                    "friendly_name": "Refresh Devices"
+                },
+                "context": {
+                    "id": "89646a8a27ab438b9326a0971e513e9f",
+                    "parent_id": null,
+                    "user_id": null
+                },
+                "entity_id": "switch.refresh_devices",
+                "last_changed": "2020-03-31T18:14:48.225298+00:00",
+                "last_updated": "2020-03-31T18:14:48.225298+00:00",
+                "state": "off"
+            }
+        },
+        {
+            "last_seen": "2020-04-01T16:31:34.005203+00:00",
+            "state": {
+                "attributes": {
+                    "editable": true,
+                    "friendly_name": "Kaushlesh",
+                    "gps_accuracy": 13,
+                    "id": "kaushlesh",
+                    "latitude": 41.8706736,
+                    "longitude": -87.9890264,
+                    "source": "device_tracker.sm_g960u"
+                },
+                "context": {
+                    "id": "6dbfaab8648448e4acb470912fa40005",
+                    "parent_id": null,
+                    "user_id": null
+                },
+                "entity_id": "person.kaushlesh",
+                "last_changed": "2020-03-31T18:14:48.239631+00:00",
+                "last_updated": "2020-04-01T11:56:01.912795+00:00",
+                "state": "home"
+            }
+        },
+        {
+            "last_seen": "2020-04-01T16:31:34.005203+00:00",
+            "state": {
+                "attributes": {
+                    "editable": false,
+                    "friendly_name": "Maximum Humidity",
+                    "initial": null,
+                    "max": 50.0,
+                    "min": 15.0,
+                    "mode": "slider",
+                    "persistent": true,
+                    "step": 1.0
+                },
+                "context": {
+                    "id": "bb08a6395dd54cd693fbf690fbf5bde4",
+                    "parent_id": null,
+                    "user_id": null
+                },
+                "entity_id": "input_number.max_humidity_slider",
+                "last_changed": "2020-03-31T18:14:48.254105+00:00",
+                "last_updated": "2020-03-31T18:14:48.254105+00:00",
+                "state": "30.0"
+            }
+        },
+        {
+            "last_seen": "2020-04-01T16:31:34.005203+00:00",
+            "state": {
+                "attributes": {
+                    "editable": true,
+                    "friendly_name": "Emelia",
+                    "id": "emelia",
+                    "user_id": "0dff9b805f6540cba85a3490c7c4244b"
+                },
+                "context": {
+                    "id": "2311ead634264bdd8e0c11ccf6a9c38c",
+                    "parent_id": null,
+                    "user_id": null
+                },
+                "entity_id": "person.emelia",
+                "last_changed": "2020-03-31T20:05:16.441498+00:00",
+                "last_updated": "2020-03-31T20:05:16.441498+00:00",
+                "state": "unknown"
+            }
+        },
+        {
+            "last_seen": "2020-04-01T16:31:34.005203+00:00",
+            "state": {
+                "attributes": {
+                    "editable": false,
+                    "friendly_name": "Minimum Humidity",
+                    "initial": null,
+                    "max": 50.0,
+                    "min": 15.0,
+                    "mode": "slider",
+                    "persistent": true,
+                    "step": 1.0
+                },
+                "context": {
+                    "id": "894328d8cec64ff489e15d498e4cc791",
+                    "parent_id": null,
+                    "user_id": null
+                },
+                "entity_id": "input_number.min_humidity_slider",
+                "last_changed": "2020-03-31T18:14:48.312559+00:00",
+                "last_updated": "2020-03-31T18:14:48.312559+00:00",
+                "state": "30.0"
+            }
+        },
+        {
+            "last_seen": "2020-04-01T16:31:34.005203+00:00",
+            "state": {
+                "attributes": {
+                    "editable": true,
+                    "friendly_name": "Fernanda",
+                    "id": "fernanda",
+                    "user_id": "b58334f6bb0748b99540e24279c6ce0b"
+                },
+                "context": {
+                    "id": "a4d066c020e74167b9f0d1c5f720ffcb",
+                    "parent_id": null,
+                    "user_id": null
+                },
+                "entity_id": "person.fernanda",
+                "last_changed": "2020-03-31T18:14:48.444301+00:00",
+                "last_updated": "2020-03-31T18:15:10.045718+00:00",
+                "state": "unknown"
+            }
+        },
+        {
+            "last_seen": "2020-04-01T16:31:34.005203+00:00",
+            "state": {
+                "attributes": {
+                    "editable": false,
+                    "friendly_name": "Laundry Maximum Temperature",
+                    "initial": null,
+                    "max": 120.0,
+                    "min": 50.0,
+                    "mode": "slider",
+                    "persistent": true,
+                    "step": 10.0
+                },
+                "context": {
+                    "id": "d6cef7c7397042c29e07f851d78b597e",
+                    "parent_id": null,
+                    "user_id": null
+                },
+                "entity_id": "input_number.laundry_max_temperature",
+                "last_changed": "2020-03-31T18:14:48.446302+00:00",
+                "last_updated": "2020-03-31T18:14:48.446302+00:00",
+                "state": "85.0"
+            }
+        },
+        {
+            "last_seen": "2020-04-01T16:31:34.005203+00:00",
+            "state": {
+                "attributes": {
+                    "friendly_name": "Garage Door Opener"
+                },
+                "context": {
+                    "id": "8f90c95408b543098400b42def9d761c",
+                    "parent_id": null,
+                    "user_id": null
+                },
+                "entity_id": "switch.garage_door_opener",
+                "last_changed": "2020-03-31T18:14:48.646783+00:00",
+                "last_updated": "2020-03-31T18:14:48.646783+00:00",
+                "state": "unavailable"
+            }
+        },
+        {
+            "last_seen": "2020-04-01T16:31:34.005203+00:00",
+            "state": {
+                "attributes": {
+                    "altitude": 180.0,
+                    "battery_level": 45,
+                    "course": 0,
+                    "friendly_name": "kc_phone",
+                    "gps_accuracy": 13,
+                    "latitude": 41.8706736,
+                    "longitude": -87.9890264,
+                    "source_type": "gps",
+                    "speed": 0,
+                    "vertical_accuracy": 2
+                },
+                "context": {
+                    "id": "66255e9cb1b54a09b0c6c0bbbd3f1271",
+                    "parent_id": null,
+                    "user_id": null
+                },
+                "entity_id": "device_tracker.sm_g960u",
+                "last_changed": "2020-04-01T11:56:01.909844+00:00",
+                "last_updated": "2020-04-01T11:56:01.909844+00:00",
+                "state": "home"
+            }
+        },
+        {
+            "last_seen": "2020-04-01T16:31:34.005203+00:00",
+            "state": {
+                "attributes": {
+                    "brightness": 12,
+                    "cloud_status": "disabled",
+                    "friendly_name": "Alans Room Dimmer",
+                    "has_firmware_update": true,
+                    "ip_address": "192.168.0.15",
+                    "over_temp": false,
+                    "protocols": [
+                        "CoAP-discovery",
+                        "CoAP-msg",
+                        "poll",
+                        "mDns"
+                    ],
+                    "shelly_id": "DB33AC",
+                    "shelly_type": "Shelly Dimmer",
+                    "supported_features": 1,
+                    "switch_1": false,
+                    "switch_2": false
+                },
+                "context": {
+                    "id": "ea758e8d229543538366146153c9df68",
+                    "parent_id": null,
+                    "user_id": null
+                },
+                "entity_id": "light.alans_room_dimmer_shelly",
+                "last_changed": "2020-04-01T06:53:47.292784+00:00",
+                "last_updated": "2020-04-01T15:01:56.315190+00:00",
+                "state": "on"
+            }
+        },
+        {
+            "last_seen": "2020-04-01T16:31:34.005203+00:00",
+            "state": {
+                "attributes": {
+                    "cloud_status": "disabled",
+                    "friendly_name": "Alans TV",
+                    "has_firmware_update": false,
+                    "ip_address": "192.168.0.20",
+                    "over_power": false,
+                    "over_temp": false,
+                    "protocols": [
+                        "CoAP-msg",
+                        "poll",
+                        "mDns",
+                        "CoAP-discovery"
+                    ],
+                    "shelly_id": "98F4ABF30E36-1",
+                    "shelly_type": "Shelly 2.5",
+                    "switch": false,
+                    "total_consumption": 0,
+                    "voltage": 124.01
+                },
+                "context": {
+                    "id": "7ac25e2fba4f493ab2823f0fff167334",
+                    "parent_id": null,
+                    "user_id": null
+                },
+                "entity_id": "switch.alans_tv_shelly",
+                "last_changed": "2020-04-01T07:51:14.209114+00:00",
+                "last_updated": "2020-04-01T16:31:06.352567+00:00",
+                "state": "on"
+            }
+        },
+        {
+            "last_seen": "2020-04-01T16:31:34.005203+00:00",
+            "state": {
+                "attributes": {
+                    "friendly_name": "Alans TV watt",
+                    "icon": "mdi:flash-outline",
+                    "ip_address": "192.168.0.20",
+                    "shelly_id": "98F4ABF30E36-1",
+                    "shelly_type": "Shelly 2.5",
+                    "unit_of_measurement": "W"
+                },
+                "context": {
+                    "id": "0dddd28e73d3487f9e8d7aa1e732e253",
+                    "parent_id": null,
+                    "user_id": null
+                },
+                "entity_id": "sensor.shelly_shsw_25_98f4abf30e36_1_current_consumption",
+                "last_changed": "2020-04-01T07:51:14.234981+00:00",
+                "last_updated": "2020-04-01T07:51:14.234981+00:00",
+                "state": "0"
+            }
+        },
+        {
+            "last_seen": "2020-04-01T16:31:34.005203+00:00",
+            "state": {
+                "attributes": {
+                    "cloud_status": "disabled",
+                    "friendly_name": "Alans PS4",
+                    "has_firmware_update": false,
+                    "ip_address": "192.168.0.20",
+                    "over_power": false,
+                    "over_temp": false,
+                    "protocols": [
+                        "CoAP-msg",
+                        "poll",
+                        "mDns",
+                        "CoAP-discovery"
+                    ],
+                    "shelly_id": "98F4ABF30E36-2",
+                    "shelly_type": "Shelly 2.5",
+                    "switch": false,
+                    "total_consumption": 0,
+                    "voltage": 124.01
+                },
+                "context": {
+                    "id": "e61a4c579b824debab9550058494e5d8",
+                    "parent_id": null,
+                    "user_id": null
+                },
+                "entity_id": "switch.playstation_shelly",
+                "last_changed": "2020-04-01T07:51:14.235850+00:00",
+                "last_updated": "2020-04-01T16:31:00.470431+00:00",
+                "state": "on"
+            }
+        },
+        {
+            "last_seen": "2020-04-01T16:31:34.005203+00:00",
+            "state": {
+                "attributes": {
+                    "friendly_name": "Alans TV and PS4-2",
+                    "icon": "mdi:flash-outline",
+                    "ip_address": "192.168.0.20",
+                    "shelly_id": "98F4ABF30E36-2",
+                    "shelly_type": "Shelly 2.5",
+                    "unit_of_measurement": "W"
+                },
+                "context": {
+                    "id": "72413bfed76a417696007f30fd543d27",
+                    "parent_id": null,
+                    "user_id": null
+                },
+                "entity_id": "sensor.shelly_shsw_25_98f4abf30e36_2_current_consumption",
+                "last_changed": "2020-04-01T13:12:43.128088+00:00",
+                "last_updated": "2020-04-01T13:12:43.128088+00:00",
+                "state": "0"
+            }
+        },
+        {
+            "last_seen": "2020-04-01T16:31:34.005203+00:00",
+            "state": {
+                "attributes": {
+                    "firmware_version": "20191014-073321/master@a1f9acb9",
+                    "friendly_name": "Upgrade firmware Shelly Dimmer - DB33AC",
+                    "ip_address": "192.168.0.15",
+                    "latest_fw_version": "1.6.0 (200309)",
+                    "shelly_id": "DB33AC",
+                    "shelly_type": "Shelly Dimmer"
+                },
+                "context": {
+                    "id": "57bd26ccc1d245589fee7173c0af0b67",
+                    "parent_id": null,
+                    "user_id": null
+                },
+                "entity_id": "switch.shelly_shdm_1_db33ac_firmware_update",
+                "last_changed": "2020-03-31T18:14:57.326371+00:00",
+                "last_updated": "2020-03-31T18:14:57.326371+00:00",
+                "state": "off"
+            }
+        },
+        {
+            "last_seen": "2020-04-01T16:31:34.005203+00:00",
+            "state": {
+                "attributes": {
+                    "friendly_name": "Shelly Dimmer - DB33AC",
+                    "icon": "mdi:flash-outline",
+                    "ip_address": "192.168.0.15",
+                    "shelly_id": "DB33AC",
+                    "shelly_type": "Shelly Dimmer",
+                    "unit_of_measurement": "W"
+                },
+                "context": {
+                    "id": "3d85f66c6f754558a1e92b1df1189b62",
+                    "parent_id": null,
+                    "user_id": null
+                },
+                "entity_id": "sensor.shelly_shdm_1_db33ac_current_consumption",
+                "last_changed": "2020-04-01T14:08:47.030072+00:00",
+                "last_updated": "2020-04-01T14:08:47.030072+00:00",
+                "state": "0"
+            }
+        },
+        {
+            "last_seen": "2020-04-01T16:31:34.005203+00:00",
+            "state": {
+                "attributes": {
+                    "device_class": "power",
+                    "friendly_name": "Alans TV and PS4-1 - Total consumption",
+                    "icon": "mdi:flash-circle",
+                    "ip_address": "192.168.0.20",
+                    "shelly_id": "98F4ABF30E36-1",
+                    "shelly_type": "Shelly 2.5",
+                    "unit_of_measurement": "Wh"
+                },
+                "context": {
+                    "id": "766a54a791f4418a9f60b4e5d7d52862",
+                    "parent_id": null,
+                    "user_id": null
+                },
+                "entity_id": "sensor.shelly_shsw_25_98f4abf30e36_1_total_consumption_attr",
+                "last_changed": "2020-04-01T15:18:02.380834+00:00",
+                "last_updated": "2020-04-01T15:18:02.380834+00:00",
+                "state": "0"
+            }
+        },
+        {
+            "last_seen": "2020-04-01T16:31:34.005203+00:00",
+            "state": {
+                "attributes": {
+                    "device_class": "power",
+                    "friendly_name": "Alans TV and PS4-2 - Total consumption",
+                    "icon": "mdi:flash-circle",
+                    "ip_address": "192.168.0.20",
+                    "shelly_id": "98F4ABF30E36-2",
+                    "shelly_type": "Shelly 2.5",
+                    "unit_of_measurement": "Wh"
+                },
+                "context": {
+                    "id": "6adfe792339c479799918be1e27752fd",
+                    "parent_id": null,
+                    "user_id": null
+                },
+                "entity_id": "sensor.shelly_shsw_25_98f4abf30e36_2_total_consumption_attr",
+                "last_changed": "2020-04-01T15:18:02.398530+00:00",
+                "last_updated": "2020-04-01T15:18:02.398530+00:00",
+                "state": "0"
+            }
+        },
+        {
+            "last_seen": "2020-04-01T16:31:34.005203+00:00",
+            "state": {
+                "attributes": {
+                    "device_class": "humidity",
+                    "friendly_name": "Living Room Humidity",
+                    "unit_of_measurement": "%"
+                },
+                "context": {
+                    "id": "bf823d0c707544b59426599fd7c5c08b",
+                    "parent_id": null,
+                    "user_id": null
+                },
+                "entity_id": "sensor.living_room_humidity_aqara",
+                "last_changed": "2020-04-01T16:09:59.753525+00:00",
+                "last_updated": "2020-04-01T16:09:59.753525+00:00",
+                "state": "40.5"
+            }
+        },
+        {
+            "last_seen": "2020-04-01T16:31:34.005203+00:00",
+            "state": {
+                "attributes": {
+                    "battery_quantity": 1,
+                    "battery_size": "CR2032",
+                    "battery_voltage": 3.0,
+                    "device_class": "battery",
+                    "friendly_name": "Living Room Sensor Power",
+                    "unit_of_measurement": "%"
+                },
+                "context": {
+                    "id": "58a8cc3ced684826b6bf2526ebe0f2fe",
+                    "parent_id": null,
+                    "user_id": null
+                },
+                "entity_id": "sensor.living_room_multi_sensor_power",
+                "last_changed": "2020-03-31T18:15:02.746713+00:00",
+                "last_updated": "2020-03-31T18:27:19.268383+00:00",
+                "state": "100"
+            }
+        },
+        {
+            "last_seen": "2020-04-01T16:31:34.005203+00:00",
+            "state": {
+                "attributes": {
+                    "battery_quantity": 1,
+                    "battery_size": "CR2450",
+                    "battery_voltage": 3.0,
+                    "device_class": "battery",
+                    "friendly_name": "Living Room Sensor Power",
+                    "unit_of_measurement": "%"
+                },
+                "context": {
+                    "id": "8344a3892a8d46b3a227714ec8f7fd65",
+                    "parent_id": null,
+                    "user_id": null
+                },
+                "entity_id": "sensor.living_room_occupancy_sensor_power_aqara",
+                "last_changed": "2020-03-31T18:15:02.747793+00:00",
+                "last_updated": "2020-03-31T18:47:36.972734+00:00",
+                "state": "100"
+            }
+        },
+        {
+            "last_seen": "2020-04-01T16:31:34.005203+00:00",
+            "state": {
+                "attributes": {
+                    "battery_quantity": 1,
+                    "battery_size": "CR2032",
+                    "battery_voltage": 3.0,
+                    "device_class": "battery",
+                    "friendly_name": "LUMI lumi.sensor_switch.aq2 fca30402 power",
+                    "unit_of_measurement": "%"
+                },
+                "context": {
+                    "id": "40358afb053840e7a6929cec9126ddae",
+                    "parent_id": null,
+                    "user_id": null
+                },
+                "entity_id": "sensor.lumi_lumi_sensor_switch_aq2_fca30402_power",
+                "last_changed": "2020-03-31T18:15:02.748775+00:00",
+                "last_updated": "2020-03-31T19:01:10.878576+00:00",
+                "state": "100"
+            }
+        },
+        {
+            "last_seen": "2020-04-01T16:31:34.005203+00:00",
+            "state": {
+                "attributes": {
+                    "battery_quantity": 1,
+                    "battery_size": "CR2450",
+                    "battery_voltage": 3.0,
+                    "device_class": "battery",
+                    "friendly_name": "LUMI lumi.sensor_motion.aq2 dd775104 power",
+                    "unit_of_measurement": "%"
+                },
+                "context": {
+                    "id": "19712b6e421d4b3397ea8b3cfb53e385",
+                    "parent_id": null,
+                    "user_id": null
+                },
+                "entity_id": "sensor.garage_occupancy_sensor_power_aqara",
+                "last_changed": "2020-03-31T18:15:02.749768+00:00",
+                "last_updated": "2020-03-31T18:59:55.880127+00:00",
+                "state": "100"
+            }
+        },
+        {
+            "last_seen": "2020-04-01T16:31:34.005203+00:00",
+            "state": {
+                "attributes": {
+                    "device_class": "illuminance",
+                    "friendly_name": "Garage lux",
+                    "unit_of_measurement": "lx"
+                },
+                "context": {
+                    "id": "bcb6d21bd0e04f22b3ff05ab03b6a02b",
+                    "parent_id": null,
+                    "user_id": null
+                },
+                "entity_id": "sensor.garage_lux_aqara",
+                "last_changed": "2020-04-01T15:14:16.118480+00:00",
+                "last_updated": "2020-04-01T15:14:16.118480+00:00",
+                "state": "197.0"
+            }
+        },
+        {
+            "last_seen": "2020-04-01T16:31:34.005203+00:00",
+            "state": {
+                "attributes": {
+                    "battery_quantity": 1,
+                    "battery_size": "CR1632",
+                    "battery_voltage": 3.0,
+                    "device_class": "battery",
+                    "friendly_name": "Main Door Sensor",
+                    "unit_of_measurement": "%"
+                },
+                "context": {
+                    "id": "92771af5a9304cf69086e25710eca319",
+                    "parent_id": null,
+                    "user_id": null
+                },
+                "entity_id": "sensor.main_door_sensor_power_aqara",
+                "last_changed": "2020-03-31T18:15:02.751794+00:00",
+                "last_updated": "2020-03-31T19:03:18.707472+00:00",
+                "state": "100"
+            }
+        },
+        {
+            "last_seen": "2020-04-01T16:31:34.005203+00:00",
+            "state": {
+                "attributes": {
+                    "battery_quantity": 1,
+                    "battery_size": "CR2450",
+                    "battery_voltage": 3.0,
+                    "device_class": "battery",
+                    "friendly_name": "Loft Motion",
+                    "unit_of_measurement": "%"
+                },
+                "context": {
+                    "id": "dde8639353ac417ba013557dd1393a50",
+                    "parent_id": null,
+                    "user_id": null
+                },
+                "entity_id": "sensor.loft_occupancy_sensor_power_aqara",
+                "last_changed": "2020-03-31T18:15:02.754028+00:00",
+                "last_updated": "2020-03-31T18:30:20.916501+00:00",
+                "state": "100"
+            }
+        },
+        {
+            "last_seen": "2020-04-01T16:31:34.005203+00:00",
+            "state": {
+                "attributes": {
+                    "device_class": "humidity",
+                    "friendly_name": "Master Bedroom Humidity",
+                    "unit_of_measurement": "%"
+                },
+                "context": {
+                    "id": "b618642162254c598ab78b1ad9858dc6",
+                    "parent_id": null,
+                    "user_id": null
+                },
+                "entity_id": "sensor.master_bedroom_humidity_aqara",
+                "last_changed": "2020-04-01T16:04:59.621331+00:00",
+                "last_updated": "2020-04-01T16:04:59.621331+00:00",
+                "state": "40.6"
+            }
+        },
+        {
+            "last_seen": "2020-04-01T16:31:34.005203+00:00",
+            "state": {
+                "attributes": {
+                    "device_class": "pressure",
+                    "friendly_name": "Living Room Pressure",
+                    "unit_of_measurement": "hPa"
+                },
+                "context": {
+                    "id": "c5019707cd4c4547aaf1bc0f1c75db3b",
+                    "parent_id": null,
+                    "user_id": null
+                },
+                "entity_id": "sensor.living_room_pressure_aqara",
+                "last_changed": "2020-04-01T16:09:59.754244+00:00",
+                "last_updated": "2020-04-01T16:09:59.754244+00:00",
+                "state": "992"
+            }
+        },
+        {
+            "last_seen": "2020-04-01T16:31:34.005203+00:00",
+            "state": {
+                "attributes": {
+                    "battery_quantity": 1,
+                    "battery_size": "CR2032",
+                    "battery_voltage": 3.0,
+                    "device_class": "battery",
+                    "friendly_name": "Master Bedroom Sensor Power",
+                    "unit_of_measurement": "%"
+                },
+                "context": {
+                    "id": "95d105c8153b498f80ad5df12e458291",
+                    "parent_id": null,
+                    "user_id": null
+                },
+                "entity_id": "sensor.master_bedroom_power_aqara",
+                "last_changed": "2020-04-01T15:05:55.255029+00:00",
+                "last_updated": "2020-04-01T15:05:55.255841+00:00",
+                "state": "100"
+            }
+        },
+        {
+            "last_seen": "2020-04-01T16:31:34.005203+00:00",
+            "state": {
+                "attributes": {
+                    "battery_quantity": 1,
+                    "battery_size": "CR1632",
+                    "battery_voltage": 3.0,
+                    "device_class": "battery",
+                    "friendly_name": "Kitchen Door Sensor Power",
+                    "unit_of_measurement": "%"
+                },
+                "context": {
+                    "id": "c1e83046e12242b29250f710f81c3e80",
+                    "parent_id": null,
+                    "user_id": null
+                },
+                "entity_id": "sensor.kitchen_door_sensor_power_aqara",
+                "last_changed": "2020-03-31T18:15:02.760230+00:00",
+                "last_updated": "2020-03-31T18:30:34.421629+00:00",
+                "state": "100"
+            }
+        },
+        {
+            "last_seen": "2020-04-01T16:31:34.005203+00:00",
+            "state": {
+                "attributes": {
+                    "device_class": "temperature",
+                    "friendly_name": "Master Bedroom Temperature",
+                    "unit_of_measurement": "\u00b0F"
+                },
+                "context": {
+                    "id": "0012719986174fafb97bffb10b959437",
+                    "parent_id": null,
+                    "user_id": null
+                },
+                "entity_id": "sensor.master_bedroom_temperature_aqara",
+                "last_changed": "2020-04-01T16:04:59.620540+00:00",
+                "last_updated": "2020-04-01T16:04:59.620540+00:00",
+                "state": "73.2"
+            }
+        },
+        {
+            "last_seen": "2020-04-01T16:31:34.005203+00:00",
+            "state": {
+                "attributes": {
+                    "device_class": "illuminance",
+                    "friendly_name": "Kitchen Lux",
+                    "unit_of_measurement": "lx"
+                },
+                "context": {
+                    "id": "e22774f45f2341b4b3351a5b59f2fffc",
+                    "parent_id": null,
+                    "user_id": null
+                },
+                "entity_id": "sensor.kitchen_lux_aqara",
+                "last_changed": "2020-04-01T16:31:18.409003+00:00",
+                "last_updated": "2020-04-01T16:31:18.409003+00:00",
+                "state": "290.0"
+            }
+        },
+        {
+            "last_seen": "2020-04-01T16:31:34.005203+00:00",
+            "state": {
+                "attributes": {
+                    "device_class": "temperature",
+                    "friendly_name": "Living Room Temperature",
+                    "unit_of_measurement": "\u00b0F"
+                },
+                "context": {
+                    "id": "76528dabd000441caa1c7330d6ac490d",
+                    "parent_id": null,
+                    "user_id": null
+                },
+                "entity_id": "sensor.living_room_temperature_aqara",
+                "last_changed": "2020-04-01T16:09:59.752705+00:00",
+                "last_updated": "2020-04-01T16:09:59.752705+00:00",
+                "state": "74.1"
+            }
+        },
+        {
+            "last_seen": "2020-04-01T16:31:34.005203+00:00",
+            "state": {
+                "attributes": {
+                    "battery_quantity": 1,
+                    "battery_size": "CR2032",
+                    "battery_voltage": 3.0,
+                    "device_class": "battery",
+                    "friendly_name": "LUMI lumi.sensor_switch.aq2 a3a20402 power",
+                    "unit_of_measurement": "%"
+                },
+                "context": {
+                    "id": "8f58d407316b42d8a1fa9869b27572cc",
+                    "parent_id": null,
+                    "user_id": null
+                },
+                "entity_id": "sensor.lumi_lumi_sensor_switch_aq2_a3a20402_power",
+                "last_changed": "2020-03-31T18:15:02.764510+00:00",
+                "last_updated": "2020-03-31T18:51:36.438274+00:00",
+                "state": "100"
+            }
+        },
+        {
+            "last_seen": "2020-04-01T16:31:34.005203+00:00",
+            "state": {
+                "attributes": {
+                    "device_class": "pressure",
+                    "friendly_name": "Master Bedroom Pressure",
+                    "unit_of_measurement": "hPa"
+                },
+                "context": {
+                    "id": "428ca72b33e348fe8407a16bab99a8a9",
+                    "parent_id": null,
+                    "user_id": null
+                },
+                "entity_id": "sensor.master_bedroom_pressure_aqara",
+                "last_changed": "2020-04-01T15:05:55.261133+00:00",
+                "last_updated": "2020-04-01T15:05:55.261133+00:00",
+                "state": "991"
+            }
+        },
+        {
+            "last_seen": "2020-04-01T16:31:34.005203+00:00",
+            "state": {
+                "attributes": {
+                    "battery_quantity": 1,
+                    "battery_size": "CR2450",
+                    "battery_voltage": 3.0,
+                    "device_class": "battery",
+                    "friendly_name": "Kitchen Sensor Power",
+                    "unit_of_measurement": "%"
+                },
+                "context": {
+                    "id": "4e8fea02bc314974a22865e497a4d476",
+                    "parent_id": null,
+                    "user_id": null
+                },
+                "entity_id": "sensor.kitchen_occupancy_sensor_aqara",
+                "last_changed": "2020-03-31T18:15:02.767204+00:00",
+                "last_updated": "2020-03-31T18:39:26.346079+00:00",
+                "state": "100"
+            }
+        },
+        {
+            "last_seen": "2020-04-01T16:31:34.005203+00:00",
+            "state": {
+                "attributes": {
+                    "device_class": "illuminance",
+                    "friendly_name": "Living Room Lux",
+                    "unit_of_measurement": "lx"
+                },
+                "context": {
+                    "id": "47ab93efc82044b98106b5287a1dbfff",
+                    "parent_id": null,
+                    "user_id": null
+                },
+                "entity_id": "sensor.living_room_lux_aqara",
+                "last_changed": "2020-04-01T15:52:04.968889+00:00",
+                "last_updated": "2020-04-01T15:52:04.968889+00:00",
+                "state": "780.0"
+            }
+        },
+        {
+            "last_seen": "2020-04-01T16:31:34.005203+00:00",
+            "state": {
+                "attributes": {
+                    "device_class": "illuminance",
+                    "friendly_name": "Loft Lux",
+                    "unit_of_measurement": "lx"
+                },
+                "context": {
+                    "id": "157a09f09b8f4f359bb8bcc7c1fa8c74",
+                    "parent_id": null,
+                    "user_id": null
+                },
+                "entity_id": "sensor.loft_lux_aqara",
+                "last_changed": "2020-04-01T16:16:06.865857+00:00",
+                "last_updated": "2020-04-01T16:16:06.865857+00:00",
+                "state": "988.0"
+            }
+        },
+        {
+            "last_seen": "2020-04-01T16:31:34.005203+00:00",
+            "state": {
+                "attributes": {
+                    "device_class": "battery",
+                    "friendly_name": "Philips RWL020 bcac0b04 power",
+                    "unit_of_measurement": "%"
+                },
+                "context": {
+                    "id": "6ac1b7572b8647daa7b9a5f463b61d9e",
+                    "parent_id": null,
+                    "user_id": null
+                },
+                "entity_id": "sensor.philips_rwl020_bcac0b04_power",
+                "last_changed": "2020-04-01T16:09:08.751867+00:00",
+                "last_updated": "2020-04-01T16:09:08.751867+00:00",
+                "state": "86"
+            }
+        },
+        {
+            "last_seen": "2020-04-01T16:31:34.005203+00:00",
+            "state": {
+                "attributes": {
+                    "device_class": "opening",
+                    "friendly_name": "Main Door"
+                },
+                "context": {
+                    "id": "1fcb542abf974044a9ec2a44ad194426",
+                    "parent_id": null,
+                    "user_id": null
+                },
+                "entity_id": "binary_sensor.main_door_sensor_aqara",
+                "last_changed": "2020-04-01T00:40:54.538736+00:00",
+                "last_updated": "2020-04-01T00:40:54.538736+00:00",
+                "state": "off"
+            }
+        },
+        {
+            "last_seen": "2020-04-01T16:31:34.005203+00:00",
+            "state": {
+                "attributes": {
+                    "device_class": "motion",
+                    "friendly_name": "Living Room Motion"
+                },
+                "context": {
+                    "id": "bcc35fa0db5440a6ace750097f5b310f",
+                    "parent_id": null,
+                    "user_id": null
+                },
+                "entity_id": "binary_sensor.living_room_motion_aqara",
+                "last_changed": "2020-04-01T16:25:55.830730+00:00",
+                "last_updated": "2020-04-01T16:25:55.830730+00:00",
+                "state": "on"
+            }
+        },
+        {
+            "last_seen": "2020-04-01T16:31:34.005203+00:00",
+            "state": {
+                "attributes": {
+                    "device_class": "opening",
+                    "friendly_name": "Kitchen Door Sensor"
+                },
+                "context": {
+                    "id": "83f63a6533104c9eb3d2c6675df73cbe",
+                    "parent_id": null,
+                    "user_id": null
+                },
+                "entity_id": "binary_sensor.kitchen_door_sensor_aqara",
+                "last_changed": "2020-04-01T15:14:27.935313+00:00",
+                "last_updated": "2020-04-01T15:14:27.935313+00:00",
+                "state": "on"
+            }
+        },
+        {
+            "last_seen": "2020-04-01T16:31:34.005203+00:00",
+            "state": {
+                "attributes": {
+                    "device_class": "motion",
+                    "friendly_name": "Loft Motion"
+                },
+                "context": {
+                    "id": "25a9e618d62c4ce28744d4bd0c071686",
+                    "parent_id": null,
+                    "user_id": null
+                },
+                "entity_id": "binary_sensor.loft_motion_aqara",
+                "last_changed": "2020-04-01T16:19:08.717255+00:00",
+                "last_updated": "2020-04-01T16:19:08.717255+00:00",
+                "state": "off"
+            }
+        },
+        {
+            "last_seen": "2020-04-01T16:31:34.005203+00:00",
+            "state": {
+                "attributes": {
+                    "device_class": "motion",
+                    "friendly_name": "Garage Motion"
+                },
+                "context": {
+                    "id": "d8d4364466b747f9b0034560b29a8714",
+                    "parent_id": null,
+                    "user_id": null
+                },
+                "entity_id": "binary_sensor.garage_motion_aqara",
+                "last_changed": "2020-04-01T15:16:16.119934+00:00",
+                "last_updated": "2020-04-01T15:16:16.119934+00:00",
+                "state": "off"
+            }
+        },
+        {
+            "last_seen": "2020-04-01T16:31:34.005203+00:00",
+            "state": {
+                "attributes": {
+                    "device_class": "occupancy",
+                    "friendly_name": "Kitchen Motion"
+                },
+                "context": {
+                    "id": "bb1bf1ff351846979a57dd8b92e5b6c3",
+                    "parent_id": null,
+                    "user_id": null
+                },
+                "entity_id": "binary_sensor.kitchen_occupancy_aqara",
+                "last_changed": "2020-04-01T15:11:44.711905+00:00",
+                "last_updated": "2020-04-01T15:11:44.711905+00:00",
+                "state": "on"
+            }
+        },
+        {
+            "last_seen": "2020-04-01T16:31:34.005203+00:00",
+            "state": {
+                "attributes": {
+                    "device_class": "occupancy",
+                    "friendly_name": "Loft Occupancy"
+                },
+                "context": {
+                    "id": "4006c0d3c9ec407a8cfa20cdb53a0d0b",
+                    "parent_id": null,
+                    "user_id": null
+                },
+                "entity_id": "binary_sensor.loft_occupancy_aqara",
+                "last_changed": "2020-04-01T16:27:08.722389+00:00",
+                "last_updated": "2020-04-01T16:27:08.722389+00:00",
+                "state": "off"
+            }
+        },
+        {
+            "last_seen": "2020-04-01T16:31:34.005203+00:00",
+            "state": {
+                "attributes": {
+                    "device_class": "motion",
+                    "friendly_name": "Kitchen Motion"
+                },
+                "context": {
+                    "id": "a853075747a34ae4a4c218e0947582ec",
+                    "parent_id": null,
+                    "user_id": null
+                },
+                "entity_id": "binary_sensor.kitchen_motion_detect",
+                "last_changed": "2020-04-01T16:10:07.578857+00:00",
+                "last_updated": "2020-04-01T16:10:07.578857+00:00",
+                "state": "on"
+            }
+        },
+        {
+            "last_seen": "2020-04-01T16:31:34.005203+00:00",
+            "state": {
+                "attributes": {
+                    "device_class": "occupancy",
+                    "friendly_name": "Living Room Occupancy"
+                },
+                "context": {
+                    "id": "057fa6d8c5f04dac9b203725d994f37d",
+                    "parent_id": null,
+                    "user_id": null
+                },
+                "entity_id": "binary_sensor.living_room_occupancy_aqara",
+                "last_changed": "2020-04-01T16:15:35.787346+00:00",
+                "last_updated": "2020-04-01T16:15:35.787346+00:00",
+                "state": "on"
+            }
+        },
+        {
+            "last_seen": "2020-04-01T16:31:34.005203+00:00",
+            "state": {
+                "attributes": {
+                    "device_class": "occupancy",
+                    "friendly_name": "Garage Occupancy"
+                },
+                "context": {
+                    "id": "a55f6a281b434fe7b2e9dccdba65054b",
+                    "parent_id": null,
+                    "user_id": null
+                },
+                "entity_id": "binary_sensor.garage_occupancy_aqara",
+                "last_changed": "2020-04-01T15:24:16.125327+00:00",
+                "last_updated": "2020-04-01T15:24:16.125327+00:00",
+                "state": "off"
+            }
+        },
+        {
+            "last_seen": "2020-04-01T16:31:34.005203+00:00",
+            "state": {
+                "attributes": {
+                    "friendly_name": "Loft Lamp Lower",
+                    "off_brightness": null,
+                    "supported_features": 41
+                },
+                "context": {
+                    "id": "a01e777671a14060b749f217b3a77965",
+                    "parent_id": null,
+                    "user_id": null
+                },
+                "entity_id": "light.loft_lamp_lower_hue",
+                "last_changed": "2020-03-31T18:15:02.803827+00:00",
+                "last_updated": "2020-03-31T18:15:02.803827+00:00",
+                "state": "off"
+            }
+        },
+        {
+            "last_seen": "2020-04-01T16:31:34.005203+00:00",
+            "state": {
+                "attributes": {
+                    "friendly_name": "Loft Lamp Upper",
+                    "off_brightness": null,
+                    "supported_features": 41
+                },
+                "context": {
+                    "id": "11626409e26a422aad5a48e1f714c29e",
+                    "parent_id": null,
+                    "user_id": null
+                },
+                "entity_id": "light.loft_lamp_upper_hue",
+                "last_changed": "2020-03-31T18:15:09.351628+00:00",
+                "last_updated": "2020-03-31T18:15:09.351628+00:00",
+                "state": "off"
+            }
+        },
+        {
+            "last_seen": "2020-04-01T16:31:34.005203+00:00",
+            "state": {
+                "attributes": {
+                    "device_class": "power",
+                    "friendly_name": "Shelly Dimmer - DB33AC - Total consumption",
+                    "icon": "mdi:flash-circle",
+                    "ip_address": "192.168.0.15",
+                    "shelly_id": "DB33AC",
+                    "shelly_type": "Shelly Dimmer",
+                    "unit_of_measurement": "Wh"
+                },
+                "context": {
+                    "id": "4630ee93dc9144b69936d258d9953f6f",
+                    "parent_id": null,
+                    "user_id": null
+                },
+                "entity_id": "sensor.shelly_shdm_1_db33ac_total_consumption_attr",
+                "last_changed": "2020-04-01T14:54:51.219543+00:00",
+                "last_updated": "2020-04-01T14:54:51.219543+00:00",
+                "state": "498"
+            }
+        },
+        {
+            "last_seen": "2020-04-01T16:31:34.005203+00:00",
+            "state": {
+                "attributes": {
+                    "battery_level": 43,
+                    "friendly_name": "ec_phone",
+                    "gps_accuracy": 100,
+                    "latitude": 41.87077232280202,
+                    "longitude": -87.98885966205863,
+                    "source_type": "gps"
+                },
+                "context": {
+                    "id": "84d46e29ec044d279f424038ac6e988b",
+                    "parent_id": null,
+                    "user_id": null
+                },
+                "entity_id": "device_tracker.iphone",
+                "last_changed": "2020-03-31T20:05:16.462389+00:00",
+                "last_updated": "2020-03-31T20:05:16.462389+00:00",
+                "state": "home"
+            }
+        },
+        {
+            "last_seen": "2020-04-01T16:31:34.005203+00:00",
+            "state": {
+                "attributes": {
+                    "device_class": "opening",
+                    "friendly_name": "Backyard Door"
+                },
+                "context": {
+                    "id": "67d2a30108304dab993fb2928237c245",
+                    "parent_id": null,
+                    "user_id": null
+                },
+                "entity_id": "binary_sensor.backyard_side_window_aqara",
+                "last_changed": "2020-04-01T15:40:30.909770+00:00",
+                "last_updated": "2020-04-01T15:50:50.228530+00:00",
+                "state": "off"
+            }
+        },
+        {
+            "last_seen": "2020-04-01T16:31:34.005203+00:00",
+            "state": {
+                "attributes": {
+                    "device_class": "opening",
+                    "friendly_name": "Couch Side Window"
+                },
+                "context": {
+                    "id": "97f19947d1ea490ca9c2d76ef163b107",
+                    "parent_id": null,
+                    "user_id": null
+                },
+                "entity_id": "binary_sensor.couch_side_widow_aqara",
+                "last_changed": "2020-04-01T15:41:52.097013+00:00",
+                "last_updated": "2020-04-01T15:41:52.097013+00:00",
+                "state": "off"
+            }
+        },
+        {
+            "last_seen": "2020-04-01T16:31:34.005203+00:00",
+            "state": {
+                "attributes": {
+                    "battery_quantity": 1,
+                    "battery_size": "CR1632",
+                    "battery_voltage": 3.0,
+                    "device_class": "battery",
+                    "friendly_name": "Couch Side Window Power",
+                    "unit_of_measurement": "%"
+                },
+                "context": {
+                    "id": "0e6d9ab20e994fcf92c7be02ce91e926",
+                    "parent_id": null,
+                    "user_id": null
+                },
+                "entity_id": "sensor.couch_side_window_power_aqara",
+                "last_changed": "2020-04-01T15:42:14.100351+00:00",
+                "last_updated": "2020-04-01T15:42:14.100351+00:00",
+                "state": "100"
+            }
+        },
+        {
+            "last_seen": "2020-04-01T16:31:34.005203+00:00",
+            "state": {
+                "attributes": {
+                    "device_class": "opening",
+                    "friendly_name": "TV Side Window"
+                },
+                "context": {
+                    "id": "a21d68bd6e3a445c8494ae680a741ab1",
+                    "parent_id": null,
+                    "user_id": null
+                },
+                "entity_id": "binary_sensor.tv_side_window_aqara",
+                "last_changed": "2020-04-01T15:45:14.676403+00:00",
+                "last_updated": "2020-04-01T15:45:14.676403+00:00",
+                "state": "off"
+            }
+        },
+        {
+            "last_seen": "2020-04-01T16:31:34.005203+00:00",
+            "state": {
+                "attributes": {
+                    "battery_quantity": 1,
+                    "battery_size": "CR1632",
+                    "battery_voltage": 3.0,
+                    "device_class": "battery",
+                    "friendly_name": "TV Side Window Power",
+                    "unit_of_measurement": "%"
+                },
+                "context": {
+                    "id": "0a620014fff04945aa4cde0366f2c792",
+                    "parent_id": null,
+                    "user_id": null
+                },
+                "entity_id": "sensor.tv_side_window_power_aqara",
+                "last_changed": "2020-04-01T15:45:49.431920+00:00",
+                "last_updated": "2020-04-01T15:45:49.431920+00:00",
+                "state": "100"
+            }
+        },
+        {
+            "last_seen": "2020-04-01T16:31:34.005203+00:00",
+            "state": {
+                "attributes": {
+                    "device_class": "opening",
+                    "friendly_name": "Screen Door"
+                },
+                "context": {
+                    "id": "e58bdfd7fc6942588e3d72a4bf2b74a8",
+                    "parent_id": null,
+                    "user_id": null
+                },
+                "entity_id": "binary_sensor.screen_door_aqara_aqara",
+                "last_changed": "2020-04-01T15:46:48.415769+00:00",
+                "last_updated": "2020-04-01T15:53:31.649887+00:00",
+                "state": "off"
+            }
+        },
+        {
+            "last_seen": "2020-04-01T16:31:34.005203+00:00",
+            "state": {
+                "attributes": {
+                    "battery_quantity": 1,
+                    "battery_size": "CR1632",
+                    "battery_voltage": 2.9,
+                    "device_class": "battery",
+                    "friendly_name": "Screen Door Aqara Power",
+                    "unit_of_measurement": "%"
+                },
+                "context": {
+                    "id": "446765bffcbe4189848e9924c3fe6bd3",
+                    "parent_id": null,
+                    "user_id": null
+                },
+                "entity_id": "sensor.screen_door_aqara_power_aqara",
+                "last_changed": "2020-04-01T15:46:48.433500+00:00",
+                "last_updated": "2020-04-01T15:46:48.433500+00:00",
+                "state": "92"
+            }
+        },
+        {
+            "last_seen": "2020-04-01T16:31:34.005203+00:00",
+            "state": {
+                "attributes": {
+                    "battery_quantity": 1,
+                    "battery_size": "CR1632",
+                    "battery_voltage": 3.0,
+                    "device_class": "battery",
+                    "friendly_name": "Backyard Door Power",
+                    "unit_of_measurement": "%"
+                },
+                "context": {
+                    "id": "e0099dc7f2e0456bb27467cd3e90396f",
+                    "parent_id": null,
+                    "user_id": null
+                },
+                "entity_id": "sensor.lbackyard_side_door_power_aqara",
+                "last_changed": "2020-04-01T15:47:33.023110+00:00",
+                "last_updated": "2020-04-01T15:47:33.023110+00:00",
+                "state": "100"
+            }
+        },
+        {
+            "last_seen": "2020-03-31T20:05:16.438303+00:00",
+            "state": {
+                "attributes": {
+                    "battery_level": 43,
+                    "friendly_name": "ec_phone",
+                    "gps_accuracy": 100,
+                    "latitude": 41.87077232280202,
+                    "longitude": -87.98885966205863,
+                    "source_type": "gps"
+                },
+                "context": {
+                    "id": "de641392329e45299231dd54b5551336",
+                    "parent_id": null,
+                    "user_id": null
+                },
+                "entity_id": "device_tracker.iphone_2",
+                "last_changed": "2020-03-31T18:14:52.546862+00:00",
+                "last_updated": "2020-03-31T18:14:52.546862+00:00",
+                "state": "home"
+            }
+        },
+        {
+            "last_seen": "2020-03-30T12:18:51.858268+00:00",
+            "state": {
+                "attributes": {
+                    "device_class": "temperature",
+                    "friendly_name": "Master Bedroom Temperature",
+                    "unit_of_measurement": "\u00b0F"
+                },
+                "context": {
+                    "id": "fb3e34024cb34389af311d3380d6a25f",
+                    "parent_id": null,
+                    "user_id": null
+                },
+                "entity_id": "sensor.lumi_lumi_weather_dfca7302_temperature",
+                "last_changed": "2020-03-30T11:54:14.369907+00:00",
+                "last_updated": "2020-03-30T11:54:14.369907+00:00",
+                "state": "73.2"
+            }
+        },
+        {
+            "last_seen": "2020-03-30T12:18:33.179111+00:00",
+            "state": {
+                "attributes": {
+                    "battery_quantity": 1,
+                    "battery_size": "CR2032",
+                    "battery_voltage": 3.0,
+                    "device_class": "battery",
+                    "friendly_name": "Master Bedroom Power",
+                    "unit_of_measurement": "%"
+                },
+                "context": {
+                    "id": "3fcb237784a142f99efb2da96adcdb2c",
+                    "parent_id": null,
+                    "user_id": null
+                },
+                "entity_id": "sensor.lumi_lumi_weather_dfca7302_power",
+                "last_changed": "2020-03-29T23:27:05.753021+00:00",
+                "last_updated": "2020-03-29T23:27:05.753875+00:00",
+                "state": "100"
+            }
+        },
+        {
+            "last_seen": "2020-03-30T12:18:42.670862+00:00",
+            "state": {
+                "attributes": {
+                    "device_class": "pressure",
+                    "friendly_name": "Master Bedroom Pressure",
+                    "unit_of_measurement": "hPa"
+                },
+                "context": {
+                    "id": "644fe1604f9f462fb25c0a991b2a55a6",
+                    "parent_id": null,
+                    "user_id": null
+                },
+                "entity_id": "sensor.lumi_lumi_weather_dfca7302_pressure",
+                "last_changed": "2020-03-30T11:54:14.394711+00:00",
+                "last_updated": "2020-03-30T11:54:14.394711+00:00",
+                "state": "990"
+            }
+        },
+        {
+            "last_seen": "2020-03-30T12:18:16.619237+00:00",
+            "state": {
+                "attributes": {
+                    "device_class": "humidity",
+                    "friendly_name": "Master Bedroom  Humidity",
+                    "unit_of_measurement": "%"
+                },
+                "context": {
+                    "id": "7406e82e86064684914bafd03595e4c6",
+                    "parent_id": null,
+                    "user_id": null
+                },
+                "entity_id": "sensor.lumi_lumi_weather_dfca7302_humidity",
+                "last_changed": "2020-03-30T11:54:14.393832+00:00",
+                "last_updated": "2020-03-30T11:54:14.393832+00:00",
+                "state": "44.3"
+            }
+        },
+        {
+            "last_seen": "2020-03-30T12:17:25.437283+00:00",
+            "state": {
+                "attributes": {
+                    "battery_quantity": 1,
+                    "battery_size": "CR2032",
+                    "battery_voltage": 3.0,
+                    "device_class": "battery",
+                    "friendly_name": "LUMI lumi.weather e7d47302 power",
+                    "unit_of_measurement": "%"
+                },
+                "context": {
+                    "id": "0fb74d01fb81473eb95141037ac6ead4",
+                    "parent_id": null,
+                    "user_id": null
+                },
+                "entity_id": "sensor.living_room_power_aqara",
+                "last_changed": "2020-03-26T21:17:14.995466+00:00",
+                "last_updated": "2020-03-26T21:40:29.736627+00:00",
+                "state": "100"
+            }
+        },
+        {
+            "last_seen": "2020-03-31T18:14:12.829428+00:00",
+            "state": {
+                "attributes": {
+                    "friendly_name": "CLIMATE: AUTO Humidifier OFF",
+                    "last_triggered": "2020-03-30T16:28:41.012488+00:00"
+                },
+                "context": {
+                    "id": "aa2176587df449c795fd8d82f1ef10fa",
+                    "parent_id": null,
+                    "user_id": null
+                },
+                "entity_id": "automation.climate_auto_humidifier_off_3",
+                "last_changed": "2020-03-26T21:32:36.951903+00:00",
+                "last_updated": "2020-03-30T16:28:41.012728+00:00",
+                "state": "on"
+            }
+        },
+        {
+            "last_seen": "2020-03-31T18:14:12.835886+00:00",
+            "state": {
+                "attributes": {
+                    "friendly_name": "automation 15",
+                    "last_triggered": null
+                },
+                "context": {
+                    "id": "7c5e826c4ee34b549b3d30ca6b45337e",
+                    "parent_id": null,
+                    "user_id": null
+                },
+                "entity_id": "automation.automation_15",
+                "last_changed": "2020-03-26T21:32:36.922547+00:00",
+                "last_updated": "2020-03-26T21:32:36.922547+00:00",
+                "state": "on"
+            }
+        },
+        {
+            "last_seen": "2020-03-26T21:26:06.842416+00:00",
+            "state": {
+                "attributes": {
+                    "friendly_name": "CLIMATE : Humidifier ON when Fan is on",
+                    "last_triggered": null
+                },
+                "context": {
+                    "id": "9e0e6e4035544cde81aad10c5f8de149",
+                    "parent_id": null,
+                    "user_id": null
+                },
+                "entity_id": "automation.climate_humidifier_on_when_fan_is_on",
+                "last_changed": "2020-03-26T21:17:00.189055+00:00",
+                "last_updated": "2020-03-26T21:17:00.189055+00:00",
+                "state": "on"
+            }
+        },
+        {
+            "last_seen": "2020-03-26T15:39:25.298337+00:00",
+            "state": {
+                "attributes": {
+                    "firmware_version": "20191217-074901/1047-long-id-for-shelly-devices@ab2bdce7",
+                    "friendly_name": "Upgrade firmware Shelly 2.5 - 98F4ABF30E36",
+                    "ip_address": "192.168.0.18",
+                    "latest_fw_version": "1.6.0 (200309)",
+                    "shelly_id": "98F4ABF30E36",
+                    "shelly_type": "Shelly 2.5"
+                },
+                "context": {
+                    "id": "2511461955b14e82b0e4ef3fb8dd6ffc",
+                    "parent_id": null,
+                    "user_id": "1bda3d6e9f7248e38892e9b8d924709d"
+                },
+                "entity_id": "switch.shelly_shsw_25_98f4abf30e36_firmware_update",
+                "last_changed": "2020-03-26T15:38:41.796171+00:00",
+                "last_updated": "2020-03-26T15:38:41.796171+00:00",
+                "state": "on"
+            }
+        },
+        {
+            "last_seen": "2020-03-26T12:16:34.178223+00:00",
+            "state": {
+                "attributes": {
+                    "friendly_name": "LIGHT: Turn on Kitchen on Kitchen door Open at night",
+                    "last_triggered": "2020-03-26T11:40:43.116888+00:00"
+                },
+                "context": {
+                    "id": "782d13166ad24ea99d4f0842eb6354ad",
+                    "parent_id": null,
+                    "user_id": null
+                },
+                "entity_id": "automation.light_turn_on_kitchen_on_kitchen_door_open_at_night",
+                "last_changed": "2020-03-24T19:36:50.010246+00:00",
+                "last_updated": "2020-03-26T11:40:43.117008+00:00",
+                "state": "on"
+            }
+        },
+        {
+            "last_seen": "2020-03-26T12:16:34.189145+00:00",
+            "state": {
+                "attributes": {
+                    "friendly_name": "automation 16",
+                    "last_triggered": null
+                },
+                "context": {
+                    "id": "f2c1affc64be4a6687ab797824b57da0",
+                    "parent_id": null,
+                    "user_id": null
+                },
+                "entity_id": "automation.automation_16",
+                "last_changed": "2020-03-24T19:36:50.021634+00:00",
+                "last_updated": "2020-03-24T19:36:50.021634+00:00",
+                "state": "on"
+            }
+        },
+        {
+            "last_seen": "2020-03-31T18:14:12.817175+00:00",
+            "state": {
+                "attributes": {
+                    "friendly_name": "CLIMATE : Humidifier ON",
+                    "last_triggered": "2020-03-30T16:20:17.016985+00:00"
+                },
+                "context": {
+                    "id": "65a33a64727c4cf2b1de215128838e80",
+                    "parent_id": null,
+                    "user_id": null
+                },
+                "entity_id": "automation.climate_humidifier_on",
+                "last_changed": "2020-03-26T21:32:36.935779+00:00",
+                "last_updated": "2020-03-30T16:20:17.019735+00:00",
+                "state": "on"
+            }
+        },
+        {
+            "last_seen": "2020-04-01T15:43:27.921112+00:00",
+            "state": {
+                "attributes": {
+                    "battery_quantity": 1,
+                    "battery_size": "CR1632",
+                    "battery_voltage": 2.9,
+                    "device_class": "battery",
+                    "friendly_name": "LUMI lumi.sensor_magnet 99fe0b04 power",
+                    "unit_of_measurement": "%"
+                },
+                "context": {
+                    "id": "ae318ff915ed41a2a477a310cad5d211",
+                    "parent_id": null,
+                    "user_id": null
+                },
+                "entity_id": "sensor.lumi_lumi_sensor_magnet_99fe0b04_power",
+                "last_changed": "2020-04-01T02:33:25.468054+00:00",
+                "last_updated": "2020-04-01T02:33:25.469037+00:00",
+                "state": "92"
+            }
+        },
+        {
+            "last_seen": "2020-04-01T15:43:14.497555+00:00",
+            "state": {
+                "attributes": {
+                    "device_class": "opening",
+                    "friendly_name": "LUMI lumi.sensor_magnet 99fe0b04 on_off"
+                },
+                "context": {
+                    "id": "ba51e15675be45d2a636fee949928db5",
+                    "parent_id": null,
+                    "user_id": null
+                },
+                "entity_id": "binary_sensor.lumi_lumi_sensor_magnet_99fe0b04_on_off",
+                "last_changed": "2020-04-01T00:38:13.788513+00:00",
+                "last_updated": "2020-04-01T00:38:13.788513+00:00",
+                "state": "off"
+            }
+        },
+        {
+            "last_seen": "2020-04-01T15:40:30.893681+00:00",
+            "state": {
+                "attributes": {
+                    "device_class": "opening",
+                    "friendly_name": "LUMI lumi.sensor_magnet daf6cf03 on_off"
+                },
+                "context": {
+                    "id": "29a3a47d027146808008a5d7905de9ff",
+                    "parent_id": null,
+                    "user_id": null
+                },
+                "entity_id": "binary_sensor.lumi_lumi_sensor_magnet_daf6cf03_on_off",
+                "last_changed": "2020-04-01T00:07:07.774292+00:00",
+                "last_updated": "2020-04-01T00:07:07.774292+00:00",
+                "state": "off"
+            }
+        },
+        {
+            "last_seen": "2020-04-01T15:41:00.726168+00:00",
+            "state": {
+                "attributes": {
+                    "battery_quantity": 1,
+                    "battery_size": "CR1632",
+                    "battery_voltage": 3.0,
+                    "device_class": "battery",
+                    "friendly_name": "LUMI lumi.sensor_magnet daf6cf03 power",
+                    "unit_of_measurement": "%"
+                },
+                "context": {
+                    "id": "09bb5ae4ff0b474d8ab0058e77907a4c",
+                    "parent_id": null,
+                    "user_id": null
+                },
+                "entity_id": "sensor.lumi_lumi_sensor_magnet_daf6cf03_power",
+                "last_changed": "2020-04-01T02:04:09.745847+00:00",
+                "last_updated": "2020-04-01T02:04:09.746664+00:00",
+                "state": "100"
+            }
+        },
+        {
+            "last_seen": "2020-04-01T15:41:52.082041+00:00",
+            "state": {
+                "attributes": {
+                    "device_class": "opening",
+                    "friendly_name": "LUMI lumi.sensor_magnet bd072a04 on_off"
+                },
+                "context": {
+                    "id": "25710b494f5848f3a1265809c7f9aae7",
+                    "parent_id": null,
+                    "user_id": null
+                },
+                "entity_id": "binary_sensor.lumi_lumi_sensor_magnet_bd072a04_on_off",
+                "last_changed": "2020-04-01T00:19:28.870294+00:00",
+                "last_updated": "2020-04-01T00:19:28.870294+00:00",
+                "state": "off"
+            }
+        },
+        {
+            "last_seen": "2020-04-01T15:42:14.090082+00:00",
+            "state": {
+                "attributes": {
+                    "battery_quantity": 1,
+                    "battery_size": "CR1632",
+                    "battery_voltage": 3.0,
+                    "device_class": "battery",
+                    "friendly_name": "LUMI lumi.sensor_magnet bd072a04 power",
+                    "unit_of_measurement": "%"
+                },
+                "context": {
+                    "id": "76224b09b762412489269a01bacfdafc",
+                    "parent_id": null,
+                    "user_id": null
+                },
+                "entity_id": "sensor.lumi_lumi_sensor_magnet_bd072a04_power",
+                "last_changed": "2020-04-01T02:12:00.602961+00:00",
+                "last_updated": "2020-04-01T02:12:00.603781+00:00",
+                "state": "100"
+            }
+        },
+        {
+            "last_seen": "2020-04-01T15:45:14.663697+00:00",
+            "state": {
+                "attributes": {
+                    "device_class": "opening",
+                    "friendly_name": "LUMI lumi.sensor_magnet 441f2704 on_off"
+                },
+                "context": {
+                    "id": "528556055e6542128b94c6eb47f0c2e0",
+                    "parent_id": null,
+                    "user_id": null
+                },
+                "entity_id": "binary_sensor.lumi_lumi_sensor_magnet_441f2704_on_off",
+                "last_changed": "2020-04-01T00:20:47.354878+00:00",
+                "last_updated": "2020-04-01T00:20:47.354878+00:00",
+                "state": "off"
+            }
+        },
+        {
+            "last_seen": "2020-04-01T15:45:49.417311+00:00",
+            "state": {
+                "attributes": {
+                    "battery_quantity": 1,
+                    "battery_size": "CR1632",
+                    "battery_voltage": 3.0,
+                    "device_class": "battery",
+                    "friendly_name": "LUMI lumi.sensor_magnet 441f2704 power",
+                    "unit_of_measurement": "%"
+                },
+                "context": {
+                    "id": "a95c1d2947364c50842cc736a34d33bb",
+                    "parent_id": null,
+                    "user_id": null
+                },
+                "entity_id": "sensor.lumi_lumi_sensor_magnet_441f2704_power",
+                "last_changed": "2020-04-01T02:15:51.533280+00:00",
+                "last_updated": "2020-04-01T02:15:51.534105+00:00",
+                "state": "100"
+            }
+        },
+        {
+            "last_seen": "2020-04-01T15:46:48.393943+00:00",
+            "state": {
+                "attributes": {
+                    "device_class": "opening",
+                    "friendly_name": "Screen Door"
+                },
+                "context": {
+                    "id": "783515b9c6114082bcb9d999d4123eb3",
+                    "parent_id": null,
+                    "user_id": null
+                },
+                "entity_id": "binary_sensor.screen_door_aqara",
+                "last_changed": "2020-04-01T15:43:14.512463+00:00",
+                "last_updated": "2020-04-01T15:43:14.512463+00:00",
+                "state": "off"
+            }
+        },
+        {
+            "last_seen": "2020-04-01T15:46:48.405190+00:00",
+            "state": {
+                "attributes": {
+                    "battery_quantity": 1,
+                    "battery_size": "CR1632",
+                    "battery_voltage": 2.9,
+                    "device_class": "battery",
+                    "friendly_name": "Screen Door Power",
+                    "unit_of_measurement": "%"
+                },
+                "context": {
+                    "id": "b0248770eaec460fb975c742cd6c3b0a",
+                    "parent_id": null,
+                    "user_id": null
+                },
+                "entity_id": "sensor.screen_door_power_aqara",
+                "last_changed": "2020-04-01T15:43:27.933682+00:00",
+                "last_updated": "2020-04-01T15:43:27.933682+00:00",
+                "state": "92"
+            }
+        },
+        {
+            "last_seen": "2020-04-01T15:47:33.008277+00:00",
+            "state": {
+                "attributes": {
+                    "battery_quantity": 1,
+                    "battery_size": "CR1632",
+                    "battery_voltage": 3.0,
+                    "device_class": "battery",
+                    "friendly_name": "Backyard Side sensor Power",
+                    "unit_of_measurement": "%"
+                },
+                "context": {
+                    "id": "20a36b8aa9464f0bb451e878575028da",
+                    "parent_id": null,
+                    "user_id": null
+                },
+                "entity_id": "sensor.lbackyard_side_window_power_aqara",
+                "last_changed": "2020-04-01T15:41:00.744490+00:00",
+                "last_updated": "2020-04-01T15:41:00.744490+00:00",
+                "state": "100"
+            }
+        }
+    ],
+    "key": "core.restore_state",
+    "version": 1
+}

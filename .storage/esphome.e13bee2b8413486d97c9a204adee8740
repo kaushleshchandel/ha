@@ -1,0 +1,26 @@
+{
+    "data": {
+        "device_info": {
+            "compilation_time": "Feb 18 2020, 11:46:39",
+            "esphome_version": "1.14.3",
+            "has_deep_sleep": false,
+            "mac_address": "50:02:91:C7:C2:D0",
+            "model": "PLATFORMIO_D1_MINI",
+            "name": "esp_display",
+            "uses_password": true
+        },
+        "services": [],
+        "switch": [
+            {
+                "assumed_state": false,
+                "icon": "mdi:restart",
+                "key": 2955737984,
+                "name": "ESP Display Restart",
+                "object_id": "esp_display_restart",
+                "unique_id": "esp_displayswitchesp_display_restart"
+            }
+        ]
+    },
+    "key": "esphome.e13bee2b8413486d97c9a204adee8740",
+    "version": 1
+}

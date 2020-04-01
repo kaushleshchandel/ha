@@ -1,0 +1,83 @@
+{
+    "data": {
+        "device_info": {
+            "compilation_time": "Mar 21 2020, 09:19:02",
+            "esphome_version": "1.14.3",
+            "has_deep_sleep": false,
+            "mac_address": "B4:E6:2D:28:97:26",
+            "model": "PLATFORMIO_ESP01_1M",
+            "name": "esp_switch_a",
+            "uses_password": false
+        },
+        "light": [
+            {
+                "effects": [],
+                "key": 3621401722,
+                "max_mireds": 0.0,
+                "min_mireds": 0.0,
+                "name": "esp_switch_a",
+                "object_id": "esp_switch_a",
+                "supports_brightness": false,
+                "supports_color_temperature": false,
+                "supports_rgb": false,
+                "supports_white_value": false,
+                "unique_id": "esp_switch_alightesp_switch_a"
+            }
+        ],
+        "sensor": [
+            {
+                "accuracy_decimals": 0,
+                "force_update": false,
+                "icon": "mdi:wifi",
+                "key": 3538907465,
+                "name": "esp_switch_a WiFi Signal",
+                "object_id": "esp_switch_a_wifi_signal",
+                "unique_id": "b4e62d289726-wifisignal",
+                "unit_of_measurement": "dB"
+            }
+        ],
+        "services": [],
+        "switch": [
+            {
+                "assumed_state": false,
+                "icon": "mdi:restart",
+                "key": 3251592878,
+                "name": "esp_switch_a Restart",
+                "object_id": "esp_switch_a_restart",
+                "unique_id": "esp_switch_aswitchesp_switch_a_restart"
+            }
+        ],
+        "text_sensor": [
+            {
+                "icon": "mdi:new-box",
+                "key": 2539706639,
+                "name": "esp_switch_a Version",
+                "object_id": "esp_switch_a_version",
+                "unique_id": "b4e62d289726-version"
+            },
+            {
+                "icon": "",
+                "key": 3672201518,
+                "name": "esp_switch_a IP",
+                "object_id": "esp_switch_a_ip",
+                "unique_id": "b4e62d289726-wifiinfo-ip"
+            },
+            {
+                "icon": "",
+                "key": 4089031604,
+                "name": "esp_switch_a SSID",
+                "object_id": "esp_switch_a_ssid",
+                "unique_id": "b4e62d289726-wifiinfo-ssid"
+            },
+            {
+                "icon": "",
+                "key": 150885252,
+                "name": "esp_switch_a BSSID",
+                "object_id": "esp_switch_a_bssid",
+                "unique_id": "b4e62d289726-wifiinfo-bssid"
+            }
+        ]
+    },
+    "key": "esphome.dfb6da4ff1494ae9ad5b7d300dba7cf4",
+    "version": 1
+}

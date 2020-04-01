@@ -1,0 +1,882 @@
+{
+    "data": {
+        "config": {
+            "title": "Home",
+            "views": [
+                {
+                    "badges": [
+                        {
+                            "entity": "binary_sensor.rfkey_13"
+                        },
+                        {
+                            "entity": "binary_sensor.couch_window"
+                        },
+                        {
+                            "entity": "binary_sensor.remote_c2"
+                        },
+                        {
+                            "entity": "binary_sensor.remote_c1"
+                        },
+                        {
+                            "entity": "binary_sensor.remote_a1"
+                        },
+                        {
+                            "entity": "binary_sensor.remote_d1"
+                        },
+                        {
+                            "entity": "binary_sensor.laundry_door"
+                        },
+                        {
+                            "entity": "binary_sensor.loft_road_side_window"
+                        },
+                        {
+                            "entity": "binary_sensor.remote_b2"
+                        },
+                        {
+                            "entity": "binary_sensor.alans_room_tv_side_window"
+                        },
+                        {
+                            "entity": "binary_sensor.sonoff_rf_bridge_status"
+                        },
+                        {
+                            "entity": "binary_sensor.remote_a2"
+                        },
+                        {
+                            "entity": "binary_sensor.remote_d2"
+                        },
+                        {
+                            "entity": "binary_sensor.master_bedroom_window"
+                        },
+                        {
+                            "entity": "binary_sensor.remote_b1"
+                        },
+                        {
+                            "entity": "binary_sensor.alans_window"
+                        },
+                        {
+                            "entity": "binary_sensor.computer_side_window"
+                        },
+                        {
+                            "entity": "binary_sensor.heat_low"
+                        },
+                        {
+                            "entity": "binary_sensor.heat_high"
+                        },
+                        {
+                            "entity": "binary_sensor.fan"
+                        },
+                        {
+                            "entity": "binary_sensor.cool"
+                        },
+                        {
+                            "entity": "binary_sensor.button"
+                        },
+                        {
+                            "entity": "binary_sensor.humidifier_status"
+                        },
+                        {
+                            "entity": "binary_sensor.garage_door"
+                        },
+                        {
+                            "entity": "binary_sensor.homelink_b"
+                        },
+                        {
+                            "entity": "binary_sensor.homelink_a"
+                        },
+                        {
+                            "entity": "binary_sensor.main_door_sensor_aqara"
+                        },
+                        {
+                            "entity": "binary_sensor.living_room_motion_aqara"
+                        },
+                        {
+                            "entity": "binary_sensor.loft_motion_aqara"
+                        },
+                        {
+                            "entity": "binary_sensor.garage_motion_aqara"
+                        },
+                        {
+                            "entity": "binary_sensor.kitchen_occupancy_aqara"
+                        },
+                        {
+                            "entity": "binary_sensor.loft_occupancy_aqara"
+                        },
+                        {
+                            "entity": "binary_sensor.kitchen_motion_detect"
+                        },
+                        {
+                            "entity": "binary_sensor.living_room_occupancy_aqara"
+                        },
+                        {
+                            "entity": "binary_sensor.garage_occupancy_aqara"
+                        },
+                        {
+                            "entity": "binary_sensor.garage_pir_sensor"
+                        },
+                        {
+                            "entity": "binary_sensor.kitchen_door"
+                        },
+                        {
+                            "entity": "binary_sensor.door_window"
+                        },
+                        {
+                            "entity": "binary_sensor.downstairs_motion"
+                        },
+                        {
+                            "entity": "person.cambria_a"
+                        },
+                        {
+                            "entity": "person.kaushlesh"
+                        },
+                        {
+                            "entity": "person.emelia"
+                        },
+                        {
+                            "entity": "person.fernanda"
+                        },
+                        {
+                            "entity": "sensor.disk_use_percent_home"
+                        },
+                        {
+                            "entity": "sensor.memory_use_percent"
+                        },
+                        {
+                            "entity": "sensor.last_boot"
+                        },
+                        {
+                            "entity": "sensor.processor_use"
+                        },
+                        {
+                            "entity": "sensor.max6675_temperature"
+                        },
+                        {
+                            "entity": "sensor.dimmer_b_ip"
+                        },
+                        {
+                            "entity": "sensor.dimmer_b_ssid"
+                        },
+                        {
+                            "entity": "sensor.dimmer_b_bssid"
+                        },
+                        {
+                            "entity": "sensor.dimmer_b_version"
+                        },
+                        {
+                            "entity": "sensor.workbench_bssid"
+                        },
+                        {
+                            "entity": "sensor.workbench_version"
+                        },
+                        {
+                            "entity": "sensor.workbench_ssid"
+                        },
+                        {
+                            "entity": "sensor.workbench_ip"
+                        },
+                        {
+                            "entity": "sensor.humidifier_ssid"
+                        },
+                        {
+                            "entity": "sensor.humidifier_bssid_2"
+                        },
+                        {
+                            "entity": "sensor.humidifier_version"
+                        },
+                        {
+                            "entity": "sensor.humidifier_ip"
+                        },
+                        {
+                            "entity": "sensor.rf_bridge_sonoff_wifi_signal"
+                        },
+                        {
+                            "entity": "sensor.rf_bridge_sonoff_uptime"
+                        },
+                        {
+                            "entity": "sensor.rf_bridge_sonoff_ssid"
+                        },
+                        {
+                            "entity": "sensor.rf_bridge_sonoff_bssid"
+                        },
+                        {
+                            "entity": "sensor.rf_bridge_sonoff_version"
+                        },
+                        {
+                            "entity": "sensor.rf_bridge_sonoff_ip"
+                        },
+                        {
+                            "entity": "sensor.hvac_wifi_signal"
+                        },
+                        {
+                            "entity": "sensor.hvac_version"
+                        },
+                        {
+                            "entity": "sensor.hvac_ip"
+                        },
+                        {
+                            "entity": "sensor.hvac_ssid"
+                        },
+                        {
+                            "entity": "sensor.hvac_bssid"
+                        },
+                        {
+                            "entity": "sensor.laundry_bmp280_wifi_signal"
+                        },
+                        {
+                            "entity": "sensor.laundry_bmp280_ssid"
+                        },
+                        {
+                            "entity": "sensor.laundry_bmp280_bssid"
+                        },
+                        {
+                            "entity": "sensor.laundry_bmp280_version"
+                        },
+                        {
+                            "entity": "sensor.laundry_bmp280_ip"
+                        },
+                        {
+                            "entity": "sensor.alans_bedroom_pressure"
+                        },
+                        {
+                            "entity": "sensor.alans_bedroom_bme280_uptime"
+                        },
+                        {
+                            "entity": "sensor.alans_bedroom_humidity"
+                        },
+                        {
+                            "entity": "sensor.alans_bedroom_bme280_wifi_signal"
+                        },
+                        {
+                            "entity": "sensor.alans_bedroom_temperature"
+                        },
+                        {
+                            "entity": "sensor.alans_bedroom_bme280_version"
+                        },
+                        {
+                            "entity": "sensor.alans_bedroom_bme280_ip"
+                        },
+                        {
+                            "entity": "sensor.alans_bedroom_bme280_ssid"
+                        },
+                        {
+                            "entity": "sensor.alans_bedroom_bme280_bssid"
+                        },
+                        {
+                            "entity": "sensor.rotary_encoder"
+                        },
+                        {
+                            "entity": "sensor.alarm_state"
+                        },
+                        {
+                            "entity": "sensor.garage_light_wifi_signal"
+                        },
+                        {
+                            "entity": "sensor.garage_light_ssid"
+                        },
+                        {
+                            "entity": "sensor.garage_light_bssid"
+                        },
+                        {
+                            "entity": "sensor.garage_light_version"
+                        },
+                        {
+                            "entity": "sensor.garage_light_ip"
+                        },
+                        {
+                            "entity": "sensor.porch_entrance_duel_version"
+                        },
+                        {
+                            "entity": "sensor.porch_entrance_duel_ip"
+                        },
+                        {
+                            "entity": "sensor.porch_entrance_duel_ssid"
+                        },
+                        {
+                            "entity": "sensor.porch_entrance_duel_bssid"
+                        },
+                        {
+                            "entity": "sensor.humidity_controller_wifi_signal"
+                        },
+                        {
+                            "entity": "sensor.humidity_controller_version"
+                        },
+                        {
+                            "entity": "sensor.humidity_controller_ip"
+                        },
+                        {
+                            "entity": "sensor.humidity_controller_ssid"
+                        },
+                        {
+                            "entity": "sensor.humidity_controller_bssid"
+                        },
+                        {
+                            "entity": "sensor.loft_temperature"
+                        },
+                        {
+                            "entity": "sensor.loft_pressure"
+                        },
+                        {
+                            "entity": "sensor.loft_bme280_wifi_signal"
+                        },
+                        {
+                            "entity": "sensor.loft_humidity"
+                        },
+                        {
+                            "entity": "sensor.loft_absolute_humidity"
+                        },
+                        {
+                            "entity": "sensor.loft_bme280_ip"
+                        },
+                        {
+                            "entity": "sensor.loft_bme280_ssid"
+                        },
+                        {
+                            "entity": "sensor.loft_bme280_bssid"
+                        },
+                        {
+                            "entity": "sensor.loft_bme280_version"
+                        },
+                        {
+                            "entity": "sensor.backyard_light_wifi_signal"
+                        },
+                        {
+                            "entity": "sensor.backyard_light_ssid"
+                        },
+                        {
+                            "entity": "sensor.backyard_light_bssid"
+                        },
+                        {
+                            "entity": "sensor.backyard_light_version"
+                        },
+                        {
+                            "entity": "sensor.backyard_light_ip"
+                        },
+                        {
+                            "entity": "sensor.kitchen_sink_light_wifi_signal"
+                        },
+                        {
+                            "entity": "sensor.kitchen_sink_light_version"
+                        },
+                        {
+                            "entity": "sensor.kitchen_sink_light_ip"
+                        },
+                        {
+                            "entity": "sensor.kitchen_sink_light_ssid"
+                        },
+                        {
+                            "entity": "sensor.kitchen_sink_light_bssid"
+                        },
+                        {
+                            "entity": "sensor.outdoor_temperature"
+                        },
+                        {
+                            "entity": "sensor.outdoor_pressure"
+                        },
+                        {
+                            "entity": "sensor.outdoor_humidity"
+                        },
+                        {
+                            "entity": "sensor.outdoor_bme280_wifi_signal"
+                        },
+                        {
+                            "entity": "sensor.outdoor_bme280_bssid"
+                        },
+                        {
+                            "entity": "sensor.outdoor_bme280_ip"
+                        },
+                        {
+                            "entity": "sensor.outdoor_bme280_version"
+                        },
+                        {
+                            "entity": "sensor.outdoor_bme280_ssid"
+                        },
+                        {
+                            "entity": "sensor.chandelier_loft_duel_wifi_signal"
+                        },
+                        {
+                            "entity": "sensor.chandelier_loft_duel_ip"
+                        },
+                        {
+                            "entity": "sensor.chandelier_loft_duel_ssid"
+                        },
+                        {
+                            "entity": "sensor.chandelier_loft_duel_bssid"
+                        },
+                        {
+                            "entity": "sensor.chandelier_loft_duel_version"
+                        },
+                        {
+                            "entity": "sensor.humidifier_wifi_signal"
+                        },
+                        {
+                            "entity": "sensor.humidifier_uptime"
+                        },
+                        {
+                            "entity": "sensor.humidifier_humidity"
+                        },
+                        {
+                            "entity": "sensor.set_point_2"
+                        },
+                        {
+                            "entity": "sensor.esp_switch_a_wifi_signal"
+                        },
+                        {
+                            "entity": "sensor.esp_switch_a_bssid"
+                        },
+                        {
+                            "entity": "sensor.esp_switch_a_version"
+                        },
+                        {
+                            "entity": "sensor.esp_switch_a_ip"
+                        },
+                        {
+                            "entity": "sensor.esp_switch_a_ssid"
+                        },
+                        {
+                            "entity": "sensor.garage_multi_sensor_wifi_signal"
+                        },
+                        {
+                            "entity": "sensor.garage_multi_sensor_version"
+                        },
+                        {
+                            "entity": "sensor.garage_multi_sensor_ip"
+                        },
+                        {
+                            "entity": "sensor.garage_multi_sensor_ssid"
+                        },
+                        {
+                            "entity": "sensor.garage_multi_sensor_bssid"
+                        },
+                        {
+                            "entity": "sensor.garage_bmp280_wifi_signal"
+                        },
+                        {
+                            "entity": "sensor.garage_temperature"
+                        },
+                        {
+                            "entity": "sensor.garage_bmp280_version"
+                        },
+                        {
+                            "entity": "sensor.garage_bmp280_ip"
+                        },
+                        {
+                            "entity": "sensor.garage_bmp280_ssid"
+                        },
+                        {
+                            "entity": "sensor.garage_bmp280_bssid"
+                        },
+                        {
+                            "entity": "sensor.audio_playback_garage_wifi_signal"
+                        },
+                        {
+                            "entity": "sensor.audio_playback_garage_ssid"
+                        },
+                        {
+                            "entity": "sensor.audio_playback_garage_bssid"
+                        },
+                        {
+                            "entity": "sensor.audio_playback_garage_version"
+                        },
+                        {
+                            "entity": "sensor.audio_playback_garage_ip"
+                        },
+                        {
+                            "entity": "sensor.battery_level"
+                        },
+                        {
+                            "entity": "sensor.geocoded_location_3"
+                        },
+                        {
+                            "entity": "sensor.wifi_connection"
+                        },
+                        {
+                            "entity": "sensor.last_update_trigger_2"
+                        },
+                        {
+                            "entity": "sensor.battery_level_3"
+                        },
+                        {
+                            "entity": "sensor.floors_descended_2"
+                        },
+                        {
+                            "entity": "sensor.sim_1_2"
+                        },
+                        {
+                            "entity": "sensor.average_active_pace_2"
+                        },
+                        {
+                            "entity": "sensor.battery_state_2"
+                        },
+                        {
+                            "entity": "sensor.steps_2"
+                        },
+                        {
+                            "entity": "sensor.ssid_2"
+                        },
+                        {
+                            "entity": "sensor.distance_2"
+                        },
+                        {
+                            "entity": "sensor.bssid_2"
+                        },
+                        {
+                            "entity": "sensor.geocoded_location_2"
+                        },
+                        {
+                            "entity": "sensor.activity_2"
+                        },
+                        {
+                            "entity": "sensor.floors_ascended_2"
+                        },
+                        {
+                            "entity": "sensor.connection_type_2"
+                        },
+                        {
+                            "entity": "sensor.shelly_shsw_25_98f4abf30e36_1_current_consumption"
+                        },
+                        {
+                            "entity": "sensor.shelly_shsw_25_98f4abf30e36_2_current_consumption"
+                        },
+                        {
+                            "entity": "sensor.shelly_shdm_1_db33ac_current_consumption"
+                        },
+                        {
+                            "entity": "sensor.shelly_shsw_25_98f4abf30e36_1_total_consumption_attr"
+                        },
+                        {
+                            "entity": "sensor.shelly_shsw_25_98f4abf30e36_2_total_consumption_attr"
+                        },
+                        {
+                            "entity": "sensor.living_room_humidity_aqara"
+                        },
+                        {
+                            "entity": "sensor.living_room_multi_sensor_power"
+                        },
+                        {
+                            "entity": "sensor.living_room_occupancy_sensor_power_aqara"
+                        },
+                        {
+                            "entity": "sensor.lumi_lumi_sensor_switch_aq2_fca30402_power"
+                        },
+                        {
+                            "entity": "sensor.garage_occupancy_sensor_power_aqara"
+                        },
+                        {
+                            "entity": "sensor.garage_lux_aqara"
+                        },
+                        {
+                            "entity": "sensor.main_door_sensor_power_aqara"
+                        },
+                        {
+                            "entity": "sensor.loft_occupancy_sensor_power_aqara"
+                        },
+                        {
+                            "entity": "sensor.master_bedroom_humidity_aqara"
+                        },
+                        {
+                            "entity": "sensor.living_room_pressure_aqara"
+                        },
+                        {
+                            "entity": "sensor.master_bedroom_power_aqara"
+                        },
+                        {
+                            "entity": "sensor.master_bedroom_temperature_aqara"
+                        },
+                        {
+                            "entity": "sensor.kitchen_lux_aqara"
+                        },
+                        {
+                            "entity": "sensor.living_room_temperature_aqara"
+                        },
+                        {
+                            "entity": "sensor.lumi_lumi_sensor_switch_aq2_a3a20402_power"
+                        },
+                        {
+                            "entity": "sensor.master_bedroom_pressure_aqara"
+                        },
+                        {
+                            "entity": "sensor.kitchen_occupancy_sensor_aqara"
+                        },
+                        {
+                            "entity": "sensor.living_room_lux_aqara"
+                        },
+                        {
+                            "entity": "sensor.loft_lux_aqara"
+                        },
+                        {
+                            "entity": "sensor.philips_rwl020_bcac0b04_power"
+                        },
+                        {
+                            "entity": "sensor.shelly_shdm_1_db33ac_total_consumption_attr"
+                        },
+                        {
+                            "entity": "sensor.laundry_temperature"
+                        },
+                        {
+                            "entity": "sensor.dimmer_level"
+                        },
+                        {
+                            "entity": "sensor.adc_value"
+                        },
+                        {
+                            "entity": "sensor.workbench_humidity"
+                        },
+                        {
+                            "entity": "sensor.workbench_temperature"
+                        },
+                        {
+                            "entity": "sensor.humidifier_pressure_2"
+                        },
+                        {
+                            "entity": "sensor.humidifier_temperature_2"
+                        },
+                        {
+                            "entity": "sun.sun"
+                        }
+                    ],
+                    "cards": [
+                        {
+                            "entities": [
+                                {
+                                    "entity": "binary_sensor.kitchen_door_sensor_aqara",
+                                    "name": "Door Sensor"
+                                }
+                            ],
+                            "title": "Kitchen",
+                            "type": "entities"
+                        },
+                        {
+                            "entities": [
+                                {
+                                    "entity": "light.loft_lamp_upper_hue",
+                                    "name": "Lamp Upper"
+                                }
+                            ],
+                            "title": "Loft",
+                            "type": "entities"
+                        },
+                        {
+                            "entities": [
+                                "light.garage_light",
+                                "light.360178242462ab2e57ae",
+                                "light.36017824d8f15ba5221f",
+                                "light.alans_night_lamp",
+                                "light.backyard",
+                                "light.chandleir",
+                                "light.kitchen_sink_light",
+                                "light.loft",
+                                "light.main_entrance",
+                                "light.porch"
+                            ],
+                            "show_header_toggle": true,
+                            "title": "entity_whitelist",
+                            "type": "entities"
+                        },
+                        {
+                            "entities": [
+                                "sensor.unavailable_entities",
+                                "sensor.available_entities",
+                                "sensor.updater",
+                                "sensor.ipv4_address_eth0",
+                                "sensor.ipv6_address_eth1"
+                            ],
+                            "show_header_toggle": true,
+                            "title": "entity_blacklist",
+                            "type": "entities"
+                        },
+                        {
+                            "entities": [
+                                "light.loft"
+                            ],
+                            "show_header_toggle": true,
+                            "title": "alarm_lights",
+                            "type": "entities"
+                        },
+                        {
+                            "entities": [
+                                "light.backyard_light",
+                                "light.porch"
+                            ],
+                            "show_header_toggle": true,
+                            "title": "outdoor_lights",
+                            "type": "entities"
+                        },
+                        {
+                            "entities": [
+                                "light.loft",
+                                "light.entrance",
+                                "light.alns_room_dimmer"
+                            ],
+                            "show_header_toggle": true,
+                            "title": "indoor_default_on_lights",
+                            "type": "entities"
+                        },
+                        {
+                            "entities": [
+                                "light.loft_lamp_lower_hue",
+                                "light.loft_lamp_upper_hue",
+                                "light.loft"
+                            ],
+                            "show_header_toggle": true,
+                            "title": "loft_lights",
+                            "type": "entities"
+                        },
+                        {
+                            "entities": [
+                                "light.loft_lamp_lower_hue",
+                                "light.loft_lamp_upper_hue"
+                            ],
+                            "show_header_toggle": true,
+                            "title": "loft_lamp",
+                            "type": "entities"
+                        },
+                        {
+                            "entity": "alarm_control_panel.home_alarm",
+                            "type": "alarm-panel"
+                        },
+                        {
+                            "entities": [
+                                "cover.garage_door_2"
+                            ],
+                            "title": "Cover",
+                            "type": "entities"
+                        },
+                        {
+                            "entities": [
+                                "input_number.garage_timer_slider",
+                                "input_number.laundry_max_temperature",
+                                "input_number.max_humidity_slider",
+                                "input_number.min_humidity_slider"
+                            ],
+                            "title": "Input number",
+                            "type": "entities"
+                        },
+                        {
+                            "entities": [
+                                {
+                                    "entity": "light.alans_room_dimmer_shelly"
+                                },
+                                {
+                                    "entity": "light.breakfast_table_dimmer"
+                                },
+                                {
+                                    "entity": "light.chandelier"
+                                },
+                                {
+                                    "entity": "light.dining_table_dimmer"
+                                },
+                                {
+                                    "entity": "light.living_room_lamp_dimmer"
+                                },
+                                {
+                                    "entity": "light.leviton_dzpd3_1lw_plug_in_dimming_lamp_module_level_2"
+                                },
+                                {
+                                    "entity": "light.master_bedroom_entrance_dimmer"
+                                },
+                                {
+                                    "entity": "light.leviton_dzpd3_1lw_plug_in_dimming_lamp_module_level"
+                                },
+                                {
+                                    "entity": "light.master_bedroom_lamp_dimmer"
+                                },
+                                {
+                                    "entity": "light.spotlights_dimmer"
+                                }
+                            ],
+                            "title": "Light",
+                            "type": "entities"
+                        },
+                        {
+                            "entity": "media_player.living_room_tv",
+                            "type": "media-control"
+                        },
+                        {
+                            "entities": [
+                                "scene.away_day",
+                                "scene.away_night",
+                                "scene.home",
+                                "scene.morning",
+                                "scene.sleeping"
+                            ],
+                            "title": "Scene",
+                            "type": "entities"
+                        },
+                        {
+                            "entities": [
+                                "script.light_loop",
+                                "script.light_flash"
+                            ],
+                            "title": "Script",
+                            "type": "entities"
+                        },
+                        {
+                            "entities": [
+                                "switch.playstation_shelly",
+                                "switch.alans_tv_shelly",
+                                "switch.b_switch",
+                                "switch.device_on_2",
+                                "switch.energy_usage_is_high",
+                                "switch.garage_door_close_switch_2",
+                                "switch.garage_door_open_switch_2",
+                                "switch.garage_door_opener",
+                                "switch.humidifier_relay",
+                                "switch.humidifier_status_2",
+                                "switch.manual_override_2",
+                                "switch.refresh_devices",
+                                "switch.rotary_switch",
+                                "switch.setting_home_away_mode",
+                                {
+                                    "entity": "switch.switch_8",
+                                    "name": "8"
+                                },
+                                "switch.system_is_online",
+                                "switch.system_is_offline",
+                                "switch.turning_off_outdoor_lights",
+                                "switch.turning_on_outdoor_lights",
+                                "switch.shelly_shdm_1_db33ac_firmware_update",
+                                "switch.welcome_home",
+                                "switch.alans_bedroom_bme280_restart",
+                                "switch.audio_playback_garage_restart",
+                                "switch.backyard_light_restart",
+                                "switch.chandelier_loft_duel_restart",
+                                "switch.esp_switch_a_restart",
+                                "switch.garage_bmp280_restart",
+                                "switch.garage_light_restart",
+                                "switch.garage_multi_sensor_restart",
+                                "switch.humidifier_restart",
+                                "switch.humidity_controller_restart",
+                                "switch.hvac_restart",
+                                "switch.kitchen_sink_light_restart",
+                                "switch.laundry_bmp280_restart",
+                                "switch.outdoor_bme280_restart",
+                                "switch.porch_entrance_duel_restart"
+                            ],
+                            "title": "Switch",
+                            "type": "entities"
+                        },
+                        {
+                            "entity": "weather.cambria_a",
+                            "type": "weather-forecast"
+                        },
+                        {
+                            "entities": [
+                                "zwave.leviton_dzpd3_1lw_plug_in_dimming_lamp_module",
+                                "zwave.leviton_dzpd3_1lw_plug_in_dimming_lamp_module_2",
+                                {
+                                    "entity": "zwave.z_wave_sigma_designs_uzb_z_wave_usb_adapter",
+                                    "name": "(Sigma Designs) UZB Z-Wave USB Adapter"
+                                }
+                            ],
+                            "title": "Z-Wave",
+                            "type": "entities"
+                        }
+                    ],
+                    "path": "default_view",
+                    "title": "Home"
+                }
+            ]
+        }
+    },
+    "key": "lovelace.lovelace_security",
+    "version": 1
+}

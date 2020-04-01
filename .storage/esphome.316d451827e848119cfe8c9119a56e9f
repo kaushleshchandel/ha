@@ -1,0 +1,160 @@
+{
+    "data": {
+        "binary_sensor": [
+            {
+                "device_class": "connectivity",
+                "is_status_binary_sensor": true,
+                "key": 280952220,
+                "name": "hvac Status",
+                "object_id": "hvac_status",
+                "unique_id": "hvacbinary_sensorhvac_status"
+            },
+            {
+                "device_class": "",
+                "is_status_binary_sensor": false,
+                "key": 3110229100,
+                "name": "Heat Low",
+                "object_id": "heat_low",
+                "unique_id": "hvacbinary_sensorheat_low"
+            },
+            {
+                "device_class": "",
+                "is_status_binary_sensor": false,
+                "key": 4128382282,
+                "name": "Heat High",
+                "object_id": "heat_high",
+                "unique_id": "hvacbinary_sensorheat_high"
+            },
+            {
+                "device_class": "",
+                "is_status_binary_sensor": false,
+                "key": 1183803264,
+                "name": "Fan",
+                "object_id": "fan",
+                "unique_id": "hvacbinary_sensorfan"
+            },
+            {
+                "device_class": "",
+                "is_status_binary_sensor": false,
+                "key": 3703938822,
+                "name": "Cool",
+                "object_id": "cool",
+                "unique_id": "hvacbinary_sensorcool"
+            }
+        ],
+        "device_info": {
+            "compilation_time": "Mar 31 2020, 13:50:57",
+            "esphome_version": "1.14.3",
+            "has_deep_sleep": false,
+            "mac_address": "50:02:91:C8:B8:C8",
+            "model": "PLATFORMIO_D1_MINI",
+            "name": "hvac",
+            "uses_password": false
+        },
+        "sensor": [
+            {
+                "accuracy_decimals": 0,
+                "force_update": false,
+                "icon": "mdi:timer",
+                "key": 2410090546,
+                "name": "hvac uptime",
+                "object_id": "hvac_uptime",
+                "unique_id": "500291c8b8c8-uptime",
+                "unit_of_measurement": "s"
+            },
+            {
+                "accuracy_decimals": 0,
+                "force_update": false,
+                "icon": "mdi:wifi",
+                "key": 16547988,
+                "name": "hvac WiFi Signal",
+                "object_id": "hvac_wifi_signal",
+                "unique_id": "500291c8b8c8-wifisignal",
+                "unit_of_measurement": "dB"
+            },
+            {
+                "accuracy_decimals": 0,
+                "force_update": false,
+                "icon": "mdi:pulse",
+                "key": 3710424442,
+                "name": "Heat Counter",
+                "object_id": "heat_counter",
+                "unique_id": "hvacsensorheat_counter",
+                "unit_of_measurement": "pulses/min"
+            },
+            {
+                "accuracy_decimals": 0,
+                "force_update": false,
+                "icon": "mdi:pulse",
+                "key": 3540275848,
+                "name": "High Counter",
+                "object_id": "high_counter",
+                "unique_id": "hvacsensorhigh_counter",
+                "unit_of_measurement": "pulses/min"
+            },
+            {
+                "accuracy_decimals": 0,
+                "force_update": false,
+                "icon": "mdi:pulse",
+                "key": 1141522979,
+                "name": "Cool Counter",
+                "object_id": "cool_counter",
+                "unique_id": "hvacsensorcool_counter",
+                "unit_of_measurement": "pulses/min"
+            },
+            {
+                "accuracy_decimals": 0,
+                "force_update": false,
+                "icon": "mdi:pulse",
+                "key": 3365646553,
+                "name": "Fan Counter",
+                "object_id": "fan_counter",
+                "unique_id": "hvacsensorfan_counter",
+                "unit_of_measurement": "pulses/min"
+            }
+        ],
+        "services": [],
+        "switch": [
+            {
+                "assumed_state": false,
+                "icon": "mdi:restart",
+                "key": 2511990447,
+                "name": "hvac Restart",
+                "object_id": "hvac_restart",
+                "unique_id": "hvacswitchhvac_restart"
+            }
+        ],
+        "text_sensor": [
+            {
+                "icon": "mdi:new-box",
+                "key": 2091753842,
+                "name": "hvac Version",
+                "object_id": "hvac_version",
+                "unique_id": "500291c8b8c8-version"
+            },
+            {
+                "icon": "",
+                "key": 2214755625,
+                "name": "hvac IP",
+                "object_id": "hvac_ip",
+                "unique_id": "500291c8b8c8-wifiinfo-ip"
+            },
+            {
+                "icon": "",
+                "key": 858442375,
+                "name": "hvac SSID",
+                "object_id": "hvac_ssid",
+                "unique_id": "500291c8b8c8-wifiinfo-ssid"
+            },
+            {
+                "icon": "",
+                "key": 3256554649,
+                "name": "hvac BSSID",
+                "object_id": "hvac_bssid",
+                "unique_id": "500291c8b8c8-wifiinfo-bssid"
+            }
+        ]
+    },
+    "key": "esphome.316d451827e848119cfe8c9119a56e9f",
+    "version": 1
+}

@@ -1,0 +1,34 @@
+{
+    "data": {
+        "binary_sensor": [
+            {
+                "device_class": "door",
+                "is_status_binary_sensor": false,
+                "key": 4167134867,
+                "name": "Backyard Door",
+                "object_id": "backyard_door",
+                "unique_id": "backyard_multi_sensorbinary_sensorbackyard_door"
+            },
+            {
+                "device_class": "window",
+                "is_status_binary_sensor": false,
+                "key": 3123816335,
+                "name": "Backyard Window",
+                "object_id": "backyard_window",
+                "unique_id": "backyard_multi_sensorbinary_sensorbackyard_window"
+            }
+        ],
+        "device_info": {
+            "compilation_time": "Feb 29 2020, 07:59:15",
+            "esphome_version": "1.14.3",
+            "has_deep_sleep": false,
+            "mac_address": "DC:4F:22:7D:C9:F1",
+            "model": "PLATFORMIO_D1_MINI",
+            "name": "backyard_multi_sensor",
+            "uses_password": false
+        },
+        "services": []
+    },
+    "key": "esphome.034e4b6090a6499db1144c5ac3600a46",
+    "version": 1
+}

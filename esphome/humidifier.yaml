@@ -116,9 +116,9 @@ sensor:
       id: bme280_humidity
       on_value:
         - lambda: |-
-            if (id(bme280_humidity).state < id(humidity_set_point).state ) {
+            if (id(bme280_humidity).state < id(humidity_set_point).state - 1 )  {
               id(led_Status).turn_on();
-            } else {
+            } else if(id(bme280_humidity).state > id(humidity_set_point).state +1 ) {
               id(led_Status).turn_off();
             }
       

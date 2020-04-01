@@ -13,6 +13,8 @@ substitutions:
 #GPIO14	Optional Sensor (C1 Pin 5)
 
 binary_sensor:
+  - platform: status
+    name:  "$devicename Status"
   - platform: gpio
     pin:
       number: GPIO0
@@ -25,8 +27,9 @@ sensor:
   - platform: wifi_signal
     name: "$devicename WiFi Signal"
     update_interval: 60s
+  - platform: uptime
+    name: "$devicename uptime"
 
-switch:
 switch:
   - platform: restart
     name: "$devicename Restart"

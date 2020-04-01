@@ -1,0 +1,40 @@
+{
+    "data": {
+        "areas": [
+            {
+                "id": "1ba018334e1f4a77b2151a5f9d2f27f2",
+                "name": "Living Room"
+            },
+            {
+                "id": "c00fe01e1f1c4b54a3c7f5a4fb279019",
+                "name": "Kitchen"
+            },
+            {
+                "id": "f824116e2a9d4e4789fdd572ea337f55",
+                "name": "Master Bedroom"
+            },
+            {
+                "id": "a0134b26410b496680687c802f28dafb",
+                "name": "Loft"
+            },
+            {
+                "id": "33d44f8dde2f432ba7b81fb4684abe0a",
+                "name": "Garage"
+            },
+            {
+                "id": "2c4d779ac6824f219d5ab7d02c14cf2d",
+                "name": "Alans Bedroom"
+            },
+            {
+                "id": "1635ed0988d64c6db783d11b1f0a32d1",
+                "name": "Porch"
+            },
+            {
+                "id": "be22218b27c243f180e34029233bc7bc",
+                "name": "Backyard"
+            }
+        ]
+    },
+    "key": "core.area_registry",
+    "version": 1
+}

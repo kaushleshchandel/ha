@@ -1,0 +1,106 @@
+{
+    "data": {
+        "binary_sensor": [
+            {
+                "device_class": "connectivity",
+                "is_status_binary_sensor": true,
+                "key": 3309127096,
+                "name": "chandelier_loft_duel Status",
+                "object_id": "chandelier_loft_duel_status",
+                "unique_id": "chandelier_loft_duelbinary_sensorchandelier_loft_duel_status"
+            }
+        ],
+        "device_info": {
+            "compilation_time": "Mar 31 2020, 13:45:54",
+            "esphome_version": "1.14.3",
+            "has_deep_sleep": false,
+            "mac_address": "C8:2B:96:10:D2:D5",
+            "model": "PLATFORMIO_ESP01_1M",
+            "name": "chandelier_loft_duel",
+            "uses_password": false
+        },
+        "light": [
+            {
+                "effects": [],
+                "key": 1767199956,
+                "max_mireds": 0.0,
+                "min_mireds": 0.0,
+                "name": "Chandelier",
+                "object_id": "chandelier",
+                "supports_brightness": false,
+                "supports_color_temperature": false,
+                "supports_rgb": false,
+                "supports_white_value": false,
+                "unique_id": "chandelier_loft_duellightchandelier"
+            },
+            {
+                "effects": [],
+                "key": 540007528,
+                "max_mireds": 0.0,
+                "min_mireds": 0.0,
+                "name": "Loft",
+                "object_id": "loft",
+                "supports_brightness": false,
+                "supports_color_temperature": false,
+                "supports_rgb": false,
+                "supports_white_value": false,
+                "unique_id": "chandelier_loft_duellightloft"
+            }
+        ],
+        "sensor": [
+            {
+                "accuracy_decimals": 0,
+                "force_update": false,
+                "icon": "mdi:wifi",
+                "key": 1477100320,
+                "name": "chandelier_loft_duel WiFi Signal",
+                "object_id": "chandelier_loft_duel_wifi_signal",
+                "unique_id": "c82b9610d2d5-wifisignal",
+                "unit_of_measurement": "dB"
+            }
+        ],
+        "services": [],
+        "switch": [
+            {
+                "assumed_state": false,
+                "icon": "mdi:restart",
+                "key": 2168894819,
+                "name": "chandelier_loft_duel Restart",
+                "object_id": "chandelier_loft_duel_restart",
+                "unique_id": "chandelier_loft_duelswitchchandelier_loft_duel_restart"
+            }
+        ],
+        "text_sensor": [
+            {
+                "icon": "mdi:new-box",
+                "key": 3294653422,
+                "name": "chandelier_loft_duel Version",
+                "object_id": "chandelier_loft_duel_version",
+                "unique_id": "c82b9610d2d5-version"
+            },
+            {
+                "icon": "",
+                "key": 1912076845,
+                "name": "chandelier_loft_duel IP",
+                "object_id": "chandelier_loft_duel_ip",
+                "unique_id": "c82b9610d2d5-wifiinfo-ip"
+            },
+            {
+                "icon": "",
+                "key": 4277704515,
+                "name": "chandelier_loft_duel SSID",
+                "object_id": "chandelier_loft_duel_ssid",
+                "unique_id": "c82b9610d2d5-wifiinfo-ssid"
+            },
+            {
+                "icon": "",
+                "key": 1799067213,
+                "name": "chandelier_loft_duel BSSID",
+                "object_id": "chandelier_loft_duel_bssid",
+                "unique_id": "c82b9610d2d5-wifiinfo-bssid"
+            }
+        ]
+    },
+    "key": "esphome.4b05cd9dd3be44ac9d48eabf8e0b1094",
+    "version": 1
+}

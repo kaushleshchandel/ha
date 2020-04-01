@@ -17,15 +17,22 @@ sensor:
       oversampling: 16x
     address: 0x76
     update_interval: 60s
-
+  - platform: wifi_signal
+    name: "$devicename WiFi Signal"
+    update_interval: 60s
+  - platform: uptime
+    name: "$devicename uptime"
+    
 switch:
   - platform: restart
     name: "$devicename Restart"
 
-sensor:
-  - platform: wifi_signal
-    name: "$devicename WiFi Signal"
-    update_interval: 60s
+
+
+binary_sensor:
+  - platform: status
+    name:  "$devicename Status"
+
 
 status_led:
   pin:

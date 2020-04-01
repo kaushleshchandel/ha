@@ -1,0 +1,355 @@
+{
+    "data": {
+        "credentials": [
+            {
+                "auth_provider_id": null,
+                "auth_provider_type": "homeassistant",
+                "data": {
+                    "username": "kaushlesh"
+                },
+                "id": "2a4ac4de88334b719a39aaacddc1a4b3",
+                "user_id": "1bda3d6e9f7248e38892e9b8d924709d"
+            },
+            {
+                "auth_provider_id": null,
+                "auth_provider_type": "homeassistant",
+                "data": {
+                    "username": "emelia"
+                },
+                "id": "41d58b13ab184fb0ac7c09b3a97817d5",
+                "user_id": "0dff9b805f6540cba85a3490c7c4244b"
+            },
+            {
+                "auth_provider_id": null,
+                "auth_provider_type": "homeassistant",
+                "data": {
+                    "username": "fernanda"
+                },
+                "id": "9b5da3202e2342b2a90c52ddf7b19435",
+                "user_id": "b58334f6bb0748b99540e24279c6ce0b"
+            }
+        ],
+        "groups": [
+            {
+                "id": "system-admin",
+                "name": "Administrators"
+            },
+            {
+                "id": "system-users",
+                "name": "Users"
+            },
+            {
+                "id": "system-read-only",
+                "name": "Read Only"
+            }
+        ],
+        "refresh_tokens": [
+            {
+                "access_token_expiration": 1800.0,
+                "client_icon": null,
+                "client_id": null,
+                "client_name": null,
+                "created_at": "2020-02-07T14:57:23.038498+00:00",
+                "id": "25dd037b314e4c3d968e21542c03706d",
+                "jwt_key": "9ed0777fef4ad9e3c9669b46aa0115fe4f09e0b80065ca8c04e67ec4a9fa8a012f419bae7168643b51f9c86e0bf90acd4a41924488097f37c4133813fd4faafd",
+                "last_used_at": "2020-04-01T16:23:11.538485+00:00",
+                "last_used_ip": "172.30.32.2",
+                "token": "1a2cd98e8d76d324479a2a1cb5ba186e0c2c443187c4a0ced111c89c880b220762a09ae70245cbe66f508b71d7b9600cb10353924a707fc9d79231dbe7cd8f01",
+                "token_type": "system",
+                "user_id": "35fbad958a234c058844028ca133ae32"
+            },
+            {
+                "access_token_expiration": 1800.0,
+                "client_icon": null,
+                "client_id": "http://localhost:8123/",
+                "client_name": null,
+                "created_at": "2020-02-07T14:59:06.893693+00:00",
+                "id": "87fdaa3214ec485eb83f77c7007cbdf7",
+                "jwt_key": "fca549b586241b00735a9cbf445464343b87aa4910838acae9fd9206e76193448ffa88d81ec697a2bee26c9cab18a984a67ac2bf43689f6b93d33a44ca7c6150",
+                "last_used_at": "2020-02-07T21:35:07.629347+00:00",
+                "last_used_ip": "127.0.0.1",
+                "token": "72a3b4f5fd4ead173aa56f6e8c16ba533ac22ad4d9b2070f14143a88d04af0350dd78e83caac521fb8d2f3f1187b5127ed8133b72839011e701a9b25df95c9a7",
+                "token_type": "normal",
+                "user_id": "1bda3d6e9f7248e38892e9b8d924709d"
+            },
+            {
+                "access_token_expiration": 1800.0,
+                "client_icon": null,
+                "client_id": "http://192.168.0.13:8123/",
+                "client_name": null,
+                "created_at": "2020-02-08T00:52:20.898245+00:00",
+                "id": "5f01b7f1f3a5442fb71e1723eda31376",
+                "jwt_key": "73c67b80f7b89e7c63c6a1fccc48118e01d7bebc59ec2b39a5a03cad0320ead8b7f553acdf8cef97e01e843d9e1ff4e58a3e671dc715e4b580189160cc2b8491",
+                "last_used_at": "2020-03-20T11:55:18.548013+00:00",
+                "last_used_ip": "192.168.0.101",
+                "token": "a55ff845851bd694a95612fd93017bb818fd97a98b5a25fe066fc0f70774e934f7f11a9c234bce4fe4b5136d9e471345f42bb8578b1a80dc8acbbbf0208db03a",
+                "token_type": "normal",
+                "user_id": "1bda3d6e9f7248e38892e9b8d924709d"
+            },
+            {
+                "access_token_expiration": 1800.0,
+                "client_icon": null,
+                "client_id": "http://192.168.0.165:8123/",
+                "client_name": null,
+                "created_at": "2020-02-08T01:03:13.910763+00:00",
+                "id": "80e3f31f2ec34e6f8df6d136c432bd21",
+                "jwt_key": "c0b7e117a991dfd61cf99b3356345e2cc627fbd36ae8687b8bf88046900f5d5562bfc42511a1b8122ba2341a69563f79ad012d4b9548417d9a023650a2a3e2f8",
+                "last_used_at": "2020-02-08T01:03:13.910962+00:00",
+                "last_used_ip": "192.168.0.48",
+                "token": "ab684a3e27a963a08ae151426c2f19213564ce00871b6d445c28cbe13156f1aa6b846f7ba6710ee0ffca2610f2332142272a6cddf3e0e5271930504e8579b2cc",
+                "token_type": "normal",
+                "user_id": "1bda3d6e9f7248e38892e9b8d924709d"
+            },
+            {
+                "access_token_expiration": 1800.0,
+                "client_icon": null,
+                "client_id": "http://kaushlesh.duckdns.org:8123/",
+                "client_name": null,
+                "created_at": "2020-02-08T14:25:12.981016+00:00",
+                "id": "4a56ff020aa8499295cec78e659a84dc",
+                "jwt_key": "93cf3c52f3e1011e085c0c290bc8fe16973cc60e53ac7f151e0679ea45a401e7320326f31c5933ea47ddfdd6df784ea027349dc033b358cae5bfd1a545d8ed05",
+                "last_used_at": "2020-03-30T02:05:54.856427+00:00",
+                "last_used_ip": "76.29.85.87",
+                "token": "74c1e98b9483e506119b1afe9fce79e3167739e589774c12f813998342b787809e0650fe13427ab203fb25163e320fa33c53ccb8a541c75939d66ba8b2091117",
+                "token_type": "normal",
+                "user_id": "1bda3d6e9f7248e38892e9b8d924709d"
+            },
+            {
+                "access_token_expiration": 1800.0,
+                "client_icon": null,
+                "client_id": "https://home-assistant.io/android",
+                "client_name": null,
+                "created_at": "2020-02-08T14:54:53.814915+00:00",
+                "id": "330b6f4bb79b45e9bf2cdfff67316e55",
+                "jwt_key": "50f43f44ef30f13b220edbd08842b3df42e1b90d487b926bb3711e3fd842f2d95004ec32db84e4f4551479b236749d4b345c3882963f89ca928faf3cf7e609aa",
+                "last_used_at": "2020-04-01T03:59:34.738788+00:00",
+                "last_used_ip": "192.168.0.11",
+                "token": "b9ab647b4d7ae3ee0f1d04d6a6930071e8cd4ed67b0f4bf41faf2bfd3c21706c3ac2deeb85588c9513fa8b611e0dded2034ec05c520aaf1d21359af23b26f421",
+                "token_type": "normal",
+                "user_id": "1bda3d6e9f7248e38892e9b8d924709d"
+            },
+            {
+                "access_token_expiration": 1800.0,
+                "client_icon": null,
+                "client_id": "http://kaushlesh.duckdns.org:8123/",
+                "client_name": null,
+                "created_at": "2020-02-08T15:09:08.043397+00:00",
+                "id": "2efe0ce663aa45308adca533a7124a3e",
+                "jwt_key": "242661c2c7ee538f09ada8f61c65f2889dece291081d3ef0429d589d3eb25fcc0f9545672aca406736008c98b86cfce67b2d14b6fabeea4ae64581a2a9e04154",
+                "last_used_at": "2020-03-05T11:53:20.815848+00:00",
+                "last_used_ip": "76.29.85.87",
+                "token": "06107b87db41b95a02459ec110dab2e59079baaff58ec2f9c850bbb1091ecf98a853865d841854705b9c4ab4bb29f548931002e16efd8ce52d6881051856793e",
+                "token_type": "normal",
+                "user_id": "1bda3d6e9f7248e38892e9b8d924709d"
+            },
+            {
+                "access_token_expiration": 1800.0,
+                "client_icon": null,
+                "client_id": "http://kaushlesh.duckdns.org:8123/",
+                "client_name": null,
+                "created_at": "2020-02-13T14:59:07.007343+00:00",
+                "id": "4034a0cf05ce4905b59b17310fe4af08",
+                "jwt_key": "20aa67fad88c91bce176f5f199d8112e60d3a1ab489a094c2a15791b337e5387b4db176304f539fd42a9f689d5b6be1752a7c75677065a416b222904a789c782",
+                "last_used_at": "2020-04-01T12:06:18.995276+00:00",
+                "last_used_ip": "172.58.139.242",
+                "token": "563f2b351767871fc7dc405bfaee88adc71ee6800c7d2fbc20d343355570257cbee10a9130c17a8263d4f8ee6761b2c1e6f336c68e1451ba4dc3d66b8af826a6",
+                "token_type": "normal",
+                "user_id": "1bda3d6e9f7248e38892e9b8d924709d"
+            },
+            {
+                "access_token_expiration": 1800.0,
+                "client_icon": null,
+                "client_id": "https://home-assistant.io/iOS",
+                "client_name": null,
+                "created_at": "2020-02-15T20:22:26.905954+00:00",
+                "id": "789c352b3cc74e7db0d595dc86ac16f7",
+                "jwt_key": "4ee26f3bc5d1785a95b3ccf596eb0b74c872cf8e3e274a9eeb7d3de14fd09f985596fe04a12d735cd49efac8a0ba8fcb3c1e98ca4f3c6734bf0614644295c8e1",
+                "last_used_at": "2020-02-15T20:22:26.906129+00:00",
+                "last_used_ip": "192.168.0.46",
+                "token": "983050592afebd0cd5abb1aec4139532c5240f899ee57d92b6a4e6f38e297cad1be931717cbfb1c13a7d7902780bd5353be6485efdb36e4e4ec2058506565ce8",
+                "token_type": "normal",
+                "user_id": "1bda3d6e9f7248e38892e9b8d924709d"
+            },
+            {
+                "access_token_expiration": 1800.0,
+                "client_icon": null,
+                "client_id": "http://kaushlesh.duckdns.org:8123/",
+                "client_name": null,
+                "created_at": "2020-02-20T12:24:33.022656+00:00",
+                "id": "0a0c629ed0f3416f9345e58079fd3faf",
+                "jwt_key": "fbc2e9d477d9d07cd1319824fc8d012b4b74f630e5eaecb384c7afeaef425d1953638fa614f8931086e3accd48f54b7a34203854db0f509025740755b80d8146",
+                "last_used_at": "2020-02-20T12:24:33.022846+00:00",
+                "last_used_ip": "76.29.85.87",
+                "token": "2e2a8ecbf322433885471df3fdf21266afee0089f05f491a1eae147a25c0d4495882ad920eafe6b4ae01ff3d88ec8988fe4bb2c1b12fc15b69ce3bc409158b98",
+                "token_type": "normal",
+                "user_id": "1bda3d6e9f7248e38892e9b8d924709d"
+            },
+            {
+                "access_token_expiration": 1800.0,
+                "client_icon": null,
+                "client_id": "http://192.168.0.17:8123/",
+                "client_name": null,
+                "created_at": "2020-02-25T03:53:49.916259+00:00",
+                "id": "93f88233fe1047d9b3eeb60404fe62d8",
+                "jwt_key": "307a9698a53533e062fd48391c99665f3effe69dc9fff84dc997119fc1ed0a704ad90ab717f852c2e07c57e616098c6f204d42fef37031250540c87f3d020535",
+                "last_used_at": "2020-02-25T03:53:49.916456+00:00",
+                "last_used_ip": "192.168.0.54",
+                "token": "1d356e25de8ca10c59d2781568f1fe693524cbe54255480ab81a770715a6aa30ddd82b261aaa5a3c695f091c1f3aa58da141643ee243274b10bb1fd52a8bd5c5",
+                "token_type": "normal",
+                "user_id": "1bda3d6e9f7248e38892e9b8d924709d"
+            },
+            {
+                "access_token_expiration": 1800.0,
+                "client_icon": null,
+                "client_id": "http://kaushlesh.duckdns.org:8123/",
+                "client_name": null,
+                "created_at": "2020-03-01T01:15:36.866234+00:00",
+                "id": "170d55b99142456a88d33b1e42428185",
+                "jwt_key": "75667fda0f4a0ebbb68c82782e5fc9a696e284d6b3bf38a68cffab233f9a7450c6b99d6ef76b83d85e50dfd0748123a33be9d83eaa3e5ba5b47db6a91bd2932e",
+                "last_used_at": "2020-03-21T20:29:16.043006+00:00",
+                "last_used_ip": "76.29.85.87",
+                "token": "e8de35b5c2ed0622f7a41cff3c93c1d741739a3b8269c89101f55f07cf6fb6f1baa34395b7360cdd00989e27bfbdcace93d39cc5748eba3112d282441f56751e",
+                "token_type": "normal",
+                "user_id": "1bda3d6e9f7248e38892e9b8d924709d"
+            },
+            {
+                "access_token_expiration": 1800.0,
+                "client_icon": null,
+                "client_id": "http://kaushlesh.duckdns.org:8123/",
+                "client_name": null,
+                "created_at": "2020-03-05T22:17:43.961080+00:00",
+                "id": "61f98d7c35ae499f8e752034a6c85b3a",
+                "jwt_key": "932513e00cfa66c99822607f7e390ac81b30ff7afba81c3e5b99bf69b6023a5988c1d8dea7f9b3004a2b585179ea3aeb1013d72d9c92cecb1aa9632de325f0a5",
+                "last_used_at": "2020-03-27T19:41:38.892558+00:00",
+                "last_used_ip": "76.29.85.87",
+                "token": "3d4fc80015c10aa4bbb7952b766728ae9112cfb6085f15389f3607b881e7d7511b12f06c6d11d73ab2025f72779753eda9e7e89b54ae32c6d5c78046e3a3fb4c",
+                "token_type": "normal",
+                "user_id": "1bda3d6e9f7248e38892e9b8d924709d"
+            },
+            {
+                "access_token_expiration": 1800.0,
+                "client_icon": null,
+                "client_id": "http://192.168.0.13:8123/",
+                "client_name": null,
+                "created_at": "2020-03-07T13:02:37.772953+00:00",
+                "id": "3fe8d5b5e04c4645a7df9ff01ecd96b6",
+                "jwt_key": "3098e7d8c57ea55de6d1d6ffe2aaf65778f4f1cdbfecca6fabbbc80a746a56240d2bdab0d851ca9e7a5aa1e38f5805eb90c832d465b5d5f5dc69415d92ce8d31",
+                "last_used_at": "2020-03-25T11:47:09.107971+00:00",
+                "last_used_ip": "192.168.0.37",
+                "token": "d0cdc329215f3dcde2f4f57c6f2bb122481837a543ed7626a74f04b9335e48ed0596507f3e405ef0faa40849cbe93599cea453cd80127a7f761cdbf9dbce3dc7",
+                "token_type": "normal",
+                "user_id": "1bda3d6e9f7248e38892e9b8d924709d"
+            },
+            {
+                "access_token_expiration": 1800.0,
+                "client_icon": null,
+                "client_id": "http://kaushlesh.duckdns.org:8123/",
+                "client_name": null,
+                "created_at": "2020-03-16T13:06:35.506822+00:00",
+                "id": "9f29381473024728b6eff672a22391c2",
+                "jwt_key": "cd2103d95c28170688e8d1bf443339d1cdc4d88fbdbb5f41b13e7751330590d42a14ee73084bf1f44adbf5dec6f7bc4e0a118b05d917a4c31e6fcc7ea53d5e3d",
+                "last_used_at": "2020-04-01T16:16:40.144138+00:00",
+                "last_used_ip": "76.29.85.87",
+                "token": "f2a1d068f8a869baad1f6bc25c6404a2e46903291a7364c6f60b7d93e80bc8de4995c92309186c4794ee2cdac3b328829f24b5890f2a693a8cffef8d726da72a",
+                "token_type": "normal",
+                "user_id": "1bda3d6e9f7248e38892e9b8d924709d"
+            },
+            {
+                "access_token_expiration": 1800.0,
+                "client_icon": null,
+                "client_id": "http://192.168.0.53:8123/",
+                "client_name": null,
+                "created_at": "2020-03-19T19:46:13.963453+00:00",
+                "id": "f6e63605451045c9ac03e096d8115d28",
+                "jwt_key": "1c83f6501c174a84359887eb23f0edcaaf8dd17862b10009d59040ae7b0c91980ffe902259387b29669a07a1244a03ee582e2f9e550d6cc973d4f7cbee25e587",
+                "last_used_at": "2020-03-19T23:50:44.503540+00:00",
+                "last_used_ip": "192.168.0.43",
+                "token": "5db390852cb61c17b1f68bca6e09ef77993bc8265b4f1f4e536b8fe91e77c676ec5febd32c7924b11227c46ec1f6cd7f7bdc94a467c29eeebb6abfd5759c0911",
+                "token_type": "normal",
+                "user_id": "1bda3d6e9f7248e38892e9b8d924709d"
+            },
+            {
+                "access_token_expiration": 1800.0,
+                "client_icon": null,
+                "client_id": "https://home-assistant.io/iOS",
+                "client_name": null,
+                "created_at": "2020-02-15T20:27:26.487133+00:00",
+                "id": "6b8843a9692846af910312b43a307909",
+                "jwt_key": "5f9f9dc3194411697d00330f3c1510d7f45c4024d1f4a44df7612303f598f5c1e6f1b7deec360d38ce5ae9ba2ab74189866c60dfd2a5f9d79151db38f3365d3e",
+                "last_used_at": "2020-04-01T02:41:54.725329+00:00",
+                "last_used_ip": "76.29.85.87",
+                "token": "eefd3a09e641b3382787aca1cba5a039de4230f9c69b528492675ebf1509e8c0435113d2e80e4015abb31a1516029a1218c7288108d75a24c8af1ba878080aff",
+                "token_type": "normal",
+                "user_id": "0dff9b805f6540cba85a3490c7c4244b"
+            },
+            {
+                "access_token_expiration": 1800.0,
+                "client_icon": null,
+                "client_id": null,
+                "client_name": null,
+                "created_at": "2020-03-14T15:04:40.274460+00:00",
+                "id": "99c56d46b0aa4c8ab01d3e95b5346eac",
+                "jwt_key": "c25b10d72d65ddde38391235b9d5c3ef06d861f1ce9ec6f53f704b81e23e7ab976b474e493cc522cb2f4c12658937583c1cc10c513aaad31b608bf472e5b247d",
+                "last_used_at": null,
+                "last_used_ip": null,
+                "token": "35a09080546bb27986e17ae6ccfcd3148efbd4539d9a21fddf2f61a19513c46aacc795681735cd5fcbfe0081a5273ba03703ddf46cb3f70c8d433031d190a6e8",
+                "token_type": "system",
+                "user_id": "9447f9ac7bce4eec93485328b503e2ee"
+            }
+        ],
+        "users": [
+            {
+                "group_ids": [
+                    "system-admin"
+                ],
+                "id": "35fbad958a234c058844028ca133ae32",
+                "is_active": true,
+                "is_owner": false,
+                "name": "Hass.io",
+                "system_generated": true
+            },
+            {
+                "group_ids": [
+                    "system-admin"
+                ],
+                "id": "1bda3d6e9f7248e38892e9b8d924709d",
+                "is_active": true,
+                "is_owner": true,
+                "name": "Home",
+                "system_generated": false
+            },
+            {
+                "group_ids": [
+                    "system-users"
+                ],
+                "id": "0dff9b805f6540cba85a3490c7c4244b",
+                "is_active": true,
+                "is_owner": false,
+                "name": "Emelia",
+                "system_generated": false
+            },
+            {
+                "group_ids": [
+                    "system-users"
+                ],
+                "id": "b58334f6bb0748b99540e24279c6ce0b",
+                "is_active": true,
+                "is_owner": false,
+                "name": "Fernanda",
+                "system_generated": false
+            },
+            {
+                "group_ids": [
+                    "system-admin"
+                ],
+                "id": "9447f9ac7bce4eec93485328b503e2ee",
+                "is_active": true,
+                "is_owner": false,
+                "name": "Home Assistant Cast",
+                "system_generated": true
+            }
+        ]
+    },
+    "key": "auth",
+    "version": 1
+}

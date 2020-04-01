@@ -1,0 +1,29 @@
+{
+    "data": {
+        "device_info": {
+            "compilation_time": "Mar 11 2020, 09:11:59",
+            "esphome_version": "1.14.3",
+            "has_deep_sleep": false,
+            "mac_address": "2C:F4:32:4B:03:BD",
+            "model": "PLATFORMIO_D1_MINI",
+            "name": "max6675_temp",
+            "uses_password": false
+        },
+        "sensor": [
+            {
+                "accuracy_decimals": 1,
+                "force_update": false,
+                "icon": "mdi:thermometer",
+                "key": 3000874310,
+                "name": "MAX6675 Temperature",
+                "object_id": "max6675_temperature",
+                "unique_id": "max6675_tempsensormax6675_temperature",
+                "unit_of_measurement": "\u00b0C"
+            }
+        ],
+        "services": [],
+        "text_sensor": []
+    },
+    "key": "esphome.f29056a4d65e47caaeed0c094a466038",
+    "version": 1
+}

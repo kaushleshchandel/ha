@@ -1,0 +1,118 @@
+{
+    "data": {
+        "binary_sensor": [
+            {
+                "device_class": "connectivity",
+                "is_status_binary_sensor": true,
+                "key": 909157389,
+                "name": "alans_bedroom_bme280 Status",
+                "object_id": "alans_bedroom_bme280_status",
+                "unique_id": "alans_bedroom_bme280binary_sensoralans_bedroom_bme280_status"
+            }
+        ],
+        "device_info": {
+            "compilation_time": "Mar 31 2020, 13:44:05",
+            "esphome_version": "1.14.3",
+            "has_deep_sleep": false,
+            "mac_address": "18:FE:34:A2:AD:6E",
+            "model": "PLATFORMIO_D1_MINI",
+            "name": "alans_bedroom_bme280",
+            "uses_password": false
+        },
+        "sensor": [
+            {
+                "accuracy_decimals": 0,
+                "force_update": false,
+                "icon": "mdi:timer",
+                "key": 1651363483,
+                "name": "alans_bedroom_bme280 uptime",
+                "object_id": "alans_bedroom_bme280_uptime",
+                "unique_id": "18fe34a2ad6e-uptime",
+                "unit_of_measurement": "s"
+            },
+            {
+                "accuracy_decimals": 0,
+                "force_update": false,
+                "icon": "mdi:wifi",
+                "key": 1497019627,
+                "name": "alans_bedroom_bme280 WiFi Signal",
+                "object_id": "alans_bedroom_bme280_wifi_signal",
+                "unique_id": "18fe34a2ad6e-wifisignal",
+                "unit_of_measurement": "dB"
+            },
+            {
+                "accuracy_decimals": 1,
+                "force_update": false,
+                "icon": "mdi:thermometer",
+                "key": 452531884,
+                "name": "Alans Bedroom Temperature",
+                "object_id": "alans_bedroom_temperature",
+                "unique_id": "alans_bedroom_bme280sensoralans_bedroom_temperature",
+                "unit_of_measurement": "\u00b0C"
+            },
+            {
+                "accuracy_decimals": 1,
+                "force_update": false,
+                "icon": "mdi:gauge",
+                "key": 864933179,
+                "name": "Alans Bedroom Pressure",
+                "object_id": "alans_bedroom_pressure",
+                "unique_id": "alans_bedroom_bme280sensoralans_bedroom_pressure",
+                "unit_of_measurement": "hPa"
+            },
+            {
+                "accuracy_decimals": 1,
+                "force_update": false,
+                "icon": "mdi:water-percent",
+                "key": 3707897289,
+                "name": "Alans Bedroom Humidity",
+                "object_id": "alans_bedroom_humidity",
+                "unique_id": "alans_bedroom_bme280sensoralans_bedroom_humidity",
+                "unit_of_measurement": "%"
+            }
+        ],
+        "services": [],
+        "switch": [
+            {
+                "assumed_state": false,
+                "icon": "mdi:restart",
+                "key": 3629410252,
+                "name": "alans_bedroom_bme280 Restart",
+                "object_id": "alans_bedroom_bme280_restart",
+                "unique_id": "alans_bedroom_bme280switchalans_bedroom_bme280_restart"
+            }
+        ],
+        "text_sensor": [
+            {
+                "icon": "mdi:new-box",
+                "key": 176838117,
+                "name": "alans_bedroom_bme280 Version",
+                "object_id": "alans_bedroom_bme280_version",
+                "unique_id": "18fe34a2ad6e-version"
+            },
+            {
+                "icon": "",
+                "key": 1477154844,
+                "name": "alans_bedroom_bme280 IP",
+                "object_id": "alans_bedroom_bme280_ip",
+                "unique_id": "18fe34a2ad6e-wifiinfo-ip"
+            },
+            {
+                "icon": "",
+                "key": 1345473698,
+                "name": "alans_bedroom_bme280 SSID",
+                "object_id": "alans_bedroom_bme280_ssid",
+                "unique_id": "18fe34a2ad6e-wifiinfo-ssid"
+            },
+            {
+                "icon": "",
+                "key": 806341874,
+                "name": "alans_bedroom_bme280 BSSID",
+                "object_id": "alans_bedroom_bme280_bssid",
+                "unique_id": "18fe34a2ad6e-wifiinfo-bssid"
+            }
+        ]
+    },
+    "key": "esphome.e2028b32508d419cb0322220101e59c1",
+    "version": 1
+}

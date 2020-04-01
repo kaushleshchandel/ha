@@ -1,0 +1,17 @@
+{
+    "data": {
+        "items": [
+            {
+                "icon": "mdi:map-marker",
+                "id": "inland",
+                "latitude": 41.84288042404329,
+                "longitude": -87.98955105872683,
+                "name": "Inland",
+                "passive": false,
+                "radius": 200.0
+            }
+        ]
+    },
+    "key": "zone",
+    "version": 1
+}

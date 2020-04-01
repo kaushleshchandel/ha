@@ -1,0 +1,47 @@
+{
+    "data": {
+        "device_info": {
+            "compilation_time": "Feb 20 2020, 07:03:29",
+            "esphome_version": "1.14.3",
+            "has_deep_sleep": false,
+            "mac_address": "50:02:91:C7:C2:D0",
+            "model": "PLATFORMIO_D1_MINI",
+            "name": "esp_display",
+            "uses_password": false
+        },
+        "sensor": [
+            {
+                "accuracy_decimals": 0,
+                "force_update": false,
+                "icon": "mdi:rotate-right",
+                "key": 352477991,
+                "name": "Rotary Encoder",
+                "object_id": "rotary_encoder",
+                "unique_id": "esp_displaysensorrotary_encoder",
+                "unit_of_measurement": "steps"
+            }
+        ],
+        "services": [],
+        "switch": [
+            {
+                "assumed_state": false,
+                "icon": "",
+                "key": 4263330437,
+                "name": "Rotary Switch",
+                "object_id": "rotary_switch",
+                "unique_id": "esp_displayswitchrotary_switch"
+            }
+        ],
+        "text_sensor": [
+            {
+                "icon": "",
+                "key": 3385632310,
+                "name": "Alarm State",
+                "object_id": "alarm_state",
+                "unique_id": "esp_displaytext_sensoralarm_state"
+            }
+        ]
+    },
+    "key": "esphome.e4ae5ebd195a4f4394fdff0167d9f4f5",
+    "version": 1
+}

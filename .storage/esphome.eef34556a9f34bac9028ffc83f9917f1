@@ -1,0 +1,98 @@
+{
+    "data": {
+        "binary_sensor": [
+            {
+                "device_class": "connectivity",
+                "is_status_binary_sensor": true,
+                "key": 1080201085,
+                "name": "garage_bmp280 Status",
+                "object_id": "garage_bmp280_status",
+                "unique_id": "garage_bmp280binary_sensorgarage_bmp280_status"
+            }
+        ],
+        "device_info": {
+            "compilation_time": "Mar 31 2020, 13:47:33",
+            "esphome_version": "1.14.3",
+            "has_deep_sleep": false,
+            "mac_address": "DC:4F:22:7D:CB:BA",
+            "model": "PLATFORMIO_D1_MINI",
+            "name": "garage_bmp280",
+            "uses_password": false
+        },
+        "sensor": [
+            {
+                "accuracy_decimals": 0,
+                "force_update": false,
+                "icon": "mdi:wifi",
+                "key": 813591867,
+                "name": "garage_bmp280 WiFi Signal",
+                "object_id": "garage_bmp280_wifi_signal",
+                "unique_id": "dc4f227dcbba-wifisignal",
+                "unit_of_measurement": "dB"
+            },
+            {
+                "accuracy_decimals": 0,
+                "force_update": false,
+                "icon": "mdi:timer",
+                "key": 4048894667,
+                "name": "garage_bmp280 uptime",
+                "object_id": "garage_bmp280_uptime",
+                "unique_id": "dc4f227dcbba-uptime",
+                "unit_of_measurement": "s"
+            },
+            {
+                "accuracy_decimals": 1,
+                "force_update": false,
+                "icon": "mdi:thermometer",
+                "key": 860520201,
+                "name": "Garage Temperature",
+                "object_id": "garage_temperature",
+                "unique_id": "garage_bmp280sensorgarage_temperature",
+                "unit_of_measurement": "\u00b0C"
+            }
+        ],
+        "services": [],
+        "switch": [
+            {
+                "assumed_state": false,
+                "icon": "mdi:restart",
+                "key": 3917338844,
+                "name": "garage_bmp280 Restart",
+                "object_id": "garage_bmp280_restart",
+                "unique_id": "garage_bmp280switchgarage_bmp280_restart"
+            }
+        ],
+        "text_sensor": [
+            {
+                "icon": "mdi:new-box",
+                "key": 2883446261,
+                "name": "garage_bmp280 Version",
+                "object_id": "garage_bmp280_version",
+                "unique_id": "dc4f227dcbba-version"
+            },
+            {
+                "icon": "",
+                "key": 1224956556,
+                "name": "garage_bmp280 IP",
+                "object_id": "garage_bmp280_ip",
+                "unique_id": "dc4f227dcbba-wifiinfo-ip"
+            },
+            {
+                "icon": "",
+                "key": 1113498546,
+                "name": "garage_bmp280 SSID",
+                "object_id": "garage_bmp280_ssid",
+                "unique_id": "dc4f227dcbba-wifiinfo-ssid"
+            },
+            {
+                "icon": "",
+                "key": 3609695842,
+                "name": "garage_bmp280 BSSID",
+                "object_id": "garage_bmp280_bssid",
+                "unique_id": "dc4f227dcbba-wifiinfo-bssid"
+            }
+        ]
+    },
+    "key": "esphome.eef34556a9f34bac9028ffc83f9917f1",
+    "version": 1
+}

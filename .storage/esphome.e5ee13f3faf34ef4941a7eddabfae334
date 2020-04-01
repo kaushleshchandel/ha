@@ -1,0 +1,98 @@
+{
+    "data": {
+        "binary_sensor": [
+            {
+                "device_class": "connectivity",
+                "is_status_binary_sensor": true,
+                "key": 2805764379,
+                "name": "laundry_bmp280 Status",
+                "object_id": "laundry_bmp280_status",
+                "unique_id": "laundry_bmp280binary_sensorlaundry_bmp280_status"
+            }
+        ],
+        "device_info": {
+            "compilation_time": "Mar 31 2020, 13:52:10",
+            "esphome_version": "1.14.3",
+            "has_deep_sleep": false,
+            "mac_address": "DC:4F:22:7D:D1:2A",
+            "model": "PLATFORMIO_D1_MINI",
+            "name": "laundry_bmp280",
+            "uses_password": false
+        },
+        "sensor": [
+            {
+                "accuracy_decimals": 0,
+                "force_update": false,
+                "icon": "mdi:wifi",
+                "key": 4236462093,
+                "name": "laundry_bmp280 WiFi Signal",
+                "object_id": "laundry_bmp280_wifi_signal",
+                "unique_id": "dc4f227dd12a-wifisignal",
+                "unit_of_measurement": "dB"
+            },
+            {
+                "accuracy_decimals": 0,
+                "force_update": false,
+                "icon": "mdi:timer",
+                "key": 881812625,
+                "name": "laundry_bmp280 uptime",
+                "object_id": "laundry_bmp280_uptime",
+                "unique_id": "dc4f227dd12a-uptime",
+                "unit_of_measurement": "s"
+            },
+            {
+                "accuracy_decimals": 1,
+                "force_update": false,
+                "icon": "mdi:thermometer",
+                "key": 800446595,
+                "name": "Laundry Temperature",
+                "object_id": "laundry_temperature",
+                "unique_id": "laundry_bmp280sensorlaundry_temperature",
+                "unit_of_measurement": "\u00b0C"
+            }
+        ],
+        "services": [],
+        "switch": [
+            {
+                "assumed_state": false,
+                "icon": "mdi:restart",
+                "key": 2465189578,
+                "name": "laundry_bmp280 Restart",
+                "object_id": "laundry_bmp280_restart",
+                "unique_id": "laundry_bmp280switchlaundry_bmp280_restart"
+            }
+        ],
+        "text_sensor": [
+            {
+                "icon": "mdi:new-box",
+                "key": 1017413059,
+                "name": "laundry_bmp280 Version",
+                "object_id": "laundry_bmp280_version",
+                "unique_id": "dc4f227dd12a-version"
+            },
+            {
+                "icon": "",
+                "key": 2643125514,
+                "name": "laundry_bmp280 IP",
+                "object_id": "laundry_bmp280_ip",
+                "unique_id": "dc4f227dd12a-wifiinfo-ip"
+            },
+            {
+                "icon": "",
+                "key": 4244006184,
+                "name": "laundry_bmp280 SSID",
+                "object_id": "laundry_bmp280_ssid",
+                "unique_id": "dc4f227dd12a-wifiinfo-ssid"
+            },
+            {
+                "icon": "",
+                "key": 3104212576,
+                "name": "laundry_bmp280 BSSID",
+                "object_id": "laundry_bmp280_bssid",
+                "unique_id": "dc4f227dd12a-wifiinfo-bssid"
+            }
+        ]
+    },
+    "key": "esphome.e5ee13f3faf34ef4941a7eddabfae334",
+    "version": 1
+}

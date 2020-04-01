@@ -1,0 +1,47 @@
+{
+    "data": {
+        "device_info": {
+            "compilation_time": "Mar 27 2020, 08:54:09",
+            "esphome_version": "1.14.3",
+            "has_deep_sleep": false,
+            "mac_address": "BC:DD:C2:6B:E2:6F",
+            "model": "PLATFORMIO_D1_MINI",
+            "name": "workbench",
+            "uses_password": false
+        },
+        "sensor": [],
+        "services": [],
+        "text_sensor": [
+            {
+                "icon": "mdi:new-box",
+                "key": 477724597,
+                "name": "workbench Version",
+                "object_id": "workbench_version",
+                "unique_id": "bcddc26be26f-version"
+            },
+            {
+                "icon": "",
+                "key": 3785261132,
+                "name": "workbench IP",
+                "object_id": "workbench_ip",
+                "unique_id": "bcddc26be26f-wifiinfo-ip"
+            },
+            {
+                "icon": "",
+                "key": 319094898,
+                "name": "workbench SSID",
+                "object_id": "workbench_ssid",
+                "unique_id": "bcddc26be26f-wifiinfo-ssid"
+            },
+            {
+                "icon": "",
+                "key": 4047796770,
+                "name": "workbench BSSID",
+                "object_id": "workbench_bssid",
+                "unique_id": "bcddc26be26f-wifiinfo-bssid"
+            }
+        ]
+    },
+    "key": "esphome.225b7d550cc94e15868a4c1b0c563c12",
+    "version": 1
+}

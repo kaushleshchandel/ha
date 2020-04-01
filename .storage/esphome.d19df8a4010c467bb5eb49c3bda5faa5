@@ -1,0 +1,108 @@
+{
+    "data": {
+        "binary_sensor": [
+            {
+                "device_class": "connectivity",
+                "is_status_binary_sensor": true,
+                "key": 238972450,
+                "name": "humidifier Status",
+                "object_id": "humidifier_status",
+                "unique_id": "humidifierbinary_sensorhumidifier_status"
+            }
+        ],
+        "device_info": {
+            "compilation_time": "Apr  1 2020, 07:15:45",
+            "esphome_version": "1.14.3",
+            "has_deep_sleep": false,
+            "mac_address": "DC:4F:22:7E:65:FB",
+            "model": "PLATFORMIO_D1_MINI",
+            "name": "humidifier",
+            "uses_password": false
+        },
+        "sensor": [
+            {
+                "accuracy_decimals": 0,
+                "force_update": false,
+                "icon": "mdi:timer",
+                "key": 3441675272,
+                "name": "humidifier uptime",
+                "object_id": "humidifier_uptime",
+                "unique_id": "dc4f227e65fb-uptime",
+                "unit_of_measurement": "s"
+            },
+            {
+                "accuracy_decimals": 0,
+                "force_update": false,
+                "icon": "mdi:wifi",
+                "key": 1027780086,
+                "name": "humidifier WiFi Signal",
+                "object_id": "humidifier_wifi_signal",
+                "unique_id": "dc4f227e65fb-wifisignal",
+                "unit_of_measurement": "dB"
+            },
+            {
+                "accuracy_decimals": 0,
+                "force_update": false,
+                "icon": "mdi:water-percent",
+                "key": 585870720,
+                "name": "Set Point",
+                "object_id": "set_point",
+                "unique_id": "dc4f227e65fb-adc",
+                "unit_of_measurement": "%"
+            },
+            {
+                "accuracy_decimals": 1,
+                "force_update": false,
+                "icon": "mdi:water-percent",
+                "key": 801901115,
+                "name": "humidifier Humidity",
+                "object_id": "humidifier_humidity",
+                "unique_id": "humidifiersensorhumidifier_humidity",
+                "unit_of_measurement": "%"
+            }
+        ],
+        "services": [],
+        "switch": [
+            {
+                "assumed_state": false,
+                "icon": "mdi:restart",
+                "key": 2618102205,
+                "name": "humidifier Restart",
+                "object_id": "humidifier_restart",
+                "unique_id": "humidifierswitchhumidifier_restart"
+            }
+        ],
+        "text_sensor": [
+            {
+                "icon": "mdi:new-box",
+                "key": 2605249328,
+                "name": "humidifier Version",
+                "object_id": "humidifier_version",
+                "unique_id": "dc4f227e65fb-version"
+            },
+            {
+                "icon": "",
+                "key": 913032159,
+                "name": "humidifier IP",
+                "object_id": "humidifier_ip",
+                "unique_id": "dc4f227e65fb-wifiinfo-ip"
+            },
+            {
+                "icon": "",
+                "key": 345266429,
+                "name": "humidifier SSID",
+                "object_id": "humidifier_ssid",
+                "unique_id": "dc4f227e65fb-wifiinfo-ssid"
+            },
+            {
+                "icon": "",
+                "key": 202577015,
+                "name": "humidifier BSSID",
+                "object_id": "humidifier_bssid",
+                "unique_id": "dc4f227e65fb-wifiinfo-bssid"
+            }
+        ]
+    },
+    "key": "esphome.d19df8a4010c467bb5eb49c3bda5faa5",
+    "version": 1
+}

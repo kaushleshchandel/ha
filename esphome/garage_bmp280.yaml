@@ -20,11 +20,16 @@ sensor:
   - platform: wifi_signal
     name: "$devicename WiFi Signal"
     update_interval: 60s
-    
+  - platform: uptime
+    name: "$devicename uptime"
 switch:
   - platform: restart
     name: "$devicename Restart"
 
+
+binary_sensor:
+  - platform: status
+    name:  "$devicename Status"
 
 status_led:
   pin:

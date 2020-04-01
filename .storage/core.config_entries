@@ -1,0 +1,507 @@
+{
+    "data": {
+        "entries": [
+            {
+                "connection_class": "cloud_poll",
+                "data": {
+                    "track_home": true
+                },
+                "domain": "met",
+                "entry_id": "646b3f55c5ba4bd3bd431c78f400cf47",
+                "options": {},
+                "source": "onboarding",
+                "system_options": {
+                    "disable_new_entities": false
+                },
+                "title": "Home",
+                "unique_id": null,
+                "version": 1
+            },
+            {
+                "connection_class": "local_push",
+                "data": {},
+                "domain": "mqtt",
+                "entry_id": "83855f74536c4b90af409f0dad9f79b7",
+                "options": {},
+                "source": "import",
+                "system_options": {
+                    "disable_new_entities": false
+                },
+                "title": "configuration.yaml",
+                "unique_id": null,
+                "version": 1
+            },
+            {
+                "connection_class": "cloud_push",
+                "data": {
+                    "app_data": {
+                        "push_token": "fB6XFq8rhWY:APA91bFtSwkWMJCCj7iPajPI7we4yb9QwLbvpWBO79tHOCiy5FvkLbG_RjbJRPvmguSm5xa3NNcM4nhnxJGIEiba7-LPwk2_96OdAAIc9PNsq9yL0n8IEJSWNHlzFYwzdrJiC0254UGR",
+                        "push_url": "https://mobile-apps.home-assistant.io/api/sendPush/android/v1"
+                    },
+                    "app_id": "io.homeassistant.companion.android",
+                    "app_name": "Home Assistant",
+                    "app_version": "1.8.0-144 (144)",
+                    "device_id": "f4f2314b10ac15e5",
+                    "device_name": "SM-G960U",
+                    "manufacturer": "samsung",
+                    "model": "SM-G960U",
+                    "os_name": "Android",
+                    "os_version": "29",
+                    "supports_encryption": false,
+                    "user_id": "1bda3d6e9f7248e38892e9b8d924709d",
+                    "webhook_id": "bb70205345c18338ad9a4f3a112372b2701bf0c19728177765d91e9c27b5fce7"
+                },
+                "domain": "mobile_app",
+                "entry_id": "7818118f40ea4388a445cbae2026ba86",
+                "options": {},
+                "source": "registration",
+                "system_options": {
+                    "disable_new_entities": false
+                },
+                "title": "SM-G960U",
+                "unique_id": "io.homeassistant.companion.android-f4f2314b10ac15e5",
+                "version": 1
+            },
+            {
+                "connection_class": "cloud_push",
+                "data": {
+                    "app_data": {
+                        "push_token": "fo7sulIsXbA:APA91bFnsWtwYPBgQmlhiwLeY51ES9GeM5a0V-g8glSEq8owiqc6TLr9AwARBoGArtg7OZ7ZpphrDKfr9YGFQqOTrmMTZ4fJZQ5JJm14AGrwctH2wX5dVfoFAy3SMgSXa697-VeXXPvx",
+                        "push_url": "https://mobile-apps.home-assistant.io/api/sendPushNotification"
+                    },
+                    "app_id": "io.robbie.HomeAssistant",
+                    "app_name": "Home Assistant",
+                    "app_version": "2.0.0 (69)",
+                    "device_id": "8e8907a9d5db4ee7a05ef7796f8350ad",
+                    "device_name": "iPhone",
+                    "manufacturer": "Apple",
+                    "model": "iPhone X\u0280",
+                    "os_name": "iOS",
+                    "os_version": "13.3.1",
+                    "secret": "b4217c5f1d59a92362dc82b1f44d936b5dcda6d72e7ebf85630b90bec8858d70",
+                    "supports_encryption": true,
+                    "user_id": "0dff9b805f6540cba85a3490c7c4244b",
+                    "webhook_id": "fc516b418883e57cc08a44d3cbee3b1f080a401296ede7517acf0e2374b46337"
+                },
+                "domain": "mobile_app",
+                "entry_id": "023b849052ff4fc1b104f5d3dd9b3045",
+                "options": {},
+                "source": "registration",
+                "system_options": {
+                    "disable_new_entities": false
+                },
+                "title": "iPhone",
+                "unique_id": null,
+                "version": 1
+            },
+            {
+                "connection_class": "local_push",
+                "data": {
+                    "host": "garage_bmp280.local",
+                    "password": "",
+                    "port": 6053
+                },
+                "domain": "esphome",
+                "entry_id": "eef34556a9f34bac9028ffc83f9917f1",
+                "options": {},
+                "source": "zeroconf",
+                "system_options": {
+                    "disable_new_entities": false
+                },
+                "title": "garage_bmp280",
+                "unique_id": null,
+                "version": 1
+            },
+            {
+                "connection_class": "local_push",
+                "data": {
+                    "host": "hvac.local",
+                    "password": "",
+                    "port": 6053
+                },
+                "domain": "esphome",
+                "entry_id": "316d451827e848119cfe8c9119a56e9f",
+                "options": {},
+                "source": "user",
+                "system_options": {
+                    "disable_new_entities": false
+                },
+                "title": "hvac",
+                "unique_id": null,
+                "version": 1
+            },
+            {
+                "connection_class": "local_push",
+                "data": {
+                    "host": "laundry_bmp280.local",
+                    "password": "",
+                    "port": 6053
+                },
+                "domain": "esphome",
+                "entry_id": "e5ee13f3faf34ef4941a7eddabfae334",
+                "options": {},
+                "source": "zeroconf",
+                "system_options": {
+                    "disable_new_entities": false
+                },
+                "title": "laundry_bmp280",
+                "unique_id": null,
+                "version": 1
+            },
+            {
+                "connection_class": "local_push",
+                "data": {
+                    "host": "alans_bedroom_bme280.local",
+                    "password": "",
+                    "port": 6053
+                },
+                "domain": "esphome",
+                "entry_id": "e2028b32508d419cb0322220101e59c1",
+                "options": {},
+                "source": "zeroconf",
+                "system_options": {
+                    "disable_new_entities": false
+                },
+                "title": "alans_bedroom_bme280",
+                "unique_id": null,
+                "version": 1
+            },
+            {
+                "connection_class": "local_push",
+                "data": {
+                    "radio_type": "ezsp",
+                    "usb_path": "/dev/ttyUSB1"
+                },
+                "domain": "zha",
+                "entry_id": "7a73b18ab4004c68ab7fb005e9918f22",
+                "options": {},
+                "source": "import",
+                "system_options": {
+                    "disable_new_entities": false
+                },
+                "title": "/dev/ttyUSB1",
+                "unique_id": null,
+                "version": 1
+            },
+            {
+                "connection_class": "local_push",
+                "data": {
+                    "network_key": null,
+                    "usb_path": "/dev/ttyUSB0"
+                },
+                "domain": "zwave",
+                "entry_id": "6d78be3d6b3b4fcfb64af37202f4fae9",
+                "options": {},
+                "source": "import",
+                "system_options": {
+                    "disable_new_entities": false
+                },
+                "title": "Z-Wave (import from configuration.yaml)",
+                "unique_id": null,
+                "version": 1
+            },
+            {
+                "connection_class": "local_push",
+                "data": {
+                    "host": "garage_light.local",
+                    "password": "",
+                    "port": 6053
+                },
+                "domain": "esphome",
+                "entry_id": "56dd4be6b9454f9ca763f3ee79deac9f",
+                "options": {},
+                "source": "zeroconf",
+                "system_options": {
+                    "disable_new_entities": false
+                },
+                "title": "garage_light",
+                "unique_id": null,
+                "version": 1
+            },
+            {
+                "connection_class": "local_push",
+                "data": {
+                    "host": "porch_entrance_duel.local",
+                    "password": "",
+                    "port": 6053
+                },
+                "domain": "esphome",
+                "entry_id": "f1c7e1285864465d9ed2b5b7c98c9cc7",
+                "options": {},
+                "source": "zeroconf",
+                "system_options": {
+                    "disable_new_entities": false
+                },
+                "title": "porch_entrance_duel",
+                "unique_id": null,
+                "version": 1
+            },
+            {
+                "connection_class": "local_push",
+                "data": {
+                    "user_id": "9447f9ac7bce4eec93485328b503e2ee"
+                },
+                "domain": "cast",
+                "entry_id": "a18f78b7cc1a42eda53f0055c7495c0e",
+                "options": {},
+                "source": "zeroconf",
+                "system_options": {
+                    "disable_new_entities": false
+                },
+                "title": "Google Cast",
+                "unique_id": null,
+                "version": 1
+            },
+            {
+                "connection_class": "local_push",
+                "data": {},
+                "domain": "shelly",
+                "entry_id": "0828f3a523194fb6aaca997f0adc09db",
+                "options": {},
+                "source": "import",
+                "system_options": {
+                    "disable_new_entities": false
+                },
+                "title": "configuration.yaml",
+                "unique_id": null,
+                "version": 1
+            },
+            {
+                "connection_class": "local_push",
+                "data": {
+                    "host": "audio_playback_garage.local",
+                    "password": "",
+                    "port": 6053
+                },
+                "domain": "esphome",
+                "entry_id": "b9240a2005b84ded87780adcd63b8a4f",
+                "options": {},
+                "source": "user",
+                "system_options": {
+                    "disable_new_entities": false
+                },
+                "title": "audio_playback_garage",
+                "unique_id": null,
+                "version": 1
+            },
+            {
+                "connection_class": "local_push",
+                "data": {
+                    "host": "backyard_light.local",
+                    "password": "",
+                    "port": 6053
+                },
+                "domain": "esphome",
+                "entry_id": "32743cac5b264d29a9971ee6a3b4d643",
+                "options": {},
+                "source": "user",
+                "system_options": {
+                    "disable_new_entities": false
+                },
+                "title": "backyard_light",
+                "unique_id": null,
+                "version": 1
+            },
+            {
+                "connection_class": "local_push",
+                "data": {
+                    "host": "humidity_controller.local",
+                    "password": "",
+                    "port": 6053
+                },
+                "domain": "esphome",
+                "entry_id": "37c10c383eb54441a84fdb50bea423b0",
+                "options": {},
+                "source": "user",
+                "system_options": {
+                    "disable_new_entities": false
+                },
+                "title": "humidity_controller",
+                "unique_id": null,
+                "version": 1
+            },
+            {
+                "connection_class": "local_push",
+                "data": {
+                    "host": "loft_bme280.local",
+                    "password": "",
+                    "port": 6053
+                },
+                "domain": "esphome",
+                "entry_id": "4f8dd51450a9471fa39cd2e8d8fbfaf0",
+                "options": {},
+                "source": "user",
+                "system_options": {
+                    "disable_new_entities": false
+                },
+                "title": "loft_bme280",
+                "unique_id": null,
+                "version": 1
+            },
+            {
+                "connection_class": "local_push",
+                "data": {
+                    "host": "garage_multi_sensor.local",
+                    "password": "",
+                    "port": 6053
+                },
+                "domain": "esphome",
+                "entry_id": "f0463310e5334d7ca74a414c99c634e2",
+                "options": {},
+                "source": "user",
+                "system_options": {
+                    "disable_new_entities": false
+                },
+                "title": "garage_multi_sensor",
+                "unique_id": null,
+                "version": 1
+            },
+            {
+                "connection_class": "local_push",
+                "data": {
+                    "host": "kitchen_sink_light.local",
+                    "password": "",
+                    "port": 6053
+                },
+                "domain": "esphome",
+                "entry_id": "6bc787d1fe7543bbbaecda8e6495cd3c",
+                "options": {},
+                "source": "user",
+                "system_options": {
+                    "disable_new_entities": false
+                },
+                "title": "kitchen_sink_light",
+                "unique_id": null,
+                "version": 1
+            },
+            {
+                "connection_class": "local_push",
+                "data": {
+                    "host": "outdoor_bme280.local",
+                    "password": "",
+                    "port": 6053
+                },
+                "domain": "esphome",
+                "entry_id": "f0bdf9fb2541417bb0596b1132d5376c",
+                "options": {},
+                "source": "user",
+                "system_options": {
+                    "disable_new_entities": false
+                },
+                "title": "outdoor_bme280",
+                "unique_id": null,
+                "version": 1
+            },
+            {
+                "connection_class": "local_push",
+                "data": {
+                    "host": "esp_switch_a.local",
+                    "password": "",
+                    "port": 6053
+                },
+                "domain": "esphome",
+                "entry_id": "dfb6da4ff1494ae9ad5b7d300dba7cf4",
+                "options": {},
+                "source": "zeroconf",
+                "system_options": {
+                    "disable_new_entities": false
+                },
+                "title": "esp_switch_a",
+                "unique_id": null,
+                "version": 1
+            },
+            {
+                "connection_class": "local_push",
+                "data": {
+                    "host": "chandelier_loft_duel.local",
+                    "password": "",
+                    "port": 6053
+                },
+                "domain": "esphome",
+                "entry_id": "4b05cd9dd3be44ac9d48eabf8e0b1094",
+                "options": {},
+                "source": "user",
+                "system_options": {
+                    "disable_new_entities": false
+                },
+                "title": "chandelier_loft_duel",
+                "unique_id": null,
+                "version": 1
+            },
+            {
+                "connection_class": "local_push",
+                "data": {
+                    "host": "dimmer_b.local",
+                    "password": "",
+                    "port": 6053
+                },
+                "domain": "esphome",
+                "entry_id": "0fe784cafcba475a8cbda4c923cca9ea",
+                "options": {},
+                "source": "zeroconf",
+                "system_options": {
+                    "disable_new_entities": false
+                },
+                "title": "dimmer_b",
+                "unique_id": null,
+                "version": 1
+            },
+            {
+                "connection_class": "local_push",
+                "data": {
+                    "host": "workbench.local",
+                    "password": "",
+                    "port": 6053
+                },
+                "domain": "esphome",
+                "entry_id": "225b7d550cc94e15868a4c1b0c563c12",
+                "options": {},
+                "source": "zeroconf",
+                "system_options": {
+                    "disable_new_entities": false
+                },
+                "title": "workbench",
+                "unique_id": null,
+                "version": 1
+            },
+            {
+                "connection_class": "local_push",
+                "data": {
+                    "host": "rf_bridge_sonoff.local",
+                    "password": "",
+                    "port": 6053
+                },
+                "domain": "esphome",
+                "entry_id": "d168a08781fa45dba0141c24bb8562bf",
+                "options": {},
+                "source": "zeroconf",
+                "system_options": {
+                    "disable_new_entities": false
+                },
+                "title": "rf_bridge_sonoff",
+                "unique_id": null,
+                "version": 1
+            },
+            {
+                "connection_class": "local_push",
+                "data": {
+                    "host": "humidifier.local",
+                    "password": "",
+                    "port": 6053
+                },
+                "domain": "esphome",
+                "entry_id": "d19df8a4010c467bb5eb49c3bda5faa5",
+                "options": {},
+                "source": "user",
+                "system_options": {
+                    "disable_new_entities": false
+                },
+                "title": "humidifier",
+                "unique_id": null,
+                "version": 1
+            }
+        ]
+    },
+    "key": "core.config_entries",
+    "version": 1
+}

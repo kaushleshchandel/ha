@@ -1,0 +1,116 @@
+{
+    "data": {
+        "binary_sensor": [
+            {
+                "device_class": "connectivity",
+                "is_status_binary_sensor": true,
+                "key": 186995876,
+                "name": "porch_entrance_duel Status",
+                "object_id": "porch_entrance_duel_status",
+                "unique_id": "porch_entrance_duelbinary_sensorporch_entrance_duel_status"
+            }
+        ],
+        "device_info": {
+            "compilation_time": "Mar 31 2020, 13:53:40",
+            "esphome_version": "1.14.3",
+            "has_deep_sleep": false,
+            "mac_address": "C8:2B:96:11:0A:E9",
+            "model": "PLATFORMIO_ESP01_1M",
+            "name": "porch_entrance_duel",
+            "uses_password": false
+        },
+        "light": [
+            {
+                "effects": [],
+                "key": 2157048949,
+                "max_mireds": 0.0,
+                "min_mireds": 0.0,
+                "name": "Porch",
+                "object_id": "porch",
+                "supports_brightness": false,
+                "supports_color_temperature": false,
+                "supports_rgb": false,
+                "supports_white_value": false,
+                "unique_id": "porch_entrance_duellightporch"
+            },
+            {
+                "effects": [],
+                "key": 2656882895,
+                "max_mireds": 0.0,
+                "min_mireds": 0.0,
+                "name": "Entrance",
+                "object_id": "entrance",
+                "supports_brightness": false,
+                "supports_color_temperature": false,
+                "supports_rgb": false,
+                "supports_white_value": false,
+                "unique_id": "porch_entrance_duellightentrance"
+            }
+        ],
+        "sensor": [
+            {
+                "accuracy_decimals": 0,
+                "force_update": false,
+                "icon": "mdi:timer",
+                "key": 397002170,
+                "name": "porch_entrance_duel uptime",
+                "object_id": "porch_entrance_duel_uptime",
+                "unique_id": "c82b96110ae9-uptime",
+                "unit_of_measurement": "s"
+            },
+            {
+                "accuracy_decimals": 0,
+                "force_update": false,
+                "icon": "mdi:wifi",
+                "key": 952607308,
+                "name": "porch_entrance_duel WiFi Signal",
+                "object_id": "porch_entrance_duel_wifi_signal",
+                "unique_id": "c82b96110ae9-wifisignal",
+                "unit_of_measurement": "dB"
+            }
+        ],
+        "services": [],
+        "switch": [
+            {
+                "assumed_state": false,
+                "icon": "mdi:restart",
+                "key": 153622535,
+                "name": "porch_entrance_duel Restart",
+                "object_id": "porch_entrance_duel_restart",
+                "unique_id": "porch_entrance_duelswitchporch_entrance_duel_restart"
+            }
+        ],
+        "text_sensor": [
+            {
+                "icon": "mdi:new-box",
+                "key": 1898551482,
+                "name": "porch_entrance_duel Version",
+                "object_id": "porch_entrance_duel_version",
+                "unique_id": "c82b96110ae9-version"
+            },
+            {
+                "icon": "",
+                "key": 375177601,
+                "name": "porch_entrance_duel IP",
+                "object_id": "porch_entrance_duel_ip",
+                "unique_id": "c82b96110ae9-wifiinfo-ip"
+            },
+            {
+                "icon": "",
+                "key": 4193593983,
+                "name": "porch_entrance_duel SSID",
+                "object_id": "porch_entrance_duel_ssid",
+                "unique_id": "c82b96110ae9-wifiinfo-ssid"
+            },
+            {
+                "icon": "",
+                "key": 2060905505,
+                "name": "porch_entrance_duel BSSID",
+                "object_id": "porch_entrance_duel_bssid",
+                "unique_id": "c82b96110ae9-wifiinfo-bssid"
+            }
+        ]
+    },
+    "key": "esphome.f1c7e1285864465d9ed2b5b7c98c9cc7",
+    "version": 1
+}

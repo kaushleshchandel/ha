@@ -27,6 +27,8 @@ status_led:
     inverted: true
 
 binary_sensor:
+  - platform: status
+    name:  "$devicename Status"
   - platform: gpio
     internal: true
     pin: GPIO13

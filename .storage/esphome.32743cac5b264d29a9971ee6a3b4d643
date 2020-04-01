@@ -1,0 +1,93 @@
+{
+    "data": {
+        "binary_sensor": [
+            {
+                "device_class": "connectivity",
+                "is_status_binary_sensor": true,
+                "key": 420212710,
+                "name": "backyard_light Status",
+                "object_id": "backyard_light_status",
+                "unique_id": "backyard_lightbinary_sensorbackyard_light_status"
+            }
+        ],
+        "device_info": {
+            "compilation_time": "Mar 31 2020, 13:45:30",
+            "esphome_version": "1.14.3",
+            "has_deep_sleep": false,
+            "mac_address": "60:01:94:E0:27:8F",
+            "model": "PLATFORMIO_ESP01_1M",
+            "name": "backyard_light",
+            "uses_password": false
+        },
+        "light": [
+            {
+                "effects": [],
+                "key": 2667433269,
+                "max_mireds": 0.0,
+                "min_mireds": 0.0,
+                "name": "backyard_light",
+                "object_id": "backyard_light",
+                "supports_brightness": false,
+                "supports_color_temperature": false,
+                "supports_rgb": false,
+                "supports_white_value": false,
+                "unique_id": "backyard_lightlightbackyard_light"
+            }
+        ],
+        "sensor": [
+            {
+                "accuracy_decimals": 0,
+                "force_update": false,
+                "icon": "mdi:wifi",
+                "key": 643170010,
+                "name": "backyard_light WiFi Signal",
+                "object_id": "backyard_light_wifi_signal",
+                "unique_id": "600194e0278f-wifisignal",
+                "unit_of_measurement": "dB"
+            }
+        ],
+        "services": [],
+        "switch": [
+            {
+                "assumed_state": false,
+                "icon": "mdi:restart",
+                "key": 2846837561,
+                "name": "backyard_light Restart",
+                "object_id": "backyard_light_restart",
+                "unique_id": "backyard_lightswitchbackyard_light_restart"
+            }
+        ],
+        "text_sensor": [
+            {
+                "icon": "mdi:new-box",
+                "key": 638810036,
+                "name": "backyard_light Version",
+                "object_id": "backyard_light_version",
+                "unique_id": "600194e0278f-version"
+            },
+            {
+                "icon": "",
+                "key": 1289335435,
+                "name": "backyard_light IP",
+                "object_id": "backyard_light_ip",
+                "unique_id": "600194e0278f-wifiinfo-ip"
+            },
+            {
+                "icon": "",
+                "key": 3812929841,
+                "name": "backyard_light SSID",
+                "object_id": "backyard_light_ssid",
+                "unique_id": "600194e0278f-wifiinfo-ssid"
+            },
+            {
+                "icon": "",
+                "key": 3034942387,
+                "name": "backyard_light BSSID",
+                "object_id": "backyard_light_bssid",
+                "unique_id": "600194e0278f-wifiinfo-bssid"
+            }
+        ]
+    },
+    "key": "esphome.32743cac5b264d29a9971ee6a3b4d643",
+    "version": 1
+}

@@ -1,0 +1,16 @@
+{
+    "data": {
+        "items": [
+            {
+                "id": "lovelace_security",
+                "mode": "storage",
+                "require_admin": true,
+                "show_in_sidebar": true,
+                "title": "Security",
+                "url_path": "lovelace-security"
+            }
+        ]
+    },
+    "key": "lovelace_dashboards",
+    "version": 1
+}

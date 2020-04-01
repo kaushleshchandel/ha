@@ -1,0 +1,108 @@
+{
+    "data": {
+        "devices": [
+            {
+                "ieee": "00:0d:6f:00:12:00:ac:fc",
+                "last_seen": 1585600135.1760375,
+                "name": "Silicon Labs EZSP"
+            },
+            {
+                "ieee": "00:15:8d:00:02:73:ca:df",
+                "last_seen": 1585676834.8393571,
+                "name": "LUMI lumi.weather"
+            },
+            {
+                "ieee": "00:15:8d:00:02:72:ee:cb",
+                "last_seen": 1585676416.607353,
+                "name": "LUMI lumi.sensor_magnet.aq2"
+            },
+            {
+                "ieee": "00:15:8d:00:02:72:e5:40",
+                "last_seen": 1581866552.7869313,
+                "name": "LUMI lumi.weather"
+            },
+            {
+                "ieee": "00:15:8d:00:02:73:d4:e7",
+                "last_seen": 1585678395.917185,
+                "name": "LUMI lumi.weather"
+            },
+            {
+                "ieee": "00:15:8d:00:02:04:a2:a3",
+                "last_seen": 1585677685.4812427,
+                "name": "LUMI lumi.sensor_switch.aq2"
+            },
+            {
+                "ieee": "00:17:88:01:10:5b:5c:2a",
+                "last_seen": 1585677366.030057,
+                "name": "Philips LWB006"
+            },
+            {
+                "ieee": "00:17:88:01:04:0b:ac:bc",
+                "last_seen": 1585675187.2332122,
+                "name": "Philips RWL020"
+            },
+            {
+                "ieee": "00:17:88:01:10:40:10:4f",
+                "last_seen": 1585677907.1606703,
+                "name": "Philips LWB006"
+            },
+            {
+                "ieee": "00:17:88:01:10:5b:00:6c",
+                "last_seen": 1581506107.4538395,
+                "name": "Philips LWB006"
+            },
+            {
+                "ieee": "00:15:8d:00:02:72:ef:c7",
+                "last_seen": 1585678389.7194793,
+                "name": "LUMI lumi.sensor_magnet.aq2"
+            },
+            {
+                "ieee": "00:15:8d:00:04:51:77:dd",
+                "last_seen": 1585677447.8081532,
+                "name": "LUMI lumi.sensor_motion.aq2"
+            },
+            {
+                "ieee": "00:15:8d:00:04:1f:ab:da",
+                "last_seen": 1585677281.0170813,
+                "name": "LUMI lumi.sensor_motion.aq2"
+            },
+            {
+                "ieee": "00:15:8d:00:04:51:a4:db",
+                "last_seen": 1585678456.6498466,
+                "name": "LUMI lumi.sensor_motion.aq2"
+            },
+            {
+                "ieee": "00:15:8d:00:04:51:4c:07",
+                "last_seen": 1585677518.4136283,
+                "name": "LUMI lumi.sensor_motion.aq2"
+            },
+            {
+                "ieee": "00:15:8d:00:02:04:a3:fc",
+                "last_seen": 1585678261.054005,
+                "name": "LUMI lumi.sensor_switch.aq2"
+            },
+            {
+                "ieee": "00:15:8d:00:03:cf:f6:da",
+                "last_seen": 1585699405.577361,
+                "name": "LUMI lumi.sensor_magnet"
+            },
+            {
+                "ieee": "00:15:8d:00:04:2a:07:bd",
+                "last_seen": 1585699884.9781842,
+                "name": "LUMI lumi.sensor_magnet"
+            },
+            {
+                "ieee": "00:15:8d:00:04:27:1f:44",
+                "last_seen": 1585700143.4893315,
+                "name": "LUMI lumi.sensor_magnet"
+            },
+            {
+                "ieee": "00:15:8d:00:04:0b:fe:99",
+                "last_seen": 1585701144.8491302,
+                "name": "LUMI lumi.sensor_magnet"
+            }
+        ]
+    },
+    "key": "zha.storage",
+    "version": 1
+}

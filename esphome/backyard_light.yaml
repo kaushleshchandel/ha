@@ -21,7 +21,7 @@ status_led:
 
 binary_sensor:
   - platform: status
-    name: Sonoff RF Bridge Status
+    name:  "$devicename Status"
   - platform: gpio
     pin: GPIO00
     id: reset

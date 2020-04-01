@@ -1,0 +1,598 @@
+{
+    "data": {
+        "config": {
+            "title": "Home",
+            "views": [
+                {
+                    "badges": [],
+                    "cards": [
+                        {
+                            "entities": [
+                                {
+                                    "entity": "cover.garage_door",
+                                    "icon": "mdi:garage",
+                                    "name": "Open/Close Garage"
+                                },
+                                {
+                                    "entity": "binary_sensor.main_door_sensor_aqara",
+                                    "icon": "mdi:door",
+                                    "name": "Main Entrance"
+                                },
+                                {
+                                    "entity": "binary_sensor.kitchen_door_sensor_aqara",
+                                    "icon": "mdi:door",
+                                    "name": "Kitchen"
+                                }
+                            ],
+                            "show_header_toggle": false,
+                            "title": "Doors",
+                            "type": "entities"
+                        },
+                        {
+                            "entity": "alarm_control_panel.home_alarm",
+                            "states": [
+                                "arm_home",
+                                "arm_away"
+                            ],
+                            "type": "alarm-panel"
+                        },
+                        {
+                            "entities": [
+                                {
+                                    "entity": "scene.home",
+                                    "icon": "mdi:home"
+                                },
+                                {
+                                    "entity": "scene.away_day",
+                                    "icon": "mdi:home-outline"
+                                },
+                                {
+                                    "entity": "scene.away_night",
+                                    "icon": "mdi:home-lightbulb-outline"
+                                },
+                                {
+                                    "entity": "scene.sleeping",
+                                    "icon": "mdi:bed-double-outline"
+                                }
+                            ],
+                            "type": "entities"
+                        },
+                        {
+                            "entities": [
+                                {
+                                    "entity": "sensor.humidifier_humidity",
+                                    "name": "Humidity"
+                                },
+                                {
+                                    "entity": "sensor.set_point",
+                                    "name": "Set Point"
+                                },
+                                {
+                                    "entity": "switch.humidifier_relay",
+                                    "icon": "mdi:light-switch",
+                                    "name": "Humidifier"
+                                },
+                                {
+                                    "entity": "binary_sensor.fan",
+                                    "icon": "mdi:fan",
+                                    "name": "AC"
+                                }
+                            ],
+                            "show_name": true,
+                            "show_state": true,
+                            "type": "glance"
+                        },
+                        {
+                            "entities": [
+                                {
+                                    "entity": "light.garage_light",
+                                    "name": "Garage"
+                                },
+                                {
+                                    "entity": "light.spotlights_dimmer",
+                                    "icon": "mdi:track-light",
+                                    "name": "Spotlights"
+                                },
+                                {
+                                    "entity": "light.chandelier",
+                                    "icon": "mdi:ceiling-light",
+                                    "name": "Chandeleir"
+                                },
+                                {
+                                    "entity": "light.kitchen_sink_light",
+                                    "icon": "mdi:wall-sconce-flat",
+                                    "name": "Kitchen Sink"
+                                },
+                                {
+                                    "entity": "light.loft",
+                                    "icon": "mdi:wall-sconce-flat"
+                                },
+                                {
+                                    "entity": "group.loft_lamp",
+                                    "icon": "mdi:floor-lamp-dual",
+                                    "name": "Loft Lamps"
+                                }
+                            ],
+                            "show_header_toggle": false,
+                            "title": "Lights",
+                            "type": "entities"
+                        },
+                        {
+                            "entities": [
+                                {
+                                    "entity": "light.porch",
+                                    "icon": "mdi:coach-lamp"
+                                },
+                                {
+                                    "entity": "light.backyard_light",
+                                    "icon": "mdi:coach-lamp",
+                                    "name": "Backyard"
+                                }
+                            ],
+                            "title": "Outdoor Lights",
+                            "type": "entities"
+                        },
+                        {
+                            "entities": [
+                                {
+                                    "entity": "switch.alans_tv_shelly",
+                                    "icon": "mdi:television"
+                                },
+                                {
+                                    "entity": "switch.playstation_shelly",
+                                    "icon": "mdi:playstation"
+                                }
+                            ],
+                            "title": "Alans Room",
+                            "type": "entities"
+                        },
+                        {
+                            "entity": "weather.cambria_a",
+                            "type": "weather-forecast"
+                        },
+                        {
+                            "entity": "light.loft_lamp_upper_hue",
+                            "name": "Loft Lamp",
+                            "type": "light"
+                        }
+                    ],
+                    "icon": "mdi:home",
+                    "path": "default_view",
+                    "title": "Home"
+                },
+                {
+                    "badges": [],
+                    "cards": [
+                        {
+                            "entity": "weather.cambria_a",
+                            "name": "Cambria Lane Weather",
+                            "type": "weather-forecast"
+                        },
+                        {
+                            "entities": [
+                                {
+                                    "entity": "sensor.outdoor_temperature"
+                                },
+                                {
+                                    "entity": "sensor.living_room_temperature_aqara"
+                                },
+                                {
+                                    "entity": "sensor.master_bedroom_temperature_aqara"
+                                },
+                                {
+                                    "entity": "sensor.alans_bedroom_temperature"
+                                }
+                            ],
+                            "show_header_toggle": false,
+                            "title": "Temperature",
+                            "type": "entities"
+                        },
+                        {
+                            "entities": [
+                                {
+                                    "entity": "sensor.set_point",
+                                    "icon": "mdi:settings",
+                                    "name": "Humidity Set Point"
+                                },
+                                {
+                                    "entity": "sensor.outdoor_humidity"
+                                },
+                                {
+                                    "entity": "sensor.living_room_humidity_aqara"
+                                },
+                                {
+                                    "entity": "sensor.master_bedroom_humidity_aqara"
+                                },
+                                {
+                                    "entity": "sensor.alans_bedroom_humidity"
+                                },
+                                {
+                                    "entity": "sensor.humidifier_humidity"
+                                }
+                            ],
+                            "title": "Humidity",
+                            "type": "entities"
+                        },
+                        {
+                            "entities": [
+                                {
+                                    "entity": "binary_sensor.heat_low"
+                                },
+                                {
+                                    "entity": "binary_sensor.heat_high"
+                                },
+                                {
+                                    "entity": "binary_sensor.cool"
+                                },
+                                {
+                                    "entity": "binary_sensor.fan"
+                                },
+                                {
+                                    "entity": "switch.humidifier_relay"
+                                }
+                            ],
+                            "hours_to_show": 24,
+                            "refresh_interval": 0,
+                            "title": "hvac",
+                            "type": "history-graph"
+                        },
+                        {
+                            "entities": [
+                                {
+                                    "entity": "binary_sensor.cool",
+                                    "icon": "mdi:snowflake"
+                                },
+                                {
+                                    "entity": "binary_sensor.heat_low",
+                                    "icon": "mdi:radiator"
+                                },
+                                {
+                                    "entity": "binary_sensor.heat_high",
+                                    "icon": "mdi:fire"
+                                },
+                                {
+                                    "entity": "binary_sensor.fan",
+                                    "icon": "mdi:fan"
+                                }
+                            ],
+                            "show_header_toggle": false,
+                            "title": "Climate Control",
+                            "type": "entities"
+                        }
+                    ],
+                    "icon": "mdi:home-thermometer",
+                    "path": "climate",
+                    "title": "Climate"
+                },
+                {
+                    "badges": [],
+                    "cards": [
+                        {
+                            "entities": [
+                                {
+                                    "entity": "light.entrance"
+                                },
+                                {
+                                    "entity": "light.kitchen_sink_light"
+                                },
+                                {
+                                    "entity": "light.breakfast_table_dimmer"
+                                },
+                                {
+                                    "entity": "light.dining_table_dimmer"
+                                },
+                                {
+                                    "entity": "light.living_room_lamp_dimmer"
+                                },
+                                {
+                                    "entity": "light.spotlights_dimmer"
+                                },
+                                {
+                                    "entity": "light.garage_light"
+                                }
+                            ],
+                            "show_header_toggle": true,
+                            "title": "First Floor",
+                            "type": "entities"
+                        },
+                        {
+                            "entities": [
+                                {
+                                    "entity": "light.porch"
+                                },
+                                {
+                                    "entity": "light.backyard_light"
+                                }
+                            ],
+                            "title": "Outdoor Lights",
+                            "type": "entities"
+                        },
+                        {
+                            "entities": [
+                                {
+                                    "entity": "light.master_bedroom_entrance_dimmer"
+                                },
+                                {
+                                    "entity": "light.master_bedroom_lamp_dimmer"
+                                },
+                                {
+                                    "entity": "light.alans_room_dimmer_shelly"
+                                },
+                                {
+                                    "entity": "light.chandelier"
+                                }
+                            ],
+                            "title": "Second Floor",
+                            "type": "entities"
+                        },
+                        {
+                            "entities": [
+                                {
+                                    "entity": "light.loft_lamp_lower_hue"
+                                },
+                                {
+                                    "entity": "light.loft_lamp_upper_hue"
+                                },
+                                {
+                                    "entity": "light.loft"
+                                }
+                            ],
+                            "title": "Loft",
+                            "type": "entities"
+                        },
+                        {
+                            "entity": "light.loft_lamp_lower_hue",
+                            "type": "light"
+                        },
+                        {
+                            "entity": "light.loft_lamp_upper_hue",
+                            "type": "light"
+                        },
+                        {
+                            "entities": [
+                                {
+                                    "entity": "sensor.garage_lux_aqara"
+                                },
+                                {
+                                    "entity": "sensor.kitchen_lux_aqara"
+                                },
+                                {
+                                    "entity": "sensor.living_room_lux_aqara"
+                                },
+                                {
+                                    "entity": "sensor.loft_lux_aqara"
+                                }
+                            ],
+                            "title": "Lux",
+                            "type": "entities"
+                        },
+                        {
+                            "entity": "light.alans_room_dimmer_shelly",
+                            "type": "light"
+                        }
+                    ],
+                    "icon": "mdi:lamp",
+                    "path": "lights",
+                    "title": "Lights"
+                },
+                {
+                    "badges": [],
+                    "cards": [
+                        {
+                            "entities": [
+                                {
+                                    "entity": "binary_sensor.garage_door"
+                                },
+                                {
+                                    "entity": "binary_sensor.screen_door_aqara_aqara",
+                                    "icon": "mdi:door"
+                                },
+                                {
+                                    "entity": "binary_sensor.main_door_sensor_aqara",
+                                    "icon": "mdi:door",
+                                    "name": "Main Door"
+                                },
+                                {
+                                    "entity": "binary_sensor.kitchen_door_sensor_aqara",
+                                    "icon": "mdi:door",
+                                    "name": "Kitchen Door"
+                                },
+                                {
+                                    "entity": "binary_sensor.backyard_side_window_aqara",
+                                    "icon": "mdi:door"
+                                },
+                                {
+                                    "entity": "binary_sensor.tv_side_window_aqara",
+                                    "icon": "mdi:window-open-variant"
+                                },
+                                {
+                                    "entity": "binary_sensor.tv_side_window_aqara",
+                                    "icon": "mdi:window-open-variant"
+                                }
+                            ],
+                            "show_header_toggle": false,
+                            "title": "Doors and Windows",
+                            "type": "entities"
+                        },
+                        {
+                            "entities": [
+                                {
+                                    "entity": "binary_sensor.garage_motion_aqara"
+                                },
+                                {
+                                    "entity": "binary_sensor.kitchen_occupancy_aqara",
+                                    "name": "Kitchen"
+                                },
+                                {
+                                    "entity": "binary_sensor.living_room_occupancy_aqara",
+                                    "name": "Living Room"
+                                },
+                                {
+                                    "entity": "binary_sensor.loft_occupancy_aqara",
+                                    "name": "Loft"
+                                }
+                            ],
+                            "show_header_toggle": false,
+                            "title": "Activity",
+                            "type": "entities"
+                        },
+                        {
+                            "entities": [
+                                {
+                                    "entity": "alarm_control_panel.home_alarm"
+                                },
+                                {
+                                    "entity": "automation.alarm_send_notification_when_alarm_triggered"
+                                }
+                            ],
+                            "type": "entities"
+                        },
+                        {
+                            "entity": "alarm_control_panel.home_alarm",
+                            "states": [
+                                "arm_home",
+                                "arm_away"
+                            ],
+                            "type": "alarm-panel"
+                        },
+                        {
+                            "entities": [
+                                {
+                                    "entity": "alarm_control_panel.home_alarm"
+                                }
+                            ],
+                            "type": "entities"
+                        },
+                        {
+                            "entities": [
+                                {
+                                    "entity": "device_tracker.iphone"
+                                },
+                                {
+                                    "entity": "person.kaushlesh"
+                                },
+                                {
+                                    "entity": "binary_sensor.kitchen_motion_detect"
+                                },
+                                {
+                                    "entity": "binary_sensor.living_room_motion_aqara"
+                                },
+                                {
+                                    "entity": "binary_sensor.loft_motion_aqara"
+                                }
+                            ],
+                            "title": "Occupancy",
+                            "type": "entities"
+                        }
+                    ],
+                    "icon": "mdi:security",
+                    "path": "security",
+                    "title": "Security"
+                },
+                {
+                    "badges": [],
+                    "cards": [
+                        {
+                            "entities": [
+                                {
+                                    "entity": "sensor.memory_use_percent"
+                                },
+                                {
+                                    "entity": "sensor.processor_use"
+                                },
+                                {
+                                    "entity": "sensor.disk_use_percent_home"
+                                },
+                                {
+                                    "entity": "sensor.last_boot"
+                                }
+                            ],
+                            "type": "entities"
+                        },
+                        {
+                            "entity": "sensor.processor_use",
+                            "max": 100,
+                            "min": 0,
+                            "name": "CPU",
+                            "theme": "default",
+                            "type": "gauge"
+                        },
+                        {
+                            "entity": "sensor.memory_use_percent",
+                            "max": 100,
+                            "min": 0,
+                            "name": "Memory",
+                            "theme": "default",
+                            "type": "gauge"
+                        },
+                        {
+                            "entities": [
+                                {
+                                    "entity": "sensor.unavailable_entities"
+                                },
+                                {
+                                    "entity": "sensor.available_entities"
+                                }
+                            ],
+                            "type": "entities"
+                        },
+                        {
+                            "entities": [
+                                {
+                                    "entity": "automation.system_daily_reboot_all_devices"
+                                },
+                                {
+                                    "entity": "automation.system_sync_states_on_start_up_manual_configuration"
+                                }
+                            ],
+                            "type": "entities"
+                        }
+                    ],
+                    "icon": "mdi:cogs",
+                    "panel": false,
+                    "path": "admin",
+                    "title": "Status"
+                },
+                {
+                    "badges": [],
+                    "cards": [
+                        {
+                            "entities": [
+                                "switch.b_switch",
+                                "sensor.dimmer_level",
+                                "sensor.dimmer_b_bssid",
+                                "sensor.dimmer_b_ip",
+                                "sensor.dimmer_b_ssid",
+                                "sensor.dimmer_b_version"
+                            ],
+                            "type": "entities"
+                        }
+                    ],
+                    "icon": "mdi:current-ac",
+                    "title": "RF"
+                },
+                {
+                    "badges": [],
+                    "cards": [
+                        {
+                            "entities": [
+                                {
+                                    "entity": "sensor.alans_bedroom_temperature"
+                                }
+                            ],
+                            "hours_to_show": 24,
+                            "refresh_interval": 0,
+                            "title": "T",
+                            "type": "history-graph"
+                        }
+                    ],
+                    "panel": true,
+                    "path": "test",
+                    "title": "History"
+                }
+            ]
+        }
+    },
+    "key": "lovelace",
+    "version": 1
+}

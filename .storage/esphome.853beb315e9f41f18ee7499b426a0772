@@ -1,0 +1,46 @@
+{
+    "data": {
+        "cover": [
+            {
+                "assumed_state": true,
+                "device_class": "",
+                "key": 1402501725,
+                "name": "Garage Door",
+                "object_id": "garage_door",
+                "supports_position": false,
+                "supports_tilt": false,
+                "unique_id": "garage_door_openercovergarage_door"
+            }
+        ],
+        "device_info": {
+            "compilation_time": "Mar  3 2020, 06:03:21",
+            "esphome_version": "1.14.3",
+            "has_deep_sleep": false,
+            "mac_address": "BC:DD:C2:0E:5F:92",
+            "model": "PLATFORMIO_ESP01_1M",
+            "name": "garage_door_opener",
+            "uses_password": false
+        },
+        "services": [],
+        "switch": [
+            {
+                "assumed_state": false,
+                "icon": "",
+                "key": 1758616307,
+                "name": "Garage Door Open Switch",
+                "object_id": "garage_door_open_switch",
+                "unique_id": "garage_door_openerswitchgarage_door_open_switch"
+            },
+            {
+                "assumed_state": false,
+                "icon": "",
+                "key": 802007175,
+                "name": "Garage Door Close Switch",
+                "object_id": "garage_door_close_switch",
+                "unique_id": "garage_door_openerswitchgarage_door_close_switch"
+            }
+        ]
+    },
+    "key": "esphome.853beb315e9f41f18ee7499b426a0772",
+    "version": 1
+}

@@ -1,0 +1,121 @@
+{
+    "data": {
+        "device_info": {
+            "compilation_time": "Mar 19 2020, 14:49:16",
+            "esphome_version": "1.14.3",
+            "has_deep_sleep": false,
+            "mac_address": "DC:4F:22:7D:D0:0F",
+            "model": "PLATFORMIO_D1_MINI",
+            "name": "audio_playback_garage",
+            "uses_password": false
+        },
+        "sensor": [],
+        "services": [],
+        "switch": [
+            {
+                "assumed_state": false,
+                "icon": "mdi:restart",
+                "key": 2866986689,
+                "name": "audio_playback_garage Restart",
+                "object_id": "audio_playback_garage_restart",
+                "unique_id": "audio_playback_garageswitchaudio_playback_garage_restart"
+            },
+            {
+                "assumed_state": false,
+                "icon": "",
+                "key": 1814044355,
+                "name": "Turning on Outdoor lights",
+                "object_id": "turning_on_outdoor_lights",
+                "unique_id": "audio_playback_garageswitchturning_on_outdoor_lights"
+            },
+            {
+                "assumed_state": false,
+                "icon": "",
+                "key": 916697545,
+                "name": "System is Online",
+                "object_id": "system_is_online",
+                "unique_id": "audio_playback_garageswitchsystem_is_online"
+            },
+            {
+                "assumed_state": false,
+                "icon": "",
+                "key": 3112000901,
+                "name": "System is offline",
+                "object_id": "system_is_offline",
+                "unique_id": "audio_playback_garageswitchsystem_is_offline"
+            },
+            {
+                "assumed_state": false,
+                "icon": "",
+                "key": 2631604622,
+                "name": "Setting Home away Mode",
+                "object_id": "setting_home_away_mode",
+                "unique_id": "audio_playback_garageswitchsetting_home_away_mode"
+            },
+            {
+                "assumed_state": false,
+                "icon": "",
+                "key": 2437429691,
+                "name": "Welcome home",
+                "object_id": "welcome_home",
+                "unique_id": "audio_playback_garageswitchwelcome_home"
+            },
+            {
+                "assumed_state": false,
+                "icon": "",
+                "key": 3106306883,
+                "name": "Energy Usage is High",
+                "object_id": "energy_usage_is_high",
+                "unique_id": "audio_playback_garageswitchenergy_usage_is_high"
+            },
+            {
+                "assumed_state": false,
+                "icon": "",
+                "key": 2538655829,
+                "name": "Turning off Outdoor lights",
+                "object_id": "turning_off_outdoor_lights",
+                "unique_id": "audio_playback_garageswitchturning_off_outdoor_lights"
+            },
+            {
+                "assumed_state": false,
+                "icon": "",
+                "key": 1510941272,
+                "name": "Switch 8",
+                "object_id": "switch_8",
+                "unique_id": "audio_playback_garageswitchswitch_8"
+            }
+        ],
+        "text_sensor": [
+            {
+                "icon": "mdi:new-box",
+                "key": 628429612,
+                "name": "audio_playback_garage Version",
+                "object_id": "audio_playback_garage_version",
+                "unique_id": "dc4f227dd00f-version"
+            },
+            {
+                "icon": "",
+                "key": 2334679635,
+                "name": "audio_playback_garage IP",
+                "object_id": "audio_playback_garage_ip",
+                "unique_id": "dc4f227dd00f-wifiinfo-ip"
+            },
+            {
+                "icon": "",
+                "key": 4267463417,
+                "name": "audio_playback_garage SSID",
+                "object_id": "audio_playback_garage_ssid",
+                "unique_id": "dc4f227dd00f-wifiinfo-ssid"
+            },
+            {
+                "icon": "",
+                "key": 3543151563,
+                "name": "audio_playback_garage BSSID",
+                "object_id": "audio_playback_garage_bssid",
+                "unique_id": "dc4f227dd00f-wifiinfo-bssid"
+            }
+        ]
+    },
+    "key": "esphome.843084140ed84b71bacfc1b7cb048099",
+    "version": 1
+}

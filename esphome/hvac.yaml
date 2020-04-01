@@ -6,6 +6,8 @@ substitutions:
 <<: !include .base.common_8266.yaml
 
 binary_sensor:
+  - platform: status
+    name:  "$devicename Status"
   - platform: template
     name: "Heat Low"
     lambda: |-
@@ -41,6 +43,8 @@ binary_sensor:
 
 
 sensor:
+  - platform: uptime
+    name: "$devicename uptime"
   - platform: wifi_signal
     name: "$devicename WiFi Signal"
     update_interval: 60s

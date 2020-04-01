@@ -1,0 +1,78 @@
+{
+    "data": {
+        "binary_sensor": [
+            {
+                "device_class": "connectivity",
+                "is_status_binary_sensor": true,
+                "key": 951596245,
+                "name": "dimmer_b Status",
+                "object_id": "dimmer_b_status",
+                "unique_id": "dimmer_bbinary_sensordimmer_b_status"
+            }
+        ],
+        "device_info": {
+            "compilation_time": "Mar 31 2020, 13:46:32",
+            "esphome_version": "1.14.3",
+            "has_deep_sleep": false,
+            "mac_address": "2C:F4:32:4B:2A:EF",
+            "model": "PLATFORMIO_D1_MINI",
+            "name": "dimmer_b",
+            "uses_password": false
+        },
+        "sensor": [
+            {
+                "accuracy_decimals": 0,
+                "force_update": false,
+                "icon": "mdi:timer",
+                "key": 2001260931,
+                "name": "dimmer_b uptime",
+                "object_id": "dimmer_b_uptime",
+                "unique_id": "2cf4324b2aef-uptime",
+                "unit_of_measurement": "s"
+            },
+            {
+                "accuracy_decimals": 0,
+                "force_update": false,
+                "icon": "mdi:wifi",
+                "key": 2712325827,
+                "name": "dimmer_b WiFi Signal",
+                "object_id": "dimmer_b_wifi_signal",
+                "unique_id": "2cf4324b2aef-wifisignal",
+                "unit_of_measurement": "dB"
+            }
+        ],
+        "services": [],
+        "text_sensor": [
+            {
+                "icon": "mdi:new-box",
+                "key": 2393550861,
+                "name": "dimmer_b Version",
+                "object_id": "dimmer_b_version",
+                "unique_id": "2cf4324b2aef-version"
+            },
+            {
+                "icon": "",
+                "key": 4072368596,
+                "name": "dimmer_b IP",
+                "object_id": "dimmer_b_ip",
+                "unique_id": "2cf4324b2aef-wifiinfo-ip"
+            },
+            {
+                "icon": "",
+                "key": 1605933818,
+                "name": "dimmer_b SSID",
+                "object_id": "dimmer_b_ssid",
+                "unique_id": "2cf4324b2aef-wifiinfo-ssid"
+            },
+            {
+                "icon": "",
+                "key": 2865654234,
+                "name": "dimmer_b BSSID",
+                "object_id": "dimmer_b_bssid",
+                "unique_id": "2cf4324b2aef-wifiinfo-bssid"
+            }
+        ]
+    },
+    "key": "esphome.0fe784cafcba475a8cbda4c923cca9ea",
+    "version": 1
+}

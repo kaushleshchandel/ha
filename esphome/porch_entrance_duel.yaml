@@ -20,6 +20,12 @@ switch:
   - platform: restart
     name: "$devicename Restart"
 
+sensor:
+  - platform: uptime
+    name: "$devicename uptime"
+  - platform: wifi_signal
+    name: "$devicename WiFi Signal"
+    update_interval: 60s
 
 status_led:
   pin:
@@ -27,6 +33,8 @@ status_led:
     inverted: true
 
 binary_sensor:
+  - platform: status
+    name: "$devicename Status"
   - platform: gpio
     internal: true
     pin: GPIO13

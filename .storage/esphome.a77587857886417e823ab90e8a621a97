@@ -1,0 +1,48 @@
+{
+    "data": {
+        "device_info": {
+            "compilation_time": "Mar 23 2020, 15:57:14",
+            "esphome_version": "1.14.3",
+            "has_deep_sleep": false,
+            "mac_address": "DC:4F:22:7E:65:FB",
+            "model": "PLATFORMIO_D1_MINI",
+            "name": "alans_room_dimmer",
+            "uses_password": false
+        },
+        "sensor": [],
+        "services": [],
+        "switch": [],
+        "text_sensor": [
+            {
+                "icon": "mdi:new-box",
+                "key": 1084096280,
+                "name": "alans_room_dimmer Version",
+                "object_id": "alans_room_dimmer_version",
+                "unique_id": "dc4f227e65fb-version"
+            },
+            {
+                "icon": "",
+                "key": 174549751,
+                "name": "alans_room_dimmer IP",
+                "object_id": "alans_room_dimmer_ip",
+                "unique_id": "dc4f227e65fb-wifiinfo-ip"
+            },
+            {
+                "icon": "",
+                "key": 1923488117,
+                "name": "alans_room_dimmer SSID",
+                "object_id": "alans_room_dimmer_ssid",
+                "unique_id": "dc4f227e65fb-wifiinfo-ssid"
+            },
+            {
+                "icon": "",
+                "key": 2920755071,
+                "name": "alans_room_dimmer BSSID",
+                "object_id": "alans_room_dimmer_bssid",
+                "unique_id": "dc4f227e65fb-wifiinfo-bssid"
+            }
+        ]
+    },
+    "key": "esphome.a77587857886417e823ab90e8a621a97",
+    "version": 1
+}

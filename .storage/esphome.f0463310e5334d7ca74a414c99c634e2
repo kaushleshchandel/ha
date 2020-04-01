@@ -1,0 +1,140 @@
+{
+    "data": {
+        "binary_sensor": [
+            {
+                "device_class": "connectivity",
+                "is_status_binary_sensor": true,
+                "key": 3382721410,
+                "name": "garage_multi_sensor Status",
+                "object_id": "garage_multi_sensor_status",
+                "unique_id": "garage_multi_sensorbinary_sensorgarage_multi_sensor_status"
+            },
+            {
+                "device_class": "garage_door",
+                "is_status_binary_sensor": false,
+                "key": 1402501725,
+                "name": "Garage Door",
+                "object_id": "garage_door",
+                "unique_id": "garage_multi_sensorbinary_sensorgarage_door"
+            },
+            {
+                "device_class": "",
+                "is_status_binary_sensor": false,
+                "key": 399565059,
+                "name": "Homelink B",
+                "object_id": "homelink_b",
+                "unique_id": "garage_multi_sensorbinary_sensorhomelink_b"
+            },
+            {
+                "device_class": "",
+                "is_status_binary_sensor": false,
+                "key": 399565056,
+                "name": "Homelink A",
+                "object_id": "homelink_a",
+                "unique_id": "garage_multi_sensorbinary_sensorhomelink_a"
+            }
+        ],
+        "cover": [
+            {
+                "assumed_state": false,
+                "device_class": "",
+                "key": 1402501725,
+                "name": "Garage Door",
+                "object_id": "garage_door",
+                "supports_position": false,
+                "supports_tilt": false,
+                "unique_id": "garage_multi_sensorcovergarage_door"
+            }
+        ],
+        "device_info": {
+            "compilation_time": "Mar 31 2020, 13:48:52",
+            "esphome_version": "1.14.3",
+            "has_deep_sleep": false,
+            "mac_address": "BC:DD:C2:6B:E6:04",
+            "model": "PLATFORMIO_D1_MINI",
+            "name": "garage_multi_sensor",
+            "uses_password": false
+        },
+        "sensor": [
+            {
+                "accuracy_decimals": 0,
+                "force_update": false,
+                "icon": "mdi:wifi",
+                "key": 1431848854,
+                "name": "garage_multi_sensor WiFi Signal",
+                "object_id": "garage_multi_sensor_wifi_signal",
+                "unique_id": "bcddc26be604-wifisignal",
+                "unit_of_measurement": "dB"
+            },
+            {
+                "accuracy_decimals": 0,
+                "force_update": false,
+                "icon": "mdi:timer",
+                "key": 2290354024,
+                "name": "garage_multi_sensor uptime",
+                "object_id": "garage_multi_sensor_uptime",
+                "unique_id": "bcddc26be604-uptime",
+                "unit_of_measurement": "s"
+            }
+        ],
+        "services": [],
+        "switch": [
+            {
+                "assumed_state": false,
+                "icon": "mdi:restart",
+                "key": 2935828637,
+                "name": "garage_multi_sensor Restart",
+                "object_id": "garage_multi_sensor_restart",
+                "unique_id": "garage_multi_sensorswitchgarage_multi_sensor_restart"
+            },
+            {
+                "assumed_state": false,
+                "icon": "",
+                "key": 1758616307,
+                "name": "Garage Door Open Switch",
+                "object_id": "garage_door_open_switch",
+                "unique_id": "garage_multi_sensorswitchgarage_door_open_switch"
+            },
+            {
+                "assumed_state": false,
+                "icon": "",
+                "key": 802007175,
+                "name": "Garage Door Close Switch",
+                "object_id": "garage_door_close_switch",
+                "unique_id": "garage_multi_sensorswitchgarage_door_close_switch"
+            }
+        ],
+        "text_sensor": [
+            {
+                "icon": "mdi:new-box",
+                "key": 3706883088,
+                "name": "garage_multi_sensor Version",
+                "object_id": "garage_multi_sensor_version",
+                "unique_id": "bcddc26be604-version"
+            },
+            {
+                "icon": "",
+                "key": 3491835711,
+                "name": "garage_multi_sensor IP",
+                "object_id": "garage_multi_sensor_ip",
+                "unique_id": "bcddc26be604-wifiinfo-ip"
+            },
+            {
+                "icon": "",
+                "key": 1810415197,
+                "name": "garage_multi_sensor SSID",
+                "object_id": "garage_multi_sensor_ssid",
+                "unique_id": "bcddc26be604-wifiinfo-ssid"
+            },
+            {
+                "icon": "",
+                "key": 3857726807,
+                "name": "garage_multi_sensor BSSID",
+                "object_id": "garage_multi_sensor_bssid",
+                "unique_id": "bcddc26be604-wifiinfo-bssid"
+            }
+        ]
+    },
+    "key": "esphome.f0463310e5334d7ca74a414c99c634e2",
+    "version": 1
+}

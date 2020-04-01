@@ -1,0 +1,54 @@
+{
+    "data": {
+        "device_info": {
+            "compilation_time": "Mar 19 2020, 14:50:17",
+            "esphome_version": "1.14.3",
+            "has_deep_sleep": false,
+            "mac_address": "C8:2B:96:10:D2:D5",
+            "model": "PLATFORMIO_ESP01_1M",
+            "name": "chandelier_loft_duel",
+            "uses_password": false
+        },
+        "light": [
+            {
+                "effects": [],
+                "key": 1767199956,
+                "max_mireds": 0.0,
+                "min_mireds": 0.0,
+                "name": "Chandelier",
+                "object_id": "chandelier",
+                "supports_brightness": false,
+                "supports_color_temperature": false,
+                "supports_rgb": false,
+                "supports_white_value": false,
+                "unique_id": "chandelier_loft_duellightchandelier"
+            },
+            {
+                "effects": [],
+                "key": 540007528,
+                "max_mireds": 0.0,
+                "min_mireds": 0.0,
+                "name": "Loft",
+                "object_id": "loft",
+                "supports_brightness": false,
+                "supports_color_temperature": false,
+                "supports_rgb": false,
+                "supports_white_value": false,
+                "unique_id": "chandelier_loft_duellightloft"
+            }
+        ],
+        "services": [],
+        "switch": [
+            {
+                "assumed_state": false,
+                "icon": "mdi:restart",
+                "key": 2168894819,
+                "name": "chandelier_loft_duel Restart",
+                "object_id": "chandelier_loft_duel_restart",
+                "unique_id": "chandelier_loft_duelswitchchandelier_loft_duel_restart"
+            }
+        ]
+    },
+    "key": "esphome.f61e3535661e45a58425070f659b4faf",
+    "version": 1
+}

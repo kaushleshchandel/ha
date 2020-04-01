@@ -1,0 +1,436 @@
+{
+    "data": {
+        "binary_sensor": {},
+        "deleted_ids": [
+            "d9eb4700dcffe10d0e3e6c7b6c8c2b6bfd1800b2cfae2c412851335eac7a25f2"
+        ],
+        "sensor": {
+            "bb70205345c18338ad9a4f3a112372b2701bf0c19728177765d91e9c27b5fce7_battery_level": {
+                "added": true,
+                "attributes": {
+                    "charger_type": "AC",
+                    "is_charging": true
+                },
+                "device_class": "battery",
+                "icon": "mdi:battery-charging-20",
+                "name": "Battery Level",
+                "state": 27,
+                "type": "sensor",
+                "unique_id": "battery_level",
+                "unit_of_measurement": "%",
+                "webhook_id": "bb70205345c18338ad9a4f3a112372b2701bf0c19728177765d91e9c27b5fce7"
+            },
+            "bb70205345c18338ad9a4f3a112372b2701bf0c19728177765d91e9c27b5fce7_geocoded_location": {
+                "added": true,
+                "attributes": {
+                    "Administrative Area": "Illinois",
+                    "Country": "United States",
+                    "ISO Country Code": "US",
+                    "Locality": "Lombard",
+                    "Location": [
+                        41.8706573,
+                        -87.98899899999999
+                    ],
+                    "Postal Code": "60148",
+                    "Sub Administrative Area": "DuPage County",
+                    "Sub Locality": null,
+                    "Sub Thoroughfare": "1135",
+                    "Thoroughfare": "Cambria Lane North"
+                },
+                "icon": "mdi:map",
+                "name": "Geocoded Location",
+                "state": "1135 Cambria Ln N, Lombard, IL 60148, USA",
+                "type": "sensor",
+                "unique_id": "geocoded_location",
+                "webhook_id": "bb70205345c18338ad9a4f3a112372b2701bf0c19728177765d91e9c27b5fce7"
+            },
+            "bb70205345c18338ad9a4f3a112372b2701bf0c19728177765d91e9c27b5fce7_wifi_connection": {
+                "added": true,
+                "attributes": {
+                    "bssid": "18:a6:f7:31:8f:4f",
+                    "frequency": 2437,
+                    "ip_address": "192.168.0.11",
+                    "is_hidden": false,
+                    "link_speed": 65,
+                    "signal_level": -60
+                },
+                "icon": "mdi:wifi-strength-2",
+                "name": "Wifi Connection",
+                "state": "HOME2G",
+                "type": "sensor",
+                "unique_id": "wifi_connection",
+                "webhook_id": "bb70205345c18338ad9a4f3a112372b2701bf0c19728177765d91e9c27b5fce7"
+            },
+            "d9eb4700dcffe10d0e3e6c7b6c8c2b6bfd1800b2cfae2c412851335eac7a25f2_activity": {
+                "added": true,
+                "attributes": {
+                    "Confidence": "High",
+                    "Types": [
+                        "Unknown"
+                    ]
+                },
+                "icon": "mdi:help-circle",
+                "name": "Activity",
+                "state": "Unknown",
+                "type": "sensor",
+                "unique_id": "activity",
+                "webhook_id": "d9eb4700dcffe10d0e3e6c7b6c8c2b6bfd1800b2cfae2c412851335eac7a25f2"
+            },
+            "d9eb4700dcffe10d0e3e6c7b6c8c2b6bfd1800b2cfae2c412851335eac7a25f2_battery_level": {
+                "added": true,
+                "attributes": {
+                    "Battery State": "Not Charging"
+                },
+                "device_class": "battery",
+                "icon": "mdi:battery-10",
+                "name": "Battery Level",
+                "state": 19,
+                "type": "sensor",
+                "unique_id": "battery_level",
+                "unit_of_measurement": "%",
+                "webhook_id": "d9eb4700dcffe10d0e3e6c7b6c8c2b6bfd1800b2cfae2c412851335eac7a25f2"
+            },
+            "d9eb4700dcffe10d0e3e6c7b6c8c2b6bfd1800b2cfae2c412851335eac7a25f2_battery_state": {
+                "added": true,
+                "attributes": {
+                    "Battery Level": 19
+                },
+                "device_class": "battery",
+                "icon": "mdi:battery-10",
+                "name": "Battery State",
+                "state": "Not Charging",
+                "type": "sensor",
+                "unique_id": "battery_state",
+                "webhook_id": "d9eb4700dcffe10d0e3e6c7b6c8c2b6bfd1800b2cfae2c412851335eac7a25f2"
+            },
+            "d9eb4700dcffe10d0e3e6c7b6c8c2b6bfd1800b2cfae2c412851335eac7a25f2_connectivity_bssid": {
+                "added": true,
+                "attributes": {},
+                "icon": "mdi:wifi-star",
+                "name": "BSSID",
+                "state": "18:a6:f7:31:8f:4f",
+                "type": "sensor",
+                "unique_id": "connectivity_bssid",
+                "webhook_id": "d9eb4700dcffe10d0e3e6c7b6c8c2b6bfd1800b2cfae2c412851335eac7a25f2"
+            },
+            "d9eb4700dcffe10d0e3e6c7b6c8c2b6bfd1800b2cfae2c412851335eac7a25f2_connectivity_connection_type": {
+                "added": true,
+                "attributes": {},
+                "icon": "mdi:wifi",
+                "name": "Connection Type",
+                "state": "Wi-Fi",
+                "type": "sensor",
+                "unique_id": "connectivity_connection_type",
+                "webhook_id": "d9eb4700dcffe10d0e3e6c7b6c8c2b6bfd1800b2cfae2c412851335eac7a25f2"
+            },
+            "d9eb4700dcffe10d0e3e6c7b6c8c2b6bfd1800b2cfae2c412851335eac7a25f2_connectivity_sim_1": {
+                "added": true,
+                "attributes": {
+                    "Allows VoIP": true,
+                    "Carrier ID": "0000000100000001",
+                    "Carrier Name": "T-Mobile",
+                    "Current Radio Technology": "Long-Term Evolution (LTE)",
+                    "ISO Country Code": "us",
+                    "Mobile Country Code": "310",
+                    "Mobile Network Code": "260"
+                },
+                "icon": "mdi:sim",
+                "name": "SIM 1",
+                "state": "T-Mobile",
+                "type": "sensor",
+                "unique_id": "connectivity_sim_1",
+                "webhook_id": "d9eb4700dcffe10d0e3e6c7b6c8c2b6bfd1800b2cfae2c412851335eac7a25f2"
+            },
+            "d9eb4700dcffe10d0e3e6c7b6c8c2b6bfd1800b2cfae2c412851335eac7a25f2_connectivity_ssid": {
+                "added": true,
+                "attributes": {},
+                "icon": "mdi:wifi",
+                "name": "SSID",
+                "state": "HOME2G",
+                "type": "sensor",
+                "unique_id": "connectivity_ssid",
+                "webhook_id": "d9eb4700dcffe10d0e3e6c7b6c8c2b6bfd1800b2cfae2c412851335eac7a25f2"
+            },
+            "d9eb4700dcffe10d0e3e6c7b6c8c2b6bfd1800b2cfae2c412851335eac7a25f2_geocoded_location": {
+                "added": true,
+                "attributes": {
+                    "Administrative Area": "IL",
+                    "Areas Of Interest": "N/A",
+                    "Country": "United States",
+                    "ISO Country Code": "US",
+                    "Inland Water": "N/A",
+                    "Locality": "Lombard",
+                    "Location": [
+                        41.870513916015625,
+                        -87.98912745547365
+                    ],
+                    "Name": "1135 E Cambria Ln N",
+                    "Ocean": "N/A",
+                    "Postal Code": "60148",
+                    "Sub Administrative Area": "DuPage",
+                    "Sub Locality": "N/A",
+                    "Sub Thoroughfare": "1135",
+                    "Thoroughfare": "E Cambria Ln N",
+                    "Time Zone": "America/Chicago"
+                },
+                "icon": "mdi:map",
+                "name": "Geocoded Location",
+                "state": "1135 E Cambria Ln N\nLombard IL 60148\nUnited States",
+                "type": "sensor",
+                "unique_id": "geocoded_location",
+                "webhook_id": "d9eb4700dcffe10d0e3e6c7b6c8c2b6bfd1800b2cfae2c412851335eac7a25f2"
+            },
+            "d9eb4700dcffe10d0e3e6c7b6c8c2b6bfd1800b2cfae2c412851335eac7a25f2_last_update_trigger": {
+                "added": true,
+                "attributes": {},
+                "icon": "mdi:cellphone-wireless",
+                "name": "Last Update Trigger",
+                "state": "Initial",
+                "type": "sensor",
+                "unique_id": "last_update_trigger",
+                "webhook_id": "d9eb4700dcffe10d0e3e6c7b6c8c2b6bfd1800b2cfae2c412851335eac7a25f2"
+            },
+            "d9eb4700dcffe10d0e3e6c7b6c8c2b6bfd1800b2cfae2c412851335eac7a25f2_pedometer_avg_active_pace": {
+                "added": true,
+                "attributes": {},
+                "icon": "mdi:speedometer",
+                "name": "Average Active Pace",
+                "state": 1,
+                "type": "sensor",
+                "unique_id": "pedometer_avg_active_pace",
+                "unit_of_measurement": "m/s",
+                "webhook_id": "d9eb4700dcffe10d0e3e6c7b6c8c2b6bfd1800b2cfae2c412851335eac7a25f2"
+            },
+            "d9eb4700dcffe10d0e3e6c7b6c8c2b6bfd1800b2cfae2c412851335eac7a25f2_pedometer_distance": {
+                "added": true,
+                "attributes": {},
+                "icon": "mdi:hiking",
+                "name": "Distance",
+                "state": 1053,
+                "type": "sensor",
+                "unique_id": "pedometer_distance",
+                "unit_of_measurement": "m",
+                "webhook_id": "d9eb4700dcffe10d0e3e6c7b6c8c2b6bfd1800b2cfae2c412851335eac7a25f2"
+            },
+            "d9eb4700dcffe10d0e3e6c7b6c8c2b6bfd1800b2cfae2c412851335eac7a25f2_pedometer_floors_ascended": {
+                "added": true,
+                "attributes": {},
+                "icon": "mdi:slope-uphill",
+                "name": "Floors Ascended",
+                "state": 1,
+                "type": "sensor",
+                "unique_id": "pedometer_floors_ascended",
+                "unit_of_measurement": "floors",
+                "webhook_id": "d9eb4700dcffe10d0e3e6c7b6c8c2b6bfd1800b2cfae2c412851335eac7a25f2"
+            },
+            "d9eb4700dcffe10d0e3e6c7b6c8c2b6bfd1800b2cfae2c412851335eac7a25f2_pedometer_floors_descended": {
+                "added": true,
+                "attributes": {},
+                "icon": "mdi:slope-downhill",
+                "name": "Floors Descended",
+                "state": 1,
+                "type": "sensor",
+                "unique_id": "pedometer_floors_descended",
+                "unit_of_measurement": "floors",
+                "webhook_id": "d9eb4700dcffe10d0e3e6c7b6c8c2b6bfd1800b2cfae2c412851335eac7a25f2"
+            },
+            "d9eb4700dcffe10d0e3e6c7b6c8c2b6bfd1800b2cfae2c412851335eac7a25f2_pedometer_steps": {
+                "added": true,
+                "attributes": {},
+                "icon": "mdi:walk",
+                "name": "Steps",
+                "state": 1631,
+                "type": "sensor",
+                "unique_id": "pedometer_steps",
+                "unit_of_measurement": "steps",
+                "webhook_id": "d9eb4700dcffe10d0e3e6c7b6c8c2b6bfd1800b2cfae2c412851335eac7a25f2"
+            },
+            "fc516b418883e57cc08a44d3cbee3b1f080a401296ede7517acf0e2374b46337_activity": {
+                "added": true,
+                "attributes": {
+                    "Confidence": "High",
+                    "Types": [
+                        "Stationary"
+                    ]
+                },
+                "icon": "mdi:human-male",
+                "name": "Activity",
+                "state": "Stationary",
+                "type": "sensor",
+                "unique_id": "activity",
+                "webhook_id": "fc516b418883e57cc08a44d3cbee3b1f080a401296ede7517acf0e2374b46337"
+            },
+            "fc516b418883e57cc08a44d3cbee3b1f080a401296ede7517acf0e2374b46337_battery_level": {
+                "added": true,
+                "attributes": {
+                    "Battery State": "Not Charging"
+                },
+                "device_class": "battery",
+                "icon": "mdi:battery-30",
+                "name": "Battery Level",
+                "state": 33,
+                "type": "sensor",
+                "unique_id": "battery_level",
+                "unit_of_measurement": "%",
+                "webhook_id": "fc516b418883e57cc08a44d3cbee3b1f080a401296ede7517acf0e2374b46337"
+            },
+            "fc516b418883e57cc08a44d3cbee3b1f080a401296ede7517acf0e2374b46337_battery_state": {
+                "added": true,
+                "attributes": {
+                    "Battery Level": 33
+                },
+                "device_class": "battery",
+                "icon": "mdi:battery-30",
+                "name": "Battery State",
+                "state": "Not Charging",
+                "type": "sensor",
+                "unique_id": "battery_state",
+                "webhook_id": "fc516b418883e57cc08a44d3cbee3b1f080a401296ede7517acf0e2374b46337"
+            },
+            "fc516b418883e57cc08a44d3cbee3b1f080a401296ede7517acf0e2374b46337_connectivity_bssid": {
+                "added": true,
+                "attributes": {},
+                "icon": "mdi:wifi-off",
+                "name": "BSSID",
+                "state": "Not Connected",
+                "type": "sensor",
+                "unique_id": "connectivity_bssid",
+                "webhook_id": "fc516b418883e57cc08a44d3cbee3b1f080a401296ede7517acf0e2374b46337"
+            },
+            "fc516b418883e57cc08a44d3cbee3b1f080a401296ede7517acf0e2374b46337_connectivity_connection_type": {
+                "added": true,
+                "attributes": {},
+                "icon": "mdi:wifi",
+                "name": "Connection Type",
+                "state": "Wi-Fi",
+                "type": "sensor",
+                "unique_id": "connectivity_connection_type",
+                "webhook_id": "fc516b418883e57cc08a44d3cbee3b1f080a401296ede7517acf0e2374b46337"
+            },
+            "fc516b418883e57cc08a44d3cbee3b1f080a401296ede7517acf0e2374b46337_connectivity_sim_1": {
+                "added": true,
+                "attributes": {
+                    "Allows VoIP": true,
+                    "Carrier ID": "0000000100000001",
+                    "Carrier Name": "T-Mobile",
+                    "Current Radio Technology": "Long-Term Evolution (LTE)",
+                    "ISO Country Code": "us",
+                    "Mobile Country Code": "310",
+                    "Mobile Network Code": "260"
+                },
+                "icon": "mdi:sim",
+                "name": "SIM 1",
+                "state": "T-Mobile",
+                "type": "sensor",
+                "unique_id": "connectivity_sim_1",
+                "webhook_id": "fc516b418883e57cc08a44d3cbee3b1f080a401296ede7517acf0e2374b46337"
+            },
+            "fc516b418883e57cc08a44d3cbee3b1f080a401296ede7517acf0e2374b46337_connectivity_ssid": {
+                "added": true,
+                "attributes": {},
+                "icon": "mdi:wifi-off",
+                "name": "SSID",
+                "state": "Not Connected",
+                "type": "sensor",
+                "unique_id": "connectivity_ssid",
+                "webhook_id": "fc516b418883e57cc08a44d3cbee3b1f080a401296ede7517acf0e2374b46337"
+            },
+            "fc516b418883e57cc08a44d3cbee3b1f080a401296ede7517acf0e2374b46337_geocoded_location": {
+                "added": true,
+                "attributes": {
+                    "Administrative Area": "IL",
+                    "Areas Of Interest": "N/A",
+                    "Country": "United States",
+                    "ISO Country Code": "US",
+                    "Inland Water": "N/A",
+                    "Locality": "Lombard",
+                    "Location": [
+                        41.870513916015625,
+                        -87.98920281810629
+                    ],
+                    "Name": "1133 E Cambria Ln N",
+                    "Ocean": "N/A",
+                    "Postal Code": "60148",
+                    "Sub Administrative Area": "DuPage",
+                    "Sub Locality": "N/A",
+                    "Sub Thoroughfare": "1133",
+                    "Thoroughfare": "E Cambria Ln N",
+                    "Time Zone": "America/Chicago"
+                },
+                "icon": "mdi:map",
+                "name": "Geocoded Location",
+                "state": "1133 E Cambria Ln N\nLombard IL 60148\nUnited States",
+                "type": "sensor",
+                "unique_id": "geocoded_location",
+                "webhook_id": "fc516b418883e57cc08a44d3cbee3b1f080a401296ede7517acf0e2374b46337"
+            },
+            "fc516b418883e57cc08a44d3cbee3b1f080a401296ede7517acf0e2374b46337_last_update_trigger": {
+                "added": true,
+                "attributes": {},
+                "icon": "mdi:cellphone-wireless",
+                "name": "Last Update Trigger",
+                "state": "Background Fetch",
+                "type": "sensor",
+                "unique_id": "last_update_trigger",
+                "webhook_id": "fc516b418883e57cc08a44d3cbee3b1f080a401296ede7517acf0e2374b46337"
+            },
+            "fc516b418883e57cc08a44d3cbee3b1f080a401296ede7517acf0e2374b46337_pedometer_avg_active_pace": {
+                "added": true,
+                "attributes": {},
+                "icon": "mdi:speedometer",
+                "name": "Average Active Pace",
+                "state": 1,
+                "type": "sensor",
+                "unique_id": "pedometer_avg_active_pace",
+                "unit_of_measurement": "m/s",
+                "webhook_id": "fc516b418883e57cc08a44d3cbee3b1f080a401296ede7517acf0e2374b46337"
+            },
+            "fc516b418883e57cc08a44d3cbee3b1f080a401296ede7517acf0e2374b46337_pedometer_distance": {
+                "added": true,
+                "attributes": {},
+                "icon": "mdi:hiking",
+                "name": "Distance",
+                "state": 389,
+                "type": "sensor",
+                "unique_id": "pedometer_distance",
+                "unit_of_measurement": "m",
+                "webhook_id": "fc516b418883e57cc08a44d3cbee3b1f080a401296ede7517acf0e2374b46337"
+            },
+            "fc516b418883e57cc08a44d3cbee3b1f080a401296ede7517acf0e2374b46337_pedometer_floors_ascended": {
+                "added": true,
+                "attributes": {},
+                "icon": "mdi:slope-uphill",
+                "name": "Floors Ascended",
+                "state": 3,
+                "type": "sensor",
+                "unique_id": "pedometer_floors_ascended",
+                "unit_of_measurement": "floors",
+                "webhook_id": "fc516b418883e57cc08a44d3cbee3b1f080a401296ede7517acf0e2374b46337"
+            },
+            "fc516b418883e57cc08a44d3cbee3b1f080a401296ede7517acf0e2374b46337_pedometer_floors_descended": {
+                "added": true,
+                "attributes": {},
+                "icon": "mdi:slope-downhill",
+                "name": "Floors Descended",
+                "state": 2,
+                "type": "sensor",
+                "unique_id": "pedometer_floors_descended",
+                "unit_of_measurement": "floors",
+                "webhook_id": "fc516b418883e57cc08a44d3cbee3b1f080a401296ede7517acf0e2374b46337"
+            },
+            "fc516b418883e57cc08a44d3cbee3b1f080a401296ede7517acf0e2374b46337_pedometer_steps": {
+                "added": true,
+                "attributes": {},
+                "icon": "mdi:walk",
+                "name": "Steps",
+                "state": 584,
+                "type": "sensor",
+                "unique_id": "pedometer_steps",
+                "unit_of_measurement": "steps",
+                "webhook_id": "fc516b418883e57cc08a44d3cbee3b1f080a401296ede7517acf0e2374b46337"
+            }
+        }
+    },
+    "key": "mobile_app",
+    "version": 1
+}

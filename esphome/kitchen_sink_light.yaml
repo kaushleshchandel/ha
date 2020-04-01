@@ -18,6 +18,8 @@ status_led:
     inverted: true
 
 binary_sensor:
+  - platform: status
+    name:  "$devicename Status"
   - platform: gpio
     pin: GPIO00
     id: reset
@@ -43,7 +45,8 @@ sensor:
   - platform: wifi_signal
     name: "$devicename WiFi Signal"
     update_interval: 60s
-
+  - platform: uptime
+    name: "$devicename uptime"
 light:
   - platform: binary
     name: "$devicename"

@@ -1,0 +1,103 @@
+{
+    "data": {
+        "binary_sensor": [
+            {
+                "device_class": "connectivity",
+                "is_status_binary_sensor": true,
+                "key": 1212305223,
+                "name": "kitchen_sink_light Status",
+                "object_id": "kitchen_sink_light_status",
+                "unique_id": "kitchen_sink_lightbinary_sensorkitchen_sink_light_status"
+            }
+        ],
+        "device_info": {
+            "compilation_time": "Mar 31 2020, 13:51:20",
+            "esphome_version": "1.14.3",
+            "has_deep_sleep": false,
+            "mac_address": "60:01:94:E0:20:D1",
+            "model": "PLATFORMIO_ESP01_1M",
+            "name": "kitchen_sink_light",
+            "uses_password": false
+        },
+        "light": [
+            {
+                "effects": [],
+                "key": 2778327306,
+                "max_mireds": 0.0,
+                "min_mireds": 0.0,
+                "name": "kitchen_sink_light",
+                "object_id": "kitchen_sink_light",
+                "supports_brightness": false,
+                "supports_color_temperature": false,
+                "supports_rgb": false,
+                "supports_white_value": false,
+                "unique_id": "kitchen_sink_lightlightkitchen_sink_light"
+            }
+        ],
+        "sensor": [
+            {
+                "accuracy_decimals": 0,
+                "force_update": false,
+                "icon": "mdi:wifi",
+                "key": 1083873689,
+                "name": "kitchen_sink_light WiFi Signal",
+                "object_id": "kitchen_sink_light_wifi_signal",
+                "unique_id": "600194e020d1-wifisignal",
+                "unit_of_measurement": "dB"
+            },
+            {
+                "accuracy_decimals": 0,
+                "force_update": false,
+                "icon": "mdi:timer",
+                "key": 3690760741,
+                "name": "kitchen_sink_light uptime",
+                "object_id": "kitchen_sink_light_uptime",
+                "unique_id": "600194e020d1-uptime",
+                "unit_of_measurement": "s"
+            }
+        ],
+        "services": [],
+        "switch": [
+            {
+                "assumed_state": false,
+                "icon": "mdi:restart",
+                "key": 461828670,
+                "name": "kitchen_sink_light Restart",
+                "object_id": "kitchen_sink_light_restart",
+                "unique_id": "kitchen_sink_lightswitchkitchen_sink_light_restart"
+            }
+        ],
+        "text_sensor": [
+            {
+                "icon": "mdi:new-box",
+                "key": 3073225951,
+                "name": "kitchen_sink_light Version",
+                "object_id": "kitchen_sink_light_version",
+                "unique_id": "600194e020d1-version"
+            },
+            {
+                "icon": "",
+                "key": 1180450270,
+                "name": "kitchen_sink_light IP",
+                "object_id": "kitchen_sink_light_ip",
+                "unique_id": "600194e020d1-wifiinfo-ip"
+            },
+            {
+                "icon": "",
+                "key": 2785512068,
+                "name": "kitchen_sink_light SSID",
+                "object_id": "kitchen_sink_light_ssid",
+                "unique_id": "600194e020d1-wifiinfo-ssid"
+            },
+            {
+                "icon": "",
+                "key": 1236787124,
+                "name": "kitchen_sink_light BSSID",
+                "object_id": "kitchen_sink_light_bssid",
+                "unique_id": "600194e020d1-wifiinfo-bssid"
+            }
+        ]
+    },
+    "key": "esphome.6bc787d1fe7543bbbaecda8e6495cd3c",
+    "version": 1
+}

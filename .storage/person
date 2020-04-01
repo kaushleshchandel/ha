@@ -1,0 +1,36 @@
+{
+    "data": {
+        "items": [
+            {
+                "device_trackers": [],
+                "id": "cambria_a",
+                "name": "Cambria-A",
+                "user_id": "1bda3d6e9f7248e38892e9b8d924709d"
+            },
+            {
+                "device_trackers": [
+                    "device_tracker.sm_g960u"
+                ],
+                "id": "kaushlesh",
+                "name": "Kaushlesh",
+                "user_id": null
+            },
+            {
+                "device_trackers": [
+                    "device_tracker.iphone_2"
+                ],
+                "id": "emelia",
+                "name": "Emelia",
+                "user_id": "0dff9b805f6540cba85a3490c7c4244b"
+            },
+            {
+                "device_trackers": [],
+                "id": "fernanda",
+                "name": "Fernanda",
+                "user_id": "b58334f6bb0748b99540e24279c6ce0b"
+            }
+        ]
+    },
+    "key": "person",
+    "version": 2
+}

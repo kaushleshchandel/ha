@@ -1,0 +1,59 @@
+{
+    "data": {
+        "device_info": {
+            "compilation_time": "Feb 17 2020, 20:13:10",
+            "esphome_version": "1.14.3",
+            "has_deep_sleep": false,
+            "mac_address": "50:02:91:C8:B8:C8",
+            "model": "PLATFORMIO_D1_MINI",
+            "name": "hvac",
+            "uses_password": false
+        },
+        "sensor": [
+            {
+                "accuracy_decimals": 2,
+                "force_update": false,
+                "icon": "mdi:pulse",
+                "key": 282155461,
+                "name": "Pulse Counter A",
+                "object_id": "pulse_counter_a",
+                "unique_id": "hvacsensorpulse_counter_a",
+                "unit_of_measurement": "pulses/min"
+            },
+            {
+                "accuracy_decimals": 2,
+                "force_update": false,
+                "icon": "mdi:pulse",
+                "key": 282155462,
+                "name": "Pulse Counter B",
+                "object_id": "pulse_counter_b",
+                "unique_id": "hvacsensorpulse_counter_b",
+                "unit_of_measurement": "pulses/min"
+            },
+            {
+                "accuracy_decimals": 2,
+                "force_update": false,
+                "icon": "mdi:pulse",
+                "key": 282155463,
+                "name": "Pulse Counter C",
+                "object_id": "pulse_counter_c",
+                "unique_id": "hvacsensorpulse_counter_c",
+                "unit_of_measurement": "pulses/min"
+            },
+            {
+                "accuracy_decimals": 2,
+                "force_update": false,
+                "icon": "mdi:pulse",
+                "key": 282155456,
+                "name": "Pulse Counter D",
+                "object_id": "pulse_counter_d",
+                "unique_id": "hvacsensorpulse_counter_d",
+                "unit_of_measurement": "pulses/min"
+            }
+        ],
+        "services": [],
+        "text_sensor": []
+    },
+    "key": "esphome.7a808c85e60a4f5889be92240e263bc1",
+    "version": 1
+}
